@@ -1,0 +1,2119 @@
+"","Group","Species","dry_mass_g","Temp_C","Mortality_yr","Ref"
+"1","Mammal","Acinonyx jubatus",12500,38,0.213,128
+"2","Mammal","Acinonyx jubatus",12500,38,0.169,128
+"3","Mammal","Acrobates pygmaeus",3,38,0.667,128
+"4","Mammal","Aepyceros melampus",13130,38,0.196,128
+"5","Mammal","Aepyceros melampus",13130,38,0.169,128
+"6","Mammal","Aepyprymnus rufescens",812.5,38,0.435,128
+"7","Mammal","Ailuropoda melanoleuca",30000,38,0.097,128
+"8","Mammal","Ailurus fulgens",875,38,0.182,128
+"9","Mammal","Alcelaphus buselaphus",42750,38,0.127,128
+"10","Mammal","Alces alces",89750,38,0.159,128
+"11","Mammal","Alces alces",89750,38,0.093,128
+"12","Mammal","Allenopithecus nigroviridis",1187,38,0.11,128
+"13","Mammal","Vulpes lagopus",862.5,38,0.256,128
+"14","Mammal","Alouatta palliata",1819,38,0.127,128
+"15","Mammal","Alouatta palliata",1819,38,0.127,128
+"16","Mammal","Alouatta palliata",1819,38,0.101,128
+"17","Mammal","Alouatta palliata",1819,38,0.101,128
+"18","Mammal","Alouatta seniculus",1536,38,0.101,128
+"19","Mammal","Ammotragus lervia",20940,38,0.256,128
+"20","Mammal","Antechinus flavipes",11.25,38,3.333,128
+"21","Mammal","Antechinus flavipes",11.25,38,1.429,128
+"22","Mammal","Antechinus stuartii",6.875,38,3.846,128
+"23","Mammal","Antechinus stuartii",6.875,38,0.909,128
+"24","Mammal","Antidorcas marsupialis",9762,38,0.127,128
+"25","Mammal","Antilocapra americana",11520,38,0.256,128
+"26","Mammal","Antilocapra americana",11520,38,0.256,128
+"27","Mammal","Antilope cervicapra",9250,38,0.169,128
+"28","Mammal","Antilope cervicapra",9250,38,0.141,128
+"29","Mammal","Aotus trivirgatus",225,38,0.213,128
+"30","Mammal","Aotus trivirgatus",225,38,0.127,128
+"31","Mammal","Aplodontia rufa",251,38,0.435,128
+"32","Mammal","Aplodontia rufa",251,38,0.256,128
+"33","Mammal","Apodemus sylvaticus",6.25,38,3.333,128
+"34","Mammal","Arctictis binturong",2875,38,0.141,128
+"35","Mammal","Arctocebus calabarensis",52.5,38,0.27,128
+"36","Mammal","Arctocephalus galapagoensis",6750,38,0.115,128
+"37","Mammal","Arctocephalus gazella",24380,38,0.196,128
+"38","Mammal","Arctocephalus gazella",24380,38,0.11,128
+"39","Mammal","Arctocephalus pusillus",44630,38,0.141,128
+"40","Mammal","Arctogalidia trivirgata",562.5,38,0.213,128
+"41","Mammal","Arvicola amphibius",50,38,1.111,128
+"42","Mammal","Ateles paniscus",1975,38,0.127,128
+"43","Mammal","Babyrousa babyrussa",25000,38,0.105,128
+"44","Mammal","Balaena mysticetus",17250000,38,0.084,128
+"45","Mammal","Balaena mysticetus",17250000,38,0.063,128
+"46","Mammal","Balaenoptera acutorostrata",2500000,38,0.056,128
+"47","Mammal","Balaenoptera acutorostrata",2500000,38,0.053,128
+"48","Mammal","Balaenoptera acutorostrata",2500000,38,0.05,128
+"49","Mammal","Balaenoptera borealis",5e+06,38,0.036,128
+"50","Mammal","Balaenoptera borealis",5e+06,38,0.034,128
+"51","Mammal","Balaenoptera edeni",4e+06,38,0.035,128
+"52","Mammal","Balaenoptera musculus",37500000,38,0.056,128
+"53","Mammal","Balaenoptera musculus",37500000,38,0.05,128
+"54","Mammal","Balaenoptera musculus",37500000,38,0.039,128
+"55","Mammal","Balaenoptera musculus",37500000,38,0.023,128
+"56","Mammal","Balaenoptera physalus",11250000,38,0.022,128
+"57","Mammal","Balaenoptera physalus",11250000,38,0.022,128
+"58","Mammal","Bassaricyon gabbii",312.5,38,0.105,128
+"59","Mammal","Bassariscus astutus",282.4,38,0.159,128
+"60","Mammal","Bassariscus sumichrasti",225,38,0.11,128
+"61","Mammal","Berardius bairdii",2845000,38,0.035,128
+"62","Mammal","Bison bison",144800,38,0.101,128
+"63","Mammal","Bison bison",144800,38,0.076,128
+"64","Mammal","Bison bonasus",2e+05,38,0.093,128
+"65","Mammal","Blarina brevicauda",3.787,38,1.111,128
+"66","Mammal","Bos grunniens",250000,38,0.101,128
+"67","Mammal","Bradypus torquatus",975,38,0.213,128
+"68","Mammal","Burramys parvus",10.38,38,0.667,128
+"69","Mammal","Cacajao calvus",1449,38,0.141,128
+"70","Mammal","Cacajao melanocephalus",950,38,0.213,128
+"71","Mammal","Callithrix jacchus",73,38,0.256,128
+"72","Mammal","Callithrix jacchus",73,38,0.256,128
+"73","Mammal","Callorhinus ursinus",25000,38,0.101,128
+"74","Mammal","Callorhinus ursinus",25000,38,0.084,128
+"75","Mammal","Callorhinus ursinus",62500,38,0.051,3
+"76","Mammal","Camelus dromedarius",2e+05,38,0.063,128
+"77","Mammal","Canis latrans",3352,38,0.175,128
+"78","Mammal","Canis latrans",3352,38,0.175,128
+"79","Mammal","Canis latrans",3352,38,0.12,128
+"80","Mammal","Canis lupus",4200,38,0.256,128
+"81","Mammal","Canis lupus",4200,38,0.186,128
+"82","Mammal","Canis lupus",4200,38,0.159,128
+"83","Mammal","Canis lupus",7069,38,0.256,128
+"84","Mammal","Canis lupus",7069,38,0.186,128
+"85","Mammal","Canis lupus",7069,38,0.159,128
+"86","Mammal","Canis rufus",5746,38,0.159,128
+"87","Mammal","Capra cylindricornis",20000,38,0.115,128
+"88","Mammal","Capra falconeri",23750,38,0.213,128
+"89","Mammal","Capra falconeri",23750,38,0.196,128
+"90","Mammal","Capreolus capreolus",7500,38,0.169,128
+"91","Mammal","Castor canadensis",3604,38,0.169,128
+"92","Mammal","Castor fiber",6250,38,0.149,128
+"93","Mammal","Cavia porcellus",182,38,0.172,128
+"94","Mammal","Cebus albifrons",657.2,38,0.063,128
+"95","Mammal","Sapajus apella",625,38,0.063,128
+"96","Mammal","Philantomba monticola",1562,38,0.213,128
+"97","Mammal","Cephalorhynchus commersonii",12500,38,0.141,128
+"98","Mammal","Ceratotherium simum",737500,38,0.07,128
+"99","Mammal","Ceratotherium simum",737500,38,0.056,128
+"100","Mammal","Ceratotherium simum",737500,38,0.05,128
+"101","Mammal","Cercocebus torquatus",1937,38,0.123,128
+"102","Mammal","Cercocebus torquatus",1937,38,0.084,128
+"103","Mammal","Cercopithecus diana",1044,38,0.072,128
+"104","Mammal","Cercopithecus mona",1156,38,0.084,128
+"105","Mammal","Cervus elaphus",12500,38,0.05,3
+"106","Mammal","Cervus elaphus",12500,38,0.025,3
+"107","Mammal","Cervus elaphus",29880,38,0.127,128
+"108","Mammal","Cervus elaphus",29880,38,0.094,128
+"109","Mammal","Cervus elaphus",39060,38,0.127,128
+"110","Mammal","Cervus elaphus",39060,38,0.094,128
+"111","Mammal","Cervus elaphus",54440,38,0.127,128
+"112","Mammal","Cervus elaphus",54440,38,0.094,128
+"113","Mammal","Chinchilla lanigera",121.2,38,0.256,128
+"114","Mammal","Chinchilla lanigera",121.2,38,0.226,128
+"115","Mammal","Chiropotes albinasus",725,38,0.149,128
+"116","Mammal","Chiropotes satanas",750,38,0.141,128
+"117","Mammal","Civettictis civetta",3000,38,0.169,128
+"118","Mammal","Coendou prehensilis",1100,38,0.149,128
+"119","Mammal","Colobus polykomos",2459,38,0.097,128
+"120","Mammal","Colobus polykomos",2459,38,0.083,128
+"121","Mammal","Cricetus cricetus",125,38,0.667,128
+"122","Mammal","Crocidura leucodon",2.455,38,0.909,128
+"123","Mammal","Crocidura russula",1.6,38,0.847,128
+"124","Mammal","Crocuta crocuta",15750,38,0.101,128
+"125","Mammal","Ctenomys talarum",33.08,38,0.909,128
+"126","Mammal","Cystophora cristata",50000,38,0.074,128
+"127","Mammal","Cystophora cristata",50000,38,0.072,128
+"128","Mammal","Cystophora cristata",50000,38,0.072,128
+"129","Mammal","Dactylopsila trivirgata",105.8,38,0.526,128
+"130","Mammal","Dama dama",12130,38,0.101,128
+"131","Mammal","Damaliscus lunatus",24500,38,0.182,3
+"132","Mammal","Damaliscus lunatus",24500,38,0.166,3
+"133","Mammal","Dasycercus cristicauda",25,38,0.435,128
+"134","Mammal","Dasyprocta punctata",668.7,38,0.256,128
+"135","Mammal","Dasyprocta punctata",668.7,38,0.256,128
+"136","Mammal","Dasypus novemcinctus",1051,38,0.169,128
+"137","Mammal","Dasypus novemcinctus",1051,38,0.169,128
+"138","Mammal","Dasyurus viverrinus",272.5,38,0.526,128
+"139","Mammal","Delanymys brooksi",1.25,38,1.429,128
+"140","Mammal","Delphinapterus leucas",350000,38,0.147,128
+"141","Mammal","Delphinapterus leucas",350000,38,0.084,128
+"142","Mammal","Delphinapterus leucas",350000,38,0.063,128
+"143","Mammal","Delphinus delphis",16250,38,0.127,128
+"144","Mammal","Dendrohyrax arboreus",737.5,38,0.256,128
+"145","Mammal","Dendrolagus matschiei",1740,38,0.323,128
+"146","Mammal","Dicerorhinus sumatrensis",350000,38,0.079,128
+"147","Mammal","Dicerorhinus sumatrensis",350000,38,0.072,128
+"148","Mammal","Diceros bicornis",295100,38,0.063,128
+"149","Mammal","Dugong dugon",105000,38,0.046,128
+"150","Mammal","Dugong dugon",105000,38,0.046,128
+"151","Mammal","Dugong dugon",105000,38,0.036,128
+"152","Mammal","Echinops telfairi",45,38,2.632,128
+"153","Mammal","Elaphurus davidianus",43750,38,0.141,128
+"154","Mammal","Elaphurus davidianus",43750,38,0.108,128
+"155","Mammal","Elephantulus myurus",13.1,38,2.941,128
+"156","Mammal","Elephantulus rufescens",9.375,38,0.435,128
+"157","Mammal","Elephas maximus",1250000,38,0.063,128
+"158","Mammal","Elephas maximus",1250000,38,0.042,128
+"159","Mammal","Elephas maximus",1250000,38,0.036,128
+"160","Mammal","Elephas maximus",1250000,38,0.032,128
+"161","Mammal","Enhydra lutris",7500,38,0.11,128
+"162","Mammal","Enhydra lutris",7500,38,0.084,128
+"163","Mammal","Equus africanus",41250,38,0.127,128
+"164","Mammal","Equus africanus",81250,38,0.127,128
+"165","Mammal","Equus quagga",59430,38,0.057,3
+"166","Mammal","Equus quagga",59430,38,0.057,3
+"167","Mammal","Equus ferus",62500,38,0.04,128
+"168","Mammal","Equus grevyi",102000,38,0.127,128
+"169","Mammal","Equus hemionus",57500,38,0.127,128
+"170","Mammal","Equus zebra",71750,38,0.127,128
+"171","Mammal","Equus zebra",71750,38,0.105,128
+"172","Mammal","Erethizon dorsatum",1771,38,0.149,128
+"173","Mammal","Erethizon dorsatum",1771,38,0.141,128
+"174","Mammal","Erignathus barbatus",75000,38,0.101,128
+"175","Mammal","Erignathus barbatus",75000,38,0.081,128
+"176","Mammal","Erignathus barbatus",75000,38,0.081,128
+"177","Mammal","Erinaceus europaeus",205.8,38,0.37,128
+"178","Mammal","Erinaceus europaeus",205.8,38,0.323,128
+"179","Mammal","Erinaceus europaeus",205.8,38,0.182,128
+"180","Mammal","Erythrocebus patas",1817,38,0.12,128
+"181","Mammal","Eschrichtius robustus",7500000,38,0.036,128
+"182","Mammal","Eschrichtius robustus",7500000,38,0.033,128
+"183","Mammal","Eumetopias jubatus",150000,38,0.11,128
+"184","Mammal","Eumetopias jubatus",150000,38,0.084,128
+"185","Mammal","Felis nigripes",325,38,0.213,128
+"186","Mammal","Felis silvestris",1063,38,0.169,128
+"187","Mammal","Felis silvestris",1063,38,0.141,128
+"188","Mammal","Felis silvestris",1162,38,0.169,128
+"189","Mammal","Felis silvestris",1162,38,0.141,128
+"190","Mammal","Galea musteloides",120,38,2.381,128
+"191","Mammal","Gazella dorcas",5750,38,0.204,128
+"192","Mammal","Gazella gazella",5625,38,0.213,128
+"193","Mammal","Georychus capensis",45.25,38,0.909,128
+"194","Mammal","Gerbillus pyramidum",10.22,38,0.323,128
+"195","Mammal","Giraffa camelopardalis",225000,38,0.101,128
+"196","Mammal","Giraffa camelopardalis",225000,38,0.097,128
+"197","Mammal","Giraffa camelopardalis",225000,38,0.069,128
+"198","Mammal","Gorilla gorilla",31060,38,0.053,128
+"199","Mammal","Gorilla gorilla",31060,38,0.05,128
+"200","Mammal","Gymnobelideus leadbeateri",31.75,38,0.345,128
+"201","Mammal","Halichoerus grypus",62500,38,0.081,128
+"202","Mammal","Halichoerus grypus",62500,38,0.063,128
+"203","Mammal","Halichoerus grypus",62500,38,0.055,128
+"204","Mammal","Halichoerus grypus",62500,38,0.055,128
+"205","Mammal","Hemibelideus lemuroides",238.1,38,0.667,128
+"206","Mammal","Hemicentetes semispinosus",28,38,1.02,128
+"207","Mammal","Hemitragus jemlahicus",22500,38,0.256,128
+"208","Mammal","Herpestes ichneumon",712.5,38,0.213,128
+"209","Mammal","Heterohyrax brucei",656.3,38,0.182,128
+"210","Mammal","Hippopotamus amphibius",3e+05,38,0.03,3
+"211","Mammal","Hippopotamus amphibius",354400,38,0.056,128
+"212","Mammal","Hippopotamus amphibius",354400,38,0.05,128
+"213","Mammal","Hippopotamus amphibius",354400,38,0.046,128
+"214","Mammal","Hydropotes inermis",3375,38,0.213,128
+"215","Mammal","Hydrurga leptonyx",90000,38,0.11,128
+"216","Mammal","Hydrurga leptonyx",90000,38,0.097,128
+"217","Mammal","Hydrurga leptonyx",90000,38,0.097,128
+"218","Mammal","Hyemoschus aquaticus",2713,38,0.196,128
+"219","Mammal","Hyemoschus aquaticus",2713,38,0.182,128
+"220","Mammal","Hylobates agilis",1250,38,0.101,128
+"221","Mammal","Hylobates lar",1250,38,0.101,128
+"222","Mammal","Symphalangus syndactylus",2750,38,0.101,128
+"223","Mammal","Symphalangus syndactylus",2750,38,0.084,128
+"224","Mammal","Hyperoodon ampullatus",625000,38,0.068,128
+"225","Mammal","Isoodon macrourus",400,38,3.333,128
+"226","Mammal","Isoodon macrourus",400,38,0.909,128
+"227","Mammal","Kobus ellipsiprymnus",52500,38,0.137,128
+"228","Mammal","Kobus kob",29380,38,0.206,3
+"229","Mammal","Kobus leche",27690,38,0.169,128
+"230","Mammal","Kobus megaceros",21880,38,0.256,128
+"231","Mammal","Lagenorhynchus acutus",50000,38,0.115,128
+"232","Mammal","Lagenorhynchus acutus",50000,38,0.093,128
+"233","Mammal","Lagostrophus fasciatus",425,38,0.667,128
+"234","Mammal","Lama guanicoe",21250,38,0.127,128
+"235","Mammal","Lemur catta",500,38,0.093,128
+"236","Mammal","Leptailurus serval",3000,38,0.11,128
+"237","Mammal","Lepus americanus",427.5,38,0.526,128
+"238","Mammal","Lepus europaeus",950,38,0.213,128
+"239","Mammal","Lepus timidus",625,38,0.286,128
+"240","Mammal","Heteromys adspersus",16.25,38,2,128
+"241","Mammal","Litocranius walleri",9500,38,0.323,128
+"242","Mammal","Litocranius walleri",9500,38,0.213,128
+"243","Mammal","Lobodon carcinophaga",56250,38,0.11,128
+"244","Mammal","Lobodon carcinophaga",56250,38,0.084,128
+"245","Mammal","Lobodon carcinophaga",56250,38,0.07,128
+"246","Mammal","Lobodon carcinophaga",56250,38,0.065,128
+"247","Mammal","Loxodonta africana",985000,38,0.042,128
+"248","Mammal","Loxodonta africana",985000,38,0.036,128
+"249","Mammal","Loxodonta africana",1652000,38,0.04,3
+"250","Mammal","Lycaon pictus",5513,38,0.256,128
+"251","Mammal","Lycaon pictus",5513,38,0.233,128
+"252","Mammal","Macaca arctoides",2500,38,0.084,128
+"253","Mammal","Macaca mulatta",1150,38,0.087,3
+"254","Mammal","Macaca mulatta",2500,38,0.084,128
+"255","Mammal","Macaca nemestrina",2500,38,0.084,128
+"256","Mammal","Macaca radiata",2500,38,0.127,128
+"257","Mammal","Macaca silenus",2500,38,0.084,128
+"258","Mammal","Macaca sinica",1000,38,0.084,128
+"259","Mammal","Macaca sylvanus",1750,38,0.127,128
+"260","Mammal","Macaca sylvanus",1750,38,0.115,128
+"261","Mammal","Macropus agilis",3750,38,0.256,128
+"262","Mammal","Macropus antilopinus",6813,38,0.159,128
+"263","Mammal","Macropus dorsalis",2813,38,0.169,128
+"264","Mammal","Macropus eugenii",1625,38,0.182,128
+"265","Mammal","Macropus fuliginosus",5500,38,0.127,128
+"266","Mammal","Macropus giganteus",6469,38,0.128,128
+"267","Mammal","Macropus giganteus",6469,38,0.127,128
+"268","Mammal","Macropus parma",1125,38,0.37,128
+"269","Mammal","Macropus parma",1125,38,0.323,128
+"270","Mammal","Macropus parryi",3375,38,0.256,128
+"271","Mammal","Macropus robustus",5316,38,0.137,128
+"272","Mammal","Macropus rufogriseus",4213,38,0.169,128
+"273","Mammal","Macropus rufogriseus",4213,38,0.137,128
+"274","Mammal","Macropus rufus",11560,38,0.127,128
+"275","Mammal","Macropus rufus",11560,38,0.115,128
+"276","Mammal","Macropus rufus",11560,38,0.084,128
+"277","Mammal","Marmota marmota",1313,38,0.169,128
+"278","Mammal","Martes martes",325,38,0.256,128
+"279","Mammal","Martes zibellina",295,38,0.28,3
+"280","Mammal","Mazama americana",5700,38,0.213,128
+"281","Mammal","Mazama americana",5700,38,0.213,128
+"282","Mammal","Megaptera novaeangliae",7500000,38,0.033,128
+"283","Mammal","Megaptera novaeangliae",7500000,38,0.026,128
+"284","Mammal","Mellivora capensis",2000,38,0.096,128
+"285","Mammal","Mephitis mephitis",521.3,38,0.435,128
+"286","Mammal","Mesocricetus auratus",26.25,38,0.909,128
+"287","Mammal","Mesocricetus auratus",26.25,38,0.256,128
+"288","Mammal","Microgale dobsoni",9.75,38,0.467,128
+"289","Mammal","Microgale talazaci",12.5,38,0.45,128
+"290","Mammal","Micromys minutus",1.5,38,2,128
+"291","Mammal","Microtus agrestis",10,38,1.852,128
+"292","Mammal","Microtus oeconomus",8.055,38,2.174,128
+"293","Mammal","Miopithecus talapoin",312.5,38,0.09,128
+"294","Mammal","Mirounga angustirostris",6e+05,38,0.182,128
+"295","Mammal","Mirounga angustirostris",6e+05,38,0.182,128
+"296","Mammal","Mirounga angustirostris",6e+05,38,0.182,128
+"297","Mammal","Mirounga leonina",4e+05,38,0.141,128
+"298","Mammal","Mirounga leonina",4e+05,38,0.127,128
+"299","Mammal","Mirounga leonina",4e+05,38,0.127,128
+"300","Mammal","Mirounga leonina",4e+05,38,0.11,128
+"301","Mammal","Monodon monoceros",225000,38,0.063,128
+"302","Mammal","Mus musculus",4.125,38,0.435,128
+"303","Mammal","Mus musculus",5.375,38,0.435,128
+"304","Mammal","Muscardinus avellanarius",7.5,38,0.667,128
+"305","Mammal","Mustela lutreola",110,38,0.256,128
+"306","Mammal","Mustela putorius",275,38,0.435,128
+"307","Mammal","Mustela putorius",275,38,0.256,128
+"308","Mammal","Neovison vison",236.2,38,0.256,128
+"309","Mammal","Myocastor coypus",1734,38,0.435,128
+"310","Mammal","Myopus schisticolor",6.25,38,3.333,128
+"311","Mammal","Myosorex varius",2.85,38,3.333,128
+"312","Mammal","Napaeozapus insignis",5.575,38,0.667,128
+"313","Mammal","Nasua nasua",948.5,38,0.182,128
+"314","Mammal","Nasua nasua",948.5,38,0.182,128
+"315","Mammal","Neomys anomalus",4,38,1.429,128
+"316","Mammal","Neomys fodiens",3.75,38,0.909,128
+"317","Mammal","Neophocaena phocaenoides",7500,38,0.11,128
+"318","Mammal","Neotoma floridana",61.19,38,0.909,128
+"319","Mammal","Ningaui timealeyi",1.425,38,1.429,128
+"320","Mammal","Nyctereutes procyonoides",1500,38,0.233,128
+"321","Mammal","Ochotona collaris",32.25,38,0.435,128
+"322","Mammal","Ovis dalli",18250,38,0.107,3
+"323","Mammal","Ochotona princeps",39.41,38,0.435,128
+"324","Mammal","Ochotona princeps",39.41,38,0.37,128
+"325","Mammal","Odobenus rosmarus",3e+05,38,0.151,128
+"326","Mammal","Odobenus rosmarus",3e+05,38,0.063,128
+"327","Mammal","Odobenus rosmarus",3e+05,38,0.063,128
+"328","Mammal","Odobenus rosmarus",3e+05,38,0.063,128
+"329","Mammal","Odocoileus virginianus",13880,38,0.256,128
+"330","Mammal","Odocoileus virginianus",13880,38,0.256,128
+"331","Mammal","Ondatra zibethicus",245.4,38,0.909,128
+"332","Mammal","Ondatra zibethicus",245.4,38,0.667,128
+"333","Mammal","Orcinus orca",1375000,38,0.05,128
+"334","Mammal","Orcinus orca",1375000,38,0.028,128
+"335","Mammal","Orcinus orca",1375000,38,0.025,128
+"336","Mammal","Oreamnos americanus",18130,38,0.182,128
+"337","Mammal","Oreamnos americanus",18130,38,0.141,128
+"338","Mammal","Oreamnos americanus",18130,38,0.141,128
+"339","Mammal","Ornithorhynchus anatinus",371.1,38,0.149,128
+"340","Mammal","Orycteropus afer",13090,38,0.11,128
+"341","Mammal","Oryctolagus cuniculus",395,38,0.286,128
+"342","Mammal","Oryctolagus cuniculus",395,38,0.256,128
+"343","Mammal","Oryctolagus cuniculus",395,38,0.141,128
+"344","Mammal","Oryctolagus cuniculus",537.5,38,0.286,128
+"345","Mammal","Oryctolagus cuniculus",537.5,38,0.256,128
+"346","Mammal","Oryctolagus cuniculus",537.5,38,0.141,128
+"347","Mammal","Otaria byronia",61250,38,0.127,128
+"348","Mammal","Ovibos moschatus",92130,38,0.105,128
+"349","Mammal","Ovis ammon",35000,38,0.196,128
+"350","Mammal","Ovis canadensis",18660,38,0.105,128
+"351","Mammal","Ovis dalli",18250,38,0.049,3
+"352","Mammal","Pusa hispida",16250,38,0.032,3
+"353","Mammal","Paguma larvata",1100,38,0.141,128
+"354","Mammal","Pan paniscus",8500,38,0.127,128
+"355","Mammal","Pan troglodytes",9750,38,0.055,3
+"356","Mammal","Pan troglodytes",11250,38,0.056,128
+"357","Mammal","Pan troglodytes",11250,38,0.05,128
+"358","Mammal","Pan troglodytes",11250,38,0.049,128
+"359","Mammal","Pan troglodytes",11250,38,0.042,128
+"360","Mammal","Panthera leo",39000,38,0.032,3
+"361","Mammal","Panthera leo",40370,38,0.169,128
+"362","Mammal","Panthera leo",40370,38,0.169,128
+"363","Mammal","Panthera leo",40370,38,0.087,128
+"364","Mammal","Panthera pardus",13750,38,0.213,128
+"365","Mammal","Panthera tigris",50000,38,0.169,128
+"366","Mammal","Panthera tigris",50000,38,0.097,128
+"367","Mammal","Panthera tigris",50000,38,0.096,128
+"368","Mammal","Papio hamadryas",5313,38,0.068,128
+"369","Mammal","Paradoxurus hermaphroditus",750,38,0.115,128
+"370","Mammal","Parantechinus apicalis",17.19,38,0.909,128
+"371","Mammal","Pseudantechinus bilarni",6.875,38,0.909,128
+"372","Mammal","Parascalops breweri",12.75,38,0.667,128
+"373","Mammal","Parascalops breweri",12.75,38,0.526,128
+"374","Mammal","Pelea capreolus",5000,38,0.256,128
+"375","Mammal","Peponocephala electra",51500,38,0.053,128
+"376","Mammal","Petauroides volans",325,38,0.435,128
+"377","Mammal","Petaurus australis",143.8,38,0.256,128
+"378","Mammal","Petaurus breviceps",31.88,38,0.182,128
+"379","Mammal","Phacochoerus aethiopicus",17750,38,0.169,128
+"380","Mammal","Phacochoerus aethiopicus",17750,38,0.135,128
+"381","Mammal","Phascolarctos cinereus",2563,38,0.196,128
+"382","Mammal","Phascolarctos cinereus",2563,38,0.149,128
+"383","Mammal","Pusa caspica",21500,38,0.072,128
+"384","Mammal","Pusa caspica",21500,38,0.053,128
+"385","Mammal","Pusa caspica",21500,38,0.05,128
+"386","Mammal","Pusa caspica",21500,38,0.05,128
+"387","Mammal","Histriophoca fasciata",22500,38,0.11,128
+"388","Mammal","Histriophoca fasciata",22500,38,0.084,128
+"389","Mammal","Histriophoca fasciata",22500,38,0.081,128
+"390","Mammal","Pagophilus groenlandicus",30000,38,0.087,128
+"391","Mammal","Pagophilus groenlandicus",30000,38,0.084,128
+"392","Mammal","Pagophilus groenlandicus",30000,38,0.084,128
+"393","Mammal","Pusa hispida",16250,38,0.063,3
+"394","Mammal","Pusa hispida",25000,38,0.063,128
+"395","Mammal","Pusa hispida",25000,38,0.058,128
+"396","Mammal","Pusa hispida",25000,38,0.058,128
+"397","Mammal","Pusa hispida",25000,38,0.055,128
+"398","Mammal","Pusa sibirica",25000,38,0.048,128
+"399","Mammal","Pusa sibirica",25000,38,0.045,128
+"400","Mammal","Pusa sibirica",25000,38,0.045,128
+"401","Mammal","Phoca vitulina",25000,38,0.097,128
+"402","Mammal","Phoca vitulina",25000,38,0.079,128
+"403","Mammal","Phoca vitulina",25000,38,0.074,128
+"404","Mammal","Phoca vitulina",25000,38,0.063,128
+"405","Mammal","Phocoena phocoena",12500,38,0.196,128
+"406","Mammal","Phocoenoides dalli",25000,38,0.149,128
+"407","Mammal","Phocoenoides dalli",25000,38,0.115,128
+"408","Mammal","Physeter macrocephalus",1e+07,38,0.033,128
+"409","Mammal","Pithecia pithecia",343.9,38,0.182,128
+"410","Mammal","Pongo pygmaeus",12500,38,0.072,128
+"411","Mammal","Pongo pygmaeus",12500,38,0.043,128
+"412","Mammal","Pontoporia blainvillei",10000,38,0.159,128
+"413","Mammal","Potamochoerus porcus",17500,38,0.169,128
+"414","Mammal","Potamochoerus porcus",17500,38,0.127,128
+"415","Mammal","Potos flavus",408.8,38,0.087,128
+"416","Mammal","Potos flavus",408.8,38,0.087,128
+"417","Mammal","Priodontes maximus",11340,38,0.169,128
+"418","Mammal","Prionailurus bengalensis",1250,38,0.169,128
+"419","Mammal","Procavia capensis",757.5,38,0.303,128
+"420","Mammal","Procavia capensis",757.5,38,0.182,128
+"421","Mammal","Procyon cancrivorus",1737,38,0.182,128
+"422","Mammal","Procyon lotor",1381,38,0.127,128
+"423","Mammal","Proechimys semispinosus",90.13,38,1.429,128
+"424","Mammal","Pseudocheirus peregrinus",225,38,0.526,128
+"425","Mammal","Pseudocheirus peregrinus",225,38,0.435,128
+"426","Mammal","Pseudois nayaur",16000,38,0.105,128
+"427","Mammal","Pseudorca crassidens",340000,38,0.115,128
+"428","Mammal","Rangifer tarandus",21510,38,0.323,128
+"429","Mammal","Rangifer tarandus",21510,38,0.256,128
+"430","Mammal","Rangifer tarandus",21510,38,0.169,128
+"431","Mammal","Rangifer tarandus",26250,38,0.076,3
+"432","Mammal","Rangifer tarandus",26250,38,0.076,3
+"433","Mammal","Redunca fulvorufula",7375,38,0.213,128
+"434","Mammal","Rhinoceros unicornis",4e+05,38,0.063,128
+"435","Mammal","Rhinoceros unicornis",4e+05,38,0.056,128
+"436","Mammal","Rhinoceros unicornis",4e+05,38,0.051,128
+"437","Mammal","Rhynchocyon chrysopygus",135,38,0.667,128
+"438","Mammal","Rupicapra rupicapra",8500,38,0.219,3
+"439","Mammal","Rupicapra rupicapra",8750,38,0.127,128
+"440","Mammal","Syncerus caffer",117300,38,0.026,3
+"441","Mammal","Syncerus caffer",117300,38,0.092,3
+"442","Mammal","Syncerus caffer",117300,38,0.03,3
+"443","Mammal","Leontocebus nigricollis",115.5,38,0.256,128
+"444","Mammal","Saiga tatarica",10000,38,0.256,128
+"445","Mammal","Saiga tatarica",10000,38,0.213,128
+"446","Mammal","Saimiri sciureus",185.8,38,0.12,128
+"447","Mammal","Scalopus aquaticus",22.81,38,0.909,128
+"448","Mammal","Sciurus carolinensis",126.6,38,0.204,128
+"449","Mammal","Sciurus carolinensis",126.6,38,0.108,128
+"450","Mammal","Sciurus carolinensis",126.6,38,0.107,128
+"451","Mammal","Sciurus vulgaris",75,38,0.213,128
+"452","Mammal","Setonix brachyurus",812.5,38,0.256,128
+"453","Mammal","Setonix brachyurus",812.5,38,0.256,128
+"454","Mammal","Sicista betulina",2.5,38,0.769,128
+"455","Mammal","Sminthopsis crassicaudata",3.75,38,2.381,128
+"456","Mammal","Sminthopsis crassicaudata",3.75,38,2,128
+"457","Mammal","Sorex alpinus",1.95,38,2.381,128
+"458","Mammal","Sorex araneus",2.5,38,1.429,128
+"459","Mammal","Sorex fumeus",1.925,38,3.333,128
+"460","Mammal","Sorex minutus",1.125,38,1.429,128
+"461","Mammal","Sorex vagrans",1.106,38,2.381,128
+"462","Mammal","Spilocuscus maculatus",1600,38,0.233,128
+"463","Mammal","Stenella attenuata",25000,38,0.055,128
+"464","Mammal","Stenella coeruleoalba",25000,38,0.05,128
+"465","Mammal","Suncus etruscus",0.45,38,2.381,128
+"466","Mammal","Suncus etruscus",0.45,38,1.429,128
+"467","Mammal","Suncus murinus",21.66,38,1.111,128
+"468","Mammal","Sundamys muelleri",106,38,10,128
+"469","Mammal","Sus scrofa",21560,38,0.127,128
+"470","Mammal","Sus scrofa",21560,38,0.12,128
+"471","Mammal","Sylvilagus floridanus",293.2,38,0.526,128
+"472","Mammal","Sylvilagus floridanus",293.2,38,0.526,128
+"473","Mammal","Sylvilagus floridanus",302.5,38,1.225,3
+"474","Mammal","Syncerus caffer",117300,38,0.026,3
+"475","Mammal","Syncerus caffer",145000,38,0.141,128
+"476","Mammal","Syncerus caffer",145000,38,0.097,128
+"477","Mammal","Syncerus caffer",145000,38,0.085,128
+"478","Mammal","Talpa europaea",22.5,38,0.909,128
+"479","Mammal","Talpa europaea",22.5,38,0.667,128
+"480","Mammal","Tamias striatus",27.98,38,0.909,128
+"481","Mammal","Tamiasciurus hudsonicus",47.5,38,0.437,3
+"482","Mammal","Tapirus indicus",50000,38,0.084,128
+"483","Mammal","Tapirus terrestris",51880,38,0.084,128
+"484","Mammal","Tapirus terrestris",51880,38,0.072,128
+"485","Mammal","Tarsipes rostratus",2.25,38,1.429,128
+"486","Mammal","Tarsius bancanus",30,38,0.323,128
+"487","Mammal","Taxidea taxus",1777,38,0.182,128
+"488","Mammal","Taxidea taxus",1777,38,0.182,128
+"489","Mammal","Taxidea taxus",1777,38,0.097,128
+"490","Mammal","Tayassu pecari",8058,38,0.192,128
+"491","Mammal","Tayassu pecari",8058,38,0.192,128
+"492","Mammal","Tetracerus quadricornis",4750,38,0.256,128
+"493","Mammal","Theropithecus gelada",4262,38,0.127,128
+"494","Mammal","Thomomys talpoides",32.52,38,1.852,128
+"495","Mammal","Thryonomys swinderianus",1015,38,0.617,128
+"496","Mammal","Tragelaphus imberbis",20390,38,0.256,128
+"497","Mammal","Tragelaphus imberbis",20390,38,0.169,128
+"498","Mammal","Trichechus inunguis",1e+05,38,0.084,128
+"499","Mammal","Trichechus manatus",62500,38,0.084,128
+"500","Mammal","Trichosurus caninus",875,38,0.213,128
+"501","Mammal","Trichosurus caninus",875,38,0.149,128
+"502","Mammal","Trichosurus caninus",875,38,0.149,128
+"503","Mammal","Trichosurus vulpecula",662.5,38,0.196,128
+"504","Mammal","Trichosurus vulpecula",662.5,38,0.196,128
+"505","Mammal","Tupaia glis",37.5,38,0.213,128
+"506","Mammal","Tursiops truncatus",43750,38,0.101,128
+"507","Mammal","Tursiops truncatus",43750,38,0.101,128
+"508","Mammal","Tursiops truncatus",43750,38,0.101,128
+"509","Mammal","Ursus arctos",34860,38,0.101,128
+"510","Mammal","Ursus arctos",34860,38,0.084,128
+"511","Mammal","Vicugna vicugna",11870,38,0.127,128
+"512","Mammal","Vombatus ursinus",6500,38,0.526,128
+"513","Mammal","Vombatus ursinus",6500,38,0.097,128
+"514","Mammal","Vulpes cana",250,38,0.256,128
+"515","Mammal","Vulpes chama",738.8,38,0.256,128
+"516","Mammal","Vulpes pallida",700,38,0.256,128
+"517","Mammal","Vulpes vulpes",1033,38,0.37,128
+"518","Mammal","Vulpes vulpes",1033,38,0.213,128
+"519","Mammal","Vulpes vulpes",1488,38,0.37,128
+"520","Mammal","Vulpes vulpes",1488,38,0.213,128
+"521","Mammal","Vulpes vulpes",1500,38,0.37,128
+"522","Mammal","Vulpes vulpes",1500,38,0.213,128
+"523","Mammal","Wallabia bicolor",3750,38,0.213,128
+"524","Mammal","Wallabia bicolor",3750,38,0.169,128
+"525","Mammal","Zalophus californianus",62500,38,0.149,128
+"526","Bird","Accipiter cooperii",109.8,40,0.213,12
+"527","Bird","Accipiter cooperii",132.3,40,0.244,12
+"528","Bird","Accipiter cooperii",132.3,40,0.345,12
+"529","Bird","Accipiter gentilis",256.1,40,0.133,12
+"530","Bird","Accipiter gentilis",256.1,40,0.133,12
+"531","Bird","Accipiter gentilis",256.1,40,0.196,12
+"532","Bird","Accipiter gentilis",284.3,40,0.196,12
+"533","Bird","Accipiter gentilis",284.3,40,0.199,12
+"534","Bird","Accipiter nisus",50.5,40,0.201,3
+"535","Bird","Accipiter nisus",59.38,40,0.169,12
+"536","Bird","Accipiter nisus",59.38,40,0.164,12
+"537","Bird","Accipiter striatus",43.5,40,0.262,12
+"538","Bird","Acridotheres cristatellus",28.25,40,0.228,12
+"539","Bird","Aechmophorus occidentalis",369.3,40,0.394,12
+"540","Bird","Aechmophorus occidentalis",369.3,40,0.182,12
+"541","Bird","Aegolius acadicus",20.71,40,0.35,12
+"542","Bird","Aegolius acadicus",20.71,40,0.355,12
+"543","Bird","Aegolius acadicus",20.71,40,0.37,12
+"544","Bird","Aegolius funereus",33.5,40,0.233,12
+"545","Bird","Aegolius funereus",33.5,40,0.794,12
+"546","Bird","Aeronautes saxatalis",8.025,40,0.459,12
+"547","Bird","Aethia cristatella",66,40,0.34,12
+"548","Bird","Aethia pusilla",21,40,0.602,12
+"549","Bird","Agelaius phoeniceus",15.9,40,0.161,12
+"550","Bird","Peucaea aestivalis",4.913,40,0.909,12
+"551","Bird","Amphispiza quinquestriata",4.763,40,0.667,12
+"552","Bird","Aimophila ruficeps",4.675,40,0.847,12
+"553","Bird","Aix sponsa",62,40,0.112,12
+"554","Bird","Aix sponsa",62,40,0.144,12
+"555","Bird","Alca torda",179.8,40,0.407,12
+"556","Bird","Alca torda",179.8,40,0.42,12
+"557","Bird","Ammodramus caudacutus",4.45,40,0.435,12
+"558","Bird","Ammodramus caudacutus",5.175,40,0.256,12
+"559","Bird","Ammodramus maritimus",5.575,40,0.286,12
+"560","Bird","Ammodramus maritimus",5.813,40,0.289,12
+"561","Bird","Ammodramus maritimus",6.05,40,0.286,12
+"562","Bird","Ammodramus savannarum",4.25,40,0.877,12
+"563","Bird","Amphispiza bilineata",3.375,40,0.435,12
+"564","Bird","Anas acuta",258.8,40,0.119,12
+"565","Bird","Anas acuta",258.8,40,0.123,12
+"566","Bird","Mareca americana",179.8,40,0.119,12
+"567","Bird","Mareca americana",198,40,0.286,12
+"568","Bird","Spatula clypeata",159,40,0.153,12
+"569","Bird","Anas crecca",79.5,40,0.123,12
+"570","Bird","Anas crecca",91,40,0.125,12
+"571","Bird","Spatula cyanoptera",102,40,0.198,12
+"572","Bird","Spatula discors",90.75,40,0.113,12
+"573","Bird","Spatula discors",102.3,40,0.146,12
+"574","Bird","Anas fulvigula",242,40,0.196,12
+"575","Bird","Anas fulvigula",257.5,40,0.19,12
+"576","Bird","Anas laysanensis",106.8,40,0.216,12
+"577","Bird","Mareca penelope",204.8,40,0.299,12
+"578","Bird","Anas platyrhynchos",270.5,40,0.087,12
+"579","Bird","Anas platyrhynchos",270.5,40,0.108,12
+"580","Bird","Anas platyrhynchos",270.5,40,0.123,12
+"581","Bird","Anas rubripes",350,40,0.096,12
+"582","Bird","Mareca strepera",247.5,40,0.13,12
+"583","Bird","Mareca strepera",247.5,40,0.143,12
+"584","Bird","Anhinga anhinga",308.8,40,0.215,12
+"585","Bird","Anous minutus",29.75,40,0.116,12
+"586","Bird","Anous stolidus",49.5,40,0.101,12
+"587","Bird","Anous tenuirostris",27.75,40,0.158,12
+"588","Bird","Anser albifrons",614,40,0.113,12
+"589","Bird","Anser albifrons",614,40,0.125,12
+"590","Bird","Anser albifrons",675.8,40,0.113,12
+"591","Bird","Anser brachyrhynchus",661.3,40,0.115,12
+"592","Bird","Anser caerulescens",657.6,40,0.095,12
+"593","Bird","Anser caerulescens",657.6,40,0.103,12
+"594","Bird","Anser caerulescens",657.6,40,0.13,12
+"595","Bird","Anser canagicus",685.8,40,0.286,12
+"596","Bird","Anser canagicus",685.8,40,0.413,12
+"597","Bird","Anser rossii",419.8,40,0.118,12
+"598","Bird","Anser rossii",419.8,40,0.129,12
+"599","Bird","Anthus rubescens",5.213,40,0.515,12
+"600","Bird","Anthus spinoletta",5.975,40,0.515,12
+"601","Bird","Aphelocoma coerulescens",20.05,40,0.161,12
+"602","Bird","Aphelocoma ultramarina",31,40,0.133,12
+"603","Bird","Aphelocoma ultramarina",31,40,0.144,12
+"604","Bird","Aphelocoma ultramarina",31,40,0.237,12
+"605","Bird","Aquila audax",875,40,0.442,12
+"606","Bird","Aquila chrysaetos",869.3,40,0.148,12
+"607","Bird","Aquila chrysaetos",1049,40,0.066,12
+"608","Bird","Aquila chrysaetos",1049,40,0.098,12
+"609","Bird","Aquila chrysaetos",1049,40,0.246,12
+"610","Bird","Clanga pomarina",342.5,40,0.097,12
+"611","Bird","Hieraaetus wahlbergi",160,40,0.216,12
+"612","Bird","Archilochus colubris",0.7875,40,0.286,12
+"613","Bird","Archilochus colubris",0.825,40,0.413,12
+"614","Bird","Ardea herodias",597.5,40,0.108,12
+"615","Bird","Arenaria interpres",28.75,40,0.178,12
+"616","Bird","Asio flammeus",86.63,40,0.198,12
+"617","Bird","Asio otus",65.5,40,0.091,12
+"618","Bird","Athene cunicularia",38.75,40,0.296,12
+"619","Bird","Auriparus flaviceps",1.7,40,0.467,12
+"620","Bird","Aythya affinis",212.5,40,0.139,12
+"621","Bird","Aythya americana",205.3,40,0.118,12
+"622","Bird","Aythya collaris",182.5,40,0.124,12
+"623","Bird","Aythya collaris",182.5,40,0.157,12
+"624","Bird","Aythya marila",233,40,0.139,12
+"625","Bird","Aythya valisineria",185.8,40,0.113,12
+"626","Bird","Bartramia longicauda",37.63,40,0.505,12
+"627","Bird","Bombycilla cedrorum",7.963,40,0.37,12
+"628","Bird","Bombycilla garrulus",14.1,40,0.45,12
+"629","Bird","Bonasa umbellus",133,40,0.303,12
+"630","Bird","Bonasa umbellus",144.1,40,0.34,12
+"631","Bird","Botaurus lentiginosus",176.5,40,0.311,12
+"632","Bird","Botaurus lentiginosus",176.5,40,0.323,12
+"633","Bird","Branta bernicla",325,40,0.153,12
+"634","Bird","Branta bernicla",307.5,40,0.117,12
+"635","Bird","Branta bernicla",342.5,40,0.098,12
+"636","Bird","Branta canadensis",828.5,40,0.108,12
+"637","Bird","Branta canadensis",953.5,40,0.104,12
+"638","Bird","Bubo virginianus",385.8,40,0.123,12
+"639","Bird","Bubo virginianus",385.8,40,0.147,12
+"640","Bird","Bubulcus ibis",84.5,40,0.11,12
+"641","Bird","Bubulcus ibis",84.5,40,0.149,12
+"642","Bird","Bucephala albeola",83.5,40,0.222,12
+"643","Bird","Bucephala albeola",118.3,40,0.171,12
+"644","Bird","Bucephala albeola",118.3,40,0.204,12
+"645","Bird","Bucephala clangula",200,40,0.213,12
+"646","Bird","Bucephala clangula",225,40,0.178,12
+"647","Bird","Bucephala clangula",250,40,0.233,12
+"648","Bird","Bucephala islandica",272.5,40,0.166,12
+"649","Bird","Bulweria bulwerii",24.75,40,0.115,12
+"650","Bird","Butastur indicus",99.25,40,0.303,12
+"651","Bird","Buteo buteo",218.8,40,0.101,12
+"652","Bird","Buteo buteo",218.8,40,0.1,12
+"653","Bird","Buteo jamaicensis",281.5,40,0.118,12
+"654","Bird","Buteo jamaicensis",281.5,40,0.118,12
+"655","Bird","Buteo jamaicensis",281.5,40,0.128,12
+"656","Bird","Buteo lagopus",239,40,0.141,12
+"657","Bird","Buteo lagopus",239,40,0.235,12
+"658","Bird","Buteo lagopus",266.3,40,0.142,12
+"659","Bird","Buteo lineatus",139.8,40,0.127,12
+"660","Bird","Buteo lineatus",139.8,40,0.127,12
+"661","Bird","Buteo regalis",286.3,40,0.127,12
+"662","Bird","Buteo regalis",286.3,40,0.16,12
+"663","Bird","Buteo swainsoni",247.1,40,0.159,12
+"664","Bird","Buteo swainsoni",247.1,40,0.16,12
+"665","Bird","Buteogallus anthracinus",249,40,0.189,12
+"666","Bird","Butorides striata",53,40,0.327,12
+"667","Bird","Calamospiza melanocorys",9.4,40,0.667,12
+"668","Bird","Calcarius lapponicus",6.825,40,0.526,12
+"669","Bird","Calcarius pictus",0.625,40,0.526,12
+"670","Bird","Calcarius pictus",6.075,40,0.667,12
+"671","Bird","Calidris alba",14.25,40,0.195,12
+"672","Bird","Calidris alba",14.25,40,0.495,12
+"673","Bird","Calidris alpina",23,40,0.206,12
+"674","Bird","Calidris alpina",23,40,0.276,12
+"675","Bird","Calidris canutus",34.25,40,0.251,12
+"676","Bird","Calidris canutus",34.25,40,0.42,12
+"677","Bird","Calidris fuscicollis",8.675,40,0.37,12
+"678","Bird","Calidris mauri",5.825,40,0.279,12
+"679","Bird","Calidris melanotos",20.35,40,0.442,12
+"680","Bird","Calidris minutilla",5.8,40,0.159,12
+"681","Bird","Calidris minutilla",5.8,40,0.159,12
+"682","Bird","Calidris minutilla",5.8,40,0.226,12
+"683","Bird","Calidris ptilocnemis",19.91,40,0.355,12
+"684","Bird","Calidris pusilla",7.825,40,0.213,12
+"685","Bird","Callipepla californica",43.25,40,0.376,12
+"686","Bird","Callipepla gambelii",42.5,40,0.35,12
+"687","Bird","Calothorax lucifer",0.825,40,0.667,12
+"688","Bird","Calypte anna",1,40,0.435,12
+"689","Bird","Calypte anna",1.05,40,0.413,12
+"690","Bird","Camptostoma imberbe",1.85,40,0.549,12
+"691","Bird","Campylorhynchus brunneicapillus",9.725,40,0.413,12
+"692","Bird","Antrostomus vociferus",13.24,40,0.667,12
+"693","Bird","Cardellina rubrifrons",2.45,40,0.909,12
+"694","Bird","Cardinalis cardinalis",10.98,40,0.161,12
+"695","Bird","Cardinalis sinuatus",9.175,40,0.45,12
+"696","Bird","Acanthis flammea",3.25,40,0.45,12
+"697","Bird","Carduelis hornemanni",3.175,40,0.575,12
+"698","Bird","Spinus pinus",3.65,40,0.273,12
+"699","Bird","Spinus psaltria",2.375,40,0.459,12
+"700","Bird","Spinus tristis",3.225,40,0.233,12
+"701","Bird","Spinus tristis",3.225,40,0.276,12
+"702","Bird","Haemorhous cassinii",6.625,40,0.37,12
+"703","Bird","Haemorhous mexicanus",5.35,40,0.22,12
+"704","Bird","Haemorhous mexicanus",5.35,40,2.941,12
+"705","Bird","Haemorhous purpureus",6.225,40,0.216,12
+"706","Bird","Cathartes aura",3668,40,0.151,12
+"707","Bird","Catharus fuscescens",7.8,40,0.254,12
+"708","Bird","Catharus guttatus",7.75,40,0.296,12
+"709","Bird","Catharus minimus",8.2,40,0.355,12
+"710","Bird","Catharus ustulatus",7.7,40,0.254,12
+"711","Bird","Tringa semipalmata",53.75,40,0.289,12
+"712","Bird","Cepphus columba",121.8,40,0.182,12
+"713","Bird","Cepphus columba",121.8,40,0.216,12
+"714","Bird","Cepphus columba",121.8,40,0.276,12
+"715","Bird","Cepphus grylle",101.3,40,0.211,12
+"716","Bird","Cerorhinca monocerata",130,40,0.35,12
+"717","Bird","Cerorhinca monocerata",130,40,0.42,12
+"718","Bird","Certhia familiaris",2.25,40,0.575,12
+"719","Bird","Chaetura vauxi",4.275,40,0.515,12
+"720","Bird","Chaetura pelagica",5.9,40,0.182,12
+"721","Bird","Charadrius alexandrinus",10.35,40,0.169,12
+"722","Bird","Charadrius alexandrinus",10.35,40,0.233,12
+"723","Bird","Charadrius alexandrinus",10.35,40,0.37,12
+"724","Bird","Charadrius melodus",13.8,40,0.182,12
+"725","Bird","Charadrius melodus",13.8,40,0.233,12
+"726","Bird","Charadrius semipalmatus",11.69,40,0.314,12
+"727","Bird","Charadrius vociferus",24.14,40,0.235,12
+"728","Bird","Chlidonias niger",16.33,40,0.147,12
+"729","Bird","Chlidonias niger",16.33,40,0.307,12
+"730","Bird","Chondestes grammacus",7.25,40,0.331,12
+"731","Bird","Chordeiles minor",15.38,40,0.286,12
+"732","Bird","Ciconia ciconia",868.3,40,0.076,12
+"733","Bird","Ciconia nigra",750,40,0.141,12
+"734","Bird","Cinclus mexicanus",15.25,40,0.515,12
+"735","Bird","Circaetus cinereus",512,40,0.382,12
+"736","Bird","Circaetus gallicus",425.8,40,0.147,12
+"737","Bird","Circaetus gallicus",425.8,40,0.149,12
+"738","Bird","Circus aeruginosus",156.9,40,0.152,12
+"739","Bird","Circus aeruginosus",156.9,40,0.155,12
+"740","Bird","Circus aeruginosus",156.9,40,0.139,12
+"741","Bird","Circus cyaneus",108.9,40,0.155,12
+"742","Bird","Circus cyaneus",108.9,40,0.159,12
+"743","Bird","Circus macrourus",97.13,40,0.189,12
+"744","Bird","Circus pygargus",78.88,40,0.156,12
+"745","Bird","Circus pygargus",78.88,40,0.159,12
+"746","Bird","Clangula hyemalis",203.5,40,0.163,12
+"747","Bird","Clangula hyemalis",233,40,0.166,12
+"748","Bird","Coccyzus americanus",16,40,0.526,12
+"749","Bird","Coccyzus erythropthalmus",12.78,40,0.526,12
+"750","Bird","Colaptes auratus",33,40,0.204,12
+"751","Bird","Colaptes auratus",33,40,0.279,12
+"752","Bird","Colaptes auratus",33,40,0.34,12
+"753","Bird","Colaptes auratus",33,40,0.388,12
+"754","Bird","Colinus virginianus",44.5,40,0.407,12
+"755","Bird","Patagioenas fasciata",85.63,40,0.137,12
+"756","Bird","Patagioenas fasciata",85.63,40,0.164,12
+"757","Bird","Patagioenas leucocephala",61.75,40,0.177,12
+"758","Bird","Patagioenas leucocephala",61.75,40,0.209,12
+"759","Bird","Patagioenas leucocephala",61.75,40,0.311,12
+"760","Bird","Columba livia",88.63,40,0.435,12
+"761","Bird","Columbina inca",11.88,40,0.331,12
+"762","Bird","Columbina passerina",7.525,40,0.36,12
+"763","Bird","Columbina passerina",7.525,40,0.427,12
+"764","Bird","Contopus cooperi",8.025,40,0.365,12
+"765","Bird","Contopus cooperi",8.025,40,0.442,12
+"766","Bird","Contopus sordidulus",3.2,40,0.427,12
+"767","Bird","Contopus virens",3.525,40,0.365,12
+"768","Bird","Coragyps atratus",520.1,40,0.099,12
+"769","Bird","Corvus brachyrhynchos",112,40,0.174,12
+"770","Bird","Corvus brachyrhynchos",112,40,0.185,12
+"771","Bird","Corvus caurinus",97.88,40,0.199,12
+"772","Bird","Corvus corax",299.8,40,0.192,12
+"773","Bird","Corvus cryptoleucus",133.5,40,0.204,12
+"774","Bird","Corvus ossifragus",71.25,40,0.175,12
+"775","Bird","Cyanocitta cristata",21.7,40,0.139,12
+"776","Bird","Cyanocitta cristata",21.7,40,0.156,12
+"777","Bird","Cyanocitta stelleri",32,40,0.158,12
+"778","Bird","Cyanocitta stelleri",32,40,0.233,12
+"779","Bird","Cyanocorax yncas",19.63,40,0.239,12
+"780","Bird","Cygnus buccinator",2713,40,0.105,12
+"781","Bird","Cygnus buccinator",2850,40,0.106,12
+"782","Bird","Cygnus columbianus",1550,40,0.129,12
+"783","Bird","Cygnus columbianus",1425,40,0.009,3
+"784","Bird","Cygnus columbianus",1550,40,0.157,12
+"785","Bird","Cygnus columbianus",1600,40,0.036,3
+"786","Bird","Cygnus columbianus",1663,40,0.12,12
+"787","Bird","Cygnus olor",2418,40,0.192,12
+"788","Bird","Cygnus olor",2684,40,0.12,12
+"789","Bird","Cygnus olor",2950,40,0.094,12
+"790","Bird","Cypseloides niger",11.4,40,0.435,12
+"791","Bird","Daption capense",107,40,0.127,12
+"792","Bird","Falcipennis canadensis",114,40,0.495,12
+"793","Bird","Falcipennis canadensis",123,40,0.196,12
+"794","Bird","Dendragapus obscurus",222.8,40,0.233,12
+"795","Bird","Dendragapus obscurus",297,40,0.235,12
+"796","Bird","Dendragapus obscurus",299.5,40,0.182,12
+"797","Bird","Dendrocygna autumnalis",212.3,40,0.314,12
+"798","Bird","Dendrocygna bicolor",177.5,40,0.4,12
+"799","Bird","Setophaga caerulescens",2.45,40,0.323,12
+"800","Bird","Setophaga caerulescens",2.538,40,0.265,12
+"801","Bird","Setophaga castanea",3.138,40,0.794,12
+"802","Bird","Setophaga coronata",3.025,40,0.394,12
+"803","Bird","Setophaga coronata",3.138,40,0.376,12
+"804","Bird","Setophaga discolor",2,40,0.249,12
+"805","Bird","Setophaga flavescens",2.35,40,0.515,12
+"806","Bird","Setophaga fusca",2.5,40,0.314,12
+"807","Bird","Setophaga kirtlandii",3.425,40,0.286,12
+"808","Bird","Setophaga kirtlandii",3.45,40,0.323,12
+"809","Bird","Setophaga magnolia",2.175,40,0.376,12
+"810","Bird","Setophaga palmarum",2.575,40,0.45,12
+"811","Bird","Setophaga palmarum",2.575,40,0.394,12
+"812","Bird","Setophaga pensylvanica",2.4,40,0.376,12
+"813","Bird","Setophaga petechia",2.45,40,0.289,12
+"814","Bird","Setophaga pinus",2.975,40,0.382,12
+"815","Bird","Setophaga striata",3.25,40,0.617,12
+"816","Bird","Setophaga striata",3.25,40,0.794,12
+"817","Bird","Setophaga tigrina",2.75,40,0.617,12
+"818","Bird","Setophaga townsendi",2.213,40,0.746,12
+"819","Bird","Setophaga virens",2.2,40,0.442,12
+"820","Bird","Diomedea amsterdamensis",1568,40,0.063,12
+"821","Bird","Thalassarche chlororhynchos",615,40,0.068,12
+"822","Bird","Thalassarche chrysostoma",876.9,40,0.084,12
+"823","Bird","Diomedea epomophora",2050,40,0.043,12
+"824","Bird","Diomedea exulans",1913,40,0.063,12
+"825","Bird","Phoebastria immutabilis",766.6,40,0.047,12
+"826","Bird","Phoebastria immutabilis",766.6,40,0.067,12
+"827","Bird","Phoebastria irrorata",848.8,40,0.063,12
+"828","Bird","Thalassarche melanophris",891,40,0.074,12
+"829","Bird","Phoebastria nigripes",787,40,0.091,12
+"830","Bird","Phoebastria nigripes",787,40,0.093,12
+"831","Bird","Diomedea exulans",1913,40,0.02,3
+"832","Bird","Dolichonyx oryzivorus",10.51,40,0.286,12
+"833","Bird","Dolichonyx oryzivorus",10.51,40,0.318,12
+"834","Bird","Hylatomus pileatus",66.5,40,0.259,12
+"835","Bird","Hylatomus pileatus",71.75,40,0.259,12
+"836","Bird","Hylatomus pileatus",71.75,40,0.286,12
+"837","Bird","Dumetella carolinensis",9.225,40,0.235,12
+"838","Bird","Egretta caerulea",84.88,40,0.183,12
+"839","Bird","Egretta rufescens",112.5,40,0.207,12
+"840","Bird","Egretta thula",92.75,40,0.144,12
+"841","Bird","Egretta thula",92.75,40,0.226,12
+"842","Bird","Elanus caeruleus",83.25,40,0.435,12
+"843","Bird","Empidonax difficilis",2.5,40,0.435,12
+"844","Bird","Empidonax flaviventris",2.9,40,0.685,12
+"845","Bird","Empidonax fulvifrons",1.975,40,1.429,12
+"846","Bird","Empidonax minimus",2.575,40,0.323,12
+"847","Bird","Empidonax minimus",2.575,40,0.442,12
+"848","Bird","Empidonax oberholseri",2.6,40,0.286,12
+"849","Bird","Empidonax oberholseri",2.6,40,0.314,12
+"850","Bird","Empidonax oberholseri",2.6,40,0.323,12
+"851","Bird","Empidonax oberholseri",2.6,40,0.435,12
+"852","Bird","Empidonax traillii",3.35,40,0.37,12
+"853","Bird","Empidonax virescens",3.225,40,0.235,12
+"854","Bird","Eremophila alpestris",7.838,40,0.323,12
+"855","Bird","Eremophila alpestris",7.838,40,0.327,12
+"856","Bird","Eremophila alpestris",7.975,40,0.365,12
+"857","Bird","Eudocimus albus",225,40,0.156,12
+"858","Bird","Eudyptula minor",276.3,40,0.195,3
+"859","Bird","Euphagus carolinus",14.94,40,0.292,12
+"860","Bird","Euphagus cyanocephalus",15.66,40,0.233,12
+"861","Bird","Falco berigora",137.4,40,0.244,12
+"862","Bird","Falco columbarius",47.63,40,0.331,12
+"863","Bird","Falco eleonorae",97.5,40,0.435,12
+"864","Bird","Falco mexicanus",138.5,40,0.282,12
+"865","Bird","Falco mexicanus",215.8,40,0.242,12
+"866","Bird","Falco naumanni",38.13,40,0.42,12
+"867","Bird","Falco peregrinus",195.4,40,0.207,12
+"868","Bird","Falco rupicoloides",65,40,0.4,12
+"869","Bird","Falco sparverius",30,40,0.22,12
+"870","Bird","Falco subbuteo",63.25,40,0.244,12
+"871","Bird","Falco subbuteo",60,40,0.237,12
+"872","Bird","Falco tinnunculus",50.38,40,0.159,12
+"873","Bird","Falco vespertinus",41.38,40,0.207,12
+"874","Bird","Ficedula hypoleuca",3,40,0.748,3
+"875","Bird","Ficedula hypoleuca",3,40,0.656,3
+"876","Bird","Fratercula arctica",95.25,40,0.127,12
+"877","Bird","Fratercula arctica",95.25,40,0.193,12
+"878","Bird","Fratercula cirrhata",194.8,40,0.435,12
+"879","Bird","Fregata ariel",188.5,40,0.149,12
+"880","Bird","Fregata ariel",201.5,40,0.108,12
+"881","Bird","Fregata minor",263.8,40,0.074,12
+"882","Bird","Fregata minor",295.8,40,0.084,12
+"883","Bird","Fulica americana",140,40,0.113,12
+"884","Bird","Fulica americana",160.5,40,0.13,12
+"885","Bird","Fulmarus glacialis",136,40,0.052,12
+"886","Bird","Fulmarus glacialis",136,40,0.355,12
+"887","Bird","Gallinago gallinago",30.5,40,0.276,12
+"888","Bird","Gallinula chloropus",75.63,40,0.244,12
+"889","Bird","Gavia arctica",838.8,40,0.09,12
+"890","Bird","Gavia immer",1034,40,0.127,12
+"891","Bird","Gavia immer",1034,40,0.331,12
+"892","Bird","Gavia stellata",387.8,40,0.11,12
+"893","Bird","Geococcyx californianus",94,40,0.704,12
+"894","Bird","Geothlypis trichas",2.475,40,0.259,12
+"895","Bird","Grus americana",1457,40,0.084,12
+"896","Bird","Grus americana",1457,40,0.355,12
+"897","Bird","Antigone canadensis",791.5,40,0.118,12
+"898","Bird","Antigone canadensis",791.5,40,0.131,12
+"899","Bird","Antigone canadensis",791.5,40,0.139,12
+"900","Bird","Passerina caerulea",7.325,40,0.442,12
+"901","Bird","Gygis alba",27.75,40,0.142,12
+"902","Bird","Gymnogyps californianus",2526,40,0.056,12
+"903","Bird","Gymnorhinus cyanocephalus",25.75,40,0.233,12
+"904","Bird","Gymnorhinus cyanocephalus",25.75,40,0.292,12
+"905","Bird","Gyps coprotheres",2044,40,0.227,12
+"906","Bird","Haematopus bachmani",162,40,0.159,12
+"907","Bird","Haematopus bachmani",162,40,0.42,12
+"908","Bird","Haematopus ostralegus",131.5,40,0.07,12
+"909","Bird","Haematopus palliatus",158,40,0.149,12
+"910","Bird","Haematopus palliatus",158,40,0.182,12
+"911","Bird","Haliaeetus albicilla",1198,40,0.12,12
+"912","Bird","Haliaeetus leucocephalus",1185,40,0.246,12
+"913","Bird","Haliastur sphenurus",200,40,0.235,12
+"914","Bird","Helmitheros vermivorum",3.25,40,0.365,12
+"915","Bird","Hieraaetus morphnoides",209.8,40,0.249,12
+"916","Bird","Himantopus mexicanus",41.5,40,0.505,12
+"917","Bird","Himatione sanguinea",6.275,40,0.407,12
+"918","Bird","Petrochelidon fulva",5.1,40,0.276,12
+"919","Bird","Petrochelidon fulva",5.1,40,0.549,12
+"920","Bird","Petrochelidon pyrrhonota",5.4,40,0.233,12
+"921","Bird","Petrochelidon pyrrhonota",5.4,40,0.256,12
+"922","Bird","Petrochelidon pyrrhonota",5.4,40,0.286,12
+"923","Bird","Hirundo rustica",3.95,40,0.318,12
+"924","Bird","Hydrobates pelagicus",6.3,40,0.127,12
+"925","Bird","Icteria virens",6.325,40,0.289,12
+"926","Bird","Icterus cucullatus",6.075,40,0.435,12
+"927","Bird","Icterus galbula",8.4,40,0.394,12
+"928","Bird","Icterus galbula",8.575,40,0.22,12
+"929","Bird","Icterus parisorum",9.35,40,0.407,12
+"930","Bird","Icterus pectoralis",11.13,40,0.22,12
+"931","Bird","Icterus spurius",4.9,40,0.267,12
+"932","Bird","Icterus spurius",4.9,40,0.276,12
+"933","Bird","Ictinia mississippiensis",69.5,40,0.323,12
+"934","Bird","Junco hyemalis",4.9,40,0.237,12
+"935","Bird","Junco hyemalis",4.9,40,0.239,12
+"936","Bird","Junco hyemalis",4.9,40,0.262,12
+"937","Bird","Junco hyemalis",4.9,40,0.394,12
+"938","Bird","Junco phaeonotus",5.1,40,0.394,12
+"939","Bird","Lagopus leucura",87.75,40,0.213,12
+"940","Bird","Lagopus leucura",89.75,40,0.169,12
+"941","Bird","Lamprolaima rhami",1.525,40,0.323,12
+"942","Bird","Lanius excubitor",16.4,40,0.82,12
+"943","Bird","Lanius ludovicianus",11.85,40,0.204,12
+"944","Bird","Lanius ludovicianus",11.85,40,0.427,12
+"945","Bird","Larus argentatus",283.8,40,0.084,12
+"946","Bird","Larus argentatus",283.8,40,0.09,12
+"947","Bird","Larus argentatus",283.8,40,0.092,12
+"948","Bird","Larus argentatus",283.8,40,0.133,12
+"949","Bird","Larus atricilla",81.25,40,0.168,12
+"950","Bird","Larus californicus",151.6,40,0.192,12
+"951","Bird","Larus canus",100.9,40,0.139,12
+"952","Bird","Larus canus",101,40,0.098,3
+"953","Bird","Larus delawarensis",129.6,40,0.079,12
+"954","Bird","Larus delawarensis",129.6,40,0.101,12
+"955","Bird","Larus glaucescens",252.5,40,0.079,12
+"956","Bird","Larus glaucescens",252.5,40,0.111,12
+"957","Bird","Larus glaucescens",252.5,40,0.114,12
+"958","Bird","Larus marinus",414.6,40,0.108,12
+"959","Bird","Larus occidentalis",252.8,40,0.091,12
+"960","Bird","Larus occidentalis",252.8,40,0.101,12
+"961","Bird","Larus pipixcan",70,40,0.273,12
+"962","Bird","Larus pipixcan",70,40,0.286,12
+"963","Bird","Laterallus jamaicensis",8.475,40,1.163,12
+"964","Bird","Leptotila verreauxi",38.25,40,0.299,12
+"965","Bird","Leucosticte arctoa",6.625,40,0.459,12
+"966","Bird","Leucosticte arctoa",6.725,40,0.394,12
+"967","Bird","Limnodromus griseus",28.25,40,0.192,12
+"968","Bird","Limnodromus griseus",28.25,40,0.34,12
+"969","Bird","Limnodromus scolopaceus",26.13,40,0.311,12
+"970","Bird","Limnothlypis swainsonii",4.725,40,0.331,12
+"971","Bird","Limosa fedoa",92.63,40,0.299,12
+"972","Bird","Limosa lapponica",84.5,40,0.685,12
+"973","Bird","Lophodytes cucullatus",135,40,0.226,12
+"974","Bird","Lophodytes cucullatus",152.5,40,0.249,12
+"975","Bird","Lophoictinia isura",125.3,40,0.149,12
+"976","Bird","Loxia curvirostra",10.15,40,0.633,12
+"977","Bird","Melanerpes aurifrons",21.35,40,0.459,12
+"978","Bird","Melanerpes carolinus",16.8,40,0.211,12
+"979","Bird","Melanerpes erythrocephalus",17.9,40,0.259,12
+"980","Bird","Melanerpes formicivorus",19.53,40,0.169,12
+"981","Bird","Melanerpes formicivorus",20.73,40,0.159,12
+"982","Bird","Melanerpes uropygialis",17.43,40,0.331,12
+"983","Bird","Melanitta deglandi",300,40,0.218,12
+"984","Bird","Melanitta stejnegeri",439.3,40,0.163,12
+"985","Bird","Melanitta stejnegeri",439.3,40,0.213,12
+"986","Bird","Meleagris gallopavo",1056,40,0.196,12
+"987","Bird","Meleagris gallopavo",1453,40,0.204,12
+"988","Bird","Melospiza georgiana",4.25,40,0.549,12
+"989","Bird","Melospiza lincolnii",4.35,40,0.34,12
+"990","Bird","Melospiza melodia",5.188,40,0.226,12
+"991","Bird","Mergus merganser",308,40,0.19,12
+"992","Bird","Mergus serrator",255.4,40,0.485,12
+"993","Bird","Merops bullockoides",8.7,40,0.37,12
+"994","Bird","Micrathene whitneyi",10.25,40,0.538,12
+"995","Bird","Calidris himantopus",14.34,40,0.282,12
+"996","Bird","Milvus migrans",206.8,40,0.107,12
+"997","Bird","Milvus migrans",206.8,40,0.11,12
+"998","Bird","Milvus milvus",270,40,0.097,12
+"999","Bird","Milvus milvus",270,40,0.098,12
+"1000","Bird","Mimus polyglottos",12.13,40,0.127,12
+"1001","Bird","Mniotilta varia",2.65,40,0.226,12
+"1002","Bird","Molothrus aeneus",16.68,40,0.746,12
+"1003","Bird","Molothrus ater",10.98,40,0.15,12
+"1004","Bird","Molothrus ater",12.25,40,0.161,12
+"1005","Bird","Morus bassanus",749.9,40,0.125,12
+"1006","Bird","Mycteria americana",594,40,0.4,12
+"1007","Bird","Myiarchus cinerascens",6.8,40,0.286,12
+"1008","Bird","Myiarchus cinerascens",6.8,40,0.538,12
+"1009","Bird","Myiarchus crinitus",8.375,40,0.183,12
+"1010","Bird","Myiarchus tyrannulus",10.95,40,0.259,12
+"1011","Bird","Myiarchus tyrannulus",10.95,40,0.323,12
+"1012","Bird","Myioborus pictus",1.975,40,0.394,12
+"1013","Bird","Myioborus pictus",1.975,40,0.617,12
+"1014","Bird","Nucifraga columbiana",33.75,40,0.146,12
+"1015","Bird","Numenius arquata",201.4,40,0.08,12
+"1016","Bird","Numenius phaeopus",101,40,0.233,12
+"1017","Bird","Numenius tahitiensis",108.4,40,0.216,12
+"1018","Bird","Bubo scandiacus",510.6,40,0.273,12
+"1019","Bird","Bubo scandiacus",569.8,40,0.237,12
+"1020","Bird","Nycticorax nycticorax",220.8,40,0.12,12
+"1021","Bird","Nycticorax nycticorax",220.8,40,0.12,12
+"1022","Bird","Nyctanassa violacea",170.6,40,0.413,12
+"1023","Bird","Hydrobates furcatus",13.83,40,0.286,12
+"1024","Bird","Hydrobates furcatus",13.83,40,0.435,12
+"1025","Bird","Hydrobates homochroa",9.225,40,0.323,12
+"1026","Bird","Hydrobates leucorhous",9.95,40,0.081,12
+"1027","Bird","Hydrobates leucorhous",9.95,40,0.087,12
+"1028","Bird","Hydrobates leucorhous",9.95,40,0.105,12
+"1029","Bird","Hydrobates tristrami",21,40,0.262,12
+"1030","Bird","Geothlypis tolmiei",2.6,40,0.649,12
+"1031","Bird","Oporornis agilis",3.8,40,0.617,12
+"1032","Bird","Geothlypis formosa",3.575,40,0.435,12
+"1033","Bird","Geothlypis philadelphia",3.25,40,0.327,12
+"1034","Bird","Geothlypis tolmiei",2.6,40,0.649,12
+"1035","Bird","Megascops asio",45.13,40,0.179,12
+"1036","Bird","Psiloscops flammeolus",13.89,40,0.318,12
+"1037","Bird","Megascops kennicottii",42.25,40,0.198,12
+"1038","Bird","Oxyura jamaicensis",147.5,40,0.187,12
+"1039","Bird","Pagodroma nivea",67,40,0.127,12
+"1040","Bird","Pagophila eburnea",154,40,0.149,12
+"1041","Bird","Pagophila eburnea",154,40,0.323,12
+"1042","Bird","Pandion haliaetus",371.4,40,0.115,12
+"1043","Bird","Parabuteo unicinctus",215.8,40,0.233,12
+"1044","Bird","Parabuteo unicinctus",215.8,40,0.256,12
+"1045","Bird","Parabuteo unicinctus",220.6,40,0.202,12
+"1046","Bird","Setophaga americana",2.15,40,0.538,12
+"1047","Bird","Poecile atricapillus",2.7,40,0.206,12
+"1048","Bird","Poecile atricapillus",2.75,40,0.361,3
+"1049","Bird","Baeolophus bicolor",5.4,40,0.192,12
+"1050","Bird","Baeolophus bicolor",5.4,40,0.549,12
+"1051","Bird","Poecile carolinensis",2.538,40,0.235,12
+"1052","Bird","Poecile cinctus",3.1,40,0.37,12
+"1053","Bird","Poecile gambeli",2.875,40,0.254,12
+"1054","Bird","Poecile hudsonicus",2.45,40,0.562,12
+"1055","Bird","Baeolophus inornatus",4.375,40,0.323,NA
+"1056","Bird","Parus major",4.75,40,0.756,3
+"1057","Bird","Parus major",4.75,40,0.989,3
+"1058","Bird","Poecile rufescens",2.425,40,0.331,12
+"1059","Bird","Poecile sclateri",2.75,40,0.526,12
+"1060","Bird","Baeolophus wollweberi",2.6,40,0.394,12
+"1061","Bird","Passer domesticus",6.925,40,0.192,12
+"1062","Bird","Passer montanus",5.5,40,0.667,12
+"1063","Bird","Passerculus sandwichensis",4.28,40,0.427,12
+"1064","Bird","Passerella iliaca",8.075,40,0.265,12
+"1065","Bird","Passerina amoena",3.875,40,0.289,12
+"1066","Bird","Passerina amoena",4,40,0.538,12
+"1067","Bird","Passerina ciris",3.75,40,0.244,12
+"1068","Bird","Passerina cyanea",3.525,40,0.233,12
+"1069","Bird","Passerina cyanea",3.725,40,0.233,12
+"1070","Bird","Passerina cyanea",3.75,40,0.429,3
+"1071","Bird","Passerina cyanea",3.75,40,0.454,3
+"1072","Bird","Pelecanus erythrorhynchos",1750,40,0.096,12
+"1073","Bird","Pelecanus erythrorhynchos",1750,40,0.159,12
+"1074","Bird","Pelecanus occidentalis",859.5,40,0.129,12
+"1075","Bird","Perdix perdix",97.38,40,0.508,12
+"1076","Bird","Perisoreus canadensis",18.25,40,0.132,12
+"1077","Bird","Perisoreus canadensis",18.25,40,0.159,12
+"1078","Bird","Perisoreus canadensis",18.25,40,0.182,12
+"1079","Bird","Pernis apivorus",189.5,40,0.087,12
+"1080","Bird","Phalacrocorax auritus",418.5,40,0.142,12
+"1081","Bird","Phalacrocorax carbo",527.4,40,0.141,12
+"1082","Bird","Phalacrocorax carbo",527.4,40,0.178,12
+"1083","Bird","Phalacrocorax pelagicus",467,40,0.142,12
+"1084","Bird","Phalacrocorax penicillatus",525.8,40,0.273,12
+"1085","Bird","Phalaenoptilus nuttallii",12.9,40,0.909,12
+"1086","Bird","Steganopus tricolor",14.99,40,0.256,12
+"1087","Bird","Pheucticus ludovicianus",11.4,40,0.355,12
+"1088","Bird","Pheucticus melanocephalus",10.45,40,0.282,12
+"1089","Bird","Phoenicopterus ruber",758.8,40,0.076,12
+"1090","Bird","Phoenicopterus ruber",758.8,40,0.193,12
+"1091","Bird","Phylloscopus borealis",2.65,40,0.877,12
+"1092","Bird","Pica nutalli",36,40,0.259,12
+"1093","Bird","Pica nutalli",39.75,40,0.256,12
+"1094","Bird","Pica pica",44.38,40,0.442,12
+"1095","Bird","Pica pica",44.38,40,0.526,12
+"1096","Bird","Leuconotopicus borealis",10.9,40,0.185,12
+"1097","Bird","Leuconotopicus borealis",10.9,40,0.213,12
+"1098","Bird","Dryobates pubescens",6.75,40,0.224,12
+"1099","Bird","Dryobates scalaris",7.575,40,0.588,12
+"1100","Bird","Leuconotopicus villosus",15.63,40,0.161,12
+"1101","Bird","Pinicola enucleator",14.1,40,0.265,12
+"1102","Bird","Melozone aberti",11.49,40,0.299,12
+"1103","Bird","Pipilo chlorurus",7.35,40,0.336,12
+"1104","Bird","Pipilo erythrophthalmus",10.43,40,0.207,12
+"1105","Bird","Pipilo erythrophthalmus",10.43,40,0.239,12
+"1106","Bird","Melozone fusca",11.1,40,0.199,12
+"1107","Bird","Piranga ludoviciana",7.025,40,0.327,12
+"1108","Bird","Piranga olivacea",7.15,40,0.254,12
+"1109","Bird","Piranga rubra",7.05,40,0.355,12
+"1110","Bird","Piranga rubra",7.05,40,0.435,12
+"1111","Bird","Platalea leucorodia",473,40,0.09,12
+"1112","Bird","Plectrophenax hyperboreus",13.63,40,0.549,12
+"1113","Bird","Plectrophenax nivalis",10.55,40,0.292,12
+"1114","Bird","Plegadis chihi",155.4,40,0.175,12
+"1115","Bird","Pluvialis dominica",36.25,40,0.549,12
+"1116","Bird","Pluvialis squatarola",55,40,0.125,12
+"1117","Bird","Pluvialis squatarola",55,40,0.201,12
+"1118","Bird","Podiceps auritus",113.3,40,0.505,12
+"1119","Bird","Podiceps grisegena",255.8,40,0.549,12
+"1120","Bird","Podiceps nigricollis",73,40,0.505,12
+"1121","Bird","Polioptila caerulea",1.5,40,0.633,12
+"1122","Bird","Caracara plancus",223.4,40,0.289,12
+"1123","Bird","Polysticta stelleri",193.3,40,0.207,12
+"1124","Bird","Polysticta stelleri",210.5,40,0.178,12
+"1125","Bird","Pooecetes gramineus",6.425,40,0.327,12
+"1126","Bird","Pooecetes gramineus",6.425,40,0.376,12
+"1127","Bird","Procellaria parkinsoni",168.8,40,0.149,12
+"1128","Bird","Procelsterna cerulea",13.25,40,0.182,12
+"1129","Bird","Procelsterna cerulea",13.25,40,0.233,12
+"1130","Bird","Progne subis",12.35,40,0.185,12
+"1131","Bird","Protonotaria citrea",3.75,40,0.538,12
+"1132","Bird","Pterodroma alba",68,40,0.226,12
+"1133","Bird","Pterodroma hypoleuca",44,40,0.239,12
+"1134","Bird","Pterodroma leucoptera",31.25,40,0.127,12
+"1135","Bird","Pterodroma macroptera",133.1,40,0.141,12
+"1136","Bird","Pterodroma phaeopygia",108.5,40,0.37,12
+"1137","Bird","Ptychoramphus aleuticus",47,40,0.251,12
+"1138","Bird","Ptychoramphus aleuticus",47,40,0.435,12
+"1139","Bird","Ptychoramphus aleuticus",47,40,0.459,12
+"1140","Bird","Puffinus auricularis",80.75,40,0.515,12
+"1141","Bird","Ardenna gravis",212.3,40,0.365,12
+"1142","Bird","Puffinus lherminieri",42,40,0.133,12
+"1143","Bird","Puffinus nativitatis",89,40,0.237,12
+"1144","Bird","Ardenna pacifica",97,40,0.151,12
+"1145","Bird","Ardenna pacifica",97,40,0.182,12
+"1146","Bird","Puffinus puffinus",113.3,40,0.084,12
+"1147","Bird","Puffinus puffinus",113.3,40,0.549,12
+"1148","Bird","Ardenna tenuirostris",135.8,40,0.084,12
+"1149","Bird","Ardenna tenuirostris",135.8,40,0.08,3
+"1150","Bird","Pycnonotus jocosus",6.85,40,0.667,12
+"1151","Bird","Pyrocephalus rubinus",3.6,40,0.476,12
+"1152","Bird","Quiscalus major",41.63,40,0.215,12
+"1153","Bird","Quiscalus mexicanus",47.75,40,0.204,12
+"1154","Bird","Quiscalus quiscula",31.75,40,0.121,12
+"1155","Bird","Rallus longirostris",80.75,40,0.345,12
+"1156","Bird","Recurvirostra americana",79,40,0.286,12
+"1157","Bird","Regulus calendula",1.663,40,0.467,12
+"1158","Bird","Regulus satrapa",1.575,40,0.495,12
+"1159","Bird","Rynchops niger",75.38,40,0.127,12
+"1160","Bird","Riparia riparia",3.65,40,0.323,12
+"1161","Bird","Rissa brevirostris",97.75,40,0.667,12
+"1162","Bird","Rissa tridactyla",98.25,40,0.135,3
+"1163","Bird","Rissa tridactyla",101.8,40,0.37,12
+"1164","Bird","Rissa tridactyla",101.8,40,0.526,12
+"1165","Bird","Rissa tridactyla",105.3,40,0.196,3
+"1166","Bird","Rostrhamus sociabilis",94.5,40,0.149,12
+"1167","Bird","Rostrhamus sociabilis",94.5,40,0.37,12
+"1168","Bird","Sayornis nigricans",4.663,40,0.323,12
+"1169","Bird","Sayornis nigricans",4.663,40,0.909,12
+"1170","Bird","Sayornis phoebe",4.95,40,0.282,12
+"1171","Bird","Scolopax minor",54.75,40,0.226,12
+"1172","Bird","Scolopax minor",54.75,40,0.276,12
+"1173","Bird","Seiurus aurocapilla",4.85,40,0.286,12
+"1174","Bird","Parkesia noveboracensis",5.075,40,0.323,12
+"1175","Bird","Parkesia noveboracensis",4.45,40,0.289,12
+"1176","Bird","Selasphorus platycercus",0.875,40,0.365,12
+"1177","Bird","Selasphorus platycercus",0.8875,40,0.323,12
+"1178","Bird","Selasphorus platycercus",0.9,40,0.209,12
+"1179","Bird","Selasphorus platycercus",0.9,40,0.211,12
+"1180","Bird","Selasphorus rufus",0.875,40,0.649,12
+"1181","Bird","Selasphorus sasin",0.7875,40,0.667,12
+"1182","Bird","Selasphorus sasin",0.8,40,0.685,12
+"1183","Bird","Setophaga ruticilla",2.125,40,0.256,12
+"1184","Bird","Sialia currucoides",7.4,40,0.549,12
+"1185","Bird","Sialia mexicana",7.25,40,0.617,12
+"1186","Bird","Sialia sialis",7.9,40,0.323,12
+"1187","Bird","Sitta canadensis",2.45,40,0.345,12
+"1188","Bird","Sitta carolinensis",5.275,40,0.262,12
+"1189","Bird","Sitta pusilla",2.55,40,0.45,12
+"1190","Bird","Sitta pygmaea",2.65,40,0.314,12
+"1191","Bird","Somateria mollissima",478.8,40,0.119,12
+"1192","Bird","Somateria mollissima",478.8,40,0.172,12
+"1193","Bird","Somateria mollissima",516.6,40,0.11,12
+"1194","Bird","Somateria spectabilis",391.8,40,0.134,12
+"1195","Bird","Spheniscus magellanicus",1125,40,0.196,12
+"1196","Bird","Sphyrapicus varius",12.58,40,0.382,12
+"1197","Bird","Spiza americana",7.325,40,0.667,12
+"1198","Bird","Passerella arborea",5.025,40,0.254,12
+"1199","Bird","Spizella breweri",2.725,40,0.505,12
+"1200","Bird","Spizella pallida",3,40,0.515,12
+"1201","Bird","Spizella passerina",3.075,40,0.262,12
+"1202","Bird","Spizella pusilla",3.125,40,0.292,12
+"1203","Bird","Spizella pusilla",3.125,40,0.331,12
+"1204","Bird","Sporophila torqueola",2.175,40,0.218,12
+"1205","Bird","Stelgidopteryx ruficollis",3.8,40,0.442,12
+"1206","Bird","Selasphorus calliope",0.6625,40,0.435,12
+"1207","Bird","Selasphorus calliope",0.7,40,0.427,12
+"1208","Bird","Stercorarius longicaudus",74.13,40,0.318,12
+"1209","Bird","Sternula albifrons",14.25,40,0.12,12
+"1210","Bird","Sternula antillarum",10.78,40,0.105,12
+"1211","Bird","Hydroprogne caspia",163.8,40,0.096,12
+"1212","Bird","Sterna dougallii",27.5,40,0.182,12
+"1213","Bird","Sterna dougallii",27.5,40,0.211,12
+"1214","Bird","Thalasseus elegans",64.25,40,0.289,12
+"1215","Bird","Sterna forsteri",39.5,40,0.213,12
+"1216","Bird","Sterna forsteri",39.5,40,0.249,12
+"1217","Bird","Onychoprion fuscatus",45,40,0.079,12
+"1218","Bird","Onychoprion lunatus",36.5,40,0.141,12
+"1219","Bird","Onychoprion lunatus",36.5,40,0.157,12
+"1220","Bird","Thalasseus maximus",117.5,40,0.114,12
+"1221","Bird","Thalasseus maximus",117.5,40,0.149,12
+"1222","Bird","Gelochelidon nilotica",58.25,40,0.159,12
+"1223","Bird","Gelochelidon nilotica",58.25,40,0.413,12
+"1224","Bird","Sterna paradisaea",27.5,40,0.074,12
+"1225","Bird","Thalasseus sandvicensis",52,40,0.158,12
+"1226","Bird","Spilopelia chinensis",39.75,40,0.336,12
+"1227","Bird","Strix nebulosa",243.5,40,0.286,12
+"1228","Bird","Strix nebulosa",289.8,40,0.196,12
+"1229","Bird","Strix occidentalis",152.4,40,0.149,12
+"1230","Bird","Strix varia",179.1,40,0.139,12
+"1231","Bird","Strix varia",200.3,40,0.254,12
+"1232","Bird","Sturnella magna",22.25,40,0.286,12
+"1233","Bird","Sturnus vulgaris",20.58,40,0.119,12
+"1234","Bird","Morus bassanus",749.9,40,0.101,12
+"1235","Bird","Morus bassanus",749.9,40,0.124,12
+"1236","Bird","Sula dactylatra",438.1,40,0.1,12
+"1237","Bird","Sula dactylatra",438.1,40,0.11,12
+"1238","Bird","Sula leucogaster",345.5,40,0.103,12
+"1239","Bird","Sula leucogaster",345.5,40,0.158,12
+"1240","Bird","Morus serrator",587.5,40,0.076,12
+"1241","Bird","Sula sula",250.8,40,0.11,12
+"1242","Bird","Sula sula",250.8,40,0.115,12
+"1243","Bird","Synthliboramphus antiquus",51.5,40,0.526,12
+"1244","Bird","Synthliboramphus antiquus",51.5,40,0.602,12
+"1245","Bird","Synthliboramphus hypoleucus",41.75,40,0.169,12
+"1246","Bird","Synthliboramphus hypoleucus",41.75,40,0.262,12
+"1247","Bird","Tachybaptus ruficollis",50.25,40,0.196,12
+"1248","Bird","Tachycineta bicolor",5.025,40,0.233,12
+"1249","Bird","Tachycineta bicolor",5.025,40,0.289,12
+"1250","Bird","Tachycineta thalassina",3.6,40,0.382,12
+"1251","Bird","Telespiza cantans",8.2,40,0.435,12
+"1252","Bird","Threskiornis aethiopicus",374.5,40,0.12,12
+"1253","Bird","Thryomanes bewickii",2.475,40,0.323,12
+"1254","Bird","Thryomanes bewickii",2.475,40,0.34,12
+"1255","Bird","Thryothorus ludovicianus",4.675,40,0.427,12
+"1256","Bird","Toxostoma bendirei",15.55,40,0.633,12
+"1257","Bird","Toxostoma curvirostre",19.85,40,0.237,12
+"1258","Bird","Toxostoma lecontei",15.48,40,0.459,12
+"1259","Bird","Toxostoma longirostre",17.48,40,0.355,12
+"1260","Bird","Toxostoma redivivum",21.1,40,0.376,12
+"1261","Bird","Toxostoma rufum",17.2,40,0.199,12
+"1262","Bird","Tringa flavipes",20.25,40,0.549,12
+"1263","Bird","Actitis macularius",10.1,40,0.213,12
+"1264","Bird","Troglodytes aedon",2.725,40,0.365,12
+"1265","Bird","Troglodytes troglodytes",2.225,40,0.649,12
+"1266","Bird","Argya squamiceps",18.5,40,0.297,3
+"1267","Bird","Argya squamiceps",18.5,40,0.097,3
+"1268","Bird","Turdus migratorius",19.33,40,0.183,12
+"1269","Bird","Tympanuchus cupido",221.4,40,2,12
+"1270","Bird","Tympanuchus pallidicinctus",188.9,40,0.189,12
+"1271","Bird","Tympanuchus phasianellus",208.9,40,0.413,12
+"1272","Bird","Tyrannus tyrannus",10.9,40,0.259,12
+"1273","Bird","Tyrannus verticalis",9.9,40,0.376,12
+"1274","Bird","Uria aalge",248.1,40,0.096,12
+"1275","Bird","Uria lomvia",241,40,0.111,12
+"1276","Bird","Leiothlypis celata",2.25,40,0.382,12
+"1277","Bird","Vermivora chrysoptera",2.175,40,0.327,12
+"1278","Bird","Leiothlypis luciae",1.65,40,0.45,12
+"1279","Bird","Leiothlypis peregrina",2.45,40,0.407,12
+"1280","Bird","Vermivora cyanoptera",2.1,40,0.327,12
+"1281","Bird","Leiothlypis ruficapilla",2.15,40,0.355,12
+"1282","Bird","Leiothlypis virginiae",1.95,40,0.649,12
+"1283","Bird","Leiothlypis virginiae",1.95,40,0.847,12
+"1284","Bird","Vireo atricapilla",2.125,40,0.37,12
+"1285","Bird","Vireo bellii",2.125,40,0.376,12
+"1286","Bird","Vireo flavifrons",4.5,40,0.427,12
+"1287","Bird","Vireo gilvus",3.7,40,0.195,12
+"1288","Bird","Vireo griseus",2.85,40,0.355,12
+"1289","Bird","Vireo huttoni",2.9,40,0.4,12
+"1290","Bird","Vireo olivaceus",4.175,40,0.256,12
+"1291","Bird","Vireo philadelphicus",3.05,40,0.292,12
+"1292","Bird","Vireo solitarius",4.15,40,0.35,12
+"1293","Bird","Cardellina canadensis",2.55,40,0.327,12
+"1294","Bird","Cardellina canadensis",2.625,40,0.323,12
+"1295","Bird","Setophaga citrina",2.613,40,0.323,12
+"1296","Bird","Cardellina pusilla",1.825,40,0.382,12
+"1297","Bird","Xanthocephalus xanthocephalus",19.93,40,0.235,12
+"1298","Bird","Zenaida asiatica",38.25,40,0.116,12
+"1299","Bird","Zenaida macroura",29.75,40,0.131,12
+"1300","Bird","Zonotrichia albicollis",6.475,40,0.265,12
+"1301","Bird","Zonotrichia atricapilla",7.45,40,0.244,12
+"1302","Bird","Zonotrichia leucophrys",7.35,40,0.192,12
+"1303","Bird","Zonotrichia querula",9.063,40,0.218,12
+"1304","Bird","Zosterops japonicus",2.5,40,0.515,12
+"1305","Fish","Abramis brama",398,8,0.165,5
+"1306","Fish","Acipenser transmontanus",24200,10,0.05,5
+"1307","Fish","Acipenser transmontanus",42500,22,0.03,5
+"1308","Fish","Acipsnser fulvescens",9000,8,0.01,5
+"1309","Fish","Ammodytes marinus",8.03,11,1.24,5
+"1310","Fish","Ammodytes tobianus",3.75,11,1.29,5
+"1311","Fish","Aphinius fasciatus",0.625,15,2.6,5
+"1312","Fish","Aphinius fasciatus",1,15,1.8,5
+"1313","Fish","Apsilus dentatus",1000,27,0.83,5
+"1314","Fish","Apsilus dentatus",1130,27,1.9,5
+"1315","Fish","Bajacalifornia burragei",2.45,4,1.039,7
+"1316","Fish","Balistes vetula",730,27,2.61,5
+"1317","Fish","Bathylagus milleri",7.5,5.5,1.217,7
+"1318","Fish","Benthosema glaciale",0.56,13,1.521,6
+"1319","Fish","Benthosema glaciale",1.4,7,1.75,5
+"1320","Fish","Benthosema glaciale",1.43,7,0.74,5
+"1321","Fish","Blennius pholis",13.5,17,0.9,5
+"1322","Fish","Borostomias panamensis",12.5,5.5,1.097,7
+"1323","Fish","Brevoortia tyrannus",35.3,23,1,5
+"1324","Fish","Brevoortia tyrannus",216,13,0.5,5
+"1325","Fish","Callionymus lyra",1.95,12,0.96,5
+"1326","Fish","Callionymus lyra",6.75,12,0.86,5
+"1327","Fish","Caranx ruber",623,27,1.51,5
+"1328","Fish","Centengraulis mysticetus",14,24,2.4,5
+"1329","Fish","Cephalopholis fulva",160,27,0.55,5
+"1330","Fish","Cetorhinus maximus",3450000,10,0.046,5
+"1331","Fish","Chelodactylus macropterus",348,14,0.08,5
+"1332","Fish","Clupea harengus",13.8,8,0.35,5
+"1333","Fish","Clupea harengus",40,9,0.36,5
+"1334","Fish","Clupea harengus",48.3,12,0.2,5
+"1335","Fish","Clupea harengus",50,11,0.25,5
+"1336","Fish","Clupea harengus",87.5,8,0.16,5
+"1337","Fish","Clupea pallassii",52.3,10,0.5,5
+"1338","Fish","Clupea pallassii",131,12,0.2,5
+"1339","Fish","Cololabis aira",47.3,12,1.6,5
+"1340","Fish","Coregonus clupeaformis",6.75,5,1.3,5
+"1341","Fish","Coregonus clupeaformis",708,5,0.15,5
+"1342","Fish","Coregonus clupeaformis",1050,5,1.35,5
+"1343","Fish","Coregonus clupeaformis",1560,5,0.17,5
+"1344","Fish","Coryphaennoides acrolepis",450,3.2,0.822,914
+"1345","Fish","Coryphaenoides rupestris",239,9.5,0.12,913
+"1346","Fish","Cottus gobio",1.08,9,1.1,5
+"1347","Fish","Cottus gobio",1.08,9,0.8,5
+"1348","Fish","Cottus gobio",1.48,9,1.1,5
+"1349","Fish","Cottus gobio",1.53,9,0.9,5
+"1350","Fish","Cyclothone braueri",0.131,10,4.867,6
+"1351","Fish","Cynoglossus macrolepidus",42.5,27,0.49,5
+"1352","Fish","Cynolebias adloffi",0.375,22,6.348,4
+"1353","Fish","Cynolebias adloffi",0.625,16,3.476,4
+"1354","Fish","Cynolebias bellottii",0.65,15,3.862,4
+"1355","Fish","Cynolebias bellottii",0.65,20,5.214,4
+"1356","Fish","Cynolebias wolterstarfii",1.25,15.5,3.395,4
+"1357","Fish","Cynolebias wolterstarfii",1.25,20,5.84,4
+"1358","Fish","Cynoscion analis",368,18,0.4,5
+"1359","Fish","Cynoscion macdonaldi",4450,27,0.3,5
+"1360","Fish","Cynoscion nobilis",6980,24,0.3,5
+"1361","Fish","Dicentrarchus labrax",1720,10,0.1,5
+"1362","Fish","Engraulis anchoita",12.5,16,0.9,5
+"1363","Fish","Engraulis anchoita",53,16,1.42,5
+"1364","Fish","Engraulis encrasicholus",6,15,1.8,5
+"1365","Fish","Engraulis japonicus",9,20,1.63,5
+"1366","Fish","Engraulis mordax",5.25,15,1.7,5
+"1367","Fish","Engraulis ringens",6,16,1.52,5
+"1368","Fish","Engraulis ringens",9.25,16,1,5
+"1369","Fish","Eopsetta jordani",993,9,0.2,5
+"1370","Fish","Eopsetta jordani",1140,9,0.25,5
+"1371","Fish","Epinephelus guttatus",470,27,0.68,5
+"1372","Fish","Epinephelus striatus",3230,27,0.24,5
+"1373","Fish","Esox lucius",823,9,0.24,5
+"1374","Fish","Esox lucius",2200,9,0.26,5
+"1375","Fish","Gadus minitus",14.9,12,1.1,5
+"1376","Fish","Gadus minitus",39.5,12,0.9,5
+"1377","Fish","Gadus morhua",750,8,0.18,5
+"1378","Fish","Gadus morhua",2040,6,0.44,5
+"1379","Fish","Gadus morhua",2700,5,0.31,5
+"1380","Fish","Gadus morhua",2750,7,0.33,5
+"1381","Fish","Gadus morhua",2930,6,0.2,5
+"1382","Fish","Gadus morhua",3750,6,0.1,5
+"1383","Fish","Gadus morhua",4100,8,0.17,5
+"1384","Fish","Gadus morhua",5000,8,0.2,5
+"1385","Fish","Gadus morhua",6000,5,0.1,5
+"1386","Fish","Gasterosteus aculeatus",0.45,10,0.9,5
+"1387","Fish","Haemulon album",1330,27,0.79,5
+"1388","Fish","Haemulon plumieri",340,27,1.77,5
+"1389","Fish","Haplochromis anaphyrmus",27.8,26,1.45,5
+"1390","Fish","Haplochromis mloto",18.5,26,0.92,5
+"1391","Fish","Hippoglossoides platessoides",173,11,0.3,5
+"1392","Fish","Hippoglossoides platessoides",310,15,0.27,5
+"1393","Fish","Hippoglossoides platessoides",415,14,0.25,5
+"1394","Fish","Hippoglossoides platessoides",510,7,0.26,5
+"1395","Fish","Hippoglossoides platessoides",515,11,0.22,5
+"1396","Fish","Hippoglossoides platessoides",545,15,0.18,5
+"1397","Fish","Hippoglossoides platessoides",713,14,0.23,5
+"1398","Fish","Hippoglossoides platessoides",955,7,0.18,5
+"1399","Fish","Hoplostethus atlanticus",540,4,0.048,912
+"1400","Fish","Hypomesus olidus",3.75,16,2.45,5
+"1401","Fish","Katsuwonus pelamis",2530,25,0.65,5
+"1402","Fish","Katsuwonus pelamis",8080,25,1.68,5
+"1403","Fish","Lamna nasus",41800,7,0.18,5
+"1404","Fish","Lampanyctus macdonaldi",0.725,10.25,1.014,6
+"1405","Fish","Lampanyctus regalis",0.725,6,1.329,7
+"1406","Fish","Latimeria chalumnae",20000,16,0.2,89
+"1407","Fish","Leiognathus splendens",16,28,1.8,5
+"1408","Fish","Lethrinops longispinis",30.5,26,1.69,5
+"1409","Fish","Lethrinops parvidens",33,26,1.2,5
+"1410","Fish","Leucichthys artedi",17.5,8,1.1,5
+"1411","Fish","Leucichthys artedi",23.8,8,1.2,5
+"1412","Fish","Leucichthys artedi",150,8,0.35,5
+"1413","Fish","Leucichthys sardinella",138,5,0.6,5
+"1414","Fish","Limanda ferruginea",295,10,0.15,5
+"1415","Fish","Lithrinus enigmaticus",730,27,0.2,5
+"1416","Fish","Lutjanus apodus",950,27,0.54,5
+"1417","Fish","Lutjanus buccanella",473,27,1.83,5
+"1418","Fish","Lutjanus buccanella",800,27,2.24,5
+"1419","Fish","Lutjanus purpureus",2930,27,0.37,5
+"1420","Fish","Mallotus villosus",15,11,1.3,5
+"1421","Fish","Maurolicus muelleri",0.125,13,4.867,6
+"1422","Fish","Melanogrammus aeglefinus",538,5,0.2,5
+"1423","Fish","Merluccius angustimanus",63.8,20,0.84,5
+"1424","Fish","Merluccius gayi",1460,14,0.37,5
+"1425","Fish","Merluccius merluccius",156,15,0.6,5
+"1426","Fish","Merluccius merluccius",395,15,0.5,5
+"1427","Fish","Merluccius productus",318,12,0.56,5
+"1428","Fish","Mugil cephalus",613,20,0.31,5
+"1429","Fish","Mulloidichthys martinicus",90,27,1.73,5
+"1430","Fish","Mulloidichthys martinicus",130,27,1.7,5
+"1431","Fish","Mycteroperca venenosa",2080,27,0.42,5
+"1432","Fish","Myctophum punctatum",1.65,15,0.73,5
+"1433","Fish","Nemipterus bleekeri",75,28,1.12,5
+"1434","Fish","Nemipterus delagoe",60,28,1.62,5
+"1435","Fish","Nemipterus hexodon",53.8,28,0.88,5
+"1436","Fish","Nemipterus japonicus",63.8,28,1.88,5
+"1437","Fish","Nemipterus marginatus",52.5,28,1.73,5
+"1438","Fish","Nemipterus marginatus",57.5,28,1.14,5
+"1439","Fish","Nemipterus mesoprion",18.8,28,1.08,5
+"1440","Fish","Nemipterus nematophorus",50,28,1.63,5
+"1441","Fish","Nemipterus nemurus",61.3,28,1.03,5
+"1442","Fish","Nemipterus peronii",64.3,28,1.05,5
+"1443","Fish","Nemipterus sp.",102,28,0.53,5
+"1444","Fish","Nemipterus tolu",57.5,28,0.41,5
+"1445","Fish","Notothenia neglecta",545,16,0.36,5
+"1446","Fish","Ocyurus chrysurus",900,27,0.62,5
+"1447","Fish","Perca fluviatilis",109,6,0.29,5
+"1448","Fish","Perca fluviatilis",158,6,0.16,5
+"1449","Fish","Phoxinus phoxinus",2.05,9,1.1,5
+"1450","Fish","Platichthys flesus",260,8,0.18,5
+"1451","Fish","Pleuronectes platessa",228,7,0.22,5
+"1452","Fish","Pleuronectes platessa",858,7,0.12,5
+"1453","Fish","Pneumatophorus japonicus",203,15,0.9,5
+"1454","Fish","Pollachius virens",2900,6,0.15,5
+"1455","Fish","Pollachius virens",4130,5,0.3,5
+"1456","Fish","Pollachius virens",5030,5,0.3,5
+"1457","Fish","Pomatoschistus minutus",1,10,3.3,5
+"1458","Fish","Poromitra crassiceps",3.53,6.5,0.677,7
+"1459","Fish","Pseudopleuronectes americanus",345,5,0.4,5
+"1460","Fish","Pseudosciaena diacanthus",4350,27,0.8,5
+"1461","Fish","Pseudotolithus elongatus",179,26,0.34,5
+"1462","Fish","Pseudoupeneus macularus",90,27,1.89,5
+"1463","Fish","Pungitius pungitius",0.1,10,1.1,5
+"1464","Fish","Restrelliger kanagurta",38.5,27,7.8,5
+"1465","Fish","Restrelliger kanagurta",40,28,4.44,5
+"1466","Fish","Restrelliger neglectus",21,28,4.2,5
+"1467","Fish","Restrelliger neglectus",27.5,28,7.22,5
+"1468","Fish","Restrelliger neglectus",51.3,28,4.56,5
+"1469","Fish","Salmo trutta",75,9,0.94,5
+"1470","Fish","Salmo trutta",125,5,0.31,5
+"1471","Fish","Salvelinus alpinus",1250,7,0.17,5
+"1472","Fish","Sardinella longiceps",15.8,27,0.67,5
+"1473","Fish","Sardinella longiceps",16.5,27,1.12,5
+"1474","Fish","Sardinops caerrula",56.3,15,0.45,5
+"1475","Fish","Sardinops caerrula",84.3,15,0.4,5
+"1476","Fish","Sardinops melanosticta",52.3,15,0.5,5
+"1477","Fish","Saurida tumbil",588,17,0.46,5
+"1478","Fish","Sebastes aleutianus",9380,4.5,0.029,91011
+"1479","Fish","Sebastes alutus",200,5,0.193,5
+"1480","Fish","Sebastes alutus",270,6,0.271,5
+"1481","Fish","Sebastes alutus",340,8,0.227,5
+"1482","Fish","Sebastes alutus",1420,4.5,0.06,91011
+"1483","Fish","Sebastes babcocki",1960,5.5,0.057,91011
+"1484","Fish","Sebastes borealis",9300,4.5,0.038,91011
+"1485","Fish","Sebastes brevispinis",1960,7,0.073,91011
+"1486","Fish","Sebastes caurinus",778,6.5,0.109,91011
+"1487","Fish","Sebastes chlorostictus",545,7,0.182,91011
+"1488","Fish","Sebastes ciliatus",1030,6,0.09,91011
+"1489","Fish","Sebastes constellatus",410,7,0.188,91011
+"1490","Fish","Sebastes crameri",778,5.5,0.091,91011
+"1491","Fish","Sebastes dalli",76.8,7,0.5,91011
+"1492","Fish","Sebastes diploproa",1140,6,0.071,91011
+"1493","Fish","Sebastes elongatus",343,6,0.143,91011
+"1494","Fish","Sebastes entomelas",815,5.5,0.1,91011
+"1495","Fish","Sebastes flavidus",1110,6,0.094,91011
+"1496","Fish","Sebastes goodei",705,6.5,0.222,91011
+"1497","Fish","Sebastes helvomaculatus",1050,6,0.069,91011
+"1498","Fish","Sebastes jorani",152,6.5,0.194,91011
+"1499","Fish","Sebastes levis",2930,6.5,0.109,91011
+"1500","Fish","Sebastes maliger",1790,7,0.067,91011
+"1501","Fish","Sebastes melanops",1020,6.5,0.12,91011
+"1502","Fish","Sebastes miniatus",1640,6.5,0.14,91011
+"1503","Fish","Sebastes mystinus",608,6,0.136,91011
+"1504","Fish","Sebastes nigrocinctus",5400,7,0.052,91011
+"1505","Fish","Sebastes ovalis",705,6.5,0.162,91011
+"1506","Fish","Sebastes paucipinis",2930,6,0.167,91011
+"1507","Fish","Sebastes pinniger",1970,7,0.071,91011
+"1508","Fish","Sebastes polyspinis",1030,5.5,0.105,91011
+"1509","Fish","Sebastes reedi",1280,6.5,0.061,91011
+"1510","Fish","Sebastes rosaceus",210,7,0.429,91011
+"1511","Fish","Sebastes rosenblatti",705,6.5,0.12,91011
+"1512","Fish","Sebastes ruberrinus",4200,6,0.051,91011
+"1513","Fish","Sebastes rubrivinctus",1020,6.5,0.333,91011
+"1514","Fish","Sebastes rufus",545,7,0.113,91011
+"1515","Fish","Sebastes saxicola",300,6,0.158,91011
+"1516","Fish","Sebastes variegatus",226,5.5,0.128,91011
+"1517","Fish","Sebastes wilsoni",61,7,0.25,91011
+"1518","Fish","Sebastes zacentrus",533,6,0.103,91011
+"1519","Fish","Sebastolobus alascanus",2470,2.8,0.053,91011
+"1520","Fish","Sebastolobus altivelis",243,2.4,0.13,91011
+"1521","Fish","Soela vulgaris",121,7,0.25,5
+"1522","Fish","Sprattus sprattus",5.1,9,0.7,5
+"1523","Fish","Sprattus sprattus",5.75,8,0.53,5
+"1524","Fish","Stolothrissa tanganicae",1.5,27,5.2,5
+"1525","Fish","Stizostedion canadensis",154,5,0.44,5
+"1526","Fish","Thunnus alaunga",1290,26,0.2,5
+"1527","Fish","Thunnus alaunga",14700,25,0.23,5
+"1528","Fish","Thunnus albacares",24800,25,0.77,5
+"1529","Fish","Thunnus albacares",34500,26,0.8,5
+"1530","Fish","Thunnus albacares",36000,25,0.8,5
+"1531","Fish","Thunnus albacares",49800,25,0.9,5
+"1532","Fish","Thunnus atlanticus",2440,26,0.67,5
+"1533","Fish","Thunnus germo",9230,25,0.22,5
+"1534","Fish","Thunnus macoyi",49000,26,0.2,5
+"1535","Fish","Tilapia esculenta",188,25,1.75,5
+"1536","Fish","Tracharus japonicus",298,20,0.99,5
+"1537","Fish","Trisopterus esmarkii",11.3,9,1.6,5
+"1538","Fish","Trisopterus esmarkii",12,9,0.6,5
+"1539","Invertebrate","Acanthochitona crinita",0.333,13.85,4.44,25
+"1540","Invertebrate","Acanthocyclops robustus",1.13e-05,5,19.211,4
+"1541","Invertebrate","Acanthocyclops robustus",1.13e-05,10,22.01,4
+"1542","Invertebrate","Acanthocyclops robustus",1.13e-05,15,44.242,4
+"1543","Invertebrate","Acanthocyclops robustus",1.13e-05,20,56.154,4
+"1544","Invertebrate","Acanthocyclops robustus",1.13e-05,25,87.6,4
+"1545","Invertebrate","Aega antarctica",5.6,-1.15,0.13,25
+"1546","Invertebrate","Amphicteis gunneri",0.365,3.35,1.083,25
+"1547","Invertebrate","Ancylus fluviatilis",0.0665,11.85,3.9,25
+"1548","Invertebrate","Ancylus fluviatilis",0.108,7.85,3.2,25
+"1549","Invertebrate","Anodonta grandis",28.8,5.85,0.183,25
+"1550","Invertebrate","Anodonta grandis",137,8.85,0.218,25
+"1551","Invertebrate","Anodonta piscinalis",9.98,12.85,0.265,25
+"1552","Invertebrate","Arctica islandica",165,6.85,0.35,25
+"1553","Invertebrate","Aulacomya ater",3,15.35,1.459,25
+"1554","Invertebrate","Boreomysis microps",0.00575,9.5,3.042,6
+"1555","Invertebrate","Bovallia gigantea f",5.93,-0.95,0.889,25
+"1556","Invertebrate","Bovallia gigantea f",15.3,-0.95,0.729,25
+"1557","Invertebrate","Bovallia gigantea",1.51,-0.95,1.385,25
+"1558","Invertebrate","Bovallia gigantea",4.75,-0.95,0.801,25
+"1559","Invertebrate","Brachycentrus spinae",0.00613,10.85,6.205,25
+"1560","Invertebrate","Calyptogena magnifica",0.243,17,1.538,22
+"1561","Invertebrate","Calyptogena magnifica",6.85,7.8,0.324,24
+"1562","Invertebrate","Cardium edule",3.8,11.85,0.86,25
+"1563","Invertebrate","Cardium edule",5.65,11.85,0.59,25
+"1564","Invertebrate","Cardium edule",9.25,11.85,0.44,25
+"1565","Invertebrate","Cardium edule",9.9,9.85,0.727,25
+"1566","Invertebrate","Cassidulus mitis",0.95,22.15,0.812,25
+"1567","Invertebrate","Chamelea gallina",1.35,24.85,4.687,25
+"1568","Invertebrate","Chione cancellata",5.23,25.85,0.553,25
+"1569","Invertebrate","Chorismus antarcticus",12.7,-1.15,0.731,25
+"1570","Invertebrate","Corbicula fluminea",0.45,21.35,4.39,25
+"1571","Invertebrate","Corbicula fluminea",0.638,21.85,1.739,25
+"1572","Invertebrate","Cyclops strenuus",3.75e-05,15,18.75,4
+"1573","Invertebrate","Cyclops strenuus",3.75e-05,20,24.146,4
+"1574","Invertebrate","Cyclops vicinus",3.8e-05,5,15.315,4
+"1575","Invertebrate","Cyclops vicinus",3.8e-05,10,15.755,4
+"1576","Invertebrate","Cyclops vicinus",3.8e-05,15,42.941,4
+"1577","Invertebrate","Daphnia ambigua",7.55e-07,5,24.333,4
+"1578","Invertebrate","Daphnia ambigua",7.55e-07,10,35.902,4
+"1579","Invertebrate","Daphnia magna",4.43e-05,14,24.971,4
+"1580","Invertebrate","Daphnia magna",4.43e-05,19,34.873,4
+"1581","Invertebrate","Daphnia magna",4.43e-05,24,51.408,4
+"1582","Invertebrate","Daphnia magna",4.43e-05,29,84.884,4
+"1583","Invertebrate","Donax incarnatus",0.905,27.85,7.483,25
+"1584","Invertebrate","Dosinia hepatica",1.85,19.85,0.568,25
+"1585","Invertebrate","Echinosigra phiale",0.182,2.85,0.275,25
+"1586","Invertebrate","Echinus acutus var. norvegicus",6.5,7,0.28,23
+"1587","Invertebrate","Echinus affinis",8.43,2.85,0.236,25
+"1588","Invertebrate","Echinus elegans",14.7,7,0.559,23
+"1589","Invertebrate","Egeria radiata",194,28.85,2.03,25
+"1590","Invertebrate","Ephemerella subvaria",0.0415,14.85,6.597,25
+"1591","Invertebrate","Epitheca spp.",0.758,16.85,2.95,25
+"1592","Invertebrate","Eucyclops serrulatus",1.28e-05,10,23.422,4
+"1593","Invertebrate","Eucyclops serrulatus",1.28e-05,15,31.878,4
+"1594","Invertebrate","Eucyclops serrulatus",1.28e-05,20,36.079,4
+"1595","Invertebrate","Eucyclops serrulatus",1.28e-05,25,105.288,4
+"1596","Invertebrate","Euphausia krohni",0.004,13,5.214,626
+"1597","Invertebrate","Eurhomalea exalbida",230,6.45,0.145,25
+"1598","Invertebrate","Filinia pejleri",1.25e-08,5,87.6,4
+"1599","Invertebrate","Filinia pejleri",1.25e-08,10,128.824,4
+"1600","Invertebrate","Filinia pejleri",1.25e-08,15,168.462,4
+"1601","Invertebrate","Filinia pejleri",1.25e-08,20,292,4
+"1602","Invertebrate","Filinia pejleri",1.25e-08,25,365,4
+"1603","Invertebrate","Filinia terminalis",1.25e-08,5,87.6,4
+"1604","Invertebrate","Filinia terminalis",1.25e-08,10,128.824,4
+"1605","Invertebrate","Filinia terminalis",1.25e-08,15,168.462,4
+"1606","Invertebrate","Filinia terminalis",1.25e-08,20,292,4
+"1607","Invertebrate","Filinia terminalis",1.25e-08,25,365,4
+"1608","Invertebrate","Gammarus fossarum",0.0128,12,3.809,4
+"1609","Invertebrate","Gammarus fossarum",0.0128,16.1,5.475,4
+"1610","Invertebrate","Gammarus fossarum",0.0128,20.2,7.552,4
+"1611","Invertebrate","Gammarus roeseli",0.0181,12,3.809,4
+"1612","Invertebrate","Gammarus roeseli",0.0181,16.1,5.475,4
+"1613","Invertebrate","Gammarus roeseli",0.0181,20.2,7.552,4
+"1614","Invertebrate","Gennadas elegans",0.109,10.5,2.028,6
+"1615","Invertebrate","Gnathophausia zoea",0.95,9.5,1.521,6
+"1616","Invertebrate","Haliotis iris",363,12.15,0.077,25
+"1617","Invertebrate","Hiatella arctica",14.5,-0.15,0.28,25
+"1618","Invertebrate","Hiatella byssifera",11.3,1.85,0.28,25
+"1619","Invertebrate","Holothuria atra",880,25.95,0.549,25
+"1620","Invertebrate","Hyalella azteca",0.00578,15.95,4.716,25
+"1621","Invertebrate","Hydrobia acuta",0.0121,9.85,3.482,25
+"1622","Invertebrate","Keratella cochlearis",1.75e-08,5,79.927,4
+"1623","Invertebrate","Keratella cochlearis",1.75e-08,10,98.649,4
+"1624","Invertebrate","Keratella cochlearis",1.75e-08,15,142.208,4
+"1625","Invertebrate","Keratella cochlearis",1.75e-08,20,240.659,4
+"1626","Invertebrate","Keratella cochlearis",1.75e-08,25,326.866,4
+"1627","Invertebrate","Laeonereis fragilis",1.13,21.85,6.658,25
+"1628","Invertebrate","Laevilacunaria antarctica",0.123,-0.95,1.832,25
+"1629","Invertebrate","Laevilacunaria antarctica",0.129,-0.95,1.647,25
+"1630","Invertebrate","Lamellibranchia",3.43,7,0.035,15
+"1631","Invertebrate","Lamellibranchia",3.43,7,0.06,16
+"1632","Invertebrate","Ledella pustulosa",0.0118,2.65,0.426,25
+"1633","Invertebrate","Lissarca miliaris",0.031,-0.95,0.597,25
+"1634","Invertebrate","Lissarca notorcadensis",0.056,-1.15,0.319,25
+"1635","Invertebrate","Lissarca notorcadensis",0.0953,-1.15,0.297,25
+"1636","Invertebrate","Littorina africana",0.115,13.85,2.027,25
+"1637","Invertebrate","Lumbrinereis fragilis",8.63,6.85,0.744,25
+"1638","Invertebrate","Lymnaea peregra",1.75,9.85,2.526,25
+"1639","Invertebrate","Macoma balthica",0.144,8.85,1.139,25
+"1640","Invertebrate","Macoma balthica",0.196,8.85,0.463,25
+"1641","Invertebrate","Macoma balthica",0.733,12.85,1.29,25
+"1642","Invertebrate","Macoma balthica",3.33,9.85,0.57,25
+"1643","Invertebrate","Macoma balthica",10.8,5.85,1.067,25
+"1644","Invertebrate","Meganyctiphanes norvegica",0.0145,13,5.214,626
+"1645","Invertebrate","Mercenaria mercenaria",38.3,11.85,0.448,25
+"1646","Invertebrate","Mesocyclops leuckarti",8.13e-06,10,18.025,4
+"1647","Invertebrate","Mesocyclops leuckarti",8.13e-06,15,38.087,4
+"1648","Invertebrate","Mesocyclops leuckarti",8.13e-06,20,49.213,4
+"1649","Invertebrate","Mesocyclops leuckarti",8.13e-06,25,69.524,4
+"1650","Invertebrate","Mesodesma arctatum",11.7,5.35,0.263,25
+"1651","Invertebrate","Mesodesma donacium",31,16.85,2.5,25
+"1652","Invertebrate","Moira atropes",33.3,25.85,0.83,25
+"1653","Invertebrate","Mya arenaria",9.05,8.85,0.64,25
+"1654","Invertebrate","Mya truncata",6.78,1.85,0.25,25
+"1655","Invertebrate","Mya truncata",7.33,-0.15,0.1,25
+"1656","Invertebrate","Mya truncata",84.8,1.85,0.14,25
+"1657","Invertebrate","Mytilid sp.",9.68,17,0.308,21
+"1658","Invertebrate","Nacella concinna",5.95,-0.95,0.196,25
+"1659","Invertebrate","Nacella delesserti",38.8,4.85,0.343,25
+"1660","Invertebrate","Nematobrachion boopis",0.0065,10.25,3.476,626
+"1661","Invertebrate","Nematoscelis megalops",0.0075,13,4.056,626
+"1662","Invertebrate","Nephtys incisa",0.28,11.65,2.155,25
+"1663","Invertebrate","Nereis diversicolor",1.22,8.85,3.79,25
+"1664","Invertebrate","Nereis virens",2.68,8.85,1.44,25
+"1665","Invertebrate","Notholca caudata",1.75e-08,5,88.664,4
+"1666","Invertebrate","Notholca caudata",1.75e-08,10,103.302,4
+"1667","Invertebrate","Notholca caudata",1.75e-08,15,190.435,4
+"1668","Invertebrate","Notholca caudata",1.75e-08,20,312.857,4
+"1669","Invertebrate","Notoacmaea scutum",6.23,11.85,2.05,25
+"1670","Invertebrate","Nucella lapillus",20.6,6.85,0.35,25
+"1671","Invertebrate","Nucula proxima",0.0107,9.85,0.49,25
+"1672","Invertebrate","Nucula turgida",0.448,11.85,0.599,25
+"1673","Invertebrate","Ophiocten gracilis",0.025,9.5,0.857,927
+"1674","Invertebrate","Ophiocten gracilis",0.0833,2.85,0.811,25
+"1675","Invertebrate","Ophiocten hastatum",0.05,9,0.615,22
+"1676","Invertebrate","Ophionepthys limicola",8.15,24.85,1.966,25
+"1677","Invertebrate","Ophionotus hexactis",1.69,1.35,0.597,25
+"1678","Invertebrate","Ophiura ljungmani",0.0273,2.85,1.148,25
+"1679","Invertebrate","Ophiura ljungmani",0.218,2.85,0.334,25
+"1680","Invertebrate","Pachygrapsus gracilis",2.7,27.85,5.4,25
+"1681","Invertebrate","Parvicardium exiguum",0.368,15.65,4.088,25
+"1682","Invertebrate","Pectinaria hyperboreia",0.239,5.85,2.263,25
+"1683","Invertebrate","Pectinaria koreni",0.0358,11.85,8.522,25
+"1684","Invertebrate","Perna perna",3.98,20.85,4.799,25
+"1685","Invertebrate","Perna perna",6.63,20.85,4.618,25
+"1686","Invertebrate","Philine gibba",9.53,1.35,0.671,25
+"1687","Invertebrate","Pontoporeia femorata",0.0905,5.85,4.233,25
+"1688","Invertebrate","Prochaetoderma yongei",0.000273,3.35,10.429,18
+"1689","Invertebrate","Reticulammina labyrinthica",0.0113,2.5,7.526,17
+"1690","Invertebrate","Scolelepis gaucha",0.00438,19.85,11.354,25
+"1691","Invertebrate","Scolelepis squamata",0.0244,21.85,4.02,25
+"1692","Invertebrate","Serolis polita",1.15,-0.85,0.626,25
+"1693","Invertebrate","Siliqua patula",9.3,10.3,1.644,4
+"1694","Invertebrate","Siliqua patula",10.5,10.3,0.968,4
+"1695","Invertebrate","Siliqua patula",11.4,14.4,1.681,4
+"1696","Invertebrate","Siliqua patula",14.6,12.2,1.027,4
+"1697","Invertebrate","Siliqua patula",14.9,10.3,1.195,4
+"1698","Invertebrate","Siliqua patula",15,8,0.826,4
+"1699","Invertebrate","Siliqua patula",23.8,5,0.306,4
+"1700","Invertebrate","Siliqua patula",24.2,5.9,0.413,4
+"1701","Invertebrate","Siliqua patula",26,5.9,0.448,4
+"1702","Invertebrate","Siliqua patula",29,4.6,0.396,4
+"1703","Invertebrate","Spisula sachalinesis",181,13.85,0.609,25
+"1704","Invertebrate","Sterechinus antarcticus",13.1,-1.15,0.07,25
+"1705","Invertebrate","Strongylocentr. droeb.",0.52,5.85,0.799,25
+"1706","Invertebrate","Strongylocentr. franciscanus",400,16.05,0.106,25
+"1707","Invertebrate","Strongylocentr. franciscanus",648,16.05,0.083,25
+"1708","Invertebrate","Strongylocentr purpuratus",0.82,14.85,1.227,25
+"1709","Invertebrate","Strongylocentr purpuratus",4.5,14.05,0.204,25
+"1710","Invertebrate","Strongylocentr purpuratus",5.18,15.25,0.317,25
+"1711","Invertebrate","Strongylocentr purpuratus",8.8,8.85,0.119,25
+"1712","Invertebrate","Strongylocentrotus pallidus",30.8,0.85,0.082,25
+"1713","Invertebrate","Tapes philippimarum",4.73,24.05,2.406,25
+"1714","Invertebrate","Tellina fabula",0.0615,9.85,1.99,25
+"1715","Invertebrate","Tellina fabula",0.153,9.85,1.723,25
+"1716","Invertebrate","Tellina martinicensis",1.26,25.85,1.686,25
+"1717","Invertebrate","Terebellides stroemi",0.0625,-0.15,0.475,25
+"1718","Invertebrate","Theora lubrica",0.0238,16.85,4.236,25
+"1719","Invertebrate","Thysanopoda acutifrons",0.0198,10.25,2.704,626
+"1720","Invertebrate","Tindaria callistiformis",0.00144,3.5,0.946,20
+"1721","Invertebrate","Turbo sarmaticus",163,16.85,0.81,25
+"1722","Invertebrate","Tysanoessa longicaudata",0.0015,13,7.3,626
+"1723","Invertebrate","Uca cumulanta",1.57,27.85,10.6,25
+"1724","Invertebrate","Uca maracoani",7.85,27.85,5.3,25
+"1725","Invertebrate","Uca maracoani",14.3,27.85,5.3,25
+"1726","Invertebrate","Uca rapax",6.85,27.85,4.9,25
+"1727","Invertebrate","Uca vocator",8.9,27.85,2.8,25
+"1728","Invertebrate","Unio tumidis",5.35,12.55,0.352,25
+"1729","Invertebrate","Venerupis aurea",5.2,11.85,0.37,25
+"1730","Invertebrate","Venerupis aurea",5.45,11.85,0.35,25
+"1731","Invertebrate","Venus antiqua",40.5,11.55,0.664,25
+"1732","Invertebrate","Vesicomyid sp.",0.00238,21,0.228,19
+"1733","Invertebrate","Yoldia eightsi",5.2,-0.95,0.13,25
+"1734","Invertebrate","Yoldia eightsi",5.48,-0.95,0.114,25
+"1735","Invertebrate","Yoldia limatula",4.93,8.85,0.803,25
+"1736","Invertebrate","Zygochlamys patagonica",75.3,7.85,1.039,25
+"1737","Multicellular plant","Acacia victoriae",400,19,0.028,29
+"1738","Multicellular plant","Acacia victoriae",400,19,0.201,29
+"1739","Multicellular plant","Acacia victoriae",460,19,0.135,29
+"1740","Multicellular plant","Acacia victoriae",510,19,0.073,29
+"1741","Multicellular plant","Acacia victoriae",540,19,0.128,29
+"1742","Multicellular plant","Accer saccharum",2100000,11,0.003,29
+"1743","Multicellular plant","Aesculu soctandra",1800000,11,0.001,29
+"1744","Multicellular plant","Alchornea costaricensis",510000,28,0.03,29
+"1745","Multicellular plant","Allium tricoccum",1.1,4,0.131,29
+"1746","Multicellular plant","Allium tricoccum",1.3,4,0.091,29
+"1747","Multicellular plant","Allium tricoccum",1.4,4,0.336,29
+"1748","Multicellular plant","Allium tricoccum",1.5,4,0.219,29
+"1749","Multicellular plant","Alseis blackiana",410000,28,0.006,29
+"1750","Multicellular plant","Amphibolis antarctica",0.33,19,0.584,29
+"1751","Multicellular plant","Amphibolis griffithii",0.67,19,1.095,29
+"1752","Multicellular plant","Antarctic phytoplanktonic",2.1e-11,1,2.482,29
+"1753","Multicellular plant","Antarctic phytoplanktonic",5.1e-10,1,0.438,29
+"1754","Multicellular plant","Arisae matriphyllum",0.12,8,2.555,29
+"1755","Multicellular plant","Arisae matriphyllum",0.12,8,4.745,29
+"1756","Multicellular plant","Arisae matriphyllum",0.22,8,1.606,29
+"1757","Multicellular plant","Arisae matriphyllum",0.22,NA,0.329,29
+"1758","Multicellular plant","Arisae matriphyllum",0.24,8,0.402,29
+"1759","Multicellular plant","Arisae matriphyllum",0.25,8,2.957,29
+"1760","Multicellular plant","Arisae matriphyllum",0.34,8,0.584,29
+"1761","Multicellular plant","Arisae matriphyllum",0.34,8,0.803,29
+"1762","Multicellular plant","Arisae matriphyllum",0.37,8,0.73,29
+"1763","Multicellular plant","Arisae matriphyllum",0.37,8,2.263,29
+"1764","Multicellular plant","Arisae matriphyllum",0.47,8,1.57,29
+"1765","Multicellular plant","Arisae matriphyllum",0.49,8,1.022,29
+"1766","Multicellular plant","Arisae matriphyllum",0.49,NA,1.679,29
+"1767","Multicellular plant","Arisae matriphyllum",0.61,8,0.621,29
+"1768","Multicellular plant","Arisae matriphyllum",0.62,8,0.84,29
+"1769","Multicellular plant","Arisae matriphyllum",0.73,8,1.022,29
+"1770","Multicellular plant","Arisae matriphyllum",0.74,8,0.329,29
+"1771","Multicellular plant","Ascophyllum nodosum",17,10,0.475,29
+"1772","Multicellular plant","Ascophyllum nodosum",23,10,0.124,29
+"1773","Multicellular plant","Ascophyllum nodosum",28,10,0.584,29
+"1774","Multicellular plant","Ascophyllum nodosum",36,NA,0.08,29
+"1775","Multicellular plant","Ascophyllum nodosum",37,10,0.767,29
+"1776","Multicellular plant","Ascophyllum nodosum",43,10,0.475,29
+"1777","Multicellular plant","Avicennia alba",6.5,28,0.329,29
+"1778","Multicellular plant","Avicennia alba",6.5,28,0.332,29
+"1779","Multicellular plant","Avicennia alba",6.5,28,1.278,29
+"1780","Multicellular plant","Avicennia alba",6.5,28,1.278,29
+"1781","Multicellular plant","Avicennia alba",6.5,28,2.409,29
+"1782","Multicellular plant","Avicennia alba",6.5,NA,0.913,29
+"1783","Multicellular plant","Avicennia marina",39,28,0.164,29
+"1784","Multicellular plant","Avicennia officinalis",13,NA,0.102,29
+"1785","Multicellular plant","Betula alleghaniensis",1100000,NA,0.006,29
+"1786","Multicellular plant","Brachypodium pinnatum",0.27,10,1.533,29
+"1787","Multicellular plant","Brachypodium pinnatum",0.29,10,1.314,29
+"1788","Multicellular plant","Brachypodium pinnatum",0.32,10,0.511,29
+"1789","Multicellular plant","Bruguiera cylindrica",2.2,28,0.511,29
+"1790","Multicellular plant","Camelia japonica",250000,19,0.005,29
+"1791","Multicellular plant","Camelia japonica",510000,19,0.009,29
+"1792","Multicellular plant","Camelia sasnqua",220000,19,0.005,29
+"1793","Multicellular plant","Camelia sasnqua",560000,19,0.012,29
+"1794","Multicellular plant","Camellia japonica",5e+05,19,0.008,29
+"1795","Multicellular plant","Camellia sasanqua",530000,19,0.012,29
+"1796","Multicellular plant","Carex flacca",0.19,10,0.08,29
+"1797","Multicellular plant","Carex flacca",0.2,10,0.548,29
+"1798","Multicellular plant","Carex flacca",0.23,10,0.223,29
+"1799","Multicellular plant","Carnegiea gigantea",440,20,0.012,29
+"1800","Multicellular plant","Carnegiea gigantea",710,20,0.009,29
+"1801","Multicellular plant","Carnegiea gigantea",4200,20,0.011,29
+"1802","Multicellular plant","Carnegiea gigantea",6100,20,0.013,29
+"1803","Multicellular plant","Carpophyllum maschalocarpum",0.011,18,0.402,29
+"1804","Multicellular plant","Carpophyllum maschalocarpum",4,18,1.46,29
+"1805","Multicellular plant","Carulerpa prolifera",0.05,21,0.876,29
+"1806","Multicellular plant","Carulerpa racemosa",0.0016,21,21.17,29
+"1807","Multicellular plant","Carulerpa taxifolia",0.032,21,2.811,29
+"1808","Multicellular plant","Catopsisssp.",0.023,19,0.27,29
+"1809","Multicellular plant","Cecropia obtusifolia",62000,25,0.055,29
+"1810","Multicellular plant","Cecropia obtusifolia",96000,25,0.237,29
+"1811","Multicellular plant","Cecropia obtusifolia",220000,25,0.032,29
+"1812","Multicellular plant","Cecropia obtusifolia",5e+05,25,0.066,29
+"1813","Multicellular plant","Cecropia obtusifolia",940000,25,0.204,29
+"1814","Multicellular plant","Cephalanthus occidentalis",16,NA,0.84,29
+"1815","Multicellular plant","Ceriops tagal",3.4,28,0.321,29
+"1816","Multicellular plant","Clethra occidentalis",40000,19,0.006,29
+"1817","Multicellular plant","Cleyera japonica",420000,19,0.005,29
+"1818","Multicellular plant","Cleyera japonica",590000,19,0.011,29
+"1819","Multicellular plant","Cleyera japonica",630000,NA,0.009,29
+"1820","Multicellular plant","Codium bursa",4.2,17,1.862,29
+"1821","Multicellular plant","Codium bursa",4.2,17,2.044,29
+"1822","Multicellular plant","Codium bursa",4.2,17,0.091,29
+"1823","Multicellular plant","Codium fragile",7.3,15,2.665,29
+"1824","Multicellular plant","Cordia alliodora",620000,28,0.047,29
+"1825","Multicellular plant","Costaria costaria",39,11,8.76,29
+"1826","Multicellular plant","Cymodocea nodosa",0.007,19,1.387,29
+"1827","Multicellular plant","Cymodocea nodosa",0.011,17,0.657,29
+"1828","Multicellular plant","Cymodocea nodosa",0.013,19,2.373,29
+"1829","Multicellular plant","Cymodocea nodosa",0.018,19,2.519,29
+"1830","Multicellular plant","Cymodocea nodosa",0.018,19,1.241,29
+"1831","Multicellular plant","Cymodocea nodosa",0.019,19,1.059,29
+"1832","Multicellular plant","Cymodocea nodosa",0.019,19,2.336,29
+"1833","Multicellular plant","Cymodocea nodosa",0.022,17,0.694,29
+"1834","Multicellular plant","Cymodocea nodosa",0.022,19,5.11,29
+"1835","Multicellular plant","Cymodocea nodosa",0.023,19,0.365,29
+"1836","Multicellular plant","Cymodocea nodosa",0.028,19,0.803,29
+"1837","Multicellular plant","Cymodocea nodosa",0.03,20,0.402,29
+"1838","Multicellular plant","Cymodocea nodosa",0.03,20,0.986,29
+"1839","Multicellular plant","Cymodocea nodosa",0.03,20,1.205,29
+"1840","Multicellular plant","Cymodocea nodosa",0.033,NA,0.767,29
+"1841","Multicellular plant","Cymodocea nodosa",0.038,19,2.701,29
+"1842","Multicellular plant","Cymodocea nodosa",0.04,20,0.694,29
+"1843","Multicellular plant","Cymodocea nodosa",0.041,20,1.387,29
+"1844","Multicellular plant","Cymodocea nodosa",0.049,20,0.621,29
+"1845","Multicellular plant","Cymodocea nodosa",0.05,20,1.241,29
+"1846","Multicellular plant","Cymodocea nodosa",0.052,19,0.584,29
+"1847","Multicellular plant","Cymodocea nodosa",0.053,19,0.511,29
+"1848","Multicellular plant","Cymodocea nodosa",0.07,20,1.314,29
+"1849","Multicellular plant","Cymodocea nodosa",0.1,19,1.46,29
+"1850","Multicellular plant","Cymodocea nodosa",0.13,17,1.205,29
+"1851","Multicellular plant","Cymodocea nodosa",0.13,19,2.446,29
+"1852","Multicellular plant","Cymodocea nodosa",0.13,20,0.949,29
+"1853","Multicellular plant","Cymodocea nodosa",0.13,22,3.103,29
+"1854","Multicellular plant","Cymodocea nodosa",0.18,17,1.387,29
+"1855","Multicellular plant","Cymodocea nodosa",0.2,20,0.876,29
+"1856","Multicellular plant","Cymodocea nodosa",0.25,20,1.643,29
+"1857","Multicellular plant","Cymodocea nodosa",0.27,17,1.059,29
+"1858","Multicellular plant","Cymodocea nodosa",0.29,17,3.65,29
+"1859","Multicellular plant","Cymodocea nodosa",0.32,17,1.022,29
+"1860","Multicellular plant","Cymodocea rotundata",0.12,28,0.803,29
+"1861","Multicellular plant","Cymodocea serrulata",0.15,28,2.884,29
+"1862","Multicellular plant","Cynoglossum officinale",2.1,10,0.767,29
+"1863","Multicellular plant","Cynoglossum officinale",2.8,10,0.069,29
+"1864","Multicellular plant","Cynoglossum officinale",3.8,10,0.343,29
+"1865","Multicellular plant","Cystoseira humilis",0.31,18,1.497,29
+"1866","Multicellular plant","Distylim racemosum",6900000,19,0.008,29
+"1867","Multicellular plant","Distylim racemosum",8300000,19,0.01,29
+"1868","Multicellular plant","Distylim racemosum",1.1e+07,19,0.008,29
+"1869","Multicellular plant","Dityllum brightwellii",8.3e-08,NA,87.6,29
+"1870","Multicellular plant","Dityllum brightwellii",8.3e-08,NA,21.9,29
+"1871","Multicellular plant","Drepanocladusex annulatus",0.016,12,0.245,29
+"1872","Multicellular plant","Drepanocladusex annulatus",0.018,6,0.511,29
+"1873","Multicellular plant","Drepanocladusex annulatus",0.019,9,0.511,29
+"1874","Multicellular plant","Drymis winteri",9500,NA,0.01,29
+"1875","Multicellular plant","Drymis winteri",17000,NA,0.01,29
+"1876","Multicellular plant","Dryobalanops lanceolata",220000,26,0.011,29
+"1877","Multicellular plant","Enhalusa coroides",2.5,28,0.234,29
+"1878","Multicellular plant","Eurya japonica",52000,19,0.03,29
+"1879","Multicellular plant","Eurya japonica",90000,19,0.022,29
+"1880","Multicellular plant","Eurya japonica",94000,19,0.02,29
+"1881","Multicellular plant","Excoecaria agallocha",2.2,28,1.022,29
+"1882","Multicellular plant","Fagus grandifolia",1e+06,11,0.012,29
+"1883","Multicellular plant","Faramea juveniles",2.8e-05,28,NA,29
+"1884","Multicellular plant","Fucus distichus",0.00073,11,3.03,29
+"1885","Multicellular plant","Fucus distichus",0.0067,11,2.117,29
+"1886","Multicellular plant","Fucus distichus",0.013,11,1.679,29
+"1887","Multicellular plant","Fucus distichus",0.04,11,2.446,29
+"1888","Multicellular plant","Fucus distichus",0.35,11,1.424,29
+"1889","Multicellular plant","Fucus gardneri",0.22,13,0.511,29
+"1890","Multicellular plant","Fucus gardneri",1.2,13,0.657,29
+"1891","Multicellular plant","Guarea glabra",4e+05,28,0.01,29
+"1892","Multicellular plant","Guatteria dumetorum",1200000,28,0.005,29
+"1893","Multicellular plant","Gustavia superba",240000,28,0.003,29
+"1894","Multicellular plant","Halesia carolina",890000,11,0.005,29
+"1895","Multicellular plant","Halodule uninervis",0.05,28,1.825,29
+"1896","Multicellular plant","Halodule wrightii",0.03,NA,3.577,29
+"1897","Multicellular plant","Hasseltia floribunda",220000,28,0.026,29
+"1898","Multicellular plant","Hedyosmum arborescens",11000,19,0.016,29
+"1899","Multicellular plant","Heisterai concinna",180000,28,0.011,29
+"1900","Multicellular plant","Heterozostera tasmanica",0.05,19,3.65,29
+"1901","Multicellular plant","Hirtella triandra",2e+05,28,0.011,29
+"1902","Multicellular plant","Hura crepitans",1600000,28,0.005,29
+"1903","Multicellular plant","Illicium anisatum",320000,19,0.018,29
+"1904","Multicellular plant","Illicium anisatum",390000,19,0.024,29
+"1905","Multicellular plant","Illicium anisatum",480000,19,0.02,29
+"1906","Multicellular plant","Impatiens capensis",0.15,8,2.117,29
+"1907","Multicellular plant","Impatiens pallida",0.75,NA,8.03,29
+"1908","Multicellular plant","Impatiens pallida",1.1,6,6.57,29
+"1909","Multicellular plant","Iris pseudacorus",1.3,NA,0.212,29
+"1910","Multicellular plant","Iris pseudacorus",38,NA,0.08,29
+"1911","Multicellular plant","Iris pseudacorus",67,NA,0.153,29
+"1912","Multicellular plant","Iris pseudacorus",120,NA,0.084,29
+"1913","Multicellular plant","Jacaranda copaia",2200000,28,0.058,29
+"1914","Multicellular plant","Laminaria longicruris",1500,10,1.059,29
+"1915","Multicellular plant","Laminaria saccharina",5.8,12,4.015,29
+"1916","Multicellular plant","Laminaria saccharina",10,12,3.468,29
+"1917","Multicellular plant","Laminaria saccharina",12,12,5.475,29
+"1918","Multicellular plant","Leathesia difformis",0.014,10,4.38,29
+"1919","Multicellular plant","Litsea acuminata",2e+06,19,0.02,29
+"1920","Multicellular plant","Litsea acuminata",2300000,19,0.019,29
+"1921","Multicellular plant","Litsea acuminata",2500000,19,0.019,29
+"1922","Multicellular plant","Lyonia octandra",11000,19,0.006,29
+"1923","Multicellular plant","Macaranga beccariana",410000,27,0.002,29
+"1924","Multicellular plant","Macaranga gigantea",1900000,27,0.001,29
+"1925","Multicellular plant","Macaranga hosei",2300000,27,0.001,29
+"1926","Multicellular plant","Macaranga hullettii",460000,27,0.001,29
+"1927","Multicellular plant","Macaranga hypoleuca",880000,27,0,29
+"1928","Multicellular plant","Macaranga lamellata",280000,27,0,29
+"1929","Multicellular plant","Macaranga trachyphylla",780000,27,0.001,29
+"1930","Multicellular plant","Macaranga triloba",870000,27,0,29
+"1931","Multicellular plant","Macaranga winkleri",780000,27,0.003,29
+"1932","Multicellular plant","Mercurialis perennis",0.37,10,0.767,29
+"1933","Multicellular plant","Micromona spusilla",1.9e-12,NA,182.5,29
+"1934","Multicellular plant","Myrsinese guinii",45000,19,0.002,29
+"1935","Multicellular plant","Myrsinese guinii",290000,19,0.004,29
+"1936","Multicellular plant","Myrsinese guinii",320000,19,0.008,29
+"1937","Multicellular plant","Neolitsea aciculata",980000,NA,0.022,29
+"1938","Multicellular plant","Neolitsea aciculata",1500000,19,0.019,29
+"1939","Multicellular plant","Neolitsea aciculata",1600000,19,0.023,29
+"1940","Multicellular plant","Nereocystis luetkeana",42,11,13.14,29
+"1941","Multicellular plant","Nothofagus betuloides",18000,NA,0.01,29
+"1942","Multicellular plant","Nothofagus betuloides",62000,NA,0.005,29
+"1943","Multicellular plant","Nothofagus betuloides",270000,NA,0.005,29
+"1944","Multicellular plant","Nothofagus betuloides",270000,NA,0.004,29
+"1945","Multicellular plant","Nothofagus betuloides",750000,NA,0.004,29
+"1946","Multicellular plant","Nothofagus pumilio",240000,NA,0.005,29
+"1947","Multicellular plant","Nothofagus pumilio",320000,NA,0.005,29
+"1948","Multicellular plant","Nyssa aquatica",13,NA,1.898,29
+"1949","Multicellular plant","Ormosia coccinea",470000,28,0.044,29
+"1950","Multicellular plant","Palmaria palmata",0.06,16,2.336,29
+"1951","Multicellular plant","Panax quinquefolium",0.43,12,0.102,29
+"1952","Multicellular plant","Parashorea macrophylla",240000,26,0.026,29
+"1953","Multicellular plant","Pelvetia fastigiata",690,17,1.132,29
+"1954","Multicellular plant","Phaeocystis pouchetii",5.1e-11,NA,292,29
+"1955","Multicellular plant","Phaeodactyllum tricornutum",1.9e-11,18,6.57,29
+"1956","Multicellular plant","Phaeodactyllum tricornutum",1.9e-11,18,2.92,29
+"1957","Multicellular plant","Piceaen gelmanii",10000,11,0.009,29
+"1958","Multicellular plant","Pinus sylvestris",31000,9,0.018,29
+"1959","Multicellular plant","Podocarpus nagi",240000,19,0.022,29
+"1960","Multicellular plant","Podocarpus nagi",1200000,19,0.019,29
+"1961","Multicellular plant","Podocarpus nagi",1200000,19,0.022,29
+"1962","Multicellular plant","Podocarpus urbanii",11000,19,0.006,29
+"1963","Multicellular plant","Populus tremuloides",250,7,0.332,29
+"1964","Multicellular plant","Populus tremuloides",440,7,0.347,29
+"1965","Multicellular plant","Posidonia angustifolia",0.37,19,1.241,29
+"1966","Multicellular plant","Posidonia australis",0.4,19,0.365,29
+"1967","Multicellular plant","Posidonia sinuosa",0.23,19,0.511,29
+"1968","Multicellular plant","Posidonia sinuosa",0.3,17,0.475,29
+"1969","Multicellular plant","Posidonica oceanica",0.19,19,0.172,29
+"1970","Multicellular plant","Posidonica oceanica",0.22,19,0.204,29
+"1971","Multicellular plant","Posidonica oceanica",0.27,NA,0.102,29
+"1972","Multicellular plant","Posidonica oceanica",0.28,19,0.475,29
+"1973","Multicellular plant","Posidonica oceanica",0.29,19,0.153,29
+"1974","Multicellular plant","Posidonica oceanica",0.32,19,0.183,29
+"1975","Multicellular plant","Posidonica oceanica",0.41,17,0.183,29
+"1976","Multicellular plant","Posidonica oceanica",0.45,19,0.183,29
+"1977","Multicellular plant","Posidonica oceanica",0.49,19,0.475,29
+"1978","Multicellular plant","Posidonica oceanica",0.51,19,0.245,29
+"1979","Multicellular plant","Posidonica oceanica",0.52,17,0.475,29
+"1980","Multicellular plant","Posidonica oceanica",0.55,19,0.069,29
+"1981","Multicellular plant","Posidonica oceanica",0.56,17,0.069,29
+"1982","Multicellular plant","Posidonica oceanica",0.57,17,NA,29
+"1983","Multicellular plant","Posidonica oceanica",0.58,17,0.08,29
+"1984","Multicellular plant","Posidonica oceanica",0.58,19,0.548,29
+"1985","Multicellular plant","Posidonica oceanica",0.63,17,0.234,29
+"1986","Multicellular plant","Posidonica oceanica",0.63,19,0.161,29
+"1987","Multicellular plant","Posidonica oceanica",0.65,17,0.08,29
+"1988","Multicellular plant","Posidonica oceanica",0.68,17,0.183,29
+"1989","Multicellular plant","Posidonica oceanica",0.72,19,0.069,29
+"1990","Multicellular plant","Posidonica oceanica",0.73,19,0.263,29
+"1991","Multicellular plant","Posidonica oceanica",0.8,19,0.08,29
+"1992","Multicellular plant","Posidonica oceanica",0.82,19,0.336,29
+"1993","Multicellular plant","Posidonica oceanica",0.94,19,0.08,29
+"1994","Multicellular plant","Posidonica oceanica",1.3,17,0.062,29
+"1995","Multicellular plant","Posidonica oceanica",1.3,19,0.062,29
+"1996","Multicellular plant","Posidonica oceanica",1.3,19,0.274,29
+"1997","Multicellular plant","Posidonica oceanica",1.3,19,0.263,29
+"1998","Multicellular plant","Potentilla matsumurae",1.1,15,0.365,29
+"1999","Multicellular plant","Potentilla matsumurae",1.8,15,4.38,29
+"2000","Multicellular plant","Poulsenia armata",1100000,28,0.035,29
+"2001","Multicellular plant","Pterocarpus rohrii",940000,28,0.062,29
+"2002","Multicellular plant","Quararibea asterolepsis",2800000,28,0.006,29
+"2003","Multicellular plant","Quercuss sp.",5e+05,10,0.011,29
+"2004","Multicellular plant","Quercuss sp.",5e+05,10,0.004,29
+"2005","Multicellular plant","Quercuss sp.",5e+05,11,0.011,29
+"2006","Multicellular plant","Quercuss sp.",5e+05,11,0.004,29
+"2007","Multicellular plant","Quercuss sp.",5e+05,12,0.004,29
+"2008","Multicellular plant","Quercuss sp.",5e+05,12,0.004,29
+"2009","Multicellular plant","Quercuss sp.",5e+05,13,0.007,29
+"2010","Multicellular plant","Quercuss sp.",5e+05,13,0.007,29
+"2011","Multicellular plant","Quercuss sp.",5e+05,14,0.009,29
+"2012","Multicellular plant","Quercuss sp.",5e+05,14,0.006,29
+"2013","Multicellular plant","Quercuss sp.",5e+05,16,0.005,29
+"2014","Multicellular plant","Quercuss sp.",5e+05,16,0.005,29
+"2015","Multicellular plant","Quercuss sp.",5e+05,NA,0.008,29
+"2016","Multicellular plant","Quercuss sp.",5e+05,NA,0.002,29
+"2017","Multicellular plant","Rhizophora apiculata",18,28,0.358,29
+"2018","Multicellular plant","Rhizophora apiculata BL.",230,27,0.153,29
+"2019","Multicellular plant","Rhizophora apiculata BL.",320,27,0.088,29
+"2020","Multicellular plant","Rhizophor amucronata",7,28,0.062,29
+"2021","Multicellular plant","Rhizophor amucronata",7,28,0.193,29
+"2022","Multicellular plant","Rhizophor amucronata",7,28,0.186,29
+"2023","Multicellular plant","Rhizophor amucronata",7,28,0.088,29
+"2024","Multicellular plant","Rhizophor amucronata",7,28,0.183,29
+"2025","Multicellular plant","Rhizophor amucronata",7,28,0.949,29
+"2026","Multicellular plant","Rhizophor amucronata",57,28,0.402,29
+"2027","Multicellular plant","Rhododendron tashiroi",160000,19,0.03,29
+"2028","Multicellular plant","Rhododendron tashiroi",160000,19,0.007,29
+"2029","Multicellular plant","Rhododendron tashiroi",230000,19,0.022,29
+"2030","Multicellular plant","Salicornia europea",0.018,10,1.46,29
+"2031","Multicellular plant","Salicornia europea",0.07,10,1.57,29
+"2032","Multicellular plant","Salix nigra",29,NA,1.314,29
+"2033","Multicellular plant","Sargassum sinclairii",0.038,18,2.081,29
+"2034","Multicellular plant","Sargassum sinclairii",22,18,3.066,29
+"2035","Multicellular plant","Sargassum spp.",3.8,20,2.701,29
+"2036","Multicellular plant","Solidago canadensis",0.14,7,0.803,29
+"2037","Multicellular plant","Solidago canadensis",0.19,7,1.643,29
+"2038","Multicellular plant","Sonneratia caseolaris",0.64,28,3.249,29
+"2039","Multicellular plant","Sonneratia caseolaris",0.64,28,1.022,29
+"2040","Multicellular plant","Sonneratia caseolaris",0.64,28,4.38,29
+"2041","Multicellular plant","Sonneratia caseolaris",0.64,28,2.336,29
+"2042","Multicellular plant","Sonneratia caseolaris",0.64,28,1.716,29
+"2043","Multicellular plant","Sonneratia caseolaris",0.64,28,5.11,29
+"2044","Multicellular plant","Sonneratia caseolaris",6.5,28,0.009,29
+"2045","Multicellular plant","Spartina alterniflora",0.19,14,0.694,29
+"2046","Multicellular plant","Spartina alterniflora",0.33,14,0.767,29
+"2047","Multicellular plant","Spartina alterniflora",0.35,14,0.84,29
+"2048","Multicellular plant","Spartina alterniflora",0.41,14,0.767,29
+"2049","Multicellular plant","Sphagnum subsecundum",0.016,9,0.913,29
+"2050","Multicellular plant","Sphagnum subsecundum",0.017,12,1.022,29
+"2051","Multicellular plant","Sphagnum subsecundum",0.028,9,0.73,29
+"2052","Multicellular plant","Sphagnum subsecundum",0.033,6,0.548,29
+"2053","Multicellular plant","Symphoricarpos occidentalis",35,0,0.099,29
+"2054","Multicellular plant","Symplocos glauca",160000,19,0.08,29
+"2055","Multicellular plant","Symplocos glauca",170000,19,0.066,29
+"2056","Multicellular plant","Symplocos glauca",180000,19,0.044,29
+"2057","Multicellular plant","Symplocos prunifolia",730000,19,0.051,29
+"2058","Multicellular plant","Symplocos prunifolia",1200000,19,0.036,29
+"2059","Multicellular plant","Symplocos prunifolia",1400000,19,0.058,29
+"2060","Multicellular plant","Symplocos tanakae",110000,19,0.033,29
+"2061","Multicellular plant","Symplocos tanakae",110000,19,0.037,29
+"2062","Multicellular plant","Symplocos tanakae",150000,19,0.047,29
+"2063","Multicellular plant","Syringodium filiforme",0.06,26,2.081,29
+"2064","Multicellular plant","Syringodium filiforme",0.19,27,1.168,29
+"2065","Multicellular plant","Syringodium isoetifolium",0.09,28,2.482,29
+"2066","Multicellular plant","Taxodium disticchum",11,NA,0.986,29
+"2067","Multicellular plant","Tetragastris panamensis",740000,28,0.019,29
+"2068","Multicellular plant","Thalassia hemprichii",0.26,28,0.475,29
+"2069","Multicellular plant","Thalassia testudinum",0.44,26,1.387,29
+"2070","Multicellular plant","Thalassia testudinum",0.46,26,1.022,29
+"2071","Multicellular plant","Thalassia testudinum",0.57,26,0.876,29
+"2072","Multicellular plant","Thalassodendron ciliatum",0.44,26,0.73,29
+"2073","Multicellular plant","Thalassodendron pachyrrizum",0.58,17,0.438,29
+"2074","Multicellular plant","Tila heterophylla",2e+06,11,0.01,29
+"2075","Multicellular plant","Tillandsia sp",0.17,19,0.27,29
+"2076","Multicellular plant","Trichilia tuberculata",410000,28,0.017,29
+"2077","Multicellular plant","Trifolium repens",0.09,8,0.876,29
+"2078","Multicellular plant","Trifolium repens",0.17,8,0.73,29
+"2079","Multicellular plant","Trifolium repens",0.21,8,0.949,29
+"2080","Multicellular plant","Trifolium repens",0.41,8,0.621,29
+"2081","Multicellular plant","Tsuga canadensis",2500000,11,0.007,29
+"2082","Multicellular plant","Typha latifolia",31,9,1.387,29
+"2083","Multicellular plant","Urtica dioica",3,8,3.504,29
+"2084","Multicellular plant","Viola blanda",0.76,9,0.318,29
+"2085","Phytoplankton","Tropical Atlantic phytoplankton communities",7.6e-15,29,226.3,29
+"2086","Phytoplankton","Tropical Atlantic phytoplankton communities",7.8e-15,29,365,29
+"2087","Phytoplankton","Tropical Atlantic phytoplankton communities",7.9e-15,29,135.05,29
+"2088","Phytoplankton","Tropical Atlantic phytoplankton communities",1.3e-14,29,233.6,29
+"2089","Phytoplankton","Tropical Atlantic phytoplankton communities",2.1e-14,27,156.95,29
+"2090","Phytoplankton","Tropical Atlantic phytoplankton communities",4.3e-14,29,94.9,29
+"2091","Phytoplankton","Tropical Atlantic phytoplankton communities",6.1e-14,20,36.5,29
+"2092","Phytoplankton","Tropical Atlantic phytoplankton communities",1.1e-13,24,365,29
+"2093","Phytoplankton","Tropical Atlantic phytoplankton communities",1.3e-13,17,3.65,29
+"2094","Phytoplankton","Tropical Atlantic phytoplankton communities",1.9e-13,24,25.915,29
+"2095","Phytoplankton","Tropical Atlantic phytoplankton communities",2e-13,24,295.65,29
+"2096","Phytoplankton","Tropical Atlantic phytoplankton communities",2.8e-13,18,14.6,29
+"2097","Phytoplankton","Tropical Atlantic phytoplankton communities",3e-13,25,693.5,29
+"2098","Phytoplankton","Tropical Atlantic phytoplankton communities",3.7e-13,20,31.755,29
+"2099","Phytoplankton","Tropical Atlantic phytoplankton communities",4.9e-13,24,912.5,29
+"2100","Phytoplankton","Tropical Atlantic phytoplankton communities",6.1e-13,18,20.44,29
+"2101","Phytoplankton","Tropical Atlantic phytoplankton communities",7.3e-13,20,25.185,29
+"2102","Phytoplankton","Tropical Atlantic phytoplankton communities",1.2e-12,21,18.25,29
+"2103","Phytoplankton","Tropical Atlantic phytoplankton communities",1.6e-12,21,80.3,29
+"2104","Phytoplankton","Tropical Atlantic phytoplankton communities",1.8e-12,20,62.05,29
+"2105","Phytoplankton","Tropical Atlantic phytoplankton communities",1.8e-12,22,51.1,29
+"2106","Phytoplankton","Tropical Atlantic phytoplankton communities",1.9e-12,23,113.15,29
+"2107","Phytoplankton","Tropical Atlantic phytoplankton communities",2.5e-12,22,7.3,29
+"2108","Phytoplankton","Tropical Atlantic phytoplankton communities",3.2e-12,17,20.805,29
+"2109","Phytoplankton","Tropical Atlantic phytoplankton communities",3.2e-12,25,109.5,29
+"2110","Phytoplankton","Tropical Atlantic phytoplankton communities",4.5e-12,18,33.215,29
+"2111","Phytoplankton","Tropical Atlantic phytoplankton communities",4.5e-12,19,58.4,29
+"2112","Phytoplankton","Tropical Atlantic phytoplankton communities",4.7e-12,20,65.7,29
+"2113","Phytoplankton","Tropical Atlantic phytoplankton communities",3.4e-11,22,8.03,29
+"2114","Phytoplankton","Tropical Atlantic phytoplankton communities",3.2e-10,22,32.485,29
+"2115","Phytoplankton","Tropical Atlantic phytoplankton communities",6.4e-10,28,215.35,29
+"2116","Phytoplankton","Mediterranean phytoplankton",5.6e-13,25,204.4,29
+"2117","Phytoplankton","Mediterranean phytoplankton",1.1e-12,17,193.45,29
+"2118","Phytoplankton","Mediterranean phytoplankton",3.8e-12,NA,313.9,29
