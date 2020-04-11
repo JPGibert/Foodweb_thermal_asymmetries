@@ -1,0 +1,735 @@
+    ############################################################
+    #######  Temperature rise and maximum trophic level  #######
+    #######             Jean P. Gibert,  2018            #######
+    ############################################################
+
+# Loading JULIA packages
+#@everywhere using Pkg
+@everywhere using Distributed
+@everywhere using SharedArrays
+@everywhere using DifferentialEquations
+@everywhere using RCall
+@everywhere using StatsBase
+
+# Loading R packages
+R"
+library('RColorBrewer')
+"
+
+
+#######################################################################################################################################
+## Baseline models and general understanding
+
+
+## Baseline model (NO Temperature)
+@everywhere function LV_model_no_T(du,u,p,t) # before (t,u,p,du)
+    # R
+    du[1] = p[1]*u[1]*(1-u[1]/p[2]) - p[3]*u[1]*u[2]/(1+p[3]*p[11]*u[1]) - p[4]*u[1]*u[3]/(1+p[4]*p[12]*u[1])
+    # C
+    du[2] = p[6]*p[3]*u[1]*u[2]/(1+p[3]*p[11]*u[1]) - p[9]*u[2] - p[5]*u[2]*u[3]/(1+p[5]*p[13]*u[2])
+    # T
+    du[3] = p[7]*p[4]*u[1]*u[3]/(1+p[4]*p[12]*u[1]) + p[8]*p[5]*u[2]*u[3]/(1+p[5]*p[13]*u[2]) - p[10]*u[3]
+end
+
+# Parameter values are as: [1=r,2=K,3=a_RC1,4=a_RC2,5=a_C1C2,6=e_RC1,7=e_RC2
+#                          8=e_C1C2,9=d_C1,10=d_C2,11=h_RC1, 12=h_RC2, 13=h_C1C2]
+
+p = [1.5,5,1,1,1,0.8,0.2,1,0.8,0.8,0.4,0.4,0.4];
+
+#pf_evol = ParameterizedFunction(parameterized_LV_II_evol_TO,p);
+u0 = [2.0;1;1;1;1;1];   # [R,C1,C2,a_RC1,a_RC2,a_C1C2]
+tspan = (0.0,10000);
+    # Same here
+#prob_evol = ODEProblem(pf_evol,u0,tspan);
+prob_evol = ODEProblem(LV_model_no_T,u0,tspan,p);
+sol_evol = solve(prob_evol,adaptive=false,dt=0.075);
+# Prepare to plot
+sol_evol=sol_evol(0:1:10000);
+sol_evol=hcat(sol_evol...)';
+times=collect(range(0,stop=10000,length=10001));
+burnin=4000;
+
+R"
+dev.new()
+# Fig 1 A
+
+plot($times,$sol_evol[,1],ylab='s',lwd=2, col='green', type='l', ylim=c(0,5))
+lines($times,$sol_evol[,2],ylab='s',lwd=2, col='yellow')
+lines($times,$sol_evol[,3],ylab='s',lwd=2, col='blue')
+
+"
+
+
+## Model with TEMPERATURE
+## The baseline model assumes that only death rates can change with temperature.
+
+## Baseline model
+@everywhere function LV_model_T(du,u,p,t) # before (t,u,p,du)
+    # R
+    du[1] = p[1]*u[1]*(1-u[1]/p[2]) - p[3]*u[1]*u[2]/(1+p[3]*p[11]*u[1]) - p[4]*u[1]*u[3]/(1+p[4]*p[12]*u[1])
+    # C
+    du[2] = p[6]*p[3]*u[1]*u[2]/(1+p[3]*p[11]*u[1]) - p[5]*u[2]*u[3]/(1+p[5]*p[13]*u[2]) -
+                    p[9]*exp((p[14]/(8.62*10.0^-5))*(1/(p[16]+273)-1/(p[17]+273)))*u[2]
+    # T
+    du[3] = p[7]*p[4]*u[1]*u[3]/(1+p[4]*p[12]*u[1]) + p[8]*p[5]*u[2]*u[3]/(1+p[5]*p[13]*u[2]) -
+                    p[10]*exp((p[15]/(8.62*10.0^-5))*(1/(p[16]+273)-1/(p[17]+273)))*u[3]
+end
+
+# Parameter values are as: [1=r,2=K,3=a_RC1,4=a_RC2,5=a_C1C2,6=e_RC1,7=e_RC2
+#                          8=e_C1C2,9=d_C1,10=d_C2,11=h_RC1, 12=h_RC2, 13=h_C1C2
+#                           14=EaC, 15 = EaT, 16= Tref, 17=Temp]
+
+p = [1.5,5,1,1,1,0.8,0.2,1,0.8,0.8,0.4,0.4,0.4,0.65,0.65,25,28];
+
+
+#pf_evol = ParameterizedFunction(parameterized_LV_II_evol_TO,p);
+u0 = [2.0;1;1];   # [R,C1,C2,a_RC1,a_RC2,a_C1C2]
+tspan = (0.0,10000);
+    # Same here
+#prob_evol = ODEProblem(pf_evol,u0,tspan);
+prob_evol = ODEProblem(LV_model_T,u0,tspan,p);
+sol_evol = solve(prob_evol,adaptive=false,dt=0.075);
+# Prepare to plot
+sol_evol=sol_evol(0:1:10000);
+sol_evol=hcat(sol_evol...)';
+times=collect(range(0,stop=10000,length=10001));
+burnin=4000;
+
+R"
+dev.new()
+# Fig 1 A
+
+plot($times,$sol_evol[,1],ylab='s',lwd=2, col='green', type='l', ylim=c(0,5))
+lines($times,$sol_evol[,2],ylab='s',lwd=2, col='yellow')
+lines($times,$sol_evol[,3],ylab='s',lwd=2, col='blue')
+
+"
+
+#######################################################################################################################################
+## ACTUAL RUNS BELOW
+
+
+##------------------------------------------------------------------------------------------------------------------------------------
+## 1) Only death rates are Temperature-dependent
+
+## Baseline model
+## The baseline model assumes that only death rates can change with temperature.
+
+@everywhere function LV_model_death_T(du,u,p,t) # before (t,u,p,du)
+    # R
+    du[1] = p[1]*exp((0.3/(8.62*10.0^-5))*(1/(p[16]+273)-1/(p[17]+273)))*u[1]*(1-u[1]/p[2]) - p[3]*u[1]*u[2]/(1+p[3]*p[11]*u[1]) - p[4]*u[1]*u[3]/(1+p[4]*p[12]*u[1]+p[5]*p[13]*u[2])
+    # C
+    du[2] = p[6]*p[3]*u[1]*u[2]/(1+p[3]*p[11]*u[1]) - p[5]*u[2]*u[3]/(1+p[4]*p[12]*u[1]+p[5]*p[13]*u[2]) -
+                    p[9]*exp((p[14]/(8.62*10.0^-5))*(1/(p[16]+273)-1/(p[17]+273)))*u[2]
+    # T
+    du[3] = p[7]*p[4]*u[1]*u[3]/(1+p[4]*p[12]*u[1]+p[5]*p[13]*u[2]) + p[8]*p[5]*u[2]*u[3]/(1+p[4]*p[12]*u[1]+p[5]*p[13]*u[2]) -
+                    p[10]*exp((p[15]/(8.62*10.0^-5))*(1/(p[16]+273)-1/(p[17]+273)))*u[3]
+end
+# Parameter values are as: [1=r,2=K,3=a_RC1,4=a_RC2,5=a_C1C2,6=e_RC1,7=e_RC2
+#                          8=e_C1C2,9=d_C1,10=d_C2,11=h_RC1, 12=h_RC2, 13=h_C1C2
+#                           14=EaC, 15 = EaT, 16= Tref, 17=Temp]
+
+
+
+#### Top predators are more suceptible to increases in Tº in all cases, regardless of who has the larger Tº sensitivity.
+### We may have a scenario where max TL increases with T, until the top predator goes extinct, in which case it will drop back to the
+## TL of the intermediate consumer.
+
+# POSIBLE TITLE: "The transient dynamics of trophic levels under warming."
+
+###
+# Differences in density with Temperature across Temperature sensitivity
+Temp = collect(range(25,stop=30,length=12));
+Ea_Pred = collect(range(0,stop=0.6,length=100));
+Pred_mean = SharedArray{Float64}(12,100);
+Pred_max_1 = SharedArray{Float64}(12,100);
+Pred_min_1 = SharedArray{Float64}(12,100);
+Int_mean = SharedArray{Float64}(12,100);
+Int_max_1 = SharedArray{Float64}(12,100);
+Int_min_1 = SharedArray{Float64}(12,100);
+Res_mean = SharedArray{Float64}(12,100);
+Res_max_1 = SharedArray{Float64}(12,100);
+Res_min_1 = SharedArray{Float64}(12,100);
+TL = SharedArray{Float64}(12,100);
+TL_mean = SharedArray{Float64}(12,100);
+Prop_CT = SharedArray{Float64}(12,100);
+Prop_RT = SharedArray{Float64}(12,100);
+
+#pf_evol = ParameterizedFunction(parameterized_LV_II_evol_TO,p);
+u0 = [2.0;1;1];   # [R,C,T]
+tspan = (0.0,10000);
+burnin=4000;
+Carrying=5 # K was assumed ot be 5, 7 and 9?
+@time  for i in 1:12
+    @sync @distributed for j in 1:100
+
+        # Parameter values are as: [1=r,2=K,3=a_RC1,4=a_RC2,5=a_C1C2,6=e_RC1,7=e_RC2
+        #                          8=e_C1C2,9=d_C1,10=d_C2,11=h_RC1, 12=h_RC2, 13=h_C1C2
+        #                           14=EaC, 15 = EaT, 16= Tref, 17=Temp]
+        p_1 = [1.5,Carrying,1,1,1,0.8,0.2,1,0.8,0.8,0.4,0.2,0.2,0.3,Ea_Pred[j],25,Temp[i]];
+        prob_1 = ODEProblem(LV_model_death_T,u0,tspan,p_1)
+        sol_1 = solve(prob_1, adaptive=false,dt=0.075)
+
+        # We ask whether every species is alive in the last time step of "sol"
+        sol_plot_1 = hcat(sol_1.u...)'
+
+        # Store mins and max
+        Pred_mean[i,j] = geomean(sol_plot_1[(end-burnin):end,3]);
+        Pred_max_1[i,j] = maximum(sol_plot_1[(end-burnin):end,3]);
+        Pred_min_1[i,j] = minimum(sol_plot_1[(end-burnin):end,3]);
+        Int_mean[i,j] = geomean(sol_plot_1[(end-burnin):end,2]);
+        Int_max_1[i,j] = maximum(sol_plot_1[(end-burnin):end,2]);
+        Int_min_1[i,j] = minimum(sol_plot_1[(end-burnin):end,2]);
+        Res_mean[i,j] = geomean(sol_plot_1[(end-burnin):end,1]);
+        Res_max_1[i,j] = maximum(sol_plot_1[(end-burnin):end,1]);
+        Res_min_1[i,j] = minimum(sol_plot_1[(end-burnin):end,1]);
+
+        ## NO NEED to calculate this inside the loop as it can be calculated using element-wise operations outside the loop
+        # Calculate TL for top predator following Gibert & Yeakel 2019
+        #TL[i,j] = 1 + (p[7]*p[4]*Res_max_1[i,j]*Int_max_1[i,j]/(1+p[4]*p[12]*Res_max_1[i,j]))/(p[7]*p[4]*Res_max_1[i,j]*Int_max_1[i,j]/#(1+p[4]*p[12]*Res_max_1[i,j]) + p[8]*p[5]*Int_max_1[i,j]*Pred_max_1[i,j]/(1+p[5]*p[13]*Int_max_1[i,j])) + #2*(p[8]*p[5]*Int_max_1[i,j]*Pred_max_1[i,j]/(1+p[5]*p[13]*Int_max_1[i,j]))/(p[7]*p[4]*Res_max_1[i,j]*Int_max_1[i,j]/#(1+p[4]*p[12]*Res_max_1[i,j]) + p[8]*p[5]*Int_max_1[i,j]*Pred_max_1[i,j]/(1+p[5]*p[13]*Int_max_1[i,j]))
+
+    end
+        println(i)
+end
+
+p = [1.5,Carrying,1,1,1,0.8,0.2,1,0.8,0.8,0.4,0.2,0.2,0.3,0.65,25,28];
+
+# Calculates TL a posteriori following Gibert & Yeakel 2019
+TL = 1 .+ (p[7].*p[4].*Res_max_1.*Pred_max_1./(1 .+ p[4].*p[12].*Res_max_1 .+ p[5].*p[13].*Int_max_1))./(p[7].*p[4].*Res_max_1.*Pred_max_1./(1 .+p[4].*p[12].*Res_max_1 .+ p[5].*p[13].*Int_max_1) .+ p[8].*p[5].*Int_max_1.*Pred_max_1./(1 .+ p[4].*p[12].*Res_max_1 .+ p[5].*p[13].*Int_max_1)) .+
+ 2*(p[8].*p[5].*Int_max_1.*Pred_max_1./(1 .+p[4].*p[12].*Res_max_1 .+ p[5].*p[13].*Int_max_1))./(p[7].*p[4].*Res_max_1.*Pred_max_1./(1 .+ p[4].*p[12].*Res_max_1 .+ p[5].*p[13].*Int_max_1) + p[8].*p[5].*Int_max_1.*Pred_max_1./(1 .+ p[4].*p[12].*Res_max_1 .+ p[5].*p[13].*Int_max_1))
+
+# Calculates TL a posteriori following Gibert & Yeakel 2019
+TL_mean = 1 .+ (p[7].*p[4].*Res_mean.*Pred_mean./(1 .+ p[4].*p[12].*Res_mean .+ p[5].*p[13].*Int_mean))./(p[7].*p[4].*Res_mean.*Pred_mean./(1 .+p[4].*p[12].*Res_mean .+ p[5].*p[13].*Int_mean) .+ p[8].*p[5].*Int_mean.*Pred_mean./(1 .+ p[4].*p[12].*Res_mean .+ p[5].*p[13].*Int_mean)) .+
+ 2*(p[8].*p[5].*Int_mean.*Pred_mean./(1 .+p[4].*p[12].*Res_mean .+ p[5].*p[13].*Int_mean))./(p[7].*p[4].*Res_mean.*Pred_mean./(1 .+ p[4].*p[12].*Res_mean .+ p[5].*p[13].*Int_mean) + p[8].*p[5].*Int_mean.*Pred_mean./(1 .+ p[4].*p[12].*Res_mean .+ p[5].*p[13].*Int_mean))
+
+# Calculates proportional contributions
+# For top eating resources
+Prop_RT = (p[7].*p[4].*Res_mean.*Pred_mean./(1 .+ p[4].*p[12].*Res_mean .+ p[5].*p[13].*Int_mean))./(p[7].*p[4].*Res_mean.*Pred_mean./(1 .+p[4].*p[12].*Res_mean .+ p[5].*p[13].*Int_mean) .+ p[8].*p[5].*Int_mean.*Pred_mean./(1 .+ p[4].*p[12].*Res_mean .+ p[5].*p[13].*Int_mean))
+# For top eating intermediate consumers
+Prop_CT = (p[8].*p[5].*Int_mean.*Pred_mean./(1 .+p[4].*p[12].*Res_mean .+ p[5].*p[13].*Int_mean))./(p[7].*p[4].*Res_mean.*Pred_mean./(1 .+ p[4].*p[12].*Res_mean .+ p[5].*p[13].*Int_mean) + p[8].*p[5].*Int_mean.*Pred_mean./(1 .+ p[4].*p[12].*Res_mean .+ p[5].*p[13].*Int_mean))
+
+# Calculates the proportion of basal species
+
+
+## Pass data to R
+R"
+Diff <- $Int_max_1 - $Pred_max_1
+Diff_min <- $Int_min_1 - $Pred_min_1
+Diff_mean <- $Int_mean - $Pred_mean
+Prop_Basal <- $Res_mean /($Res_mean + $Int_mean + $Pred_mean)
+Prop_Int <- $Int_mean /($Res_mean + $Int_mean + $Pred_mean)
+Prop_Pred <- $Pred_mean /($Res_mean + $Int_mean + $Pred_mean)
+Diff_Ea <- $Ea_Pred - 0.3
+
+color <- colorRampPalette(brewer.pal(8,'YlOrRd'))(13)
+"
+
+#### PLOT RESULTS
+
+# 1) Changes in densities and TL
+## Both Low and Large K (Non-oscillatory, =5)
+## CHANGES IN PROPORTIONS
+R"
+pdf('/Users/jeangibert/Desktop/JP/Papers_in_progress/JP_Tony_Temp_TL/Manuscript/Figures/Fig_2/Fig_2_1st_row.pdf', useDingbat=FALSE, width=5, height=11)
+par(mfrow=c(3,1),oma=c(3,1.1,0,1.1),mar=c(2,6,2,2))
+
+# Plot proportion basal
+plot(Prop_Basal[1,] ~ Diff_Ea, pch=16,ylim=c(0,1),type='l', lwd=3,  col='white', las = TRUE, axes=FALSE, ylab='', xlab='')
+box(lwd=3, bty='l')
+axis(1,at=c(-0.3,-0.15,0,0.15,0.3), tck=0.015, cex.axis=1.6, lwd.ticks=3, mgp=c(3, .7, 0))
+axis(2,at=seq(0,2,0.25), tck=0.015, las=TRUE, cex.axis=1.6,lwd.ticks=3, mgp=c(3, .5, 0))
+#mtext('Top Ea - Consumer Ea',1, line=3.3, cex=1.8)
+mtext('Proportion Basal',2,line=3.8, cex=1.8)
+    # Plot proportion basal
+for(i in 1:12){
+    lines(Prop_Basal[i,] ~ Diff_Ea, pch=16,ylim=c(0,1),type='l', lwd=3,  col=color[i+1], lty=2)
+    }
+    # Plot proportion Intermediate
+for(i in 1:12){
+    lines(Prop_Int[i,] ~ Diff_Ea, pch=16,ylim=c(0,1),type='l', lwd=3,  col=color[i+1], lty=6)
+    }
+    # Plot Proportion top
+for(i in 1:12){
+    lines(Prop_Pred[i,] ~ Diff_Ea, pch=16,ylim=c(0,1),type='l', lwd=3,  col=color[i+1])
+    }
+abline(v=0, lty=2)
+
+plot($TL_mean[1,] ~ Diff_Ea, pch=16,ylim=c(2.4,3),type='l', lwd=3,  col='white', las = TRUE, axes=FALSE, ylab='', xlab='')
+box(lwd=3, bty='l')
+axis(1,at=c(-0.3,-0.15,0,0.15,0.3), tck=0.015, cex.axis=1.6, lwd.ticks=3, mgp=c(3, .5, 0))
+axis(2,at=c(2.5,2.75,3), tck=0.015, las=TRUE, cex.axis=1.6,lwd.ticks=3, mgp=c(3, .5, 0))
+#mtext('Top Ea - Consumer Ea',1, line=3, cex=1.8)
+mtext('Trophic Level',2,line=3.8, cex=1.8)
+    # Plot Maxima
+for(i in 1:12){
+    lines($TL_mean[i,] ~ Diff_Ea, pch=16,ylim=c(0,1.5),type='l', lwd=3,  col=color[i+1])
+    }
+abline(v=0, lty=2)
+
+plot($Prop_RT[1,] ~ Diff_Ea, pch=16,ylim=c(0,1),type='l', lwd=3,  col='white', las = TRUE, axes=FALSE, ylab='', xlab='')
+box(lwd=3, bty='l')
+axis(1,at=c(-0.3,-0.15,0,0.15,0.3), tck=0.015, cex.axis=1.6, lwd.ticks=3, mgp=c(3, .5, 0))
+axis(2,at=c(0,0.5,1), tck=0.015, las=TRUE, cex.axis=1.6,lwd.ticks=3, mgp=c(3, .5, 0))
+mtext('Top Ea - Consumer Ea',1, line=3, cex=1.8)
+mtext('Interaction Strengths',2,line=3.5, cex=1.8)
+    # Plot Maxima
+for(i in 1:12){
+    lines($Prop_RT[i,] ~ Diff_Ea, pch=16,ylim=c(0,1.5),type='l', lty=2,lwd=3,  col=color[i+1])
+    lines($Prop_CT[i,] ~ Diff_Ea, pch=16,ylim=c(0,1.5),type='l', lty=6,lwd=3,  col=color[i+1])
+    }
+abline(v=0, lty=2)
+
+dev.off()
+"
+
+##------------------------------------------------------------------------------------------------------------------------------------
+## 2) Only attack rates are Temperature-dependent
+
+
+## This model assumes that only the attack rates can change with temperature.
+
+@everywhere function LV_model_attack_T(du,u,p,t) # before (t,u,p,du)
+    # R
+    du[1] = p[1]*exp((0.3/(8.62*10.0^-5))*(1/(p[17]+273)-1/(p[18]+273)))*u[1]*(1-u[1]/p[2]) -
+            p[3]*exp((p[14]/(8.62*10.0^-5))*(1/(p[17]+273)-1/(p[18]+273)))*u[1]*u[2]/(1+p[3]*exp((p[14]/(8.62*10.0^-5))*(1/(p[17]+273)-1/(p[18]+273)))*p[11]*u[1]) -
+            p[4]*exp((p[15]/(8.62*10.0^-5))*(1/(p[17]+273)-1/(p[18]+273)))*u[1]*u[3]/(1+p[4]*exp((p[15]/(8.62*10.0^-5))*(1/(p[17]+273)-1/(p[18]+273)))*p[12]*u[1]+p[5]*exp((p[16]/(8.62*10.0^-5))*(1/(p[17]+273)-1/(p[18]+273)))*p[13]*u[2])
+    # C
+    du[2] = p[6]*p[3]*exp((p[14]/(8.62*10.0^-5))*(1/(p[17]+273)-1/(p[18]+273)))*u[1]*u[2]/(1+p[3]*exp((p[14]/(8.62*10.0^-5))*(1/(p[17]+273)-1/(p[18]+273)))*p[11]*u[1]) -
+            p[5]*exp((p[16]/(8.62*10.0^-5))*(1/(p[17]+273)-1/(p[18]+273)))*u[2]*u[3]/(1+p[4]*exp((p[15]/(8.62*10.0^-5))*(1/(p[17]+273)-1/(p[18]+273)))*p[12]*u[1]+p[5]*exp((p[16]/(8.62*10.0^-5))*(1/(p[17]+273)-1/(p[18]+273)))*p[13]*u[2]) -
+            p[9]*u[2]
+    # T
+    du[3] = p[7]*p[4]*exp((p[15]/(8.62*10.0^-5))*(1/(p[17]+273)-1/(p[18]+273)))*u[1]*u[3]/(1+p[4]*exp((p[15]/(8.62*10.0^-5))*(1/(p[17]+273)-1/(p[18]+273)))*p[12]*u[1]+p[5]*exp((p[16]/(8.62*10.0^-5))*(1/(p[17]+273)-1/(p[18]+273)))*p[13]*u[2]) +
+            p[8]*p[5]*exp((p[16]/(8.62*10.0^-5))*(1/(p[17]+273)-1/(p[18]+273)))*u[2]*u[3]/(1+p[4]*exp((p[15]/(8.62*10.0^-5))*(1/(p[17]+273)-1/(p[18]+273)))*p[12]*u[1]+p[5]*exp((p[16]/(8.62*10.0^-5))*(1/(p[17]+273)-1/(p[18]+273)))*p[13]*u[2]) -
+            p[10]*u[3]
+end
+# Parameter values are as: [1=r,2=K,3=a_RC1,4=a_RC2,5=a_C1C2,6=e_RC1,7=e_RC2
+#                          8=e_C1C2,9=d_C1,10=d_C2,11=h_RC1, 12=h_RC2, 13=h_C1C2
+#                           14=EaCattR, 15 = EaTattR, 16 = EaTattC,17= Tref, 18=Temp]
+
+###
+# Differences in density with Temperature across Temperature sensitivity
+Temp = collect(range(25,stop=30,length=12));
+Ea_Pred = collect(range(0,stop=0.6,length=100));
+Pred_mean = SharedArray{Float64}(12,100);
+Pred_max_1 = SharedArray{Float64}(12,100);
+Pred_min_1 = SharedArray{Float64}(12,100);
+Int_mean = SharedArray{Float64}(12,100);
+Int_max_1 = SharedArray{Float64}(12,100);
+Int_min_1 = SharedArray{Float64}(12,100);
+Res_mean = SharedArray{Float64}(12,100);
+Res_max_1 = SharedArray{Float64}(12,100);
+Res_min_1 = SharedArray{Float64}(12,100);
+TL = SharedArray{Float64}(12,100);
+TL_mean = SharedArray{Float64}(12,100);
+Prop_CT = SharedArray{Float64}(12,100);
+Prop_RT = SharedArray{Float64}(12,100);
+
+#pf_evol = ParameterizedFunction(parameterized_LV_II_evol_TO,p);
+u0 = [2.0;1;1];   # [R,C,T]
+tspan = (0.0,10000);
+burnin=4000;
+Carrying=5 # K was assumed ot be 5, 7 and 9?
+@time  for i in 1:12
+    @sync @distributed for j in 1:100
+
+        # Parameter values are as: [1=r,2=K,3=a_RC1,4=a_RC2,5=a_C1C2,6=e_RC1,7=e_RC2
+        #                          8=e_C1C2,9=d_C1,10=d_C2,11=h_RC1, 12=h_RC2, 13=h_C1C2
+        #                           14=EaCattR, 15 = EaTattR, 16 = EaTattC,17= Tref, 18=Temp]
+
+        p_1 = [1.5,Carrying,1,1,1,0.8,0.2,1,0.8,0.8,0.4,0.2,0.2,0.3,Ea_Pred[j],Ea_Pred[j],25,Temp[i]];
+        prob_1 = ODEProblem(LV_model_attack_T,u0,tspan,p_1)
+        sol_1 = solve(prob_1, adaptive=false,dt=0.075)
+
+        # We ask whether every species is alive in the last time step of "sol"
+        sol_plot_1 = hcat(sol_1.u...)'
+
+        # Store mins and max
+        Pred_mean[i,j] = geomean(sol_plot_1[(end-burnin):end,3]);
+        Pred_max_1[i,j] = maximum(sol_plot_1[(end-burnin):end,3]);
+        Pred_min_1[i,j] = minimum(sol_plot_1[(end-burnin):end,3]);
+        Int_mean[i,j] = geomean(sol_plot_1[(end-burnin):end,2]);
+        Int_max_1[i,j] = maximum(sol_plot_1[(end-burnin):end,2]);
+        Int_min_1[i,j] = minimum(sol_plot_1[(end-burnin):end,2]);
+        Res_mean[i,j] = geomean(sol_plot_1[(end-burnin):end,1]);
+        Res_max_1[i,j] = maximum(sol_plot_1[(end-burnin):end,1]);
+        Res_min_1[i,j] = minimum(sol_plot_1[(end-burnin):end,1]);
+
+        # Calculate TL for top predator following Gibert & Yeakel 2019
+        TL[i,j] = 1 + (p_1[7]*p_1[4]*exp((p_1[15]/(8.62*10.0^-5))*(1/(p_1[17]+273)-1/(p_1[18]+273)))*Res_mean[i,j]*Pred_mean[i,j]/(1+p_1[4]*exp((p_1[15]/(8.62*10.0^-5))*(1/(p_1[17]+273)-1/(p_1[18]+273)))*p_1[12]*Res_mean[i,j]+p_1[5]*exp((p_1[16]/(8.62*10.0^-5))*(1/(p_1[17]+273)-1/(p_1[18]+273)))*p_1[13]*Int_mean[i,j]))/(p_1[7]*p_1[4]*exp((p_1[15]/(8.62*10.0^-5))*(1/(p_1[17]+273)-1/(p_1[18]+273)))*Res_mean[i,j]*Pred_mean[i,j]/(1+p_1[4]*exp((p_1[15]/(8.62*10.0^-5))*(1/(p_1[17]+273)-1/(p_1[18]+273)))*p_1[12]*Res_mean[i,j]+p_1[5]*exp((p_1[16]/(8.62*10.0^-5))*(1/(p_1[17]+273)-1/(p_1[18]+273)))*p_1[13]*Int_mean[i,j]) + p_1[8]*p_1[5]*exp((p_1[16]/(8.62*10.0^-5))*(1/(p_1[17]+273)-1/(p_1[18]+273)))*Int_mean[i,j]*Pred_mean[i,j]/(1+p_1[4]*exp((p_1[15]/(8.62*10.0^-5))*(1/(p_1[17]+273)-1/(p_1[18]+273)))*p_1[12]*Res_mean[i,j]+p_1[5]*exp((p_1[16]/(8.62*10.0^-5))*(1/(p_1[17]+273)-1/(p_1[18]+273)))*p_1[13]*Int_mean[i,j])) +
+        2*(p_1[8]*p_1[5]*exp((p_1[16]/(8.62*10.0^-5))*(1/(p_1[17]+273)-1/(p_1[18]+273)))*Int_mean[i,j]*Pred_mean[i,j]/(1+p_1[4]*exp((p_1[15]/(8.62*10.0^-5))*(1/(p_1[17]+273)-1/(p_1[18]+273)))*p_1[12]*Res_mean[i,j]+p_1[5]*exp((p_1[16]/(8.62*10.0^-5))*(1/(p_1[17]+273)-1/(p_1[18]+273)))*p_1[13]*Int_mean[i,j]))/(p_1[7]*p_1[4]*exp((p_1[15]/(8.62*10.0^-5))*(1/(p_1[17]+273)-1/(p_1[18]+273)))*Res_mean[i,j]*Pred_mean[i,j]/(1+p_1[4]*exp((p_1[15]/(8.62*10.0^-5))*(1/(p_1[17]+273)-1/(p_1[18]+273)))*p_1[12]*Res_mean[i,j]+p_1[5]*exp((p_1[16]/(8.62*10.0^-5))*(1/(p_1[17]+273)-1/(p_1[18]+273)))*p_1[13]*Int_mean[i,j]) + p_1[8]*p_1[5]*exp((p_1[16]/(8.62*10.0^-5))*(1/(p_1[17]+273)-1/(p_1[18]+273)))*Int_mean[i,j]*Pred_mean[i,j]/(1+p_1[4]*exp((p_1[15]/(8.62*10.0^-5))*(1/(p_1[17]+273)-1/(p_1[18]+273)))*p_1[12]*Res_mean[i,j]+p_1[5]*exp((p_1[16]/(8.62*10.0^-5))*(1/(p_1[17]+273)-1/(p_1[18]+273)))*p_1[13]*Int_mean[i,j]))
+
+        # Calculate proportional contributions
+        Prop_RT[i,j] = (p_1[7]*p_1[4]*exp((p_1[15]/(8.62*10.0^-5))*(1/(p_1[17]+273)-1/(p_1[18]+273)))*Res_mean[i,j]*Pred_mean[i,j]/(1+p_1[4]*exp((p_1[15]/(8.62*10.0^-5))*(1/(p_1[17]+273)-1/(p_1[18]+273)))*p_1[12]*Res_mean[i,j]+p_1[5]*exp((p_1[16]/(8.62*10.0^-5))*(1/(p_1[17]+273)-1/(p_1[18]+273)))*p_1[13]*Int_mean[i,j]))/(p_1[7]*p_1[4]*exp((p_1[15]/(8.62*10.0^-5))*(1/(p_1[17]+273)-1/(p_1[18]+273)))*Res_mean[i,j]*Pred_mean[i,j]/(1+p_1[4]*exp((p_1[15]/(8.62*10.0^-5))*(1/(p_1[17]+273)-1/(p_1[18]+273)))*p_1[12]*Res_mean[i,j]+p_1[5]*exp((p_1[16]/(8.62*10.0^-5))*(1/(p_1[17]+273)-1/(p_1[18]+273)))*p_1[13]*Int_mean[i,j]) + p_1[8]*p_1[5]*exp((p_1[16]/(8.62*10.0^-5))*(1/(p_1[17]+273)-1/(p_1[18]+273)))*Int_mean[i,j]*Pred_mean[i,j]/(1+p_1[4]*exp((p_1[15]/(8.62*10.0^-5))*(1/(p_1[17]+273)-1/(p_1[18]+273)))*p_1[12]*Res_mean[i,j]+p_1[5]*exp((p_1[16]/(8.62*10.0^-5))*(1/(p_1[17]+273)-1/(p_1[18]+273)))*p_1[13]*Int_mean[i,j]))
+
+        Prop_CT[i,j] = (p_1[8]*p_1[5]*exp((p_1[16]/(8.62*10.0^-5))*(1/(p_1[17]+273)-1/(p_1[18]+273)))*Int_mean[i,j]*Pred_mean[i,j]/(1+p_1[4]*exp((p_1[15]/(8.62*10.0^-5))*(1/(p_1[17]+273)-1/(p_1[18]+273)))*p_1[12]*Res_mean[i,j]+p_1[5]*exp((p_1[16]/(8.62*10.0^-5))*(1/(p_1[17]+273)-1/(p_1[18]+273)))*p_1[13]*Int_mean[i,j]))/(p_1[7]*p_1[4]*exp((p_1[15]/(8.62*10.0^-5))*(1/(p_1[17]+273)-1/(p_1[18]+273)))*Res_mean[i,j]*Pred_mean[i,j]/(1+p_1[4]*exp((p_1[15]/(8.62*10.0^-5))*(1/(p_1[17]+273)-1/(p_1[18]+273)))*p_1[12]*Res_mean[i,j]+p_1[5]*exp((p_1[16]/(8.62*10.0^-5))*(1/(p_1[17]+273)-1/(p_1[18]+273)))*p_1[13]*Int_mean[i,j]) + p_1[8]*p_1[5]*exp((p_1[16]/(8.62*10.0^-5))*(1/(p_1[17]+273)-1/(p_1[18]+273)))*Int_mean[i,j]*Pred_mean[i,j]/(1+p_1[4]*exp((p_1[15]/(8.62*10.0^-5))*(1/(p_1[17]+273)-1/(p_1[18]+273)))*p_1[12]*Res_mean[i,j]+p_1[5]*exp((p_1[16]/(8.62*10.0^-5))*(1/(p_1[17]+273)-1/(p_1[18]+273)))*p_1[13]*Int_mean[i,j]))
+
+    end
+        println(i)
+end
+
+## Pass data to R
+R"
+Diff <- $Int_max_1 - $Pred_max_1
+Diff_min <- $Int_min_1 - $Pred_min_1
+Diff_mean <- $Int_mean - $Pred_mean
+Prop_Basal <- $Res_mean /($Res_mean + $Int_mean + $Pred_mean)
+Prop_Int <- $Int_mean /($Res_mean + $Int_mean + $Pred_mean)
+Prop_Pred <- $Pred_mean /($Res_mean + $Int_mean + $Pred_mean)
+Diff_Ea <- $Ea_Pred - 0.3
+
+color <- colorRampPalette(brewer.pal(8,'YlOrRd'))(13)
+"
+
+#### PLOT RESULTS
+
+# 1) Changes in densities and TL
+## Both Low and Large K (Non-oscillatory, =5)
+## CHANGES IN PROPORTIONS
+R"
+pdf('/Users/jeangibert/Desktop/JP/Papers_in_progress/JP_Tony_Temp_TL/Manuscript/Figures/Fig_2/Fig_2_2nd_row.pdf', useDingbat=FALSE, width=5, height=11)
+par(mfrow=c(3,1),oma=c(3,1.1,0,1.1),mar=c(2,6,2,2))
+
+# Plot proportion basal
+plot(Prop_Basal[1,] ~ Diff_Ea, pch=16,ylim=c(0,1),type='l', lwd=3,  col='white', las = TRUE, axes=FALSE, ylab='', xlab='')
+box(lwd=3, bty='l')
+axis(1,at=c(-0.3,-0.15,0,0.15,0.3), tck=0.015, cex.axis=1.6, lwd.ticks=3, mgp=c(3, .7, 0))
+axis(2,at=seq(0,2,0.25), tck=0.015, las=TRUE, cex.axis=1.6,lwd.ticks=3, mgp=c(3, .5, 0))
+#mtext('Top Ea - Consumer Ea',1, line=3.3, cex=1.8)
+mtext('Proportion Basal',2,line=3.8, cex=1.8)
+    # Plot Maxima
+for(i in 1:12){
+    lines(Prop_Basal[i,] ~ Diff_Ea, pch=16,ylim=c(0,1),type='l', lty=2, lwd=3,  col=color[i+1])
+    }
+for(i in 1:12){
+    lines(Prop_Int[i,] ~ Diff_Ea, pch=16,ylim=c(0,1),type='l', lty=6, lwd=3,  col=color[i+1])
+    }
+for(i in 1:12){
+    lines(Prop_Pred[i,] ~ Diff_Ea, pch=16,ylim=c(0,1),type='l', lwd=3,  col=color[i+1])
+    }
+abline(v=0, lty=2)
+
+# Plot trophic level
+plot($TL[1,] ~ Diff_Ea, pch=16,ylim=c(2.4,3),type='l', lwd=3,  col='white', las = TRUE, axes=FALSE, ylab='', xlab='')
+box(lwd=3, bty='l')
+axis(1,at=c(-0.3,-0.15,0,0.15,0.3), tck=0.015, cex.axis=1.6, lwd.ticks=3, mgp=c(3, .5, 0))
+axis(2,at=c(2.5,2.75,3), tck=0.015, las=TRUE, cex.axis=1.6,lwd.ticks=3, mgp=c(3, .5, 0))
+#mtext('Top Ea - Consumer Ea',1, line=3, cex=1.8)
+mtext('Trophic Level',2,line=3.8, cex=1.8)
+    # Plot Maxima
+for(i in 1:12){
+    lines($TL[i,] ~ Diff_Ea, pch=16,ylim=c(0,1.5),type='l', lwd=3,  col=color[i+1])
+    }
+abline(v=0, lty=2)
+
+# Plot interaction strengths
+plot($Prop_RT[1,] ~ Diff_Ea, pch=16,ylim=c(0,1),type='l', lwd=3,  col='white', las = TRUE, axes=FALSE, ylab='', xlab='')
+box(lwd=3, bty='l')
+axis(1,at=c(-0.3,-0.15,0,0.15,0.3), tck=0.015, cex.axis=1.6, lwd.ticks=3, mgp=c(3, .5, 0))
+axis(2,at=c(0,0.5,1), tck=0.015, las=TRUE, cex.axis=1.6,lwd.ticks=3, mgp=c(3, .5, 0))
+mtext('Top Ea - Consumer Ea',1, line=3, cex=1.8)
+mtext('Interaction Strengths',2,line=3.5, cex=1.8)
+    # Plot Maxima
+for(i in 1:12){
+    lines($Prop_RT[i,] ~ Diff_Ea, pch=16,ylim=c(0,1.5),type='l', lty=2, lwd=3,  col=color[i+1])
+    lines($Prop_CT[i,] ~ Diff_Ea, pch=16,ylim=c(0,1.5),type='l', lty=6,lwd=3,  col=color[i+1])
+    }
+abline(v=0, lty=2)
+
+dev.off()
+"
+
+
+###----------------------------------------------------------------------------------------------------------------------------------
+# 3) Death rates AND attack rates are temperature-dependent
+
+## Baseline model
+@everywhere function LV_model_T_death_attack(du,u,p,t) # before (t,u,p,du)
+    # R
+    du[1] = p[1]*exp((0.3/(8.62*10.0^-5))*(1/(p[16]+273)-1/(p[17]+273)))*u[1]*(1-u[1]/p[2]) -
+            p[3]*exp((p[18]/(8.62*10.0^-5))*(1/(p[16]+273)-1/(p[17]+273)))*u[1]*u[2]/(1+p[3]*exp((p[18]/(8.62*10.0^-5))*(1/(p[16]+273)-1/(p[17]+273)))*p[11]*u[1]) -
+            p[4]*exp((p[19]/(8.62*10.0^-5))*(1/(p[16]+273)-1/(p[17]+273)))*u[1]*u[3]/(1+p[4]*exp((p[19]/(8.62*10.0^-5))*(1/(p[16]+273)-1/(p[17]+273)))*p[12]*u[1]+p[5]*exp((p[20]/(8.62*10.0^-5))*(1/(p[16]+273)-1/(p[17]+273)))*p[13]*u[2])
+    # C
+    du[2] = p[6]*p[3]*exp((p[18]/(8.62*10.0^-5))*(1/(p[16]+273)-1/(p[17]+273)))*u[1]*u[2]/(1+p[3]*exp((p[18]/(8.62*10.0^-5))*(1/(p[16]+273)-1/(p[17]+273)))*p[11]*u[1]) -
+            p[5]*exp((p[20]/(8.62*10.0^-5))*(1/(p[16]+273)-1/(p[17]+273)))*u[2]*u[3]/(1+p[4]*exp((p[19]/(8.62*10.0^-5))*(1/(p[16]+273)-1/(p[17]+273)))*p[12]*u[1]+p[5]*exp((p[20]/(8.62*10.0^-5))*(1/(p[16]+273)-1/(p[17]+273)))*p[13]*u[2]) -
+            p[9]*exp((p[14]/(8.62*10.0^-5))*(1/(p[16]+273)-1/(p[17]+273)))*u[2]
+    # T
+    du[3] = p[7]*p[4]*exp((p[19]/(8.62*10.0^-5))*(1/(p[16]+273)-1/(p[17]+273)))*u[1]*u[3]/(1+p[4]*exp((p[19]/(8.62*10.0^-5))*(1/(p[16]+273)-1/(p[17]+273)))*p[12]*u[1]+p[5]*exp((p[20]/(8.62*10.0^-5))*(1/(p[16]+273)-1/(p[17]+273)))*p[13]*u[2]) +
+            p[8]*p[5]*exp((p[20]/(8.62*10.0^-5))*(1/(p[16]+273)-1/(p[17]+273)))*u[2]*u[3]/(1+p[4]*exp((p[19]/(8.62*10.0^-5))*(1/(p[16]+273)-1/(p[17]+273)))*p[12]*u[1]+p[5]*exp((p[20]/(8.62*10.0^-5))*(1/(p[16]+273)-1/(p[17]+273)))*p[13]*u[2]) -
+            p[10]*exp((p[15]/(8.62*10.0^-5))*(1/(p[16]+273)-1/(p[17]+273)))*u[3]
+end
+# Parameter values are as: [1=r,2=K,3=a_RC1,4=a_RC2,5=a_C1C2,6=e_RC1,7=e_RC2
+#                          8=e_C1C2,9=d_C1,10=d_C2,11=h_RC1, 12=h_RC2, 13=h_C1C2
+#                           14=EaC, 15 = EaT, 16= Tref, 17=Temp,
+#                              18=EaCattR, 19=EaTattR, 20=EaTattC]
+
+
+###
+# Differences in density with Temperature across Temperature sensitivity
+Temp = collect(range(25,stop=30,length=12));
+Ea_Pred = collect(range(0,stop=0.6,length=100));
+Pred_mean_1 = SharedArray{Float64}(12,100);Pred_mean_2 = SharedArray{Float64}(12,100);Pred_mean_3 = SharedArray{Float64}(12,100);
+Pred_max_1 = SharedArray{Float64}(12,100);Pred_max_2 = SharedArray{Float64}(12,100);Pred_max_3 = SharedArray{Float64}(12,100);
+Pred_min_1 = SharedArray{Float64}(12,100);Pred_min_2 = SharedArray{Float64}(12,100);Pred_min_3 = SharedArray{Float64}(12,100);
+Int_mean_1 = SharedArray{Float64}(12,100);Int_mean_2 = SharedArray{Float64}(12,100);Int_mean_3 = SharedArray{Float64}(12,100);
+Int_max_1 = SharedArray{Float64}(12,100);Int_max_2 = SharedArray{Float64}(12,100);Int_max_3 = SharedArray{Float64}(12,100);
+Int_min_1 = SharedArray{Float64}(12,100);Int_min_2 = SharedArray{Float64}(12,100);Int_min_3 = SharedArray{Float64}(12,100);
+Res_mean_1 = SharedArray{Float64}(12,100);Res_mean_2 = SharedArray{Float64}(12,100);Res_mean_3 = SharedArray{Float64}(12,100);
+Res_max_1 = SharedArray{Float64}(12,100);Res_max_2 = SharedArray{Float64}(12,100);Res_max_3 = SharedArray{Float64}(12,100);
+Res_min_1 = SharedArray{Float64}(12,100);Res_min_2 = SharedArray{Float64}(12,100);Res_min_3 = SharedArray{Float64}(12,100);
+TL_1 = SharedArray{Float64}(12,100);TL_2 = SharedArray{Float64}(12,100);TL_3 = SharedArray{Float64}(12,100);
+TL_mean_1 = SharedArray{Float64}(12,100);TL_mean_2 = SharedArray{Float64}(12,100);TL_mean_3 = SharedArray{Float64}(12,100);
+Prop_CT_1 = SharedArray{Float64}(12,100);Prop_CT_2 = SharedArray{Float64}(12,100);Prop_CT_3 = SharedArray{Float64}(12,100);
+Prop_RT_1 = SharedArray{Float64}(12,100);Prop_RT_2 = SharedArray{Float64}(12,100);Prop_RT_3 = SharedArray{Float64}(12,100);
+
+#pf_evol = ParameterizedFunction(parameterized_LV_II_evol_TO,p);
+u0 = [2.0;1;1];   # [R,C,T]
+tspan = (0.0,10000);
+burnin=4000;
+Carrying=5
+@time  for i in 1:12
+    @sync @distributed for j in 1:100
+
+        # Parameter values are as: [1=r,2=K,3=a_RC1,4=a_RC2,5=a_C1C2,6=e_RC1,7=e_RC2
+        #                          8=e_C1C2,9=d_C1,10=d_C2,11=h_RC1, 12=h_RC2, 13=h_C1C2
+        #                           14=EaC, 15 = EaT, 16= Tref, 17=Temp,
+        #                              18=EaCattR, 19=EaTattR, 20=EaTattC]
+                # We assume that the sensitivity of the death rates is equal, but not too high (= 0.3). Top predator varies from 0.1 to 0.5
+            #p_1 = [1.5,5,1,1,1,0.8,0.2,1,0.8,0.8,0.4,0.4,0.4,0.3,0.3,25,Temp[i],Ea_Pred[j],max(Ea_Pred[j]-0.1,0),max(Ea_Pred[j]-0.1,0)];
+            p_1 = [1.5,Carrying,1,1,1,0.8,0.2,1,0.8,0.8,0.4,0.2,0.2,0.3,0.1,25,Temp[i],0.3,Ea_Pred[j],Ea_Pred[j]];
+            prob_1 = ODEProblem(LV_model_T_death_attack,u0,tspan,p_1)
+            sol_1 = solve(prob_1, adaptive=false,dt=0.075)
+            p_2 = [1.5,Carrying,1,1,1,0.8,0.2,1,0.8,0.8,0.4,0.2,0.2,0.3,0.3,25,Temp[i],0.3,Ea_Pred[j],Ea_Pred[j]];
+            prob_2 = ODEProblem(LV_model_T_death_attack,u0,tspan,p_2)
+            sol_2 = solve(prob_2, adaptive=false,dt=0.075)
+            p_3 = [1.5,Carrying,1,1,1,0.8,0.2,1,0.8,0.8,0.4,0.2,0.2,0.3,0.5,25,Temp[i],0.3,Ea_Pred[j],Ea_Pred[j]];
+            prob_3 = ODEProblem(LV_model_T_death_attack,u0,tspan,p_3)
+            sol_3 = solve(prob_3, adaptive=false,dt=0.075)
+
+            # We ask whether every species is alive in the last time step of "sol"
+            sol_plot_1 = hcat(sol_1.u...)'
+            sol_plot_2 = hcat(sol_2.u...)'
+            sol_plot_3 = hcat(sol_3.u...)'
+
+            # Store mins and max
+            Pred_mean_1[i,j] = geomean(sol_plot_1[(end-burnin):end,3]);Pred_mean_2[i,j] = geomean(sol_plot_2[(end-burnin):end,3]);Pred_mean_3[i,j] = geomean(sol_plot_3[(end-burnin):end,3]);
+            Pred_max_1[i,j] = maximum(sol_plot_1[(end-burnin):end,3]);Pred_max_2[i,j] = maximum(sol_plot_2[(end-burnin):end,3]);Pred_max_3[i,j] = maximum(sol_plot_3[(end-burnin):end,3]);
+            Pred_min_1[i,j] = minimum(sol_plot_1[(end-burnin):end,3]);Pred_min_2[i,j] = minimum(sol_plot_2[(end-burnin):end,3]);Pred_min_3[i,j] = minimum(sol_plot_3[(end-burnin):end,3]);
+            Int_mean_1[i,j] = geomean(sol_plot_1[(end-burnin):end,2]);Int_mean_2[i,j] = geomean(sol_plot_2[(end-burnin):end,2]);Int_mean_3[i,j] = geomean(sol_plot_3[(end-burnin):end,2]);
+            Int_max_1[i,j] = maximum(sol_plot_1[(end-burnin):end,2]);Int_max_2[i,j] = maximum(sol_plot_2[(end-burnin):end,2]);Int_max_3[i,j] = maximum(sol_plot_3[(end-burnin):end,2]);
+            Int_min_1[i,j] = minimum(sol_plot_1[(end-burnin):end,2]);Int_min_2[i,j] = minimum(sol_plot_2[(end-burnin):end,2]);Int_min_3[i,j] = minimum(sol_plot_3[(end-burnin):end,2]);
+            Res_mean_1[i,j] = geomean(sol_plot_1[(end-burnin):end,1]);Res_mean_2[i,j] = geomean(sol_plot_2[(end-burnin):end,1]);Res_mean_3[i,j] = geomean(sol_plot_3[(end-burnin):end,1]);
+            Res_max_1[i,j] = maximum(sol_plot_1[(end-burnin):end,1]);Res_max_2[i,j] = maximum(sol_plot_2[(end-burnin):end,1]);Res_max_3[i,j] = maximum(sol_plot_3[(end-burnin):end,1]);
+            Res_min_1[i,j] = minimum(sol_plot_1[(end-burnin):end,1]);Res_min_2[i,j] = minimum(sol_plot_2[(end-burnin):end,1]);Res_min_3[i,j] = minimum(sol_plot_3[(end-burnin):end,1]);
+
+            # Calculate TL for top predator following Gibert & Yeakel 2019
+            TL_1[i,j] = 1 + (p_1[7]*p_1[4]*exp((p_1[19]/(8.62*10.0^-5))*(1/(p_1[16]+273)-1/(p_1[17]+273)))*Res_mean_1[i,j]*Pred_mean_1[i,j]/(1+p_1[4]*exp((p_1[19]/(8.62*10.0^-5))*(1/(p_1[16]+273)-1/(p_1[17]+273)))*p_1[12]*Res_mean_1[i,j]+p_1[5]*exp((p_1[20]/(8.62*10.0^-5))*(1/(p_1[16]+273)-1/(p_1[17]+273)))*p_1[13]*Int_mean_1[i,j]))/(p_1[7]*p_1[4]*exp((p_1[19]/(8.62*10.0^-5))*(1/(p_1[16]+273)-1/(p_1[17]+273)))*Res_mean_1[i,j]*Pred_mean_1[i,j]/(1+p_1[4]*exp((p_1[19]/(8.62*10.0^-5))*(1/(p_1[16]+273)-1/(p_1[17]+273)))*p_1[12]*Res_mean_1[i,j]+p_1[5]*exp((p_1[20]/(8.62*10.0^-5))*(1/(p_1[16]+273)-1/(p_1[17]+273)))*p_1[13]*Int_mean_1[i,j]) + p_1[8]*p_1[5]*exp((p_1[20]/(8.62*10.0^-5))*(1/(p_1[16]+273)-1/(p_1[17]+273)))*Int_mean_1[i,j]*Pred_mean_1[i,j]/(1+p_1[4]*exp((p_1[19]/(8.62*10.0^-5))*(1/(p_1[16]+273)-1/(p_1[17]+273)))*p_1[12]*Res_mean_1[i,j]+p_1[5]*exp((p_1[20]/(8.62*10.0^-5))*(1/(p_1[16]+273)-1/(p_1[17]+273)))*p_1[13]*Int_mean_1[i,j])) +
+            2*(p_1[8]*p_1[5]*exp((p_1[20]/(8.62*10.0^-5))*(1/(p_1[16]+273)-1/(p_1[17]+273)))*Int_mean_1[i,j]*Pred_mean_1[i,j]/(1+p_1[4]*exp((p_1[19]/(8.62*10.0^-5))*(1/(p_1[16]+273)-1/(p_1[17]+273)))*p_1[12]*Res_mean_1[i,j]+p_1[5]*exp((p_1[20]/(8.62*10.0^-5))*(1/(p_1[16]+273)-1/(p_1[17]+273)))*p_1[13]*Int_mean_1[i,j]))/(p_1[7]*p_1[4]*exp((p_1[19]/(8.62*10.0^-5))*(1/(p_1[16]+273)-1/(p_1[17]+273)))*Res_mean_1[i,j]*Pred_mean_1[i,j]/(1+p_1[4]*exp((p_1[19]/(8.62*10.0^-5))*(1/(p_1[16]+273)-1/(p_1[17]+273)))*p_1[12]*Res_mean_1[i,j]+p_1[5]*exp((p_1[20]/(8.62*10.0^-5))*(1/(p_1[16]+273)-1/(p_1[17]+273)))*p_1[13]*Int_mean_1[i,j]) + p_1[8]*p_1[5]*exp((p_1[20]/(8.62*10.0^-5))*(1/(p_1[16]+273)-1/(p_1[17]+273)))*Int_mean_1[i,j]*Pred_mean_1[i,j]/(1+p_1[4]*exp((p_1[19]/(8.62*10.0^-5))*(1/(p_1[16]+273)-1/(p_1[17]+273)))*p_1[12]*Res_mean_1[i,j]+p_1[5]*exp((p_1[20]/(8.62*10.0^-5))*(1/(p_1[16]+273)-1/(p_1[17]+273)))*p_1[13]*Int_mean_1[i,j]))
+
+            TL_2[i,j] = 1 + (p_2[7]*p_2[4]*exp((p_2[19]/(8.62*10.0^-5))*(1/(p_2[16]+273)-1/(p_2[17]+273)))*Res_mean_2[i,j]*Pred_mean_2[i,j]/(1+p_2[4]*exp((p_2[19]/(8.62*10.0^-5))*(1/(p_2[16]+273)-1/(p_2[17]+273)))*p_2[12]*Res_mean_2[i,j]+p_2[5]*exp((p_2[20]/(8.62*10.0^-5))*(1/(p_2[16]+273)-1/(p_2[17]+273)))*p_2[13]*Int_mean_2[i,j]))/(p_2[7]*p_2[4]*exp((p_2[19]/(8.62*10.0^-5))*(1/(p_2[16]+273)-1/(p_2[17]+273)))*Res_mean_2[i,j]*Pred_mean_2[i,j]/(1+p_2[4]*exp((p_2[19]/(8.62*10.0^-5))*(1/(p_2[16]+273)-1/(p_2[17]+273)))*p_2[12]*Res_mean_2[i,j]+p_2[5]*exp((p_2[20]/(8.62*10.0^-5))*(1/(p_2[16]+273)-1/(p_2[17]+273)))*p_2[13]*Int_mean_2[i,j]) + p_2[8]*p_2[5]*exp((p_2[20]/(8.62*10.0^-5))*(1/(p_2[16]+273)-1/(p_2[17]+273)))*Int_mean_2[i,j]*Pred_mean_2[i,j]/(1+p_2[4]*exp((p_2[19]/(8.62*10.0^-5))*(1/(p_2[16]+273)-1/(p_2[17]+273)))*p_2[12]*Res_mean_2[i,j]+p_2[5]*exp((p_2[20]/(8.62*10.0^-5))*(1/(p_2[16]+273)-1/(p_2[17]+273)))*p_2[13]*Int_mean_2[i,j])) +
+            2*(p_2[8]*p_2[5]*exp((p_2[20]/(8.62*10.0^-5))*(1/(p_2[16]+273)-1/(p_2[17]+273)))*Int_mean_2[i,j]*Pred_mean_2[i,j]/(1+p_2[4]*exp((p_2[19]/(8.62*10.0^-5))*(1/(p_2[16]+273)-1/(p_2[17]+273)))*p_2[12]*Res_mean_2[i,j]+p_2[5]*exp((p_2[20]/(8.62*10.0^-5))*(1/(p_2[16]+273)-1/(p_2[17]+273)))*p_2[13]*Int_mean_2[i,j]))/(p_2[7]*p_2[4]*exp((p_2[19]/(8.62*10.0^-5))*(1/(p_2[16]+273)-1/(p_2[17]+273)))*Res_mean_2[i,j]*Pred_mean_2[i,j]/(1+p_2[4]*exp((p_2[19]/(8.62*10.0^-5))*(1/(p_2[16]+273)-1/(p_2[17]+273)))*p_2[12]*Res_mean_2[i,j]+p_2[5]*exp((p_2[20]/(8.62*10.0^-5))*(1/(p_2[16]+273)-1/(p_2[17]+273)))*p_2[13]*Int_mean_2[i,j]) + p_2[8]*p_2[5]*exp((p_2[20]/(8.62*10.0^-5))*(1/(p_2[16]+273)-1/(p_2[17]+273)))*Int_mean_2[i,j]*Pred_mean_2[i,j]/(1+p_2[4]*exp((p_2[19]/(8.62*10.0^-5))*(1/(p_2[16]+273)-1/(p_2[17]+273)))*p_2[12]*Res_mean_2[i,j]+p_2[5]*exp((p_2[20]/(8.62*10.0^-5))*(1/(p_2[16]+273)-1/(p_2[17]+273)))*p_2[13]*Int_mean_2[i,j]))
+
+            TL_3[i,j] = 1 + (p_3[7]*p_3[4]*exp((p_3[19]/(8.62*10.0^-5))*(1/(p_3[16]+273)-1/(p_3[17]+273)))*Res_mean_3[i,j]*Pred_mean_3[i,j]/(1+p_3[4]*exp((p_3[19]/(8.62*10.0^-5))*(1/(p_3[16]+273)-1/(p_3[17]+273)))*p_3[12]*Res_mean_3[i,j]+p_3[5]*exp((p_3[20]/(8.62*10.0^-5))*(1/(p_3[16]+273)-1/(p_3[17]+273)))*p_3[13]*Int_mean_3[i,j]))/(p_3[7]*p_3[4]*exp((p_3[19]/(8.62*10.0^-5))*(1/(p_3[16]+273)-1/(p_3[17]+273)))*Res_mean_3[i,j]*Pred_mean_3[i,j]/(1+p_3[4]*exp((p_3[19]/(8.62*10.0^-5))*(1/(p_3[16]+273)-1/(p_3[17]+273)))*p_3[12]*Res_mean_3[i,j]+p_3[5]*exp((p_3[20]/(8.62*10.0^-5))*(1/(p_3[16]+273)-1/(p_3[17]+273)))*p_3[13]*Int_mean_3[i,j]) + p_3[8]*p_3[5]*exp((p_3[20]/(8.62*10.0^-5))*(1/(p_3[16]+273)-1/(p_3[17]+273)))*Int_mean_3[i,j]*Pred_mean_3[i,j]/(1+p_3[4]*exp((p_3[19]/(8.62*10.0^-5))*(1/(p_3[16]+273)-1/(p_3[17]+273)))*p_3[12]*Res_mean_3[i,j]+p_3[5]*exp((p_3[20]/(8.62*10.0^-5))*(1/(p_3[16]+273)-1/(p_3[17]+273)))*p_3[13]*Int_mean_3[i,j])) +
+            2*(p_3[8]*p_3[5]*exp((p_3[20]/(8.62*10.0^-5))*(1/(p_3[16]+273)-1/(p_3[17]+273)))*Int_mean_3[i,j]*Pred_mean_3[i,j]/(1+p_3[4]*exp((p_3[19]/(8.62*10.0^-5))*(1/(p_3[16]+273)-1/(p_3[17]+273)))*p_3[12]*Res_mean_3[i,j]+p_3[5]*exp((p_3[20]/(8.62*10.0^-5))*(1/(p_3[16]+273)-1/(p_3[17]+273)))*p_3[13]*Int_mean_3[i,j]))/(p_3[7]*p_3[4]*exp((p_3[19]/(8.62*10.0^-5))*(1/(p_3[16]+273)-1/(p_3[17]+273)))*Res_mean_3[i,j]*Pred_mean_3[i,j]/(1+p_3[4]*exp((p_3[19]/(8.62*10.0^-5))*(1/(p_3[16]+273)-1/(p_3[17]+273)))*p_3[12]*Res_mean_3[i,j]+p_3[5]*exp((p_3[20]/(8.62*10.0^-5))*(1/(p_3[16]+273)-1/(p_3[17]+273)))*p_3[13]*Int_mean_3[i,j]) + p_3[8]*p_3[5]*exp((p_3[20]/(8.62*10.0^-5))*(1/(p_3[16]+273)-1/(p_3[17]+273)))*Int_mean_3[i,j]*Pred_mean_3[i,j]/(1+p_3[4]*exp((p_3[19]/(8.62*10.0^-5))*(1/(p_3[16]+273)-1/(p_3[17]+273)))*p_3[12]*Res_mean_3[i,j]+p_3[5]*exp((p_3[20]/(8.62*10.0^-5))*(1/(p_3[16]+273)-1/(p_3[17]+273)))*p_3[13]*Int_mean_3[i,j]))
+
+
+            ## NEED TO RECALCULATE THESE PROPORTIONS BASED ON NEW TL_S!
+            # Calculates proportional contributions
+            # For top eating resources
+            Prop_RT_1[i,j] = (p_1[7]*p_1[4]*exp((p_1[19]/(8.62*10.0^-5))*(1/(p_1[16]+273)-1/(p_1[17]+273)))*Res_mean_1[i,j]*Pred_mean_1[i,j]/(1+p_1[4]*exp((p_1[19]/(8.62*10.0^-5))*(1/(p_1[16]+273)-1/(p_1[17]+273)))*p_1[12]*Res_mean_1[i,j]+p_1[5]*exp((p_1[20]/(8.62*10.0^-5))*(1/(p_1[16]+273)-1/(p_1[17]+273)))*p_1[13]*Int_mean_1[i,j]))/(p_1[7]*p_1[4]*exp((p_1[19]/(8.62*10.0^-5))*(1/(p_1[16]+273)-1/(p_1[17]+273)))*Res_mean_1[i,j]*Pred_mean_1[i,j]/(1+p_1[4]*exp((p_1[19]/(8.62*10.0^-5))*(1/(p_1[16]+273)-1/(p_1[17]+273)))*p_1[12]*Res_mean_1[i,j]+p_1[5]*exp((p_1[20]/(8.62*10.0^-5))*(1/(p_1[16]+273)-1/(p_1[17]+273)))*p_1[13]*Int_mean_1[i,j]) + p_1[8]*p_1[5]*exp((p_1[20]/(8.62*10.0^-5))*(1/(p_1[16]+273)-1/(p_1[17]+273)))*Int_mean_1[i,j]*Pred_mean_1[i,j]/(1+p_1[4]*exp((p_1[19]/(8.62*10.0^-5))*(1/(p_1[16]+273)-1/(p_1[17]+273)))*p_1[12]*Res_mean_1[i,j]+p_1[5]*exp((p_1[20]/(8.62*10.0^-5))*(1/(p_1[16]+273)-1/(p_1[17]+273)))*p_1[13]*Int_mean_1[i,j]))
+            # For top eating intermediate consumers
+            Prop_CT_1[i,j] = (p_1[8]*p_1[5]*exp((p_1[20]/(8.62*10.0^-5))*(1/(p_1[16]+273)-1/(p_1[17]+273)))*Int_mean_1[i,j]*Pred_mean_1[i,j]/(1+p_1[4]*exp((p_1[19]/(8.62*10.0^-5))*(1/(p_1[16]+273)-1/(p_1[17]+273)))*p_1[12]*Res_mean_1[i,j]+p_1[5]*exp((p_1[20]/(8.62*10.0^-5))*(1/(p_1[16]+273)-1/(p_1[17]+273)))*p_1[13]*Int_mean_1[i,j]))/(p_1[7]*p_1[4]*exp((p_1[19]/(8.62*10.0^-5))*(1/(p_1[16]+273)-1/(p_1[17]+273)))*Res_mean_1[i,j]*Pred_mean_1[i,j]/(1+p_1[4]*exp((p_1[19]/(8.62*10.0^-5))*(1/(p_1[16]+273)-1/(p_1[17]+273)))*p_1[12]*Res_mean_1[i,j]+p_1[5]*exp((p_1[20]/(8.62*10.0^-5))*(1/(p_1[16]+273)-1/(p_1[17]+273)))*p_1[13]*Int_mean_1[i,j]) + p_1[8]*p_1[5]*exp((p_1[20]/(8.62*10.0^-5))*(1/(p_1[16]+273)-1/(p_1[17]+273)))*Int_mean_1[i,j]*Pred_mean_1[i,j]/(1+p_1[4]*exp((p_1[19]/(8.62*10.0^-5))*(1/(p_1[16]+273)-1/(p_1[17]+273)))*p_1[12]*Res_mean_1[i,j]+p_1[5]*exp((p_1[20]/(8.62*10.0^-5))*(1/(p_1[16]+273)-1/(p_1[17]+273)))*p_1[13]*Int_mean_1[i,j]))
+
+            # For top eating resources
+            Prop_RT_2[i,j] = (p_2[7]*p_2[4]*exp((p_2[19]/(8.62*10.0^-5))*(1/(p_2[16]+273)-1/(p_2[17]+273)))*Res_mean_2[i,j]*Pred_mean_2[i,j]/(1+p_2[4]*exp((p_2[19]/(8.62*10.0^-5))*(1/(p_2[16]+273)-1/(p_2[17]+273)))*p_2[12]*Res_mean_2[i,j]+p_2[5]*exp((p_2[20]/(8.62*10.0^-5))*(1/(p_2[16]+273)-1/(p_2[17]+273)))*p_2[13]*Int_mean_2[i,j]))/(p_2[7]*p_2[4]*exp((p_2[19]/(8.62*10.0^-5))*(1/(p_2[16]+273)-1/(p_2[17]+273)))*Res_mean_2[i,j]*Pred_mean_2[i,j]/(1+p_2[4]*exp((p_2[19]/(8.62*10.0^-5))*(1/(p_2[16]+273)-1/(p_2[17]+273)))*p_2[12]*Res_mean_2[i,j]+p_2[5]*exp((p_2[20]/(8.62*10.0^-5))*(1/(p_2[16]+273)-1/(p_2[17]+273)))*p_2[13]*Int_mean_2[i,j]) + p_2[8]*p_2[5]*exp((p_2[20]/(8.62*10.0^-5))*(1/(p_2[16]+273)-1/(p_2[17]+273)))*Int_mean_2[i,j]*Pred_mean_2[i,j]/(1+p_2[4]*exp((p_2[19]/(8.62*10.0^-5))*(1/(p_2[16]+273)-1/(p_2[17]+273)))*p_2[12]*Res_mean_2[i,j]+p_2[5]*exp((p_2[20]/(8.62*10.0^-5))*(1/(p_2[16]+273)-1/(p_2[17]+273)))*p_2[13]*Int_mean_2[i,j]))
+            # For top eating intermediate consumers
+            Prop_CT_2[i,j] = (p_2[8]*p_2[5]*exp((p_2[20]/(8.62*10.0^-5))*(1/(p_2[16]+273)-1/(p_2[17]+273)))*Int_mean_2[i,j]*Pred_mean_2[i,j]/(1+p_2[4]*exp((p_2[19]/(8.62*10.0^-5))*(1/(p_2[16]+273)-1/(p_2[17]+273)))*p_2[12]*Res_mean_2[i,j]+p_2[5]*exp((p_2[20]/(8.62*10.0^-5))*(1/(p_2[16]+273)-1/(p_2[17]+273)))*p_2[13]*Int_mean_2[i,j]))/(p_2[7]*p_2[4]*exp((p_2[19]/(8.62*10.0^-5))*(1/(p_2[16]+273)-1/(p_2[17]+273)))*Res_mean_2[i,j]*Pred_mean_2[i,j]/(1+p_2[4]*exp((p_2[19]/(8.62*10.0^-5))*(1/(p_2[16]+273)-1/(p_2[17]+273)))*p_2[12]*Res_mean_2[i,j]+p_2[5]*exp((p_2[20]/(8.62*10.0^-5))*(1/(p_2[16]+273)-1/(p_2[17]+273)))*p_2[13]*Int_mean_2[i,j]) + p_2[8]*p_2[5]*exp((p_2[20]/(8.62*10.0^-5))*(1/(p_2[16]+273)-1/(p_2[17]+273)))*Int_mean_2[i,j]*Pred_mean_2[i,j]/(1+p_2[4]*exp((p_2[19]/(8.62*10.0^-5))*(1/(p_2[16]+273)-1/(p_2[17]+273)))*p_2[12]*Res_mean_2[i,j]+p_2[5]*exp((p_2[20]/(8.62*10.0^-5))*(1/(p_2[16]+273)-1/(p_2[17]+273)))*p_2[13]*Int_mean_2[i,j]))
+
+            # For top eating resources
+            Prop_RT_3[i,j] = (p_3[7]*p_3[4]*exp((p_3[19]/(8.62*10.0^-5))*(1/(p_3[16]+273)-1/(p_3[17]+273)))*Res_mean_3[i,j]*Pred_mean_3[i,j]/(1+p_3[4]*exp((p_3[19]/(8.62*10.0^-5))*(1/(p_3[16]+273)-1/(p_3[17]+273)))*p_3[12]*Res_mean_3[i,j]+p_3[5]*exp((p_3[20]/(8.62*10.0^-5))*(1/(p_3[16]+273)-1/(p_3[17]+273)))*p_3[13]*Int_mean_3[i,j]))/(p_3[7]*p_3[4]*exp((p_3[19]/(8.62*10.0^-5))*(1/(p_3[16]+273)-1/(p_3[17]+273)))*Res_mean_3[i,j]*Pred_mean_3[i,j]/(1+p_3[4]*exp((p_3[19]/(8.62*10.0^-5))*(1/(p_3[16]+273)-1/(p_3[17]+273)))*p_3[12]*Res_mean_3[i,j]+p_3[5]*exp((p_3[20]/(8.62*10.0^-5))*(1/(p_3[16]+273)-1/(p_3[17]+273)))*p_3[13]*Int_mean_3[i,j]) + p_3[8]*p_3[5]*exp((p_3[20]/(8.62*10.0^-5))*(1/(p_3[16]+273)-1/(p_3[17]+273)))*Int_mean_3[i,j]*Pred_mean_3[i,j]/(1+p_3[4]*exp((p_3[19]/(8.62*10.0^-5))*(1/(p_3[16]+273)-1/(p_3[17]+273)))*p_3[12]*Res_mean_3[i,j]+p_3[5]*exp((p_3[20]/(8.62*10.0^-5))*(1/(p_3[16]+273)-1/(p_3[17]+273)))*p_3[13]*Int_mean_3[i,j]))
+            # For top eating intermediate consumers
+            Prop_CT_3[i,j] = (p_3[8]*p_3[5]*exp((p_3[20]/(8.62*10.0^-5))*(1/(p_3[16]+273)-1/(p_3[17]+273)))*Int_mean_3[i,j]*Pred_mean_3[i,j]/(1+p_3[4]*exp((p_3[19]/(8.62*10.0^-5))*(1/(p_3[16]+273)-1/(p_3[17]+273)))*p_3[12]*Res_mean_3[i,j]+p_3[5]*exp((p_3[20]/(8.62*10.0^-5))*(1/(p_3[16]+273)-1/(p_3[17]+273)))*p_3[13]*Int_mean_3[i,j]))/(p_3[7]*p_3[4]*exp((p_3[19]/(8.62*10.0^-5))*(1/(p_3[16]+273)-1/(p_3[17]+273)))*Res_mean_3[i,j]*Pred_mean_3[i,j]/(1+p_3[4]*exp((p_3[19]/(8.62*10.0^-5))*(1/(p_3[16]+273)-1/(p_3[17]+273)))*p_3[12]*Res_mean_3[i,j]+p_3[5]*exp((p_3[20]/(8.62*10.0^-5))*(1/(p_3[16]+273)-1/(p_3[17]+273)))*p_3[13]*Int_mean_3[i,j]) + p_3[8]*p_3[5]*exp((p_3[20]/(8.62*10.0^-5))*(1/(p_3[16]+273)-1/(p_3[17]+273)))*Int_mean_3[i,j]*Pred_mean_3[i,j]/(1+p_3[4]*exp((p_3[19]/(8.62*10.0^-5))*(1/(p_3[16]+273)-1/(p_3[17]+273)))*p_3[12]*Res_mean_3[i,j]+p_3[5]*exp((p_3[20]/(8.62*10.0^-5))*(1/(p_3[16]+273)-1/(p_3[17]+273)))*p_3[13]*Int_mean_3[i,j]))
+
+    end
+    println(i)
+end
+
+## Pass data to R
+R"
+Diff_1 <- $Int_max_1 - $Pred_max_1
+Diff_min_1 <- $Int_min_1 - $Pred_min_1
+Diff_mean_1 <- $Int_mean_1 - $Pred_mean_1
+Diff_2 <- $Int_max_2 - $Pred_max_2
+Diff_min_2 <- $Int_min_2 - $Pred_min_2
+Diff_mean_2 <- $Int_mean_2 - $Pred_mean_2
+Diff_3 <- $Int_max_3 - $Pred_max_3
+Diff_min_3 <- $Int_min_3 - $Pred_min_3
+Diff_mean_3 <- $Int_mean_3 - $Pred_mean_3
+Diff_Ea <- $Ea_Pred - 0.3
+
+Prop_Basal_1 <- $Res_mean_1 /($Res_mean_1 + $Int_mean_1 + $Pred_mean_1)
+Prop_Int_1 <- $Int_mean_1 /($Res_mean_1 + $Int_mean_1 + $Pred_mean_1)
+Prop_Pred_1 <- $Pred_mean_1 /($Res_mean_1 + $Int_mean_1 + $Pred_mean_1)
+
+Prop_Basal_2 <- $Res_mean_2 /($Res_mean_2 + $Int_mean_2 + $Pred_mean_2)
+Prop_Int_2 <- $Int_mean_2 /($Res_mean_2 + $Int_mean_2 + $Pred_mean_2)
+Prop_Pred_2 <- $Pred_mean_2 /($Res_mean_2 + $Int_mean_2 + $Pred_mean_2)
+
+Prop_Basal_3 <- $Res_mean_3 /($Res_mean_3 + $Int_mean_3 + $Pred_mean_3)
+Prop_Int_3 <- $Int_mean_3 /($Res_mean_3 + $Int_mean_3 + $Pred_mean_3)
+Prop_Pred_3 <- $Pred_mean_3 /($Res_mean_3 + $Int_mean_3 + $Pred_mean_3)
+
+color <- colorRampPalette(brewer.pal(8,'YlOrRd'))(13)
+"
+
+#### PLOT RESULTS
+
+# 1) Changes in densities and TL
+## Low K (Non-oscillatory)
+## While an increase in Attack rates can indeed compensate for an increase in death rates with Temperature, Temperature still mostly impacts top predators more strongly than intermediate predators, unless top predators respond to temperature by increasing predation rates much more than intermediate predators can. But even then, if top predators hammer down intermediate predators, they die off, so they are much more constrained than intermediate predators.
+
+# Plot proportions
+R"
+pdf('/Users/jeangibert/Desktop/JP/Papers_in_progress/JP_Tony_Temp_TL/Manuscript/Figures/Fig_3/Fig_3.pdf', useDingbat=FALSE, width=16, height=12)
+par(mfcol=c(3,3),oma=c(3,3,0,1.1),mar=c(2,3,2,2))
+
+# 1) For intermediate death rates smaller than top
+plot(Prop_Basal_1[1,] ~ Diff_Ea, pch=16,ylim=c(0,1),type='l', lwd=3,  col='white', las = TRUE, axes=FALSE, ylab='', xlab='')
+box(lwd=3, bty='l')
+axis(1,at=c(-0.3,-0.15,0,0.15,0.3), tck=0.015, cex.axis=1.6, lwd.ticks=3, mgp=c(3, .7, 0))
+axis(2,at=seq(0,2,0.25), tck=0.015, las=TRUE, cex.axis=1.6,lwd.ticks=3, mgp=c(3, .5, 0))
+#mtext('Top Ea - Consumer Ea',1, line=2.7, cex=1.8)
+mtext('Proportion Basal',2,line=3.8, cex=1.8)
+    # Plot proportion basal
+for(i in 1:12){
+    lines(Prop_Basal_1[i,] ~ Diff_Ea, pch=16,ylim=c(0,1),type='l',lty=2, lwd=3,  col=color[i+1])
+    }
+for(i in 1:12){
+    lines(Prop_Int_1[i,] ~ Diff_Ea, pch=16,ylim=c(0,1),type='l',lty=6, lwd=3,  col=color[i+1])
+    }
+for(i in 1:12){
+    lines(Prop_Pred_1[i,] ~ Diff_Ea, pch=16,ylim=c(0,1),type='l', lwd=3,  col=color[i+1])
+    }
+abline(v=0, lty=2)
+
+plot($TL_1[1,] ~ Diff_Ea, pch=16,ylim=c(2.4,3),type='l', lwd=3,  col='white', las = TRUE, axes=FALSE, ylab='', xlab='')
+box(lwd=3, bty='l')
+axis(1,at=c(-0.3,-0.15,0,0.15,0.3), tck=0.015, cex.axis=1.6, lwd.ticks=3, mgp=c(3, 0.7, 0))
+axis(2,at=c(2.5,2.75,3), tck=0.015, las=TRUE, cex.axis=1.6,lwd.ticks=3, mgp=c(3, .5, 0))
+#mtext('Consumer Ea - Top Ea',1, line=2.7, cex=1.8)
+mtext('Trophic Level',2,line=3.8, cex=1.8)
+    # Plot Maxima
+for(i in 1:12){
+    lines($TL_1[i,] ~ Diff_Ea, pch=16,ylim=c(0,1.5),type='l', lwd=3,  col=color[i+1])
+    }
+abline(v=0, lty=2)
+
+plot($Prop_RT_1[1,] ~ Diff_Ea, pch=16,ylim=c(0,1),type='l', lwd=3,  col='white', las = TRUE, axes=FALSE, ylab='', xlab='')
+box(lwd=3, bty='l')
+axis(1,at=c(-0.3,-0.15,0,0.15,0.3), tck=0.015, cex.axis=1.6, lwd.ticks=3, mgp=c(3, 0.7, 0))
+axis(2,at=c(0,0.5,1), tck=0.015, las=TRUE, cex.axis=1.6,lwd.ticks=3, mgp=c(3, .5, 0))
+mtext('Top Ea - Consumer Ea',1, line=3, cex=1.8)
+mtext('Interaction Strengths',2,line=3.3, cex=1.8)
+    # Plot Maxima
+for(i in 1:12){
+    lines($Prop_RT_1[i,] ~ Diff_Ea, pch=16,ylim=c(0,1.5),type='l',lty=2, lwd=3,  col=color[i+1])
+    lines($Prop_CT_1[i,] ~ Diff_Ea, pch=16,ylim=c(0,1.5),type='l',lty=6, lwd=3,  col=color[i+1])
+    }
+abline(v=0, lty=2)
+
+# 2) For intermediate death rates smaller than top
+plot(Prop_Basal_2[1,] ~ Diff_Ea, pch=16,ylim=c(0,1),type='l', lwd=3,  col='white', las = TRUE, axes=FALSE, ylab='', xlab='')
+box(lwd=3, bty='l')
+axis(1,at=c(-0.3,-0.15,0,0.15,0.3), tck=0.015, cex.axis=1.6, lwd.ticks=3, mgp=c(3, .7, 0))
+axis(2,at=seq(0,2,0.25), tck=0.015, las=TRUE, cex.axis=1.6,lwd.ticks=3, mgp=c(3, .5, 0))
+##mtext('Top Ea - Consumer Ea',1, line=2.7, cex=1.8)
+#mtext('Proportion Basal',2,line=3.5, cex=1.8)
+    # Plot proportion basal
+for(i in 1:12){
+    lines(Prop_Basal_2[i,] ~ Diff_Ea, pch=16,ylim=c(0,1),type='l',lty=2, lwd=3,  col=color[i+1])
+    }
+for(i in 1:12){
+    lines(Prop_Int_2[i,] ~ Diff_Ea, pch=16,ylim=c(0,1),type='l',lty=6, lwd=3,  col=color[i+1])
+    }
+for(i in 1:12){
+    lines(Prop_Pred_2[i,] ~ Diff_Ea, pch=16,ylim=c(0,1),type='l', lwd=3,  col=color[i+1])
+    }
+abline(v=0, lty=2)
+
+plot($TL_2[1,] ~ Diff_Ea, pch=16,ylim=c(2.4,3),type='l', lwd=3,  col='white', las = TRUE, axes=FALSE, ylab='', xlab='')
+box(lwd=3, bty='l')
+axis(1,at=c(-0.3,-0.15,0,0.15,0.3), tck=0.015, cex.axis=1.6, lwd.ticks=3, mgp=c(3, 0.7, 0))
+axis(2,at=c(2.5,2.75,3), tck=0.015, las=TRUE, cex.axis=1.6,lwd.ticks=3, mgp=c(3, .5, 0))
+#mtext('Consumer Ea - Top Ea',1, line=2.7, cex=1.8)
+#mtext('Trophic Level',2,line=3.3, cex=1.8)
+    # Plot Maxima
+for(i in 1:12){
+    lines($TL_2[i,] ~ Diff_Ea, pch=16,ylim=c(0,1.5),type='l', lwd=3,  col=color[i+1])
+    }
+abline(v=0, lty=2)
+
+plot($Prop_RT_2[1,] ~ Diff_Ea, pch=16,ylim=c(0,1),type='l', lwd=3,  col='white', las = TRUE, axes=FALSE, ylab='', xlab='')
+box(lwd=3, bty='l')
+axis(1,at=c(-0.3,-0.15,0,0.15,0.3), tck=0.015, cex.axis=1.6, lwd.ticks=3, mgp=c(3, 0.7, 0))
+axis(2,at=c(0,0.5,1), tck=0.015, las=TRUE, cex.axis=1.6,lwd.ticks=3, mgp=c(3, .5, 0))
+mtext('Top Ea - Consumer Ea',1, line=3, cex=1.8)
+#mtext('Interaction Strengths',2,line=3.3, cex=1.8)
+    # Plot Maxima
+for(i in 1:12){
+    lines($Prop_RT_2[i,] ~ Diff_Ea, pch=16,ylim=c(0,1.5),type='l',lty=2, lwd=3,  col=color[i+1])
+    lines($Prop_CT_2[i,] ~ Diff_Ea, pch=16,ylim=c(0,1.5),type='l',lty=6, lwd=3,  col=color[i+1])
+    }
+abline(v=0, lty=2)
+
+# 3) For intermediate death rates smaller than top
+plot(Prop_Basal_3[1,] ~ Diff_Ea, pch=16,ylim=c(0,1),type='l', lwd=3,  col='white', las = TRUE, axes=FALSE, ylab='', xlab='')
+box(lwd=3, bty='l')
+axis(1,at=c(-0.3,-0.15,0,0.15,0.3), tck=0.015, cex.axis=1.6, lwd.ticks=3, mgp=c(3, .7, 0))
+axis(2,at=seq(0,2,0.25), tck=0.015, las=TRUE, cex.axis=1.6,lwd.ticks=3, mgp=c(3, .5, 0))
+#mtext('Top Ea - Consumer Ea',1, line=2.7, cex=1.8)
+#mtext('Proportion Basal',2,line=3.3, cex=1.8)
+    # Plot proportion basal
+for(i in 1:12){
+    lines(Prop_Basal_3[i,] ~ Diff_Ea, pch=16,ylim=c(0,1),type='l',lty=2, lwd=3,  col=color[i+1])
+    }
+for(i in 1:12){
+    lines(Prop_Int_3[i,] ~ Diff_Ea, pch=16,ylim=c(0,1),type='l',lty=6, lwd=3,  col=color[i+1])
+    }
+for(i in 1:12){
+    lines(Prop_Pred_3[i,] ~ Diff_Ea, pch=16,ylim=c(0,1),type='l', lwd=3,  col=color[i+1])
+    }
+abline(v=0, lty=2)
+
+plot($TL_3[1,] ~ Diff_Ea, pch=16,ylim=c(2.4,3),type='l', lwd=3,  col='white', las = TRUE, axes=FALSE, ylab='', xlab='')
+box(lwd=3, bty='l')
+axis(1,at=c(-0.3,-0.15,0,0.15,0.3), tck=0.015, cex.axis=1.6, lwd.ticks=3, mgp=c(3, 0.7, 0))
+axis(2,at=c(2.5,2.75,3), tck=0.015, las=TRUE, cex.axis=1.6,lwd.ticks=3, mgp=c(3, .5, 0))
+#mtext('Top Ea - Consumer Ea',1, line=3.3, cex=1.8)
+#mtext('Trophic Level',2,line=3.3, cex=1.8)
+    # Plot Maxima
+for(i in 1:12){
+    lines($TL_3[i,] ~ Diff_Ea, pch=16,ylim=c(0,1.5),type='l', lwd=3,  col=color[i+1])
+    }
+abline(v=0, lty=2)
+
+plot($Prop_RT_3[1,] ~ Diff_Ea, pch=16,ylim=c(0,1),type='l', lwd=3,  col='white', las = TRUE, axes=FALSE, ylab='', xlab='')
+box(lwd=3, bty='l')
+axis(1,at=c(-0.3,-0.15,0,0.15,0.3), tck=0.015, cex.axis=1.6, lwd.ticks=3, mgp=c(3, 0.7, 0))
+axis(2,at=c(0,0.5,1), tck=0.015, las=TRUE, cex.axis=1.6,lwd.ticks=3, mgp=c(3, .5, 0))
+mtext('Top Ea - Consumer Ea',1, line=3, cex=1.8)
+#mtext('Interaction Strengths',2,line=3.3, cex=1.8)
+    # Plot Maxima
+for(i in 1:12){
+    lines($Prop_RT_3[i,] ~ Diff_Ea, pch=16,ylim=c(0,1.5),type='l',lty=2,lwd=3,  col=color[i+1])
+    lines($Prop_CT_3[i,] ~ Diff_Ea, pch=16,ylim=c(0,1.5),type='l',lty=6,lwd=3,  col=color[i+1])
+    }
+abline(v=0, lty=2)
+
+dev.off()
+"
+
+
+
+
+
+
+## THE END
