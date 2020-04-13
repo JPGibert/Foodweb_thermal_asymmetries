@@ -2,8 +2,9 @@ These are the data sources used in the paper
 
 1) Dell_data.csv has all the thermal sensitivities as described in Dell et al 2011 PNAS. 
 2) Metadata.docx described all variables contained in Dell_data.csv, as described in Dell et al 2011 PNAS.
-3)
-4)
-.
-.
-.
+3) McCoy_Gillooly_Data.csv is mortality data from McCoy and Gillooy 2008, Ecology Letters.
+4) Lietal_oikos_2017_data.csv is attack rate data from Li et al, Oiko 2018.
+5) bird_temp.csv is the average environmental temperature (ºC) for a bird species, as described in Methods.
+6) mammal_temp.csv is the average environmental temperature (ºC) for a mammal species, as described in Methods.
+7) McCoy_mortality_updated_endo_names.csv for are updated species name for the mortatality data McCoy and Gillooly data (2008), as described in Methods.
+8) sw_bird_names.csv are updated bird species hames for the mortatality data McCoy and Gillooly data (2008), as described in Methods.
