@@ -152,7 +152,7 @@ Prop_RT = SharedArray{Float64}(12,100);
 u0 = [2.0;1;1];   # [R,C,T]
 tspan = (0.0,10000);
 burnin=4000;
-Carrying=5 # K was assumed ot be 5, 7 and 9?
+Carrying=5 
 @time  for i in 1:12
     @sync @distributed for j in 1:100
 
@@ -321,7 +321,7 @@ Prop_RT = SharedArray{Float64}(12,100);
 u0 = [2.0;1;1];   # [R,C,T]
 tspan = (0.0,10000);
 burnin=4000;
-Carrying=5 # K was assumed ot be 5, 7 and 9?
+Carrying=5 
 @time  for i in 1:12
     @sync @distributed for j in 1:100
 
