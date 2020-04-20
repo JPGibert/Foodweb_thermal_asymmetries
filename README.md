@@ -2,7 +2,7 @@
 Supporting data and code for Gibert, Grady and Dell 2020 paper
 
 Data
-1) DATA folder
+1) Most data used in this paper can be found in the DATA folder. 
 
 Data anlysis:
 1) Temp_data_endos.R
