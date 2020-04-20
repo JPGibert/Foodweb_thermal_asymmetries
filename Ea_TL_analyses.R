@@ -1,4 +1,4 @@
-setwd("")
+setwd("your_working_directory_here")
 
 library('latex2exp')
 
