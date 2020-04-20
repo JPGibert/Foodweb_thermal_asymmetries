@@ -1,4 +1,4 @@
-gdrive_path <- file.path('/Users/jgradym/Google Drive/Gibert Paper') 
+gdrive_path <- file.path('/Users/XXXX/Google Drive/XXXX Paper') 
 
 
 library(tidyverse)
@@ -79,7 +79,7 @@ length(bird_name_check$old_name) #146
 which(is.na(mort_birds2$new_name2)) #no NA's
 
 # Read in bird shapefiles
-birds <- st_read(file.path(gdrive_path, 'Data/gibert_birds.gpkg')) #shortened to match Gillooly species
+birds <- st_read(file.path(gdrive_path, 'Data/XXX_birds.gpkg')) #shortened to match Gillooly species
 mort_birds$Species[mort_birds$Species %nin% birds$binomial] #214 spp  down not in both mortality and shapefiles - mostly spelling differences
 #improvement?
 mort_birds2$new_name2[mort_birds2$new_name2 %nin% birds$binomial] # 86 spp don't match - less but not great
@@ -264,7 +264,7 @@ bird_temp <- df_bird %>%
 write.csv(bird_temp, file.path(gdrive_path, "Data/bird_temp.csv"))
 
 
-#st_write(mort_birds4, "/Users/jgradym/Google Drive/Gibert Paper/Data/gibert_birds.gpkg")
+#st_write(mort_birds4, "/Users/XXXX/Google Drive/XXXX Paper/Data/XXXX_birds.gpkg")
 
 # Now Resolve Mammals
 mort_mammals <- mortality1[mortality1$Group == "Mammal",]
