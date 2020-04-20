@@ -178,7 +178,7 @@ Carrying=5 # K was assumed ot be 5, 7 and 9?
         Res_min_1[i,j] = minimum(sol_plot_1[(end-burnin):end,1]);
 
         ## NO NEED to calculate this inside the loop as it can be calculated using element-wise operations outside the loop
-        # Calculate TL for top predator following Gibert & Yeakel 2019
+        # Calculate TL for top predator following previous studies
         #TL[i,j] = 1 + (p[7]*p[4]*Res_max_1[i,j]*Int_max_1[i,j]/(1+p[4]*p[12]*Res_max_1[i,j]))/(p[7]*p[4]*Res_max_1[i,j]*Int_max_1[i,j]/#(1+p[4]*p[12]*Res_max_1[i,j]) + p[8]*p[5]*Int_max_1[i,j]*Pred_max_1[i,j]/(1+p[5]*p[13]*Int_max_1[i,j])) + #2*(p[8]*p[5]*Int_max_1[i,j]*Pred_max_1[i,j]/(1+p[5]*p[13]*Int_max_1[i,j]))/(p[7]*p[4]*Res_max_1[i,j]*Int_max_1[i,j]/#(1+p[4]*p[12]*Res_max_1[i,j]) + p[8]*p[5]*Int_max_1[i,j]*Pred_max_1[i,j]/(1+p[5]*p[13]*Int_max_1[i,j]))
 
     end
@@ -187,11 +187,11 @@ end
 
 p = [1.5,Carrying,1,1,1,0.8,0.2,1,0.8,0.8,0.4,0.2,0.2,0.3,0.65,25,28];
 
-# Calculates TL a posteriori following Gibert & Yeakel 2019
+# Calculates TL a posteriori following following previous studies
 TL = 1 .+ (p[7].*p[4].*Res_max_1.*Pred_max_1./(1 .+ p[4].*p[12].*Res_max_1 .+ p[5].*p[13].*Int_max_1))./(p[7].*p[4].*Res_max_1.*Pred_max_1./(1 .+p[4].*p[12].*Res_max_1 .+ p[5].*p[13].*Int_max_1) .+ p[8].*p[5].*Int_max_1.*Pred_max_1./(1 .+ p[4].*p[12].*Res_max_1 .+ p[5].*p[13].*Int_max_1)) .+
  2*(p[8].*p[5].*Int_max_1.*Pred_max_1./(1 .+p[4].*p[12].*Res_max_1 .+ p[5].*p[13].*Int_max_1))./(p[7].*p[4].*Res_max_1.*Pred_max_1./(1 .+ p[4].*p[12].*Res_max_1 .+ p[5].*p[13].*Int_max_1) + p[8].*p[5].*Int_max_1.*Pred_max_1./(1 .+ p[4].*p[12].*Res_max_1 .+ p[5].*p[13].*Int_max_1))
 
-# Calculates TL a posteriori following Gibert & Yeakel 2019
+# Calculates TL a posteriori following following previous studies
 TL_mean = 1 .+ (p[7].*p[4].*Res_mean.*Pred_mean./(1 .+ p[4].*p[12].*Res_mean .+ p[5].*p[13].*Int_mean))./(p[7].*p[4].*Res_mean.*Pred_mean./(1 .+p[4].*p[12].*Res_mean .+ p[5].*p[13].*Int_mean) .+ p[8].*p[5].*Int_mean.*Pred_mean./(1 .+ p[4].*p[12].*Res_mean .+ p[5].*p[13].*Int_mean)) .+
  2*(p[8].*p[5].*Int_mean.*Pred_mean./(1 .+p[4].*p[12].*Res_mean .+ p[5].*p[13].*Int_mean))./(p[7].*p[4].*Res_mean.*Pred_mean./(1 .+ p[4].*p[12].*Res_mean .+ p[5].*p[13].*Int_mean) + p[8].*p[5].*Int_mean.*Pred_mean./(1 .+ p[4].*p[12].*Res_mean .+ p[5].*p[13].*Int_mean))
 
@@ -223,7 +223,7 @@ color <- colorRampPalette(brewer.pal(8,'YlOrRd'))(13)
 ## Both Low and Large K (Non-oscillatory, =5)
 ## CHANGES IN PROPORTIONS
 R"
-pdf('/Users/jeangibert/Desktop/JP/Papers_in_progress/JP_Tony_Temp_TL/Manuscript/Figures/Fig_2/Fig_2_1st_row.pdf', useDingbat=FALSE, width=5, height=11)
+pdf('figfig.pdf', useDingbat=FALSE, width=5, height=11)
 par(mfrow=c(3,1),oma=c(3,1.1,0,1.1),mar=c(2,6,2,2))
 
 # Plot proportion basal
@@ -379,7 +379,7 @@ color <- colorRampPalette(brewer.pal(8,'YlOrRd'))(13)
 ## Both Low and Large K (Non-oscillatory, =5)
 ## CHANGES IN PROPORTIONS
 R"
-pdf('/Users/jeangibert/Desktop/JP/Papers_in_progress/JP_Tony_Temp_TL/Manuscript/Figures/Fig_2/Fig_2_2nd_row.pdf', useDingbat=FALSE, width=5, height=11)
+pdf('figfig.pdf', useDingbat=FALSE, width=5, height=11)
 par(mfrow=c(3,1),oma=c(3,1.1,0,1.1),mar=c(2,6,2,2))
 
 # Plot proportion basal
@@ -582,7 +582,7 @@ color <- colorRampPalette(brewer.pal(8,'YlOrRd'))(13)
 
 # Plot proportions
 R"
-pdf('/Users/jeangibert/Desktop/JP/Papers_in_progress/JP_Tony_Temp_TL/Manuscript/Figures/Fig_3/Fig_3.pdf', useDingbat=FALSE, width=16, height=12)
+pdf('figfig.pdf', useDingbat=FALSE, width=16, height=12)
 par(mfcol=c(3,3),oma=c(3,3,0,1.1),mar=c(2,3,2,2))
 
 # 1) For intermediate death rates smaller than top
