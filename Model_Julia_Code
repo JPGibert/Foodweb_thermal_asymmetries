@@ -130,13 +130,6 @@ end
 #                           14=EaC, 15 = EaT, 16= Tref, 17=Temp]
 
 
-
-#### Top predators are more suceptible to increases in Tº in all cases, regardless of who has the larger Tº sensitivity.
-### We may have a scenario where max TL increases with T, until the top predator goes extinct, in which case it will drop back to the
-## TL of the intermediate consumer.
-
-# POSIBLE TITLE: "The transient dynamics of trophic levels under warming."
-
 ###
 # Differences in density with Temperature across Temperature sensitivity
 Temp = collect(range(25,stop=30,length=12));
