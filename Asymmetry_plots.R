@@ -1,4 +1,4 @@
-################################J ohn Grady, Oct 14 2019 ################################## 
+################################XXX XXXXX, Oct 14 2019 ################################## 
 
 library(tidyverse)
 library(egg)
@@ -12,8 +12,7 @@ library(cvcqv)
 library(TeachingDemos)
 
 # Add your own google drive path to the shared folder to read in data and save plots
-# Grady's path
-gdrive_path <- file.path('/Users/jgradym/Google Drive/Gibert Paper') 
+gdrive_path <- file.path('/Users/XXXX/Google Drive/XXXXXX Paper') 
 
 invert_col <- "deepskyblue2"
 fish_col <- "navy"
@@ -274,7 +273,7 @@ grid.newpage()
 grid.draw(mortal_plot_5C_5ind)
 
 ggsave(mortal_plot_5C_5ind, height = 4.3, width = 6.3, filename = file.path(gdrive_path,'Plots/Fig_2/Fig2C_mortality_genus_5_indiv_5C_and_group.pdf'))
-ggsave(mortal_plot_5C_5ind, height = 4.3, width = 6.3, filename = '/Users/jgradym/Google Drive/Gibert Paper/Plots/Fig_2/Fig2C_mortality_genus_5_indiv_5C_and_group.pdf')
+ggsave(mortal_plot_5C_5ind, height = 4.3, width = 6.3, filename = 'figfig.pdf')
 
 
 ##########################################
@@ -816,7 +815,7 @@ mortal_plot6 <- ggplot() +
 grid.newpage()
 grid.draw(mortal_plot6)
 
-ggsave(mortal_plot6, height = 5, width = 7, filename = '/Users/jgradym/Google Drive/Gibert Paper/Plots/mortality_by_spp_or_genus_all.pdf')
+ggsave(mortal_plot6, height = 5, width = 7, filename = 'figfig.pdf')
 
 # Best compromise??
 # 5 indiv per genus, temp range of 5
