@@ -1,10 +1,9 @@
-# Foodweb_thermal_asymmetries
-Supporting data and code for Gibert, Grady and Dell 2020 paper
+## Foodweb_thermal_asymmetries
 
-*Data:*
+**Data:**
 1) Most data used in this paper can be found in the DATA folder. Some data (bird data from BirdLife International) was too large to report here, but can still be freely downloaded from BirdLife International as explained in the Methods section. 
 
-*Data anlysis:*
+**Data anlysis:**
 1) Temp_data_endos.R: 
       -has all the code needed to prepare the data used for analysis as described in the Methods section. It requires the data        from the DATA folder.
 
@@ -14,6 +13,6 @@ Supporting data and code for Gibert, Grady and Dell 2020 paper
 3) Ea_TL_analyses.R: 
       –has the code needed to reproduce Figure 4 of the main text. It requires data from the DATA folder.
 
-*Modeling:*
+**Modeling:**
 1) Model_Julia_Code: 
       –has the code needed to reproduce Figure 3 of the main text and and Figure S1 of the appendix 
