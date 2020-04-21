@@ -22,15 +22,15 @@ set parameter values as array p=[val 1, val 2, ...., val t]
 
             -Solves LV_model function (initialized above)
 
-            -Stores all numerical solutions and calculates geometric means in case of strong oscillatory behavior (none in ranged of parameters ulitized)
+            -Stores all numerical solutions and calculates geometric means in case of strong oscillatory behavior (none in ranged of parameters ultilized)
 
         end
         print i to keep track of how long this is going to take
     end
 
-4) Uses stored solutions to calculate proportion of basal species, trophic level and proportional contributions (interaction strengths), as descibed in main text
+4) Uses stored solutions to calculate proportion of basal species, trophic level and proportional contributions (interaction strengths), as described in main text
 
-5) Passess data to R (needs RCall package) and plots in R using normal R synthax but from within Julia
+5) Passess data to R (needs RCall package) and plots in R using normal R syntax but from within Julia
 
 
-The code above is slightly modified in Scenario III of the main text as now the activiation energies of two parameters of two species change simultaneously.
+The code above is slightly modified in Scenario III of the main text as now the activation energies of two parameters of two species change simultaneously.
