@@ -16,6 +16,9 @@
 
 **Modeling:**
 1) Model_Julia_Code:\
+      –explains in pseudocode how the Julia code used to run the model in the main text works
+
+2) Model_Julia_Code:\
       –has the code needed to reproduce Figure 3 of the main text and Figure S1 of the appendix\
       –to use, please download Julia from https://julialang.org/. Notice that all coding was done in Julia v1.0.0\
       –all Julia packages needed to run the code can be found in lines 8-12, and will also have to be downloaded to run the         script\
