@@ -3,7 +3,8 @@
     #######             Jean P. Gibert,  2018            #######
     ############################################################
 
-# Loading JULIA packages
+# Loading JULIA packages (Julia needs to be started as Julia -p # where # is the number of cores to be used)
+    #@everywhere enables multithreading
 #@everywhere using Pkg
 @everywhere using Distributed
 @everywhere using SharedArrays
@@ -21,7 +22,7 @@ library('RColorBrewer')
 ## Baseline models and general understanding
 
 
-## Baseline model (NO Temperature)
+## Baseline model (NO Temperature), just the underlying dynamics
 @everywhere function LV_model_no_T(du,u,p,t) # before (t,u,p,du)
     # R
     du[1] = p[1]*u[1]*(1-u[1]/p[2]) - p[3]*u[1]*u[2]/(1+p[3]*p[11]*u[1]) - p[4]*u[1]*u[3]/(1+p[4]*p[12]*u[1])
@@ -36,11 +37,9 @@ end
 
 p = [1.5,5,1,1,1,0.8,0.2,1,0.8,0.8,0.4,0.4,0.4];
 
-#pf_evol = ParameterizedFunction(parameterized_LV_II_evol_TO,p);
 u0 = [2.0;1;1;1;1;1];   # [R,C1,C2,a_RC1,a_RC2,a_C1C2]
 tspan = (0.0,10000);
     # Same here
-#prob_evol = ODEProblem(pf_evol,u0,tspan);
 prob_evol = ODEProblem(LV_model_no_T,u0,tspan,p);
 sol_evol = solve(prob_evol,adaptive=false,dt=0.075);
 # Prepare to plot
@@ -154,7 +153,7 @@ tspan = (0.0,10000);
 burnin=4000;
 Carrying=5 
 @time  for i in 1:12
-    @sync @distributed for j in 1:100
+    @sync @distributed for j in 1:100 # @sync and @distributed actually does the multithreading. needs @everywhere used as above
 
         # Parameter values are as: [1=r,2=K,3=a_RC1,4=a_RC2,5=a_C1C2,6=e_RC1,7=e_RC2
         #                          8=e_C1C2,9=d_C1,10=d_C2,11=h_RC1, 12=h_RC2, 13=h_C1C2
@@ -182,16 +181,16 @@ Carrying=5
         #TL[i,j] = 1 + (p[7]*p[4]*Res_max_1[i,j]*Int_max_1[i,j]/(1+p[4]*p[12]*Res_max_1[i,j]))/(p[7]*p[4]*Res_max_1[i,j]*Int_max_1[i,j]/#(1+p[4]*p[12]*Res_max_1[i,j]) + p[8]*p[5]*Int_max_1[i,j]*Pred_max_1[i,j]/(1+p[5]*p[13]*Int_max_1[i,j])) + #2*(p[8]*p[5]*Int_max_1[i,j]*Pred_max_1[i,j]/(1+p[5]*p[13]*Int_max_1[i,j]))/(p[7]*p[4]*Res_max_1[i,j]*Int_max_1[i,j]/#(1+p[4]*p[12]*Res_max_1[i,j]) + p[8]*p[5]*Int_max_1[i,j]*Pred_max_1[i,j]/(1+p[5]*p[13]*Int_max_1[i,j]))
 
     end
-        println(i)
+        println(i) # for keeping track of where we are at
 end
 
 p = [1.5,Carrying,1,1,1,0.8,0.2,1,0.8,0.8,0.4,0.2,0.2,0.3,0.65,25,28];
 
-# Calculates TL a posteriori following following previous studies
+# Calculates TL a posteriori following previous studies
 TL = 1 .+ (p[7].*p[4].*Res_max_1.*Pred_max_1./(1 .+ p[4].*p[12].*Res_max_1 .+ p[5].*p[13].*Int_max_1))./(p[7].*p[4].*Res_max_1.*Pred_max_1./(1 .+p[4].*p[12].*Res_max_1 .+ p[5].*p[13].*Int_max_1) .+ p[8].*p[5].*Int_max_1.*Pred_max_1./(1 .+ p[4].*p[12].*Res_max_1 .+ p[5].*p[13].*Int_max_1)) .+
  2*(p[8].*p[5].*Int_max_1.*Pred_max_1./(1 .+p[4].*p[12].*Res_max_1 .+ p[5].*p[13].*Int_max_1))./(p[7].*p[4].*Res_max_1.*Pred_max_1./(1 .+ p[4].*p[12].*Res_max_1 .+ p[5].*p[13].*Int_max_1) + p[8].*p[5].*Int_max_1.*Pred_max_1./(1 .+ p[4].*p[12].*Res_max_1 .+ p[5].*p[13].*Int_max_1))
 
-# Calculates TL a posteriori following following previous studies
+# Calculates TL a posteriori following previous studies
 TL_mean = 1 .+ (p[7].*p[4].*Res_mean.*Pred_mean./(1 .+ p[4].*p[12].*Res_mean .+ p[5].*p[13].*Int_mean))./(p[7].*p[4].*Res_mean.*Pred_mean./(1 .+p[4].*p[12].*Res_mean .+ p[5].*p[13].*Int_mean) .+ p[8].*p[5].*Int_mean.*Pred_mean./(1 .+ p[4].*p[12].*Res_mean .+ p[5].*p[13].*Int_mean)) .+
  2*(p[8].*p[5].*Int_mean.*Pred_mean./(1 .+p[4].*p[12].*Res_mean .+ p[5].*p[13].*Int_mean))./(p[7].*p[4].*Res_mean.*Pred_mean./(1 .+ p[4].*p[12].*Res_mean .+ p[5].*p[13].*Int_mean) + p[8].*p[5].*Int_mean.*Pred_mean./(1 .+ p[4].*p[12].*Res_mean .+ p[5].*p[13].*Int_mean))
 
@@ -201,10 +200,8 @@ Prop_RT = (p[7].*p[4].*Res_mean.*Pred_mean./(1 .+ p[4].*p[12].*Res_mean .+ p[5].
 # For top eating intermediate consumers
 Prop_CT = (p[8].*p[5].*Int_mean.*Pred_mean./(1 .+p[4].*p[12].*Res_mean .+ p[5].*p[13].*Int_mean))./(p[7].*p[4].*Res_mean.*Pred_mean./(1 .+ p[4].*p[12].*Res_mean .+ p[5].*p[13].*Int_mean) + p[8].*p[5].*Int_mean.*Pred_mean./(1 .+ p[4].*p[12].*Res_mean .+ p[5].*p[13].*Int_mean))
 
-# Calculates the proportion of basal species
-
-
-## Pass data to R
+## Calculates the proportion of basal species
+# Pass data to R
 R"
 Diff <- $Int_max_1 - $Pred_max_1
 Diff_min <- $Int_min_1 - $Pred_min_1
