@@ -5,10 +5,12 @@
 
 **Data anlysis:**
 1) Temp_data_endos.R:\
-      –has all the code needed to prepare the data used for analysis as described in the Methods section. It requires the data        from the DATA folder.
+      –has all the code needed to prepare the data used for analysis as described in the Methods section.\
+      –this code standardizes species names, calculates the geographic range centroid, uses the centroid to source                   environmental temperature at that point in space from WorldClim and sea surface temperature file.\
+      –it requires the data from the DATA folder in this repository.
 
 2) Asymmetry_plots.R:\
-      –has the code needed to reproduce Figure 2 of the main text. 
+      –has the code needed to reproduce Figure 2 of the main text.
 
 3) Ea_TL_analyses.R:\
       –has the code needed to reproduce Figure 4 of the main text. It requires data from the DATA folder.
