@@ -12,7 +12,7 @@ library(cvcqv)
 library(TeachingDemos)
 
 # Add your own google drive path to the shared folder to read in data and save plots
-gdrive_path <- file.path('/Users/XXXX/Google Drive/XXXXXX Paper') 
+gdrive_path <- file.path('YOUR PATH HERE')
 
 invert_col <- "deepskyblue2"
 fish_col <- "navy"
@@ -58,10 +58,10 @@ theme_ticks <- theme(axis.ticks.length=unit(-0.25, "cm"),
                      axis.text.y.left = element_text(margin=unit(c(0.4,0.4,0.4,0.4), "cm")))
 # Read in data
 
-attack <- read_csv(file.path(gdrive_path, 'Data/Lietal_oikos_2017_data.csv'))
+attack <- read_csv(file.path(gdrive_path, 'Lietal_oikos_2017_data.csv'))
 attack$one_kT <- 1/(8.617e-5*(attack$temperature.degree.celcius +273.15))
 
-mortality1 <- read_csv(file.path(gdrive_path,'Data/McCoy_Gillooly_Data.csv')) #2,117 values
+mortality1 <- read_csv(file.path(gdrive_path,'McCoy_Gillooly_Data.csv')) #2,117 values
 mortality1[is.na(mortality1$Species),]
 
 ######################################################
@@ -75,8 +75,8 @@ mortality1[is.na(mortality1$Species),]
 
 ###################################  Add endo temp data ################################## 
   # This temp determined from matching lat/lon centroid of species range to climate data from ...
-bird_temp <- read_csv(file.path(gdrive_path,"Data/bird_temp.csv"))
-mammal_temp <- read_csv(file.path(gdrive_path,"Data/mammal_temp.csv"))
+bird_temp <- read_csv(file.path(gdrive_path,"bird_temp.csv"))
+mammal_temp <- read_csv(file.path(gdrive_path,"mammal_temp.csv"))
 mammal_temp2 <- mammal_temp %>%
   dplyr::select(Species, Mean_Temp_C) 
  # use new endo data and old ecto data in column called 'Temp_C_good'
@@ -174,7 +174,7 @@ grid.newpage()
 grid.draw(mortal_plot_endo)
 
 # Save plot
-ggsave(mortal_plot_endo, height = 4.6, width = 6.7, filename = file.path(gdrive_path, "Plots/Fig_2/Fig2a_endo_mortality.pdf"))
+ggsave(mortal_plot_endo, height = 4.6, width = 6.7, filename = file.path(gdrive_path, "NAME YOUR FILE.pdf"))
 
 
 # all ectos combined (note have to decide on color, navy (fish) and darkred (birds) don't look as good but increase contrast, maybe worth it)
@@ -229,7 +229,7 @@ grid.newpage()
 grid.draw(mortal_plot_ecto) 
 
 # Save plot
-ggsave(mortal_plot_ecto, height = 5, width = 7, filename = file.path(gdrive_path, 'Plots/Fig_2/Fig2b_ecto_mortality2.pdf'))
+ggsave(mortal_plot_ecto, height = 5, width = 7, filename = file.path(gdrive_path, 'NAME YOUR FILE.pdf'))
 
 
 # Restrict to 5 individuals per genus, 5 temp C range
@@ -269,8 +269,8 @@ grid.newpage()
 grid.draw(mortal_plot_5C_5ind)
 
 # Save plot
-ggsave(mortal_plot_5C_5ind, height = 4.3, width = 6.3, filename = file.path(gdrive_path,'Plots/Fig_2/Fig2C_mortality_genus_5_indiv_5C_and_group.pdf'))
-ggsave(mortal_plot_5C_5ind, height = 4.3, width = 6.3, filename = 'figfig.pdf')
+ggsave(mortal_plot_5C_5ind, height = 4.3, width = 6.3, filename = file.path(gdrive_path,'NAME YOUR FILE.pdf'))
+ggsave(mortal_plot_5C_5ind, height = 4.3, width = 6.3, filename = 'NAME YOUR FILE.pdf')
 
 
 ##########################################
@@ -279,7 +279,7 @@ ggsave(mortal_plot_5C_5ind, height = 4.3, width = 6.3, filename = 'figfig.pdf')
 ##########################################
 
 #Restricted to 5 indiv per genus, 5 C range
-
+# IN prep for the plot------------------------------------
 mort_ecto <- mort_5 %>% 
   filter(Group == "Fish" | Group == "Invertebrate")  
 
@@ -333,7 +333,8 @@ mort_lm2 <- mort_lm2 %>%
   distinct()
 mort_lm2 
 
-#B violin plot
+##-----------------
+#ACTUALLY MAKES THE VIOLIN PLOT:
 mort_vio_Ea <- ggplot(mort_lm2, aes(x = Thermy, y = -1*estimate))+
   geom_violin(size = 1, aes(color = Thermy)) + geom_jitter(aes(fill = Thermy),shape = 21, size = 3, color = "black", width = 0.05, stroke = .5 ) +
   scale_y_continuous(position = "right",name=expression(paste('Thermal Sensitivity (E'[a],')')))+ 
@@ -345,10 +346,15 @@ mort_vio_Ea <- ggplot(mort_lm2, aes(x = Thermy, y = -1*estimate))+
 mort_vio_Ea
 
 # Save plot
-ggsave(mort_vio_Ea,  height = 4.22, width = 6.05, filename = file.path(gdrive_path,'Plots/Fig_2/Fig2d_vio_mort.pdf'))
+ggsave(mort_vio_Ea,  height = 4.22, width = 6.05, filename = file.path(gdrive_path,'NAME YOUR FILE.pdf'))
 
 
-####### Mortality regressions
+####################################################
+##v  Fig 2E - Mortality & Attack regressions (ectos)
+####################################################
+
+##---------------------------------
+## PART 1 (mortality)
 mortal_plot_5C_5ind <- ggplot(mort_5 %>% 
                                 filter(Group == "Fish" | Group == "Invertebrate")  %>%
                                 filter(n_genus >= 5) %>%
@@ -371,16 +377,36 @@ mortal_plot_5C_5ind <- ggplot(mort_5 %>%
 grid.draw(mortal_plot_5C_5ind)
 
 # Save plot
-ggsave(mortal_plot_5C_5ind, height = 4.7, width = 6.7, filename = file.path(gdrive_path,'Plots/Fig_2/Fig2e_2v2_mort_by_genus_5_indiv_5C_overlay.pdf'))
+ggsave(mortal_plot_5C_5ind, height = 4.7, width = 6.7, filename = file.path(gdrive_path,'NAME YOUR FILE.pdf'))
 
+##---------------------------------
+## PART 2 (attack)
+attack_regr_genus <- ggplot(attack_5 %>% 
+                              arrange(Pred_Genus),
+                            aes(x = one_kT, y = attack.rate)) + 
+  geom_smooth(method = 'lm', size = 1,  alpha = 0, linetype = "dashed",
+              aes(group = Pred_Genus, color = predator.met.group)) +
+  scale_color_manual(values =c("invert" = invert_col, "ectovert" = "navy"))+
+  scale_y_continuous(name = expression(paste('Attack Rate (m'^2,' s'^-1,')')),
+                     limits = c(10^-9, 10^-4), 
+                     labels = trans_format("log10", math_format(10^.x)),
+                     breaks = c(10^-11, 10^-9, 10^-7, 10^-5, 10^-3), trans = "log10") +  
+  scale_x_reverse(name = expression("1/kT"), limits = c(42, 38), 
+                  sec.axis = sec_axis(~ 1/(.*0.00008617) - 273.15, 
+                                      name = NULL)) +
+  
+  annotate("text", y = 10^-9.5, x = 40, hjust = 0, size = 6, label = NA, color = invert_col) +
+  theme_single + theme_ticks + theme(legend.position = "none")
 
+grid.newpage()
+grid.draw(attack_regr_genus)
+ggsave(attack_regr_genus , height = 4.7, width = 6.7, filename = file.path(gdrive_path,'NAME YOUR FILE.pdf'))
+## Attack and mortality plots were manually superimposed
 
 ############################################
-##v  Fig 2F - violin plot
+##  Fig 2F - violin plot
 ############################################
-
-#################################  Fig 2e Attack Rates & Mortality Regressions  #################################
-
+## 1) Gets the data for Violin plot
 attack2 <- attack %>%
   mutate(Pred_Genus = word(predator.species)) %>%
   add_count(predator.species, name = "n_species") %>%# exclude taxa with few members
@@ -423,7 +449,6 @@ attack_lm <- attack_5 %>%
   unnest(tidied) 
 attack_lm
 
-
 attack_lm <- filter(attack_lm, term != '(Intercept)') %>%
   mutate(Thermy = "Ectotherm") %>%
   mutate(Type = "Attack") %>%
@@ -438,6 +463,7 @@ mort_lm <- mort_lm2 %>%
 
 mort_attack <-bind_rows(mort_lm, attack_lm)
 
+## 2) Plots the violin plot
 vio_mort_attack_ea <- ggplot(mort_attack , aes(x = Type, y = -1*estimate))+
   geom_violin(size = 1, color = "dodgerblue", aes(linetype = Type)) + 
   scale_linetype_manual(values=c("dashed", "solid"))+
@@ -448,39 +474,8 @@ vio_mort_attack_ea <- ggplot(mort_attack , aes(x = Type, y = -1*estimate))+
   theme_single + theme(legend.position = "none")  + theme_ticks + #+ggtitle("Ectotherm Thermal Sensitivity") +
   theme(plot.title = element_text(hjust = 0.5, face = "bold"))
 vio_mort_attack_ea
-ggsave(vio_mort_attack_ea,  height = 4.22, width = 5.9,  filename = file.path(gdrive_path,'Plots/Fig_2/Fig2f_vio_mort_attack_ea_dashed.pdf'))
+ggsave(vio_mort_attack_ea,  height = 4.22, width = 5.9,  filename = file.path(gdrive_path,'NAME YOUR FIGURE.pdf'))
 
-
-##########################################
-# Attack genus regressions
-##########################################
-#### Regressions within species, first add n per species and temp range
-
-
-# Plot by species, at least 3 spp
-
-
-
-attack_regr_genus <- ggplot(attack_5 %>% 
-                              arrange(Pred_Genus),
-                            aes(x = one_kT, y = attack.rate)) + 
-  geom_smooth(method = 'lm', size = 1,  alpha = 0, linetype = "dashed",
-              aes(group = Pred_Genus, color = predator.met.group)) +
-  scale_color_manual(values =c("invert" = invert_col, "ectovert" = "navy"))+
-  scale_y_continuous(name = expression(paste('Attack Rate (m'^2,' s'^-1,')')),
-                     limits = c(10^-9, 10^-4), 
-                     labels = trans_format("log10", math_format(10^.x)),
-                     breaks = c(10^-11, 10^-9, 10^-7, 10^-5, 10^-3), trans = "log10") +  
-  scale_x_reverse(name = expression("1/kT"), limits = c(42, 38), 
-                  sec.axis = sec_axis(~ 1/(.*0.00008617) - 273.15, 
-                                      name = NULL)) +
-  
-  annotate("text", y = 10^-9.5, x = 40, hjust = 0, size = 6, label = NA, color = invert_col) +
-  theme_single + theme_ticks + theme(legend.position = "none")
-
-grid.newpage()
-grid.draw(attack_regr_genus)
-ggsave(attack_regr_genus , height = 4.7, width = 6.7, filename = file.path(gdrive_path,'Plots/Fig_2/Fig2e_1_attack_by_genus_5_indiv_5C.pdf'))
 
 ###################################################################
 #############Compare Mortality Variance  between Thermies #########
@@ -508,464 +503,3 @@ var_endo
 #CI of variance
 sigma.test(mort_lm_ecto$estimate, sigmasq = var_endo)
 # ecto vs endo range
-
-#interquartile distance
-IQR(mort_lm_ecto$estimate) #0.4150781 Interquartile range
-IQR(mort_lm_endo$estimate) #0.225 Interquartile range
-
-# CI's for interquartile range - found this on the web, doesn't seem to be very sensitive
-# get IQR CI's with bootstrapping
-library(boot)
-iqr.fun <- function(data, indices) {
-  
-  d <- data[indices]  
-  iqr <- IQR(d)  
-  return(iqr)
-}
-
-set.seed(1000) # for reproducibility
-
-ecto_iqr_boot <- boot(data = mort_lm_ecto$estimate, statistic = iqr.fun, R = 100000)
-
-ecto_iqr_boot 
-#Bootstrap Statistics :
-# original      bias    std. error
-#t1* 0.4150781 -0.01578602   0.1718928
-
-ecto_mort_IQR_CIs <- boot.ci(ecto_iqr_boot )
-ecto_mort_IQR_CIs
-#Intervals : 
-# Level      Normal              Basic         
-#95%   ( 0.0940,  0.7678 )   ( 0.1299,  0.7574 )  
-
-#Level     Percentile            BCa          
-#95%   ( 0.0727,  0.7003 )   ( 0.0769,  0.8530 ) 
-
-endo_iqr_boot <- boot(data = mort_lm_endo$estimate, statistic = iqr.fun, R = 100000)
-#Bootstrap Statistics :
-# original      bias    std. error
-#t1* 0.4150781 -0.01578602   0.1718928
-endo_iqr_boot 
-#Bootstrap Statistics :
-#  original      bias    std. error
-#t1* 0.2258414 -0.01793671  0.08412654
-endo_mort_IQR_CIs <- boot.ci(endo_iqr_boot )
-endo_mort_IQR_CIs 
-#Intervals : 
-#  Level      Normal              Basic         
-#95%   ( 0.0789,  0.4087 )   ( 0.0739,  0.3787 )  
-# Confidence intervals
-
-
-
-#coefficience of variation
-cv_versatile(mort_lm_ecto$estimate, method = "All")
-cv_versatile(mort_lm_endo$estimate, method = "All")
-#kelley    -93.5 -304.8  -59.5   cv with Kelley 95% CI
-
-#coefficience of quartile variation
-cqv_versatile(mort_lm_ecto$estimate, method = "all")
-cqv_versatile(mort_lm_endo$estimate, method = "all")
-
-range(mort_lm_endo$estimate)
-quantile(mort_lm_endo$estimate)
-
-
-
-##########################################################################################
-##########################################################################################
-##########################################################################################
-###################################  Mccoy & gillooly's Figure #1 ################################## 
-# note: some species have multiple data points
-mortal_plot_orig <- ggplot(mortality %>% 
-                         filter(Group == "Fish" | Group == "Invertebrate") %>%
-                         arrange(Group),
-                       aes(x = one_kT_mccoy, y = mortality_corr)) + 
-  geom_point(size = 2.5, stroke = .5, aes(shape = Group)) + 
-  scale_shape_manual(values = c("Invertebrate" = 2, "Fish" = 19)) +
-  geom_smooth(method = 'lm', size = 1,  alpha = 0.3, color = "black") +
-  scale_y_continuous(trans = "log10",
-                     name = expression(paste('Mortality (yr'^-1,' g'^{1/4},')'))) +  
-  scale_x_continuous(name = expression("1/kT (1/T - 1/T20 ºC)"), limits = c(-2,4))+
-  theme_single
-grid.newpage()
-grid.draw(mortal_plot_orig)
-
-# The way I would do it; Ectos
-
-mortal_plot_ecto <- ggplot(mortality %>% 
-                       filter(Group == "Fish" | Group == "Invertebrate") %>%
-                       arrange(Group),
-                    aes(x = one_kT, y = mortality_corr, shape = Group)) + 
-  geom_point(size = 2.5, stroke = .5, aes(shape = Group), color = "blue2") + 
-  scale_shape_manual(values = c("Invertebrate" = 2, "Fish" = 19)) +
-  geom_smooth(method = 'lm', size = 1,  alpha = 0.3, color = "darkblue") +
-  scale_y_continuous(trans = "log10",  name = expression(paste('Mortality (yr'^-1,' g'^{1/4},')')),
-                     limits = c(0.05, 20), breaks = c(0.1,  1, 10), labels = c("0.1", "1",  "10")) +  
-  scale_x_reverse(name = expression("1/kT"), limits = c(43.2, 39.5), 
-                  sec.axis = sec_axis(~ 1/(.*0.00008617) - 273.15, 
-                                      name = "Temperature (ºC)")) +
-
-  theme_single
-grid.newpage()
-grid.draw(mortal_plot_ecto)
-
-# Endos
-mortal_plot_endo <- ggplot(mortality %>% 
-                             filter(Group == "Bird" |
-                                      Group == "Mammal") %>%
-                             arrange(Group),
-                           aes(x = one_kT, y = mortality_corr, shape = Group)) + 
-  geom_point(size = 2.5, stroke = .5, aes(shape = Group), color = "brown2") + 
-  scale_shape_manual(values = c("Mammal" = 11, "Bird" = 18)) +
-  geom_smooth(method = 'lm', size = 1,  alpha = 0.3, color = "brown3") +
-  scale_y_continuous(name = expression(paste('Mortality (yr'^-1,' g'^{1/4},')')), 
-                     trans = "log10", breaks = c(0.1, 1, 10), labels = c("0.1", "1", "10")) +  
-  scale_x_reverse(name = expression("1/kT"), limits = c(),#43.2, 39.5), 
-                  sec.axis = sec_axis(~ 1/(.*0.00008617) - 273.15, 
-                                      name = "Temperature (ºC)")) +
-  
-  theme_single
-grid.newpage()
-grid.draw(mortal_plot_endo)
-
-#### All
-mortal_plot_all <- ggplot(mortality %>% 
-                         filter(Group == "Fish" | Group == "Invertebrate" | Group == "Bird" |
-                                  Group == "Mammal") %>%
-                         arrange(Group),
-                       aes(x = one_kT, y = mortality_corr, shape = Group)) + 
-  geom_point(size = 2.5, stroke = .5, aes(shape = Group, color = Group)) + 
-  scale_shape_manual(values = c("Invertebrate" = 2, "Fish" = 19, "Mammal" = 11, "Bird" = 18)) +
-  geom_smooth(method = 'lm', size = 1,  alpha = 0.3, aes(color = Group)) +
-  scale_color_manual(values =c("Invertebrate" = invert_col, "Fish" = fish_col, 
-                               "Mammal" = mamm_col, "Bird" = bird_col)) +
-  scale_y_continuous(name = expression(paste('Mortality (yr'^-1,' g'^{1/4},')')),
-                     trans = "log10", breaks = c(0.1, 1, 10), labels = c("0.1", "1", "10")) + 
-  scale_x_reverse(name = expression("1/kT"), limits = c(43.2, 39.5), 
-                  sec.axis = sec_axis(~ 1/(.*0.00008617) - 273.15, 
-                                      name = "Temperature (ºC)")) +
-  theme_single
-grid.newpage()
-grid.draw(mortal_plot_all)
-# A mess!
-
-
-# Compare with McCoy results
-    # regression of fish and inverts together
-mortality5 <- mortality4 %>%
-  filter(Group == "Invertebrate" | Group == "Fish")
-
-lm1 <- lm(log(mortality_corr) ~ one_kT_mccoy , data = mortality5)
-summary(lm1) # slope = -0.56971 (matches -0.57!) 
-
-lm2a <- lm(log(mortality_corr) ~ one_kT_mccoy + Group, data = mortality5)
-summary(lm2a) #-0.56190 (slightly different than -0.57!); 
-
-#one_kT vs more complicated setup (one_kt_mccoy), mnakes no difference
-lm2b <- lm(log(mortality_corr) ~ one_kT + Group, data = mortality5)
-summary(lm2b)  #-0.56190 
-
-
-
-#ectos
-mean(mort_lm_ecto$estimate,na.rm=T)
-#[1] -0.379574
-median(mort_lm_ecto$estimate,na.rm=T)
-#-0.5248579
-t.test(mort_lm_ecto$estimate )$"conf.int"
-#[1] -0.5941474 -0.1650006
-
-#endos
-mean(mort_lm_endo$estimate,na.rm=T)
-#[1] 0.02355298
-median(mort_lm_endo$estimate,na.rm=T)
-#0.03015333
-t.test(mort_lm_endo$estimate )$"conf.int"
-#[1] -0.1003453  0.1474513
-
-t.test(mort_lms2c$estimate ~ mort_lms2c$Thermy)
-#t = -3.5084, df = 20.544, p-value = 0.002144
-
-#b Birds
-mean(mort_lm_endo$estimate[1:10])
-#[1] 0.0623127
-median(mort_lm_endo$estimate[1:10],na.rm=T)
-#[1] 0.07359674
-t.test(mort_lm_endo$estimate[1:10] )$"conf.int"
-#[1] -0.0440225  0.1686479
-
-# Mammals
-mean(mort_lm_endo$estimate[11:20])
-#[1] -0.01520674
-median(mort_lm_endo$estimate[11:20],na.rm=T)
-#[1] 0.02241846
-t.test(mort_lm_endo$estimate[11:20] )$"conf.int"
-#[1] -0.2656006  0.2351872
-
-
-# Fish
-mean(mort_lm_ecto$estimate[1:5])
-#[1] -0.2095318
-median(mort_lm_ecto$estimate[1:5],na.rm=T)
-#[1] -0.151948
-t.test(mort_lm_ecto$estimate[1:5] )$"conf.int"
-#[1] -0.51757396  0.09851029
-
-
-# Inverts
-mean(mort_lm_ecto$estimate[6:13])
-#[1] -0.4858504
-median(mort_lm_ecto$estimate[6:13],na.rm=T)
-#[1] -0.5480302
-t.test(mort_lm_ecto$estimate[6:13] )$"conf.int"
-#-0.8068326 -0.1648681
-
-t.test(mort_lms2c$estimate ~ mort_lms2c$Thermy)
-#t = -3.5084, df = 20.544, p-value = 0.002144
-
-
-#kelley  1124    222.1  -234.6     cv with Kelley 95% CI
-# Restricted to 5 indiv per genus, 5 C range
-
-
-#one_kT vs more complicated setup (one_kt_mccoy), mnakes no difference
-
-lm3 <- lm(log(mortality_final$mortality_corr) ~ mortality_final$one_kT + mortality_final$Group + mortality_final$Species )
-summary(lm3)  #-0.56190 
-aov(lm3)
-library(rsq)
-rsq.partial(lm3)
-########################################################################
-################################# Plots ##############################
-########################################################################
-
-
-#Phytoplankton don't look great, only two "species"
-unique(mortality_final$Species[mortality_final$Group == "Phytoplankton"])
-mortal_plot_phyto <- ggplot(mortality_final %>% 
-                              filter(temp_range_spp >= 2) %>%
-                         filter(Group == "Phytoplankton" | Group == "Multicellular plant") %>%
-                         arrange(Species),
-                       aes(x = one_kT, y = mortality_corr)) + 
-  geom_smooth(method = 'lm', size = 1,  alpha = 0, color = "forestgreen",
-              aes(group = Species)) +
-  scale_y_log10(name = expression(paste('Mortality (yr'^-1,' g'^{1/4},')')))+#,
-                     #limits = c(-4, 0.5)) +  
-  scale_x_reverse(name = expression("1/kT"), limits = c(43, 38), 
-                  sec.axis = sec_axis(~ 1/(.*0.00008617) - 273.15, 
-                                      name = "Temperature (ºC)")) +
-  theme_single
-grid.newpage()
-grid.draw(mortal_plot_phyto)
-
-# Ectotherms
-# restricted to temp range of 5 c
-mortal_plot_ectos <- ggplot(mortality_final %>% 
-                              filter(Group == "Fish" | Group == "Invertebrate") %>%
-                              #filter(n_species >= 2) %>%
-                              filter(temp_range_spp >= 5) %>%
-                              arrange(Species),
-                            aes(x = one_kT, y = mortality_corr)) + 
-  geom_smooth(method = 'lm', size = 0.5,  alpha = 0,
-              aes(group = Genus, color = Group)) +
-  scale_color_manual(values =c("Invertebrate" = invert_col, "Fish" = fish_col, 
-                               "Mammal" = mamm_col, "Bird" = bird_col)) +
-  scale_y_continuous(trans = "log10", name = expression(paste('Mortality (yr'^-1,' g'^{1/4},')')),
-                     limits = c(.1, 10), breaks = c(0.1, 1, 10), labels = c(0.1, 1, 10)) +  
-  scale_x_reverse(name = expression("1/kT"), limits = c(42.5, 39.5), 
-                  sec.axis = sec_axis(~ 1/(.*0.00008617) - 273.15, 
-                                      name = "Temperature (ºC)")) +
-  theme_single
-grid.newpage()
-grid.draw(mortal_plot_ectos)
-
-### All, by species for ectos (no phytoplankton), by genus for endos - looks  a little crazy
-mortal_plot6 <- ggplot() + 
-  geom_smooth(data = mortality_final %>%
-                filter(Group == "Fish" | Group == "Invertebrate"),
-                      # temp_range_spp >=5, n_species >= 3), 
-              method = 'lm', size = 0.5,  alpha = 0,
-              aes(group = Species, color = Group,
-                  x = one_kT, y = mortality_corr)) +
-  geom_smooth(data = mortality_final %>%
-                filter(Group == "Mammal" | Group == "Bird"),
-                      # temp_range_genus >=5, n_genus >= 3),
-              method = 'lm', size = 0.5,  alpha = 0,
-              aes(group = Genus, color = Group,
-                  x = one_kT, y = mortality_corr)) +
-  #geom_smooth(method = 'lm', size = 1.5,  alpha = 0,
-  #           aes(group = Group, color = Group)) +
-  scale_color_manual(values =c("Invertebrate" = invert_col, "Fish" = fish_col, 
-                               "Mammal" = mamm_col, "Bird" = bird_col)) +
-  scale_y_continuous(name = expression(paste('Mortality (yr'^-1,' g'^{1/4},')')),
-                     trans = "log10", breaks = c(0.3, 1, 3,10), labels = c("0.3", "1", "3", "10"), limits = c(0.18, 10)) +  
-  scale_x_reverse(name =  expression("1/kT"), limits = c(44.8, 38), 
-                  sec.axis = sec_axis(~ 1/(.*0.00008617) - 273.15, 
-                                      name = "Temperature (ºC)")) +
-  annotate("text", label = "Bird", hjust = 0, color = "brown4", x = 44.8, y = 6.9, size = 6, fontface = "bold") +
-  annotate("text", label = "Mammal", hjust = 0,color = "red", x = 44.8, y = 9, size = 6, fontface = "bold") +
-  annotate("text", label = "Invertebrate", hjust = 0,color = "deepskyblue2", x = 44.8, y = 5.3, size = 6, fontface = "bold") +
-  annotate("text", label = "Fish", hjust = 0,color = "navy", x = 44.8, y = 4, size = 6, fontface = "bold") +
-  theme_single +theme(legend.position = "none")
-grid.newpage()
-grid.draw(mortal_plot6)
-
-ggsave(mortal_plot6, height = 5, width = 7, filename = 'figfig.pdf')
-
-# Best compromise??
-# 5 indiv per genus, temp range of 5
-mortal_plot_all <- ggplot(mortality_final %>% 
-                         filter(Group == "Fish" | Group == "Invertebrate" |
-                                  Group == "Mammal" | Group == "Bird") %>%
-                         #filter(n_genus >= 5) %>%
-                         filter(temp_range_genus >= 5),
-                       aes(x = one_kT, y = mortality_corr)) + 
-  geom_smooth(method = 'lm', size = 0.5,  alpha = 0,
-              aes(group = Genus, color = Group)) +
-  scale_color_manual(values =c("Invertebrate" = invert_col, "Fish" = fish_col, 
-                               "Mammal" = mamm_col, "Bird" = bird_col)) +
-  scale_y_continuous(name = expression(paste('Mortality (yr'^-1,' g'^{1/4},')')),
-                     trans = "log10", breaks = c(0.3, 1, 3,10), labels = c("0.3", "1", "3", "10"), limits = c(0.3, 10)) +  
-  scale_x_reverse(name = expression("1/kT"), limits = c(44.8, 38), 
-                  sec.axis = sec_axis(~ 1/(.*0.00008617) - 273.15, 
-                                      name = "Temperature (ºC)")) +
-  #annotate("text", label = "Bird", hjust = 0, color = bird_col, x = 44.8, y = 6.9, size = 6, fontface = "bold") +
-  #annotate("text", label = "Mammal", hjust = 0,color = mamm_col, x = 44.8, y = 9, size = 6, fontface = "bold") +
-  #annotate("text", label = "Invertebrate", hjust = 0, color = invert_col, x = 44.8, y = 5.3, size = 6, fontface = "bold") +
-  #annotate("text", label = "Fish", hjust = 0,color = fish_col, x = 44.8, y = 4, size = 6, fontface = "bold") +
-  theme_single +theme(legend.position = "none")
-grid.newpage()
-grid.draw(mortal_plot_all)
-ggsave(mortal_plot_all, height = 5, width = 7, filename = file.path(gdrive_path, 'Plots/mortality_by_genus_5_indiv_5C.pdf'))
-
-
-
-
-###############Supplemental Mortality: regression for all groups, showing the data points
-
-#combine supplements
-g_ecto <- ggplotGrob(mortal_plot_ecto)
-g_endo <- ggplotGrob(mortal_plot_endo)
-g3 <- rbind(g_endo, g_ecto , size = "first")
-g3$widths <- unit.pmax(g_ecto$widths, g_ecto$widths)
-grid.newpage()
-grid.draw(g3)
-ggsave(g3, height = 7.6, width = 6, filename = file.path(gdrive_path,'Plots/comb_mortality.pdf'))
-
-
-##################################################################  
-######################  Attack Rates #############################
-##################################################################  
-
-unique(attack$predator.species)
-# slope and r2 depends on what variables are included in addition to temp
-lm_attack <- lm( data= attack, log(attack.rate) ~ one_kT)
-summary(lm_attack) # E = -0.75, r2 = 0.03
-lm_attack_dim <- lm(data= attack, log(attack.rate) ~ one_kT +dimensionality)
-summary(lm_attack_dim) # E = -0.75, r2 = 0.05
-
-lm_attack_dim_sp <- lm(data= attack, log(attack.rate) ~ one_kT +dimensionality + predator.species)
-summary(lm_attack_dim_sp) # E = -0.429, int = 4.005, r2 = 0.93
-
-lm_attack_sp <- lm(data= attack, log(attack.rate) ~ one_kT + predator.species)
-summary(lm_attack_sp) # E = -0.425, int = 43.856
-attack_lab  <- expression(paste('y = -0.425x, r'^2,' = 0.94'))
-
-## All data points
-attack_all2 <- ggplot(attack,
-                       aes(x = one_kT, y = attack.rate)) + #, shape = Group)) + 
-  geom_point(size = 2.5, stroke = .5,  shape =21, fill = "deepskyblue3", color = "black") +
-  geom_smooth(method = 'lm', size = 1,  alpha = 0.3, color = "deepskyblue3") +
-  scale_y_log10(breaks = trans_breaks(n = 4,"log10", function(x) 10^x),
-                                   labels = trans_format("log10", math_format(10^.x)),
-                                   name = expression(paste('Attack Rate (m'^2,' s'^-1,')'))) +
-             
-  scale_x_reverse(name = expression("1/kT"), limits = c(42.2, 38), 
-                  sec.axis = sec_axis(~ 1/(.*0.00008617) - 273.15, 
-                                      name = "Temperature (ºC)")) +
-  annotate("text", label = "y = -0.76x, r") +
-  theme_single
-grid.newpage()
-grid.draw(attack_all2)
-
-
-#combined with mortality
-attack_regr_genus <- ggplot(attack %>% 
-         #filter(dimensionality == "2D") %>% 
-         filter(n_genus >= 5) %>%
-         filter(temp_range_genus >= 5) %>%
-         arrange(Pred_Genus),
-       aes(x = one_kT, y = attack.rate)) + 
-  geom_smooth(method = 'lm', size = 1,  alpha = 0,
-              aes(group = Pred_Genus, color = predator.met.group), linetype = "dashed") +
-  scale_color_manual(values =c("invert" = invert_col, "ectovert" = "navy"))+
-  scale_y_continuous(name = expression(paste('Attack Rate (m'^2,' s'^-1,')')),
-                     limits = c(10^-10, 10^-3), 
-                     labels = trans_format("log10", math_format(10^.x)),
-                     breaks = c(10^-11, 10^-9, 10^-7, 10^-5, 10^-3), trans = "log10") +  
-  scale_x_reverse(name = expression("1/kT"), limits = c(42, 38), 
-                  sec.axis = sec_axis(~ 1/(.*0.00008617) - 273.15, 
-                                      name = NULL)) +
-  #annotate("text", y = 10^-9.5, x = 40, hjust = 0, size = 6, label = attack_lab, color = invert_col) +
-  theme_single + theme(legend.position = "none")
-
-grid.newpage()
-grid.draw(attack_regr_genus)
-ggsave(attack_regr_genus , height = 4.7, width = 6.7, filename = file.path(gdrive_path,'Plots/attack_by_genus_5_indiv_5C_over.pdf'))
-
-
-# All slopes, calculated separately
-
-
-box_mort_attack_ea <- ggplot(mort_attack , aes(x = Type, y = -1*estimate, fill = Type))+
-  geom_boxplot(fill = "dodgerblue") + 
-  scale_y_continuous(position = "right", name=expression(paste('Thermal Sensitivity (E'[a],')')))+ 
-  scale_x_discrete(name = NULL) +
-  # scale_fill_manual(values =c("Ectotherm" = "skyblue3", "Endotherm" = "red2")) +
-  theme_single + theme(legend.position = "none") 
-box_mort_attack_ea
-ggsave(box_mort_attack_ea,  height = 4.22, width = 5.9,  filename = file.path(gdrive_path,'Plots/box_mort_attack_ea.pdf'))
-
-
-# combine plots
-#combine supplements
-g_ecto <- ggplotGrob(mortal_plot_ecto)
-g_endo <- ggplotGrob(mortal_plot_endo)
-g3 <- rbind(g_endo, g_ecto , size = "first")
-g3$widths <- unit.pmax(g_ecto$widths, g_ecto$widths)
-grid.newpage()
-grid.draw(g3)
-ggsave(g3, height = 7.6, width = 6, filename = file.path(gdrive_path,'Plots/comb_mortality.pdf'))
-
-mortal_plot_endo
-mortal_plot_ecto
-mortal_plot_5C_5ind
-box_mort_Ea 
-attack_regr
-box_mort_attack_ea 
-
-
-g_mortal_plot_endo<- ggplotGrob(mortal_plot_endo)
-g_mortal_plot_ecto <- ggplotGrob(mortal_plot_ecto)
-g_mortal_plot_5C_5ind <- ggplotGrob(mortal_plot_5C_5ind)
-g_box_mort_Ea<- ggplotGrob(box_mort_Ea)
-g_attack_regr <- ggplotGrob(attack_regr)
-g_box_mort_attack_ea <- ggplotGrob(box_mort_attack_ea)
-
-
-
-g3a <- rbind(g_mortal_plot_endo, g_mortal_plot_5C_5ind , g_attack_regr, size = "first")
-g3a$widths <- unit.pmax(g_mortal_plot_endo$widths, g_mortal_plot_5C_5ind$widths,g_attack_regr$widths)
-grid.newpage()
-grid.draw(g3a)
-g3b <- rbind(g_mortal_plot_ecto, g_box_mort_Ea, g_box_mort_attack_ea , size = "first")
-g3b$widths <- unit.pmax(g_mortal_plot_ecto$widths, g_box_mort_Ea$widths,g_box_mort_attack_ea$widths)
-grid.newpage()
-grid.draw(g3b)
-
-g4 <- cbind(g3a, g3b)
-grid.newpage()
-grid.draw(g4)
-
-ggsave(g4, height = 7.6, width = 6, filename = file.path(gdrive_path,'Plots/all_figs.pdf'))
