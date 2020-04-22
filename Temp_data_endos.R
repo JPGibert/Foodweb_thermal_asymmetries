@@ -1,4 +1,4 @@
-path <- file.path('ADD YOUR FILE PATH HERE') 
+path <- file.path('YOUR FOLDER HERE') 
 
 library(tidyverse)
 library(sf)
@@ -9,7 +9,7 @@ library(Hmisc, pos =100)
 
 ##### Read in Mortality data from MccCoy & Gillooly 
 # correct bird names
-mortality1 <- read_csv(file.path(path,'Data/McCoy_Gillooly_Data.csv'))
+mortality1 <- read_csv(file.path(path,'McCoy_Gillooly_Data.csv'))
 
 #----------------------------------------------------------------------------------------------------
 #---------Check Species Names and Update to match names for Birdlife International Range Maps--------
@@ -127,7 +127,7 @@ mort_birds2 <- mort_birds2[-which(mort_birds2$new_name2 == "Pagophila eburnea"),
 
 #updated Species List
 bird_spp <- unique(mort_birds2$new_name2)
-write_csv(bird_spp, "~/Desktop/bird_spp.csv")
+
 
 #-----------------------------------------------------------------------------------------------------
 #--------------------------------- Spatial Analysis - Get Centroid -----------------------------------
@@ -139,7 +139,7 @@ write_csv(bird_spp, "~/Desktop/bird_spp.csv")
 ea_tf <- st_crs("+proj=cea +lon_0=0 +lat_ts=30 +x_0=0 +y_0=0 +datum=WGS84 +ellps=WGS84 +units=m +no_defs") #equal area projection
 
 # Read in bird shapefiles
-birds <- st_read(file.path(path, 'Data/bird_mort.gpkg')) #shortened to match Gillooly species
+birds <- st_read(file.path(path, 'bird_range_sample.gpkg')) #shortened to match Gillooly species
 
 #---- Limit Birdlife Int species to those in mortality file
 mort_birds3 <- birds %>%
@@ -150,8 +150,9 @@ reshape_birds <- function(x) {
   raw1 = st_transform(x, ea_tf) 
   raw2 = filter(raw1, ORIGIN != 4)
   raw3 = rename(raw2,binomial = SCINAME)
-  raw4 = rename(raw3, geom = SHAPE)
+  #raw4 = rename(raw3, geom = SHAPE)
 }
+
 
 mort_birds4 <- reshape_birds(mort_birds3)
 mort_birds4 
@@ -219,7 +220,7 @@ ggplot(data = filter(mort_birds_shp_lat_lon ,binomial == "Accipiter nisus" )) + 
 #swimming birds (Alcidae, Shpheniscidae and marine going Phalacrocoracidae, Gaviidae, Podicipedidae)
 
 # ocean 
-ocean_temp <- raster(file.path(path, 'Data/sstC_2006_2015.tif')) #Data compiled in 2019 XXXX paper
+ocean_temp <- raster(file.path(path, 'sstC_2006_2015.tif')) #Data compiled in 2019 XXXX paper
 temp_ocean_latlon <- projectRaster(ocean_temp, raster_latlon)
 temps_raster <- raster::extract(temp_ocean_latlon, data.frame(x = mort_birds_shp_lat_lon$X.1, y = mort_birds_shp_lat_lon$Y.1))
 temps_raster_df <- as.data.frame(temps_raster, xy = T)
@@ -238,7 +239,7 @@ values2 <- temps_raster_df$temps_raster #sea surface temp
 df_bird <- as_tibble(cbind.data.frame(coordinates(points),values1, values2, mort_birds_shp_lat_lon$binomial))
 
 # Species list of marine swimming birds from above families
-sw_bird_spp <-read_csv(file.path(path,'Data/sw_bird_names.csv'))
+sw_bird_spp <-read_csv(file.path(path,'sw_bird_names.csv'))
 
 # Mean Temp = If bird is marine, use sea surface temp, otherwise WorldClim 
 bird_temp <- df_bird %>%
@@ -331,8 +332,8 @@ mammal_spp <- unique(mort_mammals2$new_name2)[order(unique(mort_mammals2$new_nam
 #-------------  Get centroids and associated temp 
 
 #---- read in range shapefiles
-mammals_shp0 <- st_read(file.path(path, 'Data/MAMMALS/MAMMALS.shp'))
-mammals_shp0 <- st_read(file.path(path, 'Data/mammal_range_sample.shp'))
+#mammals_shp0 <- st_read(file.path(path, 'Data/MAMMALS/MAMMALS.shp'))
+mammals_shp0 <- st_read(file.path(path, 'mammal_range_sample.shp'))
 
 #------- Limit to species in mortality dataset
 mort_mammals_shp1 <- mammals_shp0 %>%
@@ -443,4 +444,5 @@ mammal_temp <- mammal_temp0 %>%
 
 head(mammal_temp)
 mammal_temp <- mammal_temp %>% dplyr::select(Mean_Temp_C, Order, Family, Species)
+
 
