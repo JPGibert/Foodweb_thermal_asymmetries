@@ -7,7 +7,8 @@
 1) Temp_data_endos.R:\
       –has all the code needed to prepare the data used for analysis as described in the Methods section.\
       –this code standardizes species names, calculates the geographic range centroid, uses the centroid to source                   environmental temperature at that point in space from WorldClim and sea surface temperature file.\
-      –it requires the data from the DATA folder in this repository.
+      –it requires the data from the DATA folder in this repository.\
+      –set PATH to data location. To use full data, set PATH to where you downloaded IUCN or BirdLife data file. Alternatively       use with "Sample data" within the DATA folder.
 
 2) Asymmetry_plots.R:\
       –has the code needed to reproduce Figure 2 of the main text.
