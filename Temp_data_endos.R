@@ -141,6 +141,9 @@ ea_tf <- st_crs("+proj=cea +lon_0=0 +lat_ts=30 +x_0=0 +y_0=0 +datum=WGS84 +ellps
 # Read in bird shapefiles
 birds <- st_read(file.path(path, 'bird_range_sample.gpkg')) #shortened to match Gillooly species
 
+## For the full dataset: 
+#birds <- st_read(file.path(path, 'FILE_NAME.gpkg', layer="All_Species")) 
+
 #---- Limit Birdlife Int species to those in mortality file
 mort_birds3 <- birds %>%
   filter(SCINAME  %in% bird_spp) 
