@@ -153,9 +153,8 @@ reshape_birds <- function(x) {
   raw1 = st_transform(x, ea_tf) 
   raw2 = filter(raw1, ORIGIN != 4)
   raw3 = rename(raw2,binomial = SCINAME)
-  #raw4 = rename(raw3, geom = SHAPE)
+  #raw4 = rename(raw3, geom = SHAPE) ## For Full dataset, remove pound sign
 }
-
 
 mort_birds4 <- reshape_birds(mort_birds3)
 mort_birds4 
