@@ -7,4 +7,5 @@
 5) bird_temp.csv is the average environmental temperature (ºC) for a bird species, as described in Methods.
 6) mammal_temp.csv is the average environmental temperature (ºC) for a mammal species, as described in Methods.
 7) McCoy_mortality_updated_endo_names.csv for are updated species name for the mortality data McCoy and Gillooly data (2008), as described in Methods.
-8) sw_bird_names.csv are updated bird species hames for the mortality data McCoy and Gillooly data (2008), as described in Methods.
+8) sstC_2006_2015.tif is mean sea surface temperature 2006-2015 
+9) sw_bird_names.csv are updated bird species hames for the mortality data McCoy and Gillooly data (2008), as described in Methods.
