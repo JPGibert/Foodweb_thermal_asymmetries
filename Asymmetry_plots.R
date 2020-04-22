@@ -89,16 +89,10 @@ mortality2 #2,103 spp
 unique(mortality2$Group)
 
 
-# Create 1/kT column; Mccoy use a weird but equivalent formulation ('one_kT_mccoy')
+# Create 1/kT column; 
 mortality2$one_kT <- 1/(8.617e-5*(mortality2$Temp_C_good +273.15)) # my default temp
-mortality2$one_kT_mccoy <- (1/8.617e-5) *((1/(mortality2$Temp_C_good + 273.15) - (1/(273.15 + 20)))) #what mccoy did
 mortality2$mortality_corr <- mortality2$Mortality_yr*mortality2$dry_mass_g^0.25
 
-# data counts
-length(mortality2$Temp_C[mortality2$Group == "Mammal"]) #774  
-sum(!is.na(mortality2$Temp_C_good[mortality2$Group == "Mammal"])) # 318 out of 489
-length(mortality2$Temp_C_good[mortality2$Group == "Bird"]) #774  Total Endo = 1263
-sum(!is.na(mortality2$Temp_C_good[mortality2$Group == "Bird"])) #496,  To
 
 ##################### remove NA's, NAN, Inf's for analysis ################################## 
 mortality2.1 <- mortality2[is.na(log(mortality2$mortality_corr)) == F,]
@@ -179,7 +173,7 @@ mortal_plot_endo <- ggplot(mortality %>%
 grid.newpage()
 grid.draw(mortal_plot_endo)
 
-
+# Save plot
 ggsave(mortal_plot_endo, height = 4.6, width = 6.7, filename = file.path(gdrive_path, "Plots/Fig_2/Fig2a_endo_mortality.pdf"))
 
 
@@ -234,6 +228,7 @@ mortal_plot_ecto <- ggplot(mortality %>%
 grid.newpage()
 grid.draw(mortal_plot_ecto) 
 
+# Save plot
 ggsave(mortal_plot_ecto, height = 5, width = 7, filename = file.path(gdrive_path, 'Plots/Fig_2/Fig2b_ecto_mortality2.pdf'))
 
 
@@ -241,6 +236,7 @@ ggsave(mortal_plot_ecto, height = 5, width = 7, filename = file.path(gdrive_path
 mort_5 <- mortality_final %>% 
   filter(n_genus >= 5) %>%
   filter(temp_range_genus >= 5)
+
 ##########################################
 #### Panel 2c, Mortality regressions
 ##########################################
@@ -272,6 +268,7 @@ mortal_plot_5C_5ind <- ggplot(mort_5 %>%
 grid.newpage()
 grid.draw(mortal_plot_5C_5ind)
 
+# Save plot
 ggsave(mortal_plot_5C_5ind, height = 4.3, width = 6.3, filename = file.path(gdrive_path,'Plots/Fig_2/Fig2C_mortality_genus_5_indiv_5C_and_group.pdf'))
 ggsave(mortal_plot_5C_5ind, height = 4.3, width = 6.3, filename = 'figfig.pdf')
 
@@ -282,7 +279,6 @@ ggsave(mortal_plot_5C_5ind, height = 4.3, width = 6.3, filename = 'figfig.pdf')
 ##########################################
 
 #Restricted to 5 indiv per genus, 5 C range
-
 
 mort_ecto <- mort_5 %>% 
   filter(Group == "Fish" | Group == "Invertebrate")  
@@ -319,7 +315,6 @@ mort_lm
 
 
 #### look within genus 
-
 mort_lm2 <- mort_5  %>%
   nest(-Genus) %>% 
   mutate(
@@ -348,8 +343,9 @@ mort_vio_Ea <- ggplot(mort_lm2, aes(x = Thermy, y = -1*estimate))+
   theme_single + theme(legend.position = "none") + ggtitle("Mortality") + 
   theme(plot.title = element_text(hjust = 0.5, face = "bold")) + theme_ticks
 mort_vio_Ea
-ggsave(mort_vio_Ea,  height = 4.22, width = 6.05, filename = file.path(gdrive_path,'Plots/Fig_2/Fig2d_vio_mort.pdf'))
 
+# Save plot
+ggsave(mort_vio_Ea,  height = 4.22, width = 6.05, filename = file.path(gdrive_path,'Plots/Fig_2/Fig2d_vio_mort.pdf'))
 
 
 ####### Mortality regressions
@@ -373,6 +369,8 @@ mortal_plot_5C_5ind <- ggplot(mort_5 %>%
 
   theme_single + theme_ticks +theme(legend.position = "none")
 grid.draw(mortal_plot_5C_5ind)
+
+# Save plot
 ggsave(mortal_plot_5C_5ind, height = 4.7, width = 6.7, filename = file.path(gdrive_path,'Plots/Fig_2/Fig2e_2v2_mort_by_genus_5_indiv_5C_overlay.pdf'))
 
 
@@ -381,9 +379,7 @@ ggsave(mortal_plot_5C_5ind, height = 4.7, width = 6.7, filename = file.path(gdri
 ##v  Fig 2F - violin plot
 ############################################
 
-#################################  Fig 5e Attack Rates & Mortality Regressions  #################################
-
-
+#################################  Fig 2e Attack Rates & Mortality Regressions  #################################
 
 attack2 <- attack %>%
   mutate(Pred_Genus = word(predator.species)) %>%
