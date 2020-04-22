@@ -1,4 +1,4 @@
-Here is a description of the data sources used in this paper.
+## Here is a description of the data sources used in this paper.
 
 1) Dell_data.csv has all the thermal sensitivities for multiple traits, as described in Dell et al 2011 PNAS. 
 2) Metadata.docx described all variables contained in Dell_data.csv, as described in Dell et al 2011 PNAS.
