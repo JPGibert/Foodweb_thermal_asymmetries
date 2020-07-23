@@ -18,7 +18,7 @@
       –the code 1) loads the data in Dell et al 2011, 2) finds all those ocurrences for which information on possible trophic       role exists (e.g., resource, grazer, omnivore), 3) extracts reported temperature sensitivities for those species, then         4) asks whether the temperature sensitivities increase or decrease with trophic level, by performing the analysis in two       different ways (as describved in the main text). The code is setup to reproduce the results in the main text. 
 
 **Modeling:**
-1) Model_Julia_Code:\
+1) Model_Julia_pseudoCode:\
       –explains in pseudocode how the Julia code used to run the model in the main text works
 
 2) Model_Julia_Code:\
