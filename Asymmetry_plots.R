@@ -71,14 +71,13 @@ theme_ticks <- theme(axis.ticks.length=unit(-0.25, "cm"),
 ###################################  Add endo temp data ################################## 
 
 # Create 1/kT column; 
-mortality0 <- read_csv(file.path(gdrive_path,'McCoy_mortality_updated_endo_names.csv')) 
+mortality0 <- read_csv(file.path(gdrive_path,'McCoy_mortality_updated.csv')) 
 mortality0$one_kT <- 1/(8.617e-5*(mortality0$Temp_C + 273.15)) # Inverse Temperature
 
 mortality1 <- mortality0 %>%
   rename(species = Species) %>%
   arrange(Group, species) %>%
-  mutate(log_mort = log(Mortality_yr), log_mass = log(dry_mass_g)) %>%
-  select(-Ref) 
+  mutate(log_mort = log(Mortality_yr), log_mass = log(dry_mass_g))
 
  
 ##########################################################################
@@ -157,7 +156,7 @@ get_prior(formula = log_mort ~ log_mass + one_kT + (1|gr(species, cov = A)), dat
 
 priors1 <- c(set_prior("normal(0, 1)", class = "Intercept"),
              set_prior("normal(0, 1)", class = "b", coef = "one_kT"), #slope = 0 for endotherms
-             set_prior("normal(0, 1)", class = "b", coef = "log_mass")
+             set_prior("normal(-0.25, 1)", class = "b", coef = "log_mass")
 )
 
 
@@ -167,9 +166,8 @@ system.time(model_mort_mammal <- brm(
     family = gaussian(), 
     data2 = list(A = A),
     prior = priors1,
-    cores = parallel::detectCores() -1,
-    control = list(adapt_delta = 0.9) 
-  ))
+    cores = parallel::detectCores() -1) 
+  )
 
 
 # Model Results
@@ -195,9 +193,8 @@ model_mort_mammal_corr <- brm(
     family = gaussian(), 
     data2 = list(A = A),
     prior = priors2,
-    cores = parallel::detectCores() -1,
-    control = list(adapt_delta = 0.9) 
-  ) 
+    cores = parallel::detectCores() -1) 
+   
 
 print(summary(model_mort_mammal_corr), digits = 5) 
 
@@ -221,9 +218,6 @@ bird_tree_mcc <- drop.tip(bird_tree_mcc0 , bird_tree_mcc0$tip.label[is.na(bird_s
 
 mort_bird <- mort_bird0[mort_bird0$species %in% bird_tree_mcc$tip.label,]
 
-# drop bird species not in phylogeny
-mortality1 <- mortality1 %>% filter(Group != "Bird")
-mortality1 <- as_tibble(rbind(mort_bird, mortality1))
 
 # variance and covariance from phylogeny
 A <- ape::vcv.phylo(bird_tree_mcc)
@@ -235,10 +229,9 @@ system.time(model_mort_bird <- brm(
     family = gaussian(), 
     data2 = list(A = A),
     prior = priors1,
-    cores = parallel::detectCores() -1,
-    control = list(adapt_delta = 0.9) 
+    cores = parallel::detectCores() -1) 
   ) 
-)
+
 # Model Results
 print(summary(model_mort_bird), digits = 4) 
 bayes_R2(model_mort_bird) 
