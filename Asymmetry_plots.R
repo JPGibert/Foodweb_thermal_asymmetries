@@ -77,8 +77,9 @@ mortality0$one_kT <- 1/(8.617e-5*(mortality0$Temp_C + 273.15)) # Inverse Tempera
 mortality1 <- mortality0 %>%
   rename(species = Species) %>%
   arrange(Group, species) %>%
-  mutate(log_mort = log(Mortality_yr), log_mass = log(dry_mass_g))
-
+  mutate(log_mort = log(Mortality_yr), log_mass = log(dry_mass_g),
+         Genus = word(species, sep = "_"))
+mortality1
  
 ##########################################################################
 #--------------- Analyze Groups ----------
@@ -87,14 +88,16 @@ mortality1 <- mortality0 %>%
 # Data
 mort_fish <- mortality1 %>%
   filter(Group == "Fish") %>%
-  select(species, log_mass, log_mort, one_kT)
+  select(Genus, species, log_mass, log_mort, one_kT)
 
-# Model, species as random effect
-fish_mort_lmer <- lmer(log_mort ~ log_mass + one_kT + (1 |species), data = mort_fish)
+# Model, species as random effect, not enough data to model different slopes per genus
+fish_mort_lmer <- lmer(log_mort ~ log_mass + one_kT + +
+                         (1|Genus) + (1|species) + 
+                         (1|Genus:species), data = mort_fish)
 
 # Results
 summary(fish_mort_lmer) # mass slope = -0.29283
-confint.merMod(fish_mort_lmer)
+confint.merMod(fish_mort_lmer, method = "Wald")
 r.squaredGLMM(fish_mort_lmer)
 
 # Mass-corrected  for plotting
@@ -106,20 +109,22 @@ mort_invert <- mortality1 %>%
   filter(Group == "Invertebrate")
 
 # Model, species as random effect
-invert_mort_lmer <- lmer(log_mort ~ log_mass + one_kT + (1|species), data = mort_invert )
+invert_mort_lmer <- lmer(log_mort ~ log_mass + one_kT + +
+                         (1|Genus) + (1|species) + 
+                         (1|Genus:species), data = mort_invert)
 
 # Results
 summary(invert_mort_lmer)  # mass slope = -0.24932
-confint.merMod(invert_mort_lmer)
+confint.merMod(invert_mort_lmer, method = "Wald")
 r.squaredGLMM(invert_mort_lmer)
 
 # Or evaluate ectos together 
 mort_ecto <- mortality1 %>%
   filter(Group == "Fish" | Group == "Invertebrate") 
-mort_ecto_lmer <- lmer(log_mort ~ log_mass + one_kT + (1 + one_kT|Group) +(1|Group:species) +
-                         (1 + log_mass|Group), data = mort_ecto)
+mort_ecto_lmer <- lmer(log_mort ~ log_mass + one_kT + (one_kT|Group) +(1|Genus) +(1|species) +(1|Group:Genus:species) +
+                         (log_mass|Group), data = mort_ecto)
 summary(mort_ecto_lmer)
-confint.merMod(mort_ecto_lmer, method = "Wald") # Wald handles multiple terms better
+confint.merMod(mort_ecto_lmer, method = "Wald") 
 r.squaredGLMM(mort_ecto_lmer)
 
 #--------------Mammals: comprehensive phylogeny available-----------------
@@ -559,32 +564,37 @@ attack4  <- attack3  %>%
   mutate(temp_range_genus = max(temperature.degree.celcius) - min(temperature.degree.celcius))
 
 attack <- attack4
-
+attack$log_attack <- log(attack$attack.rate)
 
 # Mixed model test - Group and species as random effect  (species nested in group)
-ecto_attack_lmer <-  lmer(data = attack, log(attack.rate) ~ one_kT + log(predator.mass.mg) +
-                            (1 + one_kT|predator.ana.group) + (1|predator.ana.group:predator.species) +
-                            (1 + log(predator.mass.mg)|predator.ana.group)
-                          )
+ecto_attack_lmer <-  lmer(data = attack, log(attack.rate) ~ one_kT + log(predator.mass.mg) 
+                            (one_kT|predator.ana.group) + (one_kT|Pred_Genus) + 
+                            (one_kT|predator.ana.group:Pred_Genus) + (1|predator.species) +
+                            (one_kT|Pred_Genus:predator.species))
 summary(ecto_attack_lmer)
 confint.merMod(ecto_attack_lmer, method = "Wald")
 r.squaredGLMM(ecto_attack_lmer)
 
 # Mixed model for inverts separately
-invert_attack <- attack %>% filter( predator.ana.group == "invertebrate")
-invert_attack_lmer <- lmer(data = invert_attack, log(attack.rate) ~ one_kT + log(predator.mass.mg) +
-                             (1|predator.species))
-summary(invert_attack_lmer)  #0.56031 mass scaling slope
-confint.merMod(invert_attack_lmer)
-r.squaredGLMM(invert_attack_lmer)
-invert_attack$attack_mass_corr <- invert_attack$attack.rate/invert_attack$predator.mass.mg^0.560
 
-#vMixed model for vertebrates separately
+log_mort ~ log_mass + one_kT + +(1 | Genus) + (1 | species) +      (1 | Genus:species)
+Data: mort_fish
+invert_attack <- attack %>% filter(predator.ana.group == "invertebrate")
+invert_attack_lmer <- lmer(data = invert_attack, log_attack ~ one_kT + log(predator.mass.mg) +
+                             (log(predator.mass.mg)|Pred_Genus) +
+                             (one_kT|Pred_Genus) + (1|predator.species) + (1|Pred_Genus:predator.species))
+summary(invert_attack_lmer)  #0.56031 mass scaling slope
+confint.merMod(invert_attack_lmer, method = "Wald")
+r.squaredGLMM(invert_attack_lmer)
+invert_attack$attack_mass_corr <- invert_attack$attack.rate/invert_attack$predator.mass.mg^0.538
+
+# Mixed model for vertebrates separately
 vert_attack <- attack %>% filter(predator.ana.group == "vertebrate")
-vert_attack_lmer <- lmer(data = vert_attack, log(attack.rate) ~ one_kT + log(predator.mass.mg) +
-                           (1|predator.species))
+vert_attack_lmer <- lmer(data = vert_attack, log_attack ~ one_kT + log(predator.mass.mg) +
+                           (1 + one_kT|Pred_Genus) + (1|predator.species))
+
 summary(vert_attack_lmer) 
-confint.merMod(vert_attack_lmer)
+confint.merMod(vert_attack_lmer, method = "Wald")
 r.squaredGLMM(vert_attack_lmer)
 
 # add mass-corrected attack rate as column
