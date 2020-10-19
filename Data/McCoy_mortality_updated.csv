@@ -1,1717 +1,1713 @@
-Group,Species,dry_mass_g,Temp_C,Mortality_yr
-Mammal,Acinonyx_jubatus,12500,26.2,0.213
-Mammal,Acinonyx_jubatus,12500,26.2,0.169
-Mammal,Acrobates_pygmaeus,3,20.4,0.667
-Mammal,Aepyceros_melampus,13130,24,0.196
-Mammal,Aepyceros_melampus,13130,24,0.169
-Mammal,Aepyprymnus_rufescens,812.5,20.1,0.435
-Mammal,Ailuropoda_melanoleuca,30000,13.3,0.097
-Mammal,Ailurus_fulgens,875,4.5,0.182
-Mammal,Alcelaphus_buselaphus,42750,28,0.127
-Mammal,Alces_alces,89750,9.320396853310546,0.159
-Mammal,Alces_alces,89750,9.320396853310546,0.093
-Mammal,Allenopithecus_nigroviridis,1187,24.9,0.11
-Mammal,Vulpes_lagopus,862.5,0.9,0.256
-Mammal,Alouatta_palliata,1819,23.1,0.127
-Mammal,Alouatta_palliata,1819,23.1,0.127
-Mammal,Alouatta_palliata,1819,23.1,0.101
-Mammal,Alouatta_palliata,1819,23.1,0.101
-Mammal,Ammotragus_lervia,20940,24.6,0.256
-Mammal,Antechinus_flavipes,11.25,20.2,3.333
-Mammal,Antechinus_flavipes,11.25,20.2,1.429
-Mammal,Antechinus_stuartii,6.875,11.4,3.846
-Mammal,Antechinus_stuartii,6.875,11.4,0.909
-Mammal,Antidorcas_marsupialis,9762,20.3,0.127
-Mammal,Antilocapra_americana,11520,1,0.256
-Mammal,Antilocapra_americana,11520,1,0.256
-Mammal,Antilope_cervicapra,9250,27.5,0.169
-Mammal,Antilope_cervicapra,9250,27.5,0.141
-Mammal,Aotus_trivirgatus,225,26.3,0.213
-Mammal,Aotus_trivirgatus,225,26.3,0.127
-Mammal,Aplodontia_rufa,251,7.2,0.435
-Mammal,Aplodontia_rufa,251,7.2,0.256
-Mammal,Apodemus_sylvaticus,6.25,1.4,3.333
-Mammal,Arctictis_binturong,2875,24.7,0.141
-Mammal,Arctocebus_calabarensis,52.5,25.8,0.27
-Mammal,Arctocephalus_galapagoensis,6750,23.9,0.115
-Mammal,Arctocephalus_gazella,24380,0.9923703201080865,0.196
-Mammal,Arctocephalus_gazella,24380,0.9923703201080865,0.11
-Mammal,Arctocephalus_pusillus,44630,16.5,0.141
-Mammal,Arctogalidia_trivirgata,562.5,25.7,0.213
-Mammal,Arvicola_amphibius,50,2.9,1.111
-Mammal,Ateles_paniscus,1975,25.9,0.127
-Mammal,Babyrousa_babyrussa,25000,22.3,0.105
-Mammal,Balaena_mysticetus,17250000,5.058747107691224,0.084
-Mammal,Balaena_mysticetus,17250000,5.058747107691224,0.063
-Mammal,Balaenoptera_acutorostrata,2500000,25.75998347856639,0.056
-Mammal,Balaenoptera_acutorostrata,2500000,25.75998347856639,0.053
-Mammal,Balaenoptera_acutorostrata,2500000,25.75998347856639,0.05
-Mammal,Balaenoptera_borealis,5000000,26.157343803315896,0.036
-Mammal,Balaenoptera_borealis,5000000,26.157343803315896,0.034
-Mammal,Balaenoptera_edeni,4000000,26.093237996834947,0.035
-Mammal,Balaenoptera_musculus,37500000,20.30535723610996,0.056
-Mammal,Balaenoptera_musculus,37500000,20.30535723610996,0.05
-Mammal,Balaenoptera_musculus,37500000,20.30535723610996,0.039
-Mammal,Balaenoptera_musculus,37500000,20.30535723610996,0.023
-Mammal,Balaenoptera_physalus,11250000,23.626656051591965,0.022
-Mammal,Balaenoptera_physalus,11250000,23.626656051591965,0.022
-Mammal,Bassaricyon_gabbii,312.5,25.4,0.105
-Mammal,Bassariscus_astutus,282.4,16.1,0.159
-Mammal,Bassariscus_sumichrasti,225,24.2,0.11
-Mammal,Berardius_bairdii,2845000,16.137661831184374,0.035
-Mammal,Bison_bison,144800,-2.8,0.101
-Mammal,Bison_bison,144800,-2.8,0.076
-Mammal,Bison_bonasus,200000,7.4,0.093
-Mammal,Blarina_brevicauda,3.787,7.2,1.111
-Mammal,Bradypus_torquatus,975,23.7,0.213
-Mammal,Burramys_parvus,10.38,8.5,0.667
-Mammal,Cacajao_calvus,1449,25.8,0.141
-Mammal,Cacajao_melanocephalus,950,26.4,0.213
-Mammal,Callithrix_jacchus,73,25.7,0.256
-Mammal,Callithrix_jacchus,73,25.7,0.256
-Mammal,Callorhinus_ursinus,25000,14.650324347226272,0.101
-Mammal,Callorhinus_ursinus,25000,14.650324347226272,0.084
-Mammal,Callorhinus_ursinus,62500,14.650324347226272,0.051
-Mammal,Canis_latrans,3352,3.8,0.175
-Mammal,Canis_latrans,3352,3.8,0.175
-Mammal,Canis_latrans,3352,3.8,0.12
-Mammal,Canis_lupus,4200,9.3,0.256
-Mammal,Canis_lupus,4200,9.3,0.186
-Mammal,Canis_lupus,4200,9.3,0.159
-Mammal,Canis_lupus,7069,9.3,0.256
-Mammal,Canis_lupus,7069,9.3,0.186
-Mammal,Canis_lupus,7069,9.3,0.159
-Mammal,Canis_rufus,5746,16.4,0.159
-Mammal,Capra_cylindricornis,20000,3,0.115
-Mammal,Capra_falconeri,23750,2.4,0.213
-Mammal,Capra_falconeri,23750,2.4,0.196
-Mammal,Capreolus_capreolus,7500,7.7,0.169
-Mammal,Castor_canadensis,3604,5.9,0.169
-Mammal,Castor_fiber,6250,4.3,0.149
-Mammal,Cebus_albifrons,657.2,25.9,0.063
-Mammal,Sapajus_apella,625,26.5,0.063
-Mammal,Philantomba_monticola,1562,25,0.213
-Mammal,Cephalorhynchus_commersonii,12500,8.938528714829758,0.141
-Mammal,Ceratotherium_simum,737500,20.9,0.07
-Mammal,Ceratotherium_simum,737500,20.9,0.056
-Mammal,Ceratotherium_simum,737500,20.9,0.05
-Mammal,Cercocebus_torquatus,1937,21.7,0.123
-Mammal,Cercocebus_torquatus,1937,21.7,0.084
-Mammal,Cercopithecus_diana,1044,25.1,0.072
-Mammal,Cercopithecus_mona,1156,25.4,0.084
-Mammal,Cervus_elaphus,12500,9.5,0.05
-Mammal,Cervus_elaphus,12500,9.5,0.025
-Mammal,Cervus_elaphus,29880,9.5,0.127
-Mammal,Cervus_elaphus,29880,9.5,0.094
-Mammal,Cervus_elaphus,39060,9.5,0.127
-Mammal,Cervus_elaphus,39060,9.5,0.094
-Mammal,Cervus_elaphus,54440,9.5,0.127
-Mammal,Cervus_elaphus,54440,9.5,0.094
-Mammal,Chinchilla_lanigera,121.2,12.1,0.256
-Mammal,Chinchilla_lanigera,121.2,12.1,0.226
-Mammal,Chiropotes_albinasus,725,26.4,0.149
-Mammal,Chiropotes_satanas,750,26.7,0.141
-Mammal,Civettictis_civetta,3000,26.4,0.169
-Mammal,Coendou_prehensilis,1100,26.4,0.149
-Mammal,Colobus_polykomos,2459,25.7,0.097
-Mammal,Colobus_polykomos,2459,25.7,0.083
-Mammal,Cricetus_cricetus,125,3.2,0.667
-Mammal,Crocidura_leucodon,2.455,11.1,0.909
-Mammal,Crocidura_russula,1.6,12.4,0.847
-Mammal,Crocuta_crocuta,15750,24.7,0.101
-Mammal,Ctenomys_talarum,33.08,13.6,0.909
-Mammal,Cystophora_cristata,50000,8.925894572623157,0.074
-Mammal,Cystophora_cristata,50000,8.925894572623157,0.072
-Mammal,Cystophora_cristata,50000,8.925894572623157,0.072
-Mammal,Dactylopsila_trivirgata,105.8,24,0.526
-Mammal,Dama_dama,12130,8,0.101
-Mammal,Damaliscus_lunatus,24500,22.2,0.182
-Mammal,Damaliscus_lunatus,24500,22.2,0.166
-Mammal,Dasycercus_cristicauda,25,22.3,0.435
-Mammal,Dasyprocta_punctata,668.7,28.42805228870055,0.256
-Mammal,Dasyprocta_punctata,668.7,28.42805228870055,0.256
-Mammal,Dasypus_novemcinctus,1051,26,0.169
-Mammal,Dasypus_novemcinctus,1051,26,0.169
-Mammal,Dasyurus_viverrinus,272.5,6.5,0.526
-Mammal,Delanymys_brooksi,1.25,20.1,1.429
-Mammal,Delphinapterus_leucas,350000,0.7448252501446501,0.147
-Mammal,Delphinapterus_leucas,350000,0.7448252501446501,0.084
-Mammal,Delphinapterus_leucas,350000,0.7448252501446501,0.063
-Mammal,Delphinus_delphis,16250,25.22489353323608,0.127
-Mammal,Dendrohyrax_arboreus,737.5,20.7,0.256
-Mammal,Dendrolagus_matschiei,1740,12.7,0.323
-Mammal,Dicerorhinus_sumatrensis,350000,28.945013952127518,0.079
-Mammal,Dicerorhinus_sumatrensis,350000,28.945013952127518,0.072
-Mammal,Diceros_bicornis,295100,23.3,0.063
-Mammal,Dugong_dugon,105000,27.5,0.046
-Mammal,Dugong_dugon,105000,27.5,0.046
-Mammal,Dugong_dugon,105000,27.5,0.036
-Mammal,Echinops_telfairi,45,22.6,2.632
-Mammal,Elephantulus_myurus,13.1,18.8,2.941
-Mammal,Elephantulus_rufescens,9.375,20.8,0.435
-Mammal,Elephas_maximus,1250000,28.422274612562642,0.063
-Mammal,Elephas_maximus,1250000,28.422274612562642,0.042
-Mammal,Elephas_maximus,1250000,28.422274612562642,0.036
-Mammal,Elephas_maximus,1250000,28.422274612562642,0.032
-Mammal,Enhydra_lutris,7500,5.3,0.11
-Mammal,Enhydra_lutris,7500,5.3,0.084
-Mammal,Equus_africanus,41250,30.1,0.127
-Mammal,Equus_africanus,81250,30.1,0.127
-Mammal,Equus_quagga,59430,19.6,0.057
-Mammal,Equus_quagga,59430,19.6,0.057
-Mammal,Equus_ferus,62500,5.9,0.04
-Mammal,Equus_grevyi,102000,26,0.127
-Mammal,Equus_hemionus,57500,4.4,0.127
-Mammal,Equus_zebra,71750,20,0.127
-Mammal,Equus_zebra,71750,20,0.105
-Mammal,Erethizon_dorsatum,1771,4.3,0.149
-Mammal,Erethizon_dorsatum,1771,4.3,0.141
-Mammal,Erignathus_barbatus,75000,3.675418008588607,0.101
-Mammal,Erignathus_barbatus,75000,3.675418008588607,0.081
-Mammal,Erignathus_barbatus,75000,3.675418008588607,0.081
-Mammal,Erinaceus_europaeus,205.8,8.1,0.37
-Mammal,Erinaceus_europaeus,205.8,8.1,0.323
-Mammal,Erinaceus_europaeus,205.8,8.1,0.182
-Mammal,Erythrocebus_patas,1817,25.1,0.12
-Mammal,Eschrichtius_robustus,7500000,8.15232062183361,0.036
-Mammal,Eschrichtius_robustus,7500000,8.15232062183361,0.033
-Mammal,Eumetopias_jubatus,150000,6.4,0.11
-Mammal,Eumetopias_jubatus,150000,6.4,0.084
-Mammal,Felis_nigripes,325,20,0.213
-Mammal,Felis_silvestris,1063,26.5,0.169
-Mammal,Felis_silvestris,1063,26.5,0.141
-Mammal,Felis_silvestris,1162,26.5,0.169
-Mammal,Felis_silvestris,1162,26.5,0.141
-Mammal,Galea_musteloides,120,8.6,2.381
-Mammal,Gazella_dorcas,5750,23.5,0.204
-Mammal,Gazella_gazella,5625,19.2,0.213
-Mammal,Georychus_capensis,45.25,13,0.909
-Mammal,Gerbillus_pyramidum,10.22,24.7,0.323
-Mammal,Giraffa_camelopardalis,225000,18.8,0.101
-Mammal,Giraffa_camelopardalis,225000,18.8,0.097
-Mammal,Giraffa_camelopardalis,225000,18.8,0.069
-Mammal,Gorilla_gorilla,31060,23.8,0.053
-Mammal,Gorilla_gorilla,31060,23.8,0.05
-Mammal,Gymnobelideus_leadbeateri,31.75,10.5,0.345
-Mammal,Halichoerus_grypus,62500,10.275928351028758,0.081
-Mammal,Halichoerus_grypus,62500,10.275928351028758,0.063
-Mammal,Halichoerus_grypus,62500,10.275928351028758,0.055
-Mammal,Halichoerus_grypus,62500,10.275928351028758,0.055
-Mammal,Hemibelideus_lemuroides,238.1,20.8,0.667
-Mammal,Hemicentetes_semispinosus,28,21.1,1.02
-Mammal,Hemitragus_jemlahicus,22500,0.6,0.256
-Mammal,Herpestes_ichneumon,712.5,24.4,0.213
-Mammal,Heterohyrax_brucei,656.3,19.6,0.182
-Mammal,Hippopotamus_amphibius,300000,23.5,0.03
-Mammal,Hippopotamus_amphibius,354400,23.5,0.056
-Mammal,Hippopotamus_amphibius,354400,23.5,0.05
-Mammal,Hippopotamus_amphibius,354400,23.5,0.046
-Mammal,Hydropotes_inermis,3375,14.9,0.213
-Mammal,Hydrurga_leptonyx,90000,-1.2094293666334854,0.11
-Mammal,Hydrurga_leptonyx,90000,-1.2094293666334854,0.097
-Mammal,Hydrurga_leptonyx,90000,-1.2094293666334854,0.097
-Mammal,Hyemoschus_aquaticus,2713,24.6,0.196
-Mammal,Hyemoschus_aquaticus,2713,24.6,0.182
-Mammal,Hylobates_agilis,1250,26.7,0.101
-Mammal,Hylobates_lar,1250,25.7,0.101
-Mammal,Symphalangus_syndactylus,2750,23.9,0.101
-Mammal,Symphalangus_syndactylus,2750,23.9,0.084
-Mammal,Hyperoodon_ampullatus,625000,18.029368007018007,0.068
-Mammal,Isoodon_macrourus,400,25.9,3.333
-Mammal,Isoodon_macrourus,400,25.9,0.909
-Mammal,Kobus_ellipsiprymnus,52500,25.4,0.137
-Mammal,Kobus_kob,29380,26.4,0.206
-Mammal,Kobus_leche,27690,22.3,0.169
-Mammal,Kobus_megaceros,21880,27.4,0.256
-Mammal,Lagenorhynchus_acutus,50000,10.723969876371292,0.115
-Mammal,Lagenorhynchus_acutus,50000,10.723969876371292,0.093
-Mammal,Lama_guanicoe,21250,14.3,0.127
-Mammal,Lemur_catta,500,23.1,0.093
-Mammal,Leptailurus_serval,3000,24.4,0.11
-Mammal,Lepus_americanus,427.5,0.8,0.526
-Mammal,Lepus_europaeus,950,7.6,0.213
-Mammal,Lepus_timidus,625,-1.4,0.286
-Mammal,Liomys_adspersus,16.25,27.2,2
-Mammal,Litocranius_walleri,9500,28.9,0.323
-Mammal,Litocranius_walleri,9500,28.9,0.213
-Mammal,Lobodon_carcinophaga,56250,-1.2017485184909644,0.11
-Mammal,Lobodon_carcinophaga,56250,-1.2017485184909644,0.084
-Mammal,Lobodon_carcinophaga,56250,-1.2017485184909644,0.07
-Mammal,Lobodon_carcinophaga,56250,-1.2017485184909644,0.065
-Mammal,Loxodonta_africana,985000,21.8,0.042
-Mammal,Loxodonta_africana,985000,21.8,0.036
-Mammal,Loxodonta_africana,1652000,21.8,0.04
-Mammal,Lycaon_pictus,5513,20.5,0.256
-Mammal,Lycaon_pictus,5513,20.5,0.233
-Mammal,Macaca_arctoides,2500,21.1,0.084
-Mammal,Macaca_mulatta,1150,23.8,0.087
-Mammal,Macaca_mulatta,2500,23.8,0.084
-Mammal,Macaca_nemestrina,2500,23.3,0.084
-Mammal,Macaca_radiata,2500,26.5,0.127
-Mammal,Macaca_silenus,2500,26,0.084
-Mammal,Macaca_sinica,1000,27.2,0.084
-Mammal,Macaca_sylvanus,1750,13.3,0.127
-Mammal,Macaca_sylvanus,1750,13.3,0.115
-Mammal,Macropus_agilis,3750,26.2,0.256
-Mammal,Macropus_antilopinus,6813,27.4,0.159
-Mammal,Macropus_dorsalis,2813,20.3,0.169
-Mammal,Macropus_eugenii,1625,15.5,0.182
-Mammal,Macropus_fuliginosus,5500,18.1,0.127
-Mammal,Macropus_giganteus,6469,20.5,0.128
-Mammal,Macropus_giganteus,6469,20.5,0.127
-Mammal,Macropus_parma,1125,14.3,0.37
-Mammal,Macropus_parma,1125,14.3,0.323
-Mammal,Macropus_parryi,3375,21.6,0.256
-Mammal,Macropus_robustus,5316,21.2,0.137
-Mammal,Macropus_rufogriseus,4213,19.1,0.169
-Mammal,Macropus_rufogriseus,4213,19.1,0.137
-Mammal,Macropus_rufus,11560,20.9,0.127
-Mammal,Macropus_rufus,11560,20.9,0.115
-Mammal,Macropus_rufus,11560,20.9,0.084
-Mammal,Marmota_marmota,1313,-0.1,0.169
-Mammal,Martes_martes,325,6.9,0.256
-Mammal,Martes_zibellina,295,-8.4,0.28
-Mammal,Mazama_americana,5700,26.4,0.213
-Mammal,Mazama_americana,5700,26.4,0.213
-Mammal,Megaptera_novaeangliae,7500000,25.75998347856639,0.033
-Mammal,Megaptera_novaeangliae,7500000,25.75998347856639,0.026
-Mammal,Mellivora_capensis,2000,26.2,0.096
-Mammal,Mephitis_mephitis,521.3,8.8,0.435
-Mammal,Mesocricetus_auratus,26.25,17.1,0.909
-Mammal,Mesocricetus_auratus,26.25,17.1,0.256
-Mammal,Microgale_dobsoni,9.75,19.8,0.467
-Mammal,Microgale_talazaci,12.5,19.5,0.45
-Mammal,Micromys_minutus,1.5,7.2,2
-Mammal,Microtus_agrestis,10,3,1.852
-Mammal,Microtus_oeconomus,8.055,1.5,2.174
-Mammal,Miopithecus_talapoin,312.5,22.4,0.09
-Mammal,Mirounga_angustirostris,600000,12.327846461335271,0.182
-Mammal,Mirounga_angustirostris,600000,12.327846461335271,0.182
-Mammal,Mirounga_angustirostris,600000,12.327846461335271,0.182
-Mammal,Mirounga_leonina,400000,0.6603785187235638,0.141
-Mammal,Mirounga_leonina,400000,0.6603785187235638,0.127
-Mammal,Mirounga_leonina,400000,0.6603785187235638,0.127
-Mammal,Mirounga_leonina,400000,0.6603785187235638,0.11
-Mammal,Monodon_monoceros,225000,2.1008546643821226,0.063
-Mammal,Mus_musculus,4.125,4,0.435
-Mammal,Mus_musculus,5.375,4,0.435
-Mammal,Muscardinus_avellanarius,7.5,7.1,0.667
-Mammal,Mustela_lutreola,110,5.4,0.256
-Mammal,Mustela_putorius,275,7.8,0.435
-Mammal,Mustela_putorius,275,7.8,0.256
-Mammal,Neovison_vison,236.2,4.1,0.256
-Mammal,Myocastor_coypus,1734,16.9,0.435
-Mammal,Myopus_schisticolor,6.25,-4,3.333
-Mammal,Myosorex_varius,2.85,15.1,3.333
-Mammal,Napaeozapus_insignis,5.575,3.6,0.667
-Mammal,Nasua_nasua,948.5,25.2,0.182
-Mammal,Nasua_nasua,948.5,25.2,0.182
-Mammal,Neomys_anomalus,4,11.1,1.429
-Mammal,Neomys_fodiens,3.75,3.8,0.909
-Mammal,Neophocaena_phocaenoides,7500,28.721991374079735,0.11
-Mammal,Neotoma_floridana,61.19,16.6,0.909
-Mammal,Ningaui_timealeyi,1.425,25.4,1.429
-Mammal,Nyctereutes_procyonoides,1500,6.7,0.233
-Mammal,Ochotona_collaris,32.25,-6.6,0.435
-Mammal,Ovis_dalli,18250,-6.3,0.107
-Mammal,Ochotona_princeps,39.41,6,0.435
-Mammal,Ochotona_princeps,39.41,6,0.37
-Mammal,Odobenus_rosmarus,300000,3.043098011667524,0.151
-Mammal,Odobenus_rosmarus,300000,3.043098011667524,0.063
-Mammal,Odobenus_rosmarus,300000,3.043098011667524,0.063
-Mammal,Odobenus_rosmarus,300000,3.043098011667524,0.063
-Mammal,Odocoileus_virginianus,13880,18.9,0.256
-Mammal,Odocoileus_virginianus,13880,18.9,0.256
-Mammal,Ondatra_zibethicus,245.4,2,0.909
-Mammal,Ondatra_zibethicus,245.4,2,0.667
-Mammal,Orcinus_orca,1375000,25.75998347856639,0.05
-Mammal,Orcinus_orca,1375000,25.75998347856639,0.028
-Mammal,Orcinus_orca,1375000,25.75998347856639,0.025
-Mammal,Oreamnos_americanus,18130,2.2,0.182
-Mammal,Oreamnos_americanus,18130,2.2,0.141
-Mammal,Oreamnos_americanus,18130,2.2,0.141
-Mammal,Ornithorhynchus_anatinus,371.1,19.7,0.149
-Mammal,Orycteropus_afer,13090,24.3,0.11
-Mammal,Oryctolagus_cuniculus,395,13.8,0.286
-Mammal,Oryctolagus_cuniculus,395,13.8,0.256
-Mammal,Oryctolagus_cuniculus,395,13.8,0.141
-Mammal,Oryctolagus_cuniculus,537.5,13.8,0.286
-Mammal,Oryctolagus_cuniculus,537.5,13.8,0.256
-Mammal,Oryctolagus_cuniculus,537.5,13.8,0.141
-Mammal,Otaria_bryonia,61250,14.7,0.127
-Mammal,Ovibos_moschatus,92130,-13.3,0.105
-Mammal,Ovis_ammon,35000,-4.4,0.196
-Mammal,Ovis_canadensis,18660,8.8,0.105
-Mammal,Ovis_dalli,18250,-6.3,0.049
-Mammal,Pusa_hispida,16250,0.9157553407268688,0.032
-Mammal,Paguma_larvata,1100,18.6,0.141
-Mammal,Pan_paniscus,8500,24.6,0.127
-Mammal,Pan_troglodytes,9750,24.6,0.055
-Mammal,Pan_troglodytes,11250,24.6,0.056
-Mammal,Pan_troglodytes,11250,24.6,0.05
-Mammal,Pan_troglodytes,11250,24.6,0.049
-Mammal,Pan_troglodytes,11250,24.6,0.042
-Mammal,Panthera_leo,39000,17.8,0.032
-Mammal,Panthera_leo,40370,17.8,0.169
-Mammal,Panthera_leo,40370,17.8,0.169
-Mammal,Panthera_leo,40370,17.8,0.087
-Mammal,Panthera_pardus,13750,23.7,0.213
-Mammal,Panthera_tigris,50000,2.3,0.169
-Mammal,Panthera_tigris,50000,2.3,0.097
-Mammal,Panthera_tigris,50000,2.3,0.096
-Mammal,Papio_hamadryas,5313,26.8,0.068
-Mammal,Paradoxurus_hermaphroditus,750,26.3,0.115
-Mammal,Parantechinus_apicalis,17.19,16.3,0.909
-Mammal,Pseudantechinus_bilarni,6.875,26.8,0.909
-Mammal,Parascalops_breweri,12.75,6.4,0.667
-Mammal,Parascalops_breweri,12.75,6.4,0.526
-Mammal,Pelea_capreolus,5000,15.7,0.256
-Mammal,Peponocephala_electra,51500,26.979255118364645,0.053
-Mammal,Petauroides_volans,325,19.8,0.435
-Mammal,Petaurus_australis,143.8,18.2,0.256
-Mammal,Petaurus_breviceps,31.88,23.4,0.182
-Mammal,Phacochoerus_aethiopicus,17750,30.1,0.169
-Mammal,Phacochoerus_aethiopicus,17750,30.1,0.135
-Mammal,Phascolarctos_cinereus,2563,20,0.196
-Mammal,Phascolarctos_cinereus,2563,20,0.149
-Mammal,Pusa_caspica,21500,15.92941868704437,0.072
-Mammal,Pusa_caspica,21500,15.92941868704437,0.053
-Mammal,Pusa_caspica,21500,15.92941868704437,0.05
-Mammal,Pusa_caspica,21500,15.92941868704437,0.05
-Mammal,Histriophoca_fasciata,22500,9.601615994027165,0.11
-Mammal,Histriophoca_fasciata,22500,9.601615994027165,0.084
-Mammal,Histriophoca_fasciata,22500,9.601615994027165,0.081
-Mammal,Pagophilus_groenlandicus,30000,3,0.087
-Mammal,Pagophilus_groenlandicus,30000,3,0.084
-Mammal,Pagophilus_groenlandicus,30000,3,0.084
-Mammal,Pusa_hispida,16250,0.9157553407268688,0.063
-Mammal,Pusa_hispida,25000,0.9157553407268688,0.063
-Mammal,Pusa_hispida,25000,0.9157553407268688,0.058
-Mammal,Pusa_hispida,25000,0.9157553407268688,0.058
-Mammal,Pusa_hispida,25000,0.9157553407268688,0.055
-Mammal,Pusa_sibirica,25000,-2.2,0.048
-Mammal,Pusa_sibirica,25000,-2.2,0.045
-Mammal,Pusa_sibirica,25000,-2.2,0.045
-Mammal,Phoca_vitulina,25000,-4.1,0.097
-Mammal,Phoca_vitulina,25000,-4.1,0.079
-Mammal,Phoca_vitulina,25000,-4.1,0.074
-Mammal,Phoca_vitulina,25000,-4.1,0.063
-Mammal,Phocoena_phocoena,12500,11.986806825726141,0.196
-Mammal,Phocoenoides_dalli,25000,16.04374383878537,0.149
-Mammal,Phocoenoides_dalli,25000,16.04374383878537,0.115
-Mammal,Physeter_macrocephalus,10000000,25.75998347856639,0.033
-Mammal,Pithecia_pithecia,343.9,26,0.182
-Mammal,Pongo_pygmaeus,12500,26.6,0.072
-Mammal,Pongo_pygmaeus,12500,26.6,0.043
-Mammal,Pontoporia_blainvillei,10000,18.1,0.159
-Mammal,Potamochoerus_porcus,17500,23.6,0.169
-Mammal,Potamochoerus_porcus,17500,23.6,0.127
-Mammal,Potos_flavus,408.8,26.9,0.087
-Mammal,Potos_flavus,408.8,26.9,0.087
-Mammal,Priodontes_maximus,11340,26.4,0.169
-Mammal,Prionailurus_bengalensis,1250,8.9,0.169
-Mammal,Procavia_capensis,757.5,24.9,0.303
-Mammal,Procavia_capensis,757.5,24.9,0.182
-Mammal,Procyon_cancrivorus,1737,25.5,0.182
-Mammal,Procyon_lotor,1381,14.4,0.127
-Mammal,Proechimys_semispinosus,90.13,27.98719415311911,1.429
-Mammal,Pseudocheirus_peregrinus,225,20.4,0.526
-Mammal,Pseudocheirus_peregrinus,225,20.4,0.435
-Mammal,Pseudois_nayaur,16000,-5.6,0.105
-Mammal,Pseudorca_crassidens,340000,27.885914623151024,0.115
-Mammal,Rangifer_tarandus,21510,7.355661840317146,0.323
-Mammal,Rangifer_tarandus,21510,7.355661840317146,0.256
-Mammal,Rangifer_tarandus,21510,7.355661840317146,0.169
-Mammal,Rangifer_tarandus,26250,7.355661840317146,0.076
-Mammal,Rangifer_tarandus,26250,7.355661840317146,0.076
-Mammal,Redunca_fulvorufula,7375,14.6,0.213
-Mammal,Rhinoceros_unicornis,400000,25,0.063
-Mammal,Rhinoceros_unicornis,400000,25,0.056
-Mammal,Rhinoceros_unicornis,400000,25,0.051
-Mammal,Rhynchocyon_chrysopygus,135,25.7,0.667
-Mammal,Rupicapra_rupicapra,8500,1.4,0.219
-Mammal,Rupicapra_rupicapra,8750,1.4,0.127
-Mammal,Syncerus_caffer,117300,20.1,0.026
-Mammal,Syncerus_caffer,117300,20.1,0.092
-Mammal,Syncerus_caffer,117300,20.1,0.03
-Mammal,Leontocebus_nigricollis,115.5,26.1,0.256
-Mammal,Saiga_tatarica,10000,7.1,0.256
-Mammal,Saiga_tatarica,10000,7.1,0.213
-Mammal,Saimiri_sciureus,185.8,25.6,0.12
-Mammal,Scalopus_aquaticus,22.81,14.6,0.909
-Mammal,Sciurus_carolinensis,126.6,11.7,0.204
-Mammal,Sciurus_carolinensis,126.6,11.7,0.108
-Mammal,Sciurus_carolinensis,126.6,11.7,0.107
-Mammal,Sciurus_vulgaris,75,0.3,0.213
-Mammal,Setonix_brachyurus,812.5,14.8,0.256
-Mammal,Setonix_brachyurus,812.5,14.8,0.256
-Mammal,Sicista_betulina,2.5,1.8,0.769
-Mammal,Sminthopsis_crassicaudata,3.75,21.2,2.381
-Mammal,Sminthopsis_crassicaudata,3.75,21.2,2
-Mammal,Sorex_alpinus,1.95,9.4,2.381
-Mammal,Sorex_araneus,2.5,2.9,1.429
-Mammal,Sorex_fumeus,1.925,7.4,3.333
-Mammal,Sorex_minutus,1.125,4.8,1.429
-Mammal,Sorex_vagrans,1.106,4.2,2.381
-Mammal,Spilocuscus_maculatus,1600,25.5,0.233
-Mammal,Stenella_attenuata,25000,25.958158081719986,0.055
-Mammal,Stenella_coeruleoalba,25000,26.257699138132708,0.05
-Mammal,Suncus_etruscus,0.45,23.9,2.381
-Mammal,Suncus_etruscus,0.45,23.9,1.429
-Mammal,Suncus_murinus,21.66,26.9,1.111
-Mammal,Sundamys_muelleri,106,23.3,10
-Mammal,Sus_scrofa,21560,-0.6,0.127
-Mammal,Sus_scrofa,21560,-0.6,0.12
-Mammal,Sylvilagus_floridanus,293.2,18.3,0.526
-Mammal,Sylvilagus_floridanus,293.2,18.3,0.526
-Mammal,Sylvilagus_floridanus,302.5,18.3,1.225
-Mammal,Syncerus_caffer,117300,20.1,0.026
-Mammal,Syncerus_caffer,145000,20.1,0.141
-Mammal,Syncerus_caffer,145000,20.1,0.097
-Mammal,Syncerus_caffer,145000,20.1,0.085
-Mammal,Talpa_europaea,22.5,6.8,0.909
-Mammal,Talpa_europaea,22.5,6.8,0.667
-Mammal,Tamias_striatus,27.98,8.5,0.909
-Mammal,Tamiasciurus_hudsonicus,47.5,0.7,0.437
-Mammal,Tapirus_indicus,50000,26.2,0.084
-Mammal,Tapirus_terrestris,51880,26.4,0.084
-Mammal,Tapirus_terrestris,51880,26.4,0.072
-Mammal,Tarsipes_rostratus,2.25,16.7,1.429
-Mammal,Tarsius_bancanus,30,23.3,0.323
-Mammal,Taxidea_taxus,1777,0.2,0.182
-Mammal,Taxidea_taxus,1777,0.2,0.182
-Mammal,Taxidea_taxus,1777,0.2,0.097
-Mammal,Tayassu_pecari,8058,26.4,0.192
-Mammal,Tayassu_pecari,8058,26.4,0.192
-Mammal,Tetracerus_quadricornis,4750,24.6,0.256
-Mammal,Theropithecus_gelada,4262,15.2,0.127
-Mammal,Thomomys_talpoides,32.52,4.4,1.852
-Mammal,Thryonomys_swinderianus,1015,24.8,0.617
-Mammal,Tragelaphus_imberbis,20390,26.6,0.256
-Mammal,Tragelaphus_imberbis,20390,26.6,0.169
-Mammal,Trichechus_inunguis,100000,26.8,0.084
-Mammal,Trichechus_manatus,62500,28.00124854936785,0.084
-Mammal,Trichosurus_caninus,875,17,0.213
-Mammal,Trichosurus_caninus,875,17,0.149
-Mammal,Trichosurus_caninus,875,17,0.149
-Mammal,Trichosurus_vulpecula,662.5,23,0.196
-Mammal,Trichosurus_vulpecula,662.5,23,0.196
-Mammal,Tupaia_glis,37.5,20.1,0.213
-Mammal,Tursiops_truncatus,43750,25.871072116585903,0.101
-Mammal,Tursiops_truncatus,43750,25.871072116585903,0.101
-Mammal,Tursiops_truncatus,43750,25.871072116585903,0.101
-Mammal,Ursus_arctos,34860,-4.3,0.101
-Mammal,Ursus_arctos,34860,-4.3,0.084
-Mammal,Vicugna_vicugna,11870,18.1,0.127
-Mammal,Vombatus_ursinus,6500,14.3,0.526
-Mammal,Vombatus_ursinus,6500,14.3,0.097
-Mammal,Vulpes_cana,250,16.5,0.256
-Mammal,Vulpes_chama,738.8,19.8,0.256
-Mammal,Vulpes_pallida,700,26.9,0.256
-Mammal,Vulpes_vulpes,1033,7.6,0.37
-Mammal,Vulpes_vulpes,1033,7.6,0.213
-Mammal,Vulpes_vulpes,1488,7.6,0.37
-Mammal,Vulpes_vulpes,1488,7.6,0.213
-Mammal,Vulpes_vulpes,1500,7.6,0.37
-Mammal,Vulpes_vulpes,1500,7.6,0.213
-Mammal,Wallabia_bicolor,3750,20.4,0.213
-Mammal,Wallabia_bicolor,3750,20.4,0.169
-Mammal,Zalophus_californianus,62500,18,0.149
-Bird,Accipiter_cooperii,109.8,13.4,0.213
-Bird,Accipiter_cooperii,132.3,13.4,0.244
-Bird,Accipiter_cooperii,132.3,13.4,0.345
-Bird,Accipiter_gentilis,256.1,1.5,0.133
-Bird,Accipiter_gentilis,256.1,1.5,0.133
-Bird,Accipiter_gentilis,256.1,1.5,0.196
-Bird,Accipiter_gentilis,284.3,1.5,0.196
-Bird,Accipiter_gentilis,284.3,1.5,0.199
-Bird,Accipiter_nisus,50.5,-1.5,0.201
-Bird,Accipiter_nisus,59.38,-1.5,0.169
-Bird,Accipiter_nisus,59.38,-1.5,0.164
-Bird,Accipiter_striatus,43.5,26.2,0.262
-Bird,Acridotheres_cristatellus,28.25,16.2,0.228
-Bird,Aechmophorus_occidentalis,369.3,-0.4,0.394
-Bird,Aechmophorus_occidentalis,369.3,-0.4,0.182
-Bird,Aegolius_acadicus,20.71,6.6,0.35
-Bird,Aegolius_acadicus,20.71,6.6,0.355
-Bird,Aegolius_acadicus,20.71,6.6,0.37
-Bird,Aegolius_funereus,33.5,4.7,0.233
-Bird,Aegolius_funereus,33.5,4.7,0.794
-Bird,Aeronautes_saxatalis,8.025,17.4,0.459
-Bird,Aethia_cristatella,66,5.2,0.34
-Bird,Aethia_pusilla,21,7,0.602
-Bird,Agelaius_phoeniceus,15.9,13.9,0.161
-Bird,Aimophila_aestivalis,4.913,18.4,0.909
-Bird,Aimophila_quinquestriata,4.763,16.1,0.667
-Bird,Aimophila_ruficeps,4.675,18.6,0.847
-Bird,Aix_sponsa,62,13.1,0.112
-Bird,Aix_sponsa,62,13.1,0.144
-Bird,Alca_torda,179.8,13.223169389173535,0.407
-Bird,Alca_torda,179.8,13.223169389173535,0.42
-Bird,Ammodramus_caudacutus,4.45,23.546941570482286,0.435
-Bird,Ammodramus_caudacutus,5.175,23.546941570482286,0.256
-Bird,Ammodramus_maritimus,5.575,18.1,0.286
-Bird,Ammodramus_maritimus,5.813,18.1,0.289
-Bird,Ammodramus_maritimus,6.05,18.1,0.286
-Bird,Ammodramus_savannarum,4.25,9.1,0.877
-Bird,Amphispiza_bilineata,3.375,17.5,0.435
-Bird,Anas_acuta,258.8,-1.2,0.119
-Bird,Anas_acuta,258.8,-1.2,0.123
-Bird,Anas_americana,179.8,0.5,0.119
-Bird,Anas_americana,198,0.5,0.286
-Bird,Anas_clypeata,159,0.9,0.153
-Bird,Anas_crecca,79.5,-0.5,0.123
-Bird,Anas_crecca,91,-0.5,0.125
-Bird,Anas_cyanoptera,102,19.37636705098811,0.198
-Bird,Anas_discors,90.75,5.6,0.113
-Bird,Anas_discors,102.3,5.6,0.146
-Bird,Anas_fulvigula,242,22.1,0.196
-Bird,Anas_fulvigula,257.5,22.1,0.19
-Bird,Anas_laysanensis,106.8,22.4,0.216
-Bird,Anas_penelope,204.8,-5.4,0.299
-Bird,Anas_platyrhynchos,270.5,6.4,0.087
-Bird,Anas_platyrhynchos,270.5,6.4,0.108
-Bird,Anas_platyrhynchos,270.5,6.4,0.123
-Bird,Anas_rubripes,350,-1,0.096
-Bird,Anas_strepera,247.5,2.6,0.13
-Bird,Anas_strepera,247.5,2.6,0.143
-Bird,Anhinga_anhinga,308.8,26.5,0.215
-Bird,Anous_minutus,29.75,27.47888496361633,0.116
-Bird,Anous_stolidus,49.5,26.42350418200115,0.101
-Bird,Anous_tenuirostris,27.75,28.549174853502667,0.158
-Bird,Anser_albifrons,614,-15.6,0.113
-Bird,Anser_albifrons,614,-15.6,0.125
-Bird,Anser_albifrons,675.8,-15.6,0.113
-Bird,Anser_brachyrhynchus,661.3,0.38001075869064466,0.115
-Bird,Chen_caerulescens,657.6,3,0.095
-Bird,Chen_caerulescens,657.6,3,0.103
-Bird,Chen_caerulescens,657.6,3,0.13
-Bird,Chen_canagica,685.8,3.7,0.286
-Bird,Chen_canagica,685.8,3.7,0.413
-Bird,Chen_rossii,419.8,7.6,0.118
-Bird,Chen_rossii,419.8,7.6,0.129
-Bird,Anthus_rubescens,5.213,8.989647689350138,0.515
-Bird,Anthus_spinoletta,5.975,19.6,0.515
-Bird,Aphelocoma_coerulescens,20.05,22.3,0.161
-Bird,Aphelocoma_ultramarina,31,15.5,0.133
-Bird,Aphelocoma_ultramarina,31,15.5,0.144
-Bird,Aphelocoma_ultramarina,31,15.5,0.237
-Bird,Aquila_audax,875,21.5,0.442
-Bird,Aquila_chrysaetos,869.3,2.7,0.148
-Bird,Aquila_chrysaetos,1049,2.7,0.066
-Bird,Aquila_chrysaetos,1049,2.7,0.098
-Bird,Aquila_chrysaetos,1049,2.7,0.246
-Bird,Aquila_pomarina,342.5,21.7,0.097
-Bird,Aquila_wahlbergi,160,25.8,0.216
-Bird,Archilochus_colubris,0.7875,9.9,0.286
-Bird,Archilochus_colubris,0.825,9.9,0.413
-Bird,Ardea_herodias,597.5,13.6,0.108
-Bird,Arenaria_interpres,28.75,29.236640303622686,0.178
-Bird,Asio_flammeus,86.63,-0.6,0.198
-Bird,Asio_otus,65.5,4.7,0.091
-Bird,Athene_cunicularia,38.75,24.9,0.296
-Bird,Auriparus_flaviceps,1.7,18.9,0.467
-Bird,Aythya_affinis,212.5,1.4,0.139
-Bird,Aythya_americana,205.3,7.2,0.118
-Bird,Aythya_collaris,182.5,-0.2,0.124
-Bird,Aythya_collaris,182.5,-0.2,0.157
-Bird,Aythya_marila,233,-11.5,0.139
-Bird,Aythya_valisineria,185.8,16.8,0.113
-Bird,Bartramia_longicauda,37.63,26.6,0.505
-Bird,Bombycilla_cedrorum,7.963,20.4,0.37
-Bird,Bombycilla_garrulus,14.1,4.2,0.45
-Bird,Bonasa_umbellus,133,0.9,0.303
-Bird,Bonasa_umbellus,144.1,0.9,0.34
-Bird,Botaurus_lentiginosus,176.5,3.7,0.311
-Bird,Botaurus_lentiginosus,176.5,3.7,0.323
-Bird,Branta_bernicla,325,-0.38828501402344906,0.153
-Bird,Branta_bernicla,307.5,-0.38828501402344906,0.117
-Bird,Branta_bernicla,342.5,-0.38828501402344906,0.098
-Bird,Branta_canadensis,828.5,-2.1,0.108
-Bird,Branta_canadensis,953.5,-2.1,0.104
-Bird,Bubo_virginianus,385.8,26.775251766694854,0.123
-Bird,Bubo_virginianus,385.8,26.775251766694854,0.147
-Bird,Bubulcus_ibis,84.5,24.3,0.11
-Bird,Bubulcus_ibis,84.5,24.3,0.149
-Bird,Bucephala_albeola,83.5,12.9,0.222
-Bird,Bucephala_albeola,118.3,12.9,0.171
-Bird,Bucephala_albeola,118.3,12.9,0.204
-Bird,Bucephala_clangula,200,-0.5,0.213
-Bird,Bucephala_clangula,225,-0.5,0.178
-Bird,Bucephala_clangula,250,-0.5,0.233
-Bird,Bucephala_islandica,272.5,4.3,0.166
-Bird,Bulweria_bulwerii,24.75,25.7,0.115
-Bird,Butastur_indicus,99.25,26.2,0.303
-Bird,Buteo_buteo,218.8,3,0.101
-Bird,Buteo_buteo,218.8,3,0.1
-Bird,Buteo_jamaicensis,281.5,0.1,0.118
-Bird,Buteo_jamaicensis,281.5,0.1,0.118
-Bird,Buteo_jamaicensis,281.5,0.1,0.128
-Bird,Buteo_lagopus,239,-1.8,0.141
-Bird,Buteo_lagopus,239,-1.8,0.235
-Bird,Buteo_lagopus,266.3,-1.8,0.142
-Bird,Buteo_lineatus,139.8,15.4,0.127
-Bird,Buteo_lineatus,139.8,15.4,0.127
-Bird,Buteo_regalis,286.3,5.6,0.127
-Bird,Buteo_regalis,286.3,5.6,0.16
-Bird,Buteo_swainsoni,247.1,25.7,0.159
-Bird,Buteo_swainsoni,247.1,25.7,0.16
-Bird,Buteogallus_anthracinus,249,26.9,0.189
-Bird,Butorides_striata,53,27.068106911524886,0.327
-Bird,Calamospiza_melanocorys,9.4,5.2,0.667
-Bird,Calcarius_lapponicus,6.825,5.679991043780527,0.526
-Bird,Calcarius_pictus,0.625,-0.1,0.526
-Bird,Calcarius_pictus,6.075,-0.1,0.667
-Bird,Calidris_alba,14.25,29.236640303622686,0.195
-Bird,Calidris_alba,14.25,29.236640303622686,0.495
-Bird,Calidris_alpina,23,4.8,0.206
-Bird,Calidris_alpina,23,4.8,0.276
-Bird,Calidris_canutus,34.25,-8.9,0.251
-Bird,Calidris_canutus,34.25,-8.9,0.42
-Bird,Calidris_fuscicollis,8.675,28.1,0.37
-Bird,Calidris_mauri,5.825,26.438345981560566,0.279
-Bird,Calidris_melanotos,20.35,28.38576361710392,0.442
-Bird,Calidris_minutilla,5.8,7.3,0.159
-Bird,Calidris_minutilla,5.8,7.3,0.159
-Bird,Calidris_minutilla,5.8,7.3,0.226
-Bird,Calidris_ptilocnemis,19.91,2.1,0.355
-Bird,Calidris_pusilla,7.825,6.4,0.213
-Bird,Callipepla_californica,43.25,9.1,0.376
-Bird,Callipepla_gambelii,42.5,20.1,0.35
-Bird,Calypte_anna,1,9.7,0.435
-Bird,Calypte_anna,1.05,9.7,0.413
-Bird,Camptostoma_imberbe,1.85,25.8,0.549
-Bird,Campylorhynchus_brunneicapillus,9.725,18.9,0.413
-Bird,Caprimulgus_vociferus,13.24,9.3,0.667
-Bird,Cardellina_rubrifrons,2.45,13.4,0.909
-Bird,Cardinalis_cardinalis,10.98,16.3,0.161
-Bird,Cardinalis_sinuatus,9.175,18.3,0.45
-Bird,Carduelis_flammea,3.25,9.8,0.45
-Bird,Carduelis_hornemanni,3.175,NA,0.575
-Bird,Carduelis_pinus,3.65,14.2,0.273
-Bird,Carduelis_psaltria,2.375,13.6,0.459
-Bird,Carduelis_tristis,3.225,10.6,0.233
-Bird,Carduelis_tristis,3.225,10.6,0.276
-Bird,Carpodacus_cassinii,6.625,6.8,0.37
-Bird,Carpodacus_mexicanus,5.35,7.2,0.22
-Bird,Carpodacus_mexicanus,5.35,7.2,2.941
-Bird,Carpodacus_purpureus,6.225,-0.7,0.216
-Bird,Cathartes_aura,3668,26.1,0.151
-Bird,Catharus_fuscescens,7.8,26.8,0.254
-Bird,Catharus_guttatus,7.75,2.9,0.296
-Bird,Catharus_minimus,8.2,10,0.355
-Bird,Catharus_ustulatus,7.7,24.9,0.254
-Bird,Catoptrophorus_semipalmatus,53.75,7.3,0.289
-Bird,Cepphus_columba,121.8,9.3,0.182
-Bird,Cepphus_columba,121.8,9.3,0.216
-Bird,Cepphus_columba,121.8,9.3,0.276
-Bird,Cepphus_grylle,101.3,7.231377948178691,0.211
-Bird,Cerorhinca_monocerata,130,-4.9,0.35
-Bird,Cerorhinca_monocerata,130,-4.9,0.42
-Bird,Certhia_familiaris,2.25,1.9,0.575
-Bird,Chaetura_vauxi,4.275,2.7,0.515
-Bird,Chaetura_pelagica,5.9,11,0.182
-Bird,Charadrius_alexandrinus,10.35,9.1,0.169
-Bird,Charadrius_alexandrinus,10.35,9.1,0.233
-Bird,Charadrius_alexandrinus,10.35,9.1,0.37
-Bird,Charadrius_melodus,13.8,4.5,0.182
-Bird,Charadrius_melodus,13.8,4.5,0.233
-Bird,Charadrius_semipalmatus,11.69,5.6,0.314
-Bird,Charadrius_vociferus,24.14,1.8,0.235
-Bird,Chlidonias_niger,16.33,5.5,0.147
-Bird,Chlidonias_niger,16.33,5.5,0.307
-Bird,Chondestes_grammacus,7.25,9.4,0.331
-Bird,Chordeiles_minor,15.38,9,0.286
-Bird,Ciconia_ciconia,868.3,24.5,0.076
-Bird,Ciconia_nigra,750,3.3,0.141
-Bird,Cinclus_mexicanus,15.25,11.15409509184261,0.515
-Bird,Circaetus_cinereus,512,24.7,0.382
-Bird,Circaetus_gallicus,425.8,9.9,0.147
-Bird,Circaetus_gallicus,425.8,9.9,0.149
-Bird,Circus_aeruginosus,156.9,5.8,0.152
-Bird,Circus_aeruginosus,156.9,5.8,0.155
-Bird,Circus_aeruginosus,156.9,5.8,0.139
-Bird,Circus_cyaneus,108.9,0,0.155
-Bird,Circus_cyaneus,108.9,0,0.159
-Bird,Clangula_hyemalis,203.5,-10.6,0.163
-Bird,Clangula_hyemalis,233,-10.6,0.166
-Bird,Coccyzus_americanus,16,25.2,0.526
-Bird,Coccyzus_erythropthalmus,12.78,8.2,0.526
-Bird,Colaptes_auratus,33,-0.3,0.204
-Bird,Colaptes_auratus,33,-0.3,0.279
-Bird,Colaptes_auratus,33,-0.3,0.34
-Bird,Colaptes_auratus,33,-0.3,0.388
-Bird,Colinus_virginianus,44.5,16.8,0.407
-Bird,Patagioenas_fasciata,85.63,18,0.137
-Bird,Patagioenas_fasciata,85.63,18,0.164
-Bird,Patagioenas_leucocephala,61.75,25.7,0.177
-Bird,Patagioenas_leucocephala,61.75,25.7,0.209
-Bird,Patagioenas_leucocephala,61.75,25.7,0.311
-Bird,Columba_livia,88.63,11.2,0.435
-Bird,Columbina_inca,11.88,20.9,0.331
-Bird,Columbina_passerina,7.525,15.2,0.36
-Bird,Columbina_passerina,7.525,15.2,0.427
-Bird,Contopus_cooperi,8.025,3.4,0.365
-Bird,Contopus_cooperi,8.025,3.4,0.442
-Bird,Contopus_sordidulus,3.2,8.1,0.427
-Bird,Contopus_virens,3.525,11.4,0.365
-Bird,Coragyps_atratus,520.1,26.2,0.099
-Bird,Corvus_brachyrhynchos,112,12.7,0.174
-Bird,Corvus_brachyrhynchos,112,12.7,0.185
-Bird,Corvus_caurinus,97.88,7.3,0.199
-Bird,Corvus_corax,299.8,2,0.192
-Bird,Corvus_cryptoleucus,133.5,19.4,0.204
-Bird,Corvus_ossifragus,71.25,16.2,0.175
-Bird,Cyanocitta_cristata,21.7,11.2,0.139
-Bird,Cyanocitta_cristata,21.7,11.2,0.156
-Bird,Cyanocitta_stelleri,32,7.7,0.158
-Bird,Cyanocitta_stelleri,32,7.7,0.233
-Bird,Cyanocorax_yncas,19.63,26,0.239
-Bird,Cygnus_buccinator,2713,-1.4,0.105
-Bird,Cygnus_buccinator,2850,-1.4,0.106
-Bird,Cygnus_columbianus,1550,-12.3,0.129
-Bird,Cygnus_columbianus,1425,-12.3,0.009
-Bird,Cygnus_columbianus,1550,-12.3,0.157
-Bird,Cygnus_columbianus,1600,-12.3,0.036
-Bird,Cygnus_columbianus,1663,-12.3,0.12
-Bird,Cygnus_olor,2418,6.1,0.192
-Bird,Cygnus_olor,2684,6.1,0.12
-Bird,Cygnus_olor,2950,6.1,0.094
-Bird,Cypseloides_niger,11.4,16.6,0.435
-Bird,Daption_capense,107,11.571241245872145,0.127
-Bird,Dendragapus_canadensis,114,-2.1,0.495
-Bird,Dendragapus_canadensis,123,-2.1,0.196
-Bird,Dendragapus_obscurus,222.8,2.1,0.233
-Bird,Dendragapus_obscurus,297,2.1,0.235
-Bird,Dendragapus_obscurus,299.5,2.1,0.182
-Bird,Dendrocygna_autumnalis,212.3,27.20612680481935,0.314
-Bird,Dendrocygna_bicolor,177.5,22.8,0.4
-Bird,Dendroica_caerulescens,2.45,12.1,0.323
-Bird,Dendroica_caerulescens,2.538,12.1,0.265
-Bird,Dendroica_castanea,3.138,15.7,0.794
-Bird,Dendroica_coronata,3.025,-1.2,0.394
-Bird,Dendroica_coronata,3.138,-1.2,0.376
-Bird,Dendroica_discolor,2,13.8,0.249
-Bird,Dendroica_dominica,2.35,24.4,0.515
-Bird,Dendroica_fusca,2.5,17.7,0.314
-Bird,Dendroica_kirtlandii,3.425,5.7,0.286
-Bird,Dendroica_kirtlandii,3.45,5.7,0.323
-Bird,Dendroica_magnolia,2.175,0,0.376
-Bird,Dendroica_palmarum,2.575,-1.6,0.45
-Bird,Dendroica_palmarum,2.575,-1.6,0.394
-Bird,Dendroica_pensylvanica,2.4,15.5,0.376
-Bird,Dendroica_petechia,2.45,6.6,0.289
-Bird,Dendroica_pinus,2.975,8.8,0.382
-Bird,Dendroica_striata,3.25,-2.8,0.617
-Bird,Dendroica_striata,3.25,-2.8,0.794
-Bird,Dendroica_tigrina,2.75,-0.3,0.617
-Bird,Dendroica_townsendi,2.213,13,0.746
-Bird,Dendroica_virens,2.2,12.6,0.442
-Bird,Diomedea_amsterdamensis,1568,17.585990608066393,0.063
-Bird,Thalassarche_chlororhynchos,615,19.12514289165493,0.068
-Bird,Thalassarche_chrysostoma,876.9,4.316549350850019,0.084
-Bird,Diomedea_epomophora,2050,5.4558577916746325,0.043
-Bird,Diomedea_exulans,1913,8.870550977879923,0.063
-Bird,Phoebastria_immutabilis,766.6,21.405235930820062,0.047
-Bird,Phoebastria_immutabilis,766.6,21.405235930820062,0.067
-Bird,Phoebastria_irrorata,848.8,22.690373318329883,0.063
-Bird,Phoebastria_nigripes,787,25.418004356462777,0.091
-Bird,Phoebastria_nigripes,787,25.418004356462777,0.093
-Bird,Diomedea_exulans,1913,8.870550977879923,0.02
-Bird,Dolichonyx_oryzivorus,10.51,28.2,0.286
-Bird,Dolichonyx_oryzivorus,10.51,28.2,0.318
-Bird,Dryocopus_pileatus,66.5,6.9,0.259
-Bird,Dryocopus_pileatus,71.75,6.9,0.259
-Bird,Dryocopus_pileatus,71.75,6.9,0.286
-Bird,Dumetella_carolinensis,9.225,8.5,0.235
-Bird,Egretta_caerulea,84.88,26.2,0.183
-Bird,Egretta_rufescens,112.5,26.221026110723844,0.207
-Bird,Egretta_thula,92.75,26.3,0.144
-Bird,Egretta_thula,92.75,26.3,0.226
-Bird,Elanus_caeruleus,83.25,27.2,0.435
-Bird,Empidonax_difficilis,2.5,7.8,0.435
-Bird,Empidonax_flaviventris,2.9,-1,0.685
-Bird,Empidonax_fulvifrons,1.975,16.6,1.429
-Bird,Empidonax_minimus,2.575,1.1,0.323
-Bird,Empidonax_minimus,2.575,1.1,0.442
-Bird,Empidonax_oberholseri,2.6,6.2,0.286
-Bird,Empidonax_oberholseri,2.6,6.2,0.314
-Bird,Empidonax_oberholseri,2.6,6.2,0.323
-Bird,Empidonax_oberholseri,2.6,6.2,0.435
-Bird,Empidonax_traillii,3.35,9,0.37
-Bird,Empidonax_virescens,3.225,14.2,0.235
-Bird,Eremophila_alpestris,7.838,10.209645424413361,0.323
-Bird,Eremophila_alpestris,7.838,10.209645424413361,0.327
-Bird,Eremophila_alpestris,7.975,10.209645424413361,0.365
-Bird,Eudocimus_albus,225,28.357307780096416,0.156
-Bird,Eudyptula_minor,276.3,15.697625857611634,0.195
-Bird,Euphagus_carolinus,14.94,-1.1,0.292
-Bird,Euphagus_cyanocephalus,15.66,4,0.233
-Bird,Falco_berigora,137.4,21.5,0.244
-Bird,Falco_columbarius,47.63,9.131408319618354,0.331
-Bird,Falco_eleonorae,97.5,22.6,0.435
-Bird,Falco_mexicanus,138.5,9.5,0.282
-Bird,Falco_mexicanus,215.8,9.5,0.242
-Bird,Falco_naumanni,38.13,25.78614744503812,0.42
-Bird,Falco_peregrinus,195.4,-5.2,0.207
-Bird,Falco_rupicoloides,65,21.6,0.4
-Bird,Falco_sparverius,30,25.2,0.22
-Bird,Falco_subbuteo,63.25,1.7,0.244
-Bird,Falco_subbuteo,60,1.7,0.237
-Bird,Falco_tinnunculus,50.38,29.435231049664356,0.159
-Bird,Falco_vespertinus,41.38,28.5,0.207
-Bird,Ficedula_hypoleuca,3,4.9,0.748
-Bird,Ficedula_hypoleuca,3,4.9,0.656
-Bird,Fratercula_arctica,95.25,12.663727578308587,0.127
-Bird,Fratercula_arctica,95.25,12.663727578308587,0.193
-Bird,Fratercula_cirrhata,194.8,15.946306764860589,0.435
-Bird,Fregata_ariel,188.5,24.7,0.149
-Bird,Fregata_ariel,201.5,24.7,0.108
-Bird,Fregata_minor,263.8,26.530498819540245,0.074
-Bird,Fregata_minor,295.8,26.530498819540245,0.084
-Bird,Fulica_americana,140,4.7,0.113
-Bird,Fulica_americana,160.5,4.7,0.13
-Bird,Fulmarus_glacialis,136,8,0.052
-Bird,Fulmarus_glacialis,136,8,0.355
-Bird,Gallinago_gallinago,30.5,-0.5,0.276
-Bird,Gallinula_chloropus,75.63,27.348192243165215,0.244
-Bird,Gavia_arctica,838.8,-2.2,0.09
-Bird,Gavia_immer,1034,-1.4,0.127
-Bird,Gavia_immer,1034,-1.4,0.331
-Bird,Gavia_stellata,387.8,-8.2,0.11
-Bird,Geococcyx_californianus,94,15.6,0.704
-Bird,Geothlypis_trichas,2.475,7.4,0.259
-Bird,Grus_americana,1457,4.5,0.084
-Bird,Grus_americana,1457,4.5,0.355
-Bird,Grus_canadensis,791.5,-1.5,0.118
-Bird,Grus_canadensis,791.5,-1.5,0.131
-Bird,Grus_canadensis,791.5,-1.5,0.139
-Bird,Passerina_caerulea,7.325,17.6,0.442
-Bird,Gygis_alba,27.75,26.628623867391983,0.142
-Bird,Gymnogyps_californianus,2526,11.1,0.056
-Bird,Gymnorhinus_cyanocephalus,25.75,2.7,0.233
-Bird,Gymnorhinus_cyanocephalus,25.75,2.7,0.292
-Bird,Gyps_coprotheres,2044,20.7,0.227
-Bird,Haematopus_bachmani,162,NA,0.159
-Bird,Haematopus_bachmani,162,NA,0.42
-Bird,Haematopus_ostralegus,131.5,3.4,0.07
-Bird,Haematopus_palliatus,158,25.8,0.149
-Bird,Haematopus_palliatus,158,25.8,0.182
-Bird,Haliaeetus_albicilla,1198,-2.2,0.12
-Bird,Haliaeetus_leucocephalus,1185,-0.7,0.246
-Bird,Haliastur_sphenurus,200,23.2,0.235
-Bird,Helmitheros_vermivorum,3.25,14,0.365
-Bird,Hieraaetus_morphnoides,209.8,21.8,0.249
-Bird,Himantopus_mexicanus,41.5,NA,0.505
-Bird,Himatione_sanguinea,6.275,25.424592273958734,0.407
-Bird,Petrochelidon_fulva,5.1,26.54288133296588,0.276
-Bird,Petrochelidon_fulva,5.1,26.54288133296588,0.549
-Bird,Petrochelidon_pyrrhonota,5.4,5.9,0.233
-Bird,Petrochelidon_pyrrhonota,5.4,5.9,0.256
-Bird,Petrochelidon_pyrrhonota,5.4,5.9,0.286
-Bird,Hirundo_rustica,3.95,7.4,0.318
-Bird,Hydrobates_pelagicus,6.3,27.66505397952067,0.127
-Bird,Icteria_virens,6.325,12.2,0.289
-Bird,Icterus_cucullatus,6.075,20.7,0.435
-Bird,Icterus_galbula,8.4,8.2,0.394
-Bird,Icterus_galbula,8.575,8.2,0.22
-Bird,Icterus_parisorum,9.35,16.8,0.407
-Bird,Icterus_pectoralis,11.13,20.7,0.22
-Bird,Icterus_spurius,4.9,14.3,0.267
-Bird,Icterus_spurius,4.9,14.3,0.276
-Bird,Ictinia_mississippiensis,69.5,27.318817436778165,0.323
-Bird,Junco_hyemalis,4.9,-1.5,0.237
-Bird,Junco_hyemalis,4.9,-1.5,0.239
-Bird,Junco_hyemalis,4.9,-1.5,0.262
-Bird,Junco_hyemalis,4.9,-1.5,0.394
-Bird,Junco_phaeonotus,5.1,16.6,0.394
-Bird,Lagopus_leucura,87.75,0.8,0.213
-Bird,Lagopus_leucura,89.75,0.8,0.169
-Bird,Lamprolaima_rhami,1.525,24.1,0.323
-Bird,Lanius_excubitor,16.4,23.978253683437064,0.82
-Bird,Lanius_ludovicianus,11.85,17.2,0.204
-Bird,Lanius_ludovicianus,11.85,17.2,0.427
-Bird,Larus_argentatus,283.8,10.53799665366629,0.084
-Bird,Larus_argentatus,283.8,10.53799665366629,0.09
-Bird,Larus_argentatus,283.8,10.53799665366629,0.092
-Bird,Larus_argentatus,283.8,10.53799665366629,0.133
-Bird,Larus_atricilla,81.25,26.9,0.168
-Bird,Larus_californicus,151.6,9.8,0.192
-Bird,Larus_canus,100.9,1.7,0.139
-Bird,Larus_canus,101,1.7,0.098
-Bird,Larus_delawarensis,129.6,3,0.079
-Bird,Larus_delawarensis,129.6,3,0.101
-Bird,Larus_glaucescens,252.5,11.60180885959032,0.079
-Bird,Larus_glaucescens,252.5,11.60180885959032,0.111
-Bird,Larus_glaucescens,252.5,11.60180885959032,0.114
-Bird,Larus_marinus,414.6,11.173818482948063,0.108
-Bird,Larus_occidentalis,252.8,14.1,0.091
-Bird,Larus_occidentalis,252.8,14.1,0.101
-Bird,Larus_pipixcan,70,14.5,0.273
-Bird,Larus_pipixcan,70,14.5,0.286
-Bird,Laterallus_jamaicensis,8.475,25.5,1.163
-Bird,Leptotila_verreauxi,38.25,26.3,0.299
-Bird,Leucosticte_arctoa,6.625,-6.1,0.459
-Bird,Leucosticte_arctoa,6.725,-6.1,0.394
-Bird,Limnodromus_griseus,28.25,-0.8,0.192
-Bird,Limnodromus_griseus,28.25,-0.8,0.34
-Bird,Limnodromus_scolopaceus,26.13,7.2,0.311
-Bird,Limnothlypis_swainsonii,4.725,16.8,0.331
-Bird,Limosa_fedoa,92.63,3.7,0.299
-Bird,Limosa_lapponica,84.5,29.236640303622686,0.685
-Bird,Lophodytes_cucullatus,135,9.8,0.226
-Bird,Lophodytes_cucullatus,152.5,9.8,0.249
-Bird,Lophoictinia_isura,125.3,20.6,0.149
-Bird,Loxia_curvirostra,10.15,6.7,0.633
-Bird,Melanerpes_aurifrons,21.35,26.221026110723844,0.459
-Bird,Melanerpes_carolinus,16.8,14.2,0.211
-Bird,Melanerpes_erythrocephalus,17.9,14.4,0.259
-Bird,Melanerpes_formicivorus,19.53,19.4,0.169
-Bird,Melanerpes_formicivorus,20.73,19.4,0.159
-Bird,Melanerpes_uropygialis,17.43,23.7,0.331
-Bird,Melanitta_fusca,300,-2.5,0.218
-Bird,Melanitta_fusca,439.3,-8.1,0.163
-Bird,Melanitta_fusca,439.3,-8.1,0.213
-Bird,Meleagris_gallopavo,1056,14,0.196
-Bird,Meleagris_gallopavo,1453,14,0.204
-Bird,Melospiza_georgiana,4.25,-0.6,0.549
-Bird,Melospiza_lincolnii,4.35,0.3,0.34
-Bird,Melospiza_melodia,5.188,0.8,0.226
-Bird,Mergus_merganser,308,-0.4,0.19
-Bird,Mergus_serrator,255.4,-5.1,0.485
-Bird,Merops_bullockoides,8.7,19.7,0.37
-Bird,Micrathene_whitneyi,10.25,20.7,0.538
-Bird,Calidris_himantopus,14.34,26.4,0.282
-Bird,Milvus_migrans,206.8,29.15310482644366,0.107
-Bird,Milvus_migrans,206.8,29.15310482644366,0.11
-Bird,Milvus_milvus,270,10.6,0.097
-Bird,Milvus_milvus,270,10.6,0.098
-Bird,Mimus_polyglottos,12.13,14.7,0.127
-Bird,Mniotilta_varia,2.65,4,0.226
-Bird,Molothrus_aeneus,16.68,16.1,0.746
-Bird,Molothrus_ater,10.98,6.9,0.15
-Bird,Molothrus_ater,12.25,6.9,0.161
-Bird,Morus_bassanus,749.9,17.00331622475932,0.125
-Bird,Mycteria_americana,594,25.9,0.4
-Bird,Myiarchus_cinerascens,6.8,7.2,0.286
-Bird,Myiarchus_cinerascens,6.8,7.2,0.538
-Bird,Myiarchus_crinitus,8.375,11.2,0.183
-Bird,Myiarchus_tyrannulus,10.95,24.8,0.259
-Bird,Myiarchus_tyrannulus,10.95,24.8,0.323
-Bird,Myioborus_pictus,1.975,16.8,0.394
-Bird,Myioborus_pictus,1.975,16.8,0.617
-Bird,Nucifraga_columbiana,33.75,8.6,0.146
-Bird,Numenius_arquata,201.4,14.1,0.08
-Bird,Numenius_phaeopus,101,29.27394312637361,0.233
-Bird,Numenius_tahitiensis,108.4,-2.8,0.216
-Bird,Bubo_scandiaca,510.6,-6.1,0.273
-Bird,Bubo_scandiaca,569.8,-6.1,0.237
-Bird,Nycticorax_nycticorax,220.8,27.1,0.12
-Bird,Nycticorax_nycticorax,220.8,27.1,0.12
-Bird,Nyctanassa_violacea,170.6,27.5,0.413
-Bird,Oceanodroma_furcata,13.83,17.991004588700154,0.286
-Bird,Oceanodroma_furcata,13.83,17.991004588700154,0.435
-Bird,Oceanodroma_homochroa,9.225,16.064304073697606,0.323
-Bird,Oceanodroma_leucorhoa,9.95,26.098540578626803,0.081
-Bird,Oceanodroma_leucorhoa,9.95,26.098540578626803,0.087
-Bird,Oceanodroma_leucorhoa,9.95,26.098540578626803,0.105
-Bird,Oceanodroma_tristrami,21,20.7,0.262
-Bird,Oporornis_tolmiei,2.6,10.6,0.649
-Bird,Oporornis_agilis,3.8,25.6,0.617
-Bird,Oporornis_formosus,3.575,14.5,0.435
-Bird,Oporornis_philadelphia,3.25,17,0.327
-Bird,Oporornis_tolmiei,2.6,10.6,0.649
-Bird,Megascops_asio,45.13,13,0.179
-Bird,Otus_flammeolus,13.89,6.8,0.318
-Bird,Megascops_kennicottii,42.25,7.8,0.198
-Bird,Oxyura_jamaicensis,147.5,6.6,0.187
-Bird,Pagodroma_nivea,67,-0.2818239580647039,0.127
-Bird,Pandion_haliaetus,371.4,7.8,0.115
-Bird,Parabuteo_unicinctus,215.8,26.2,0.233
-Bird,Parabuteo_unicinctus,215.8,26.2,0.256
-Bird,Parabuteo_unicinctus,220.6,26.2,0.202
-Bird,Parula_americana,2.15,11.8,0.538
-Bird,Parus_atricapillus,2.7,4.2,0.206
-Bird,Parus_atricapillus,2.75,4.2,0.361
-Bird,Baeolophus_bicolor,5.4,13.7,0.192
-Bird,Baeolophus_bicolor,5.4,13.7,0.549
-Bird,Parus_carolinensis,2.538,15.6,0.235
-Bird,Parus_cinctus,3.1,-8.6,0.37
-Bird,Parus_gambeli,2.875,4.9,0.254
-Bird,Parus_hudsonicus,2.45,-1.4,0.562
-Bird,Baeolophus_inornatus,4.375,17.3,0.323
-Bird,Parus_major,4.75,14.2,0.756
-Bird,Parus_major,4.75,14.2,0.989
-Bird,Parus_rufescens,2.425,7.2,0.331
-Bird,Parus_sclateri,2.75,15.9,0.526
-Bird,Baeolophus_wollweberi,2.6,17.7,0.394
-Bird,Passer_domesticus,6.925,12.1,0.192
-Bird,Passer_montanus,5.5,11.8,0.667
-Bird,Passerculus_sandwichensis,4.28,1.8,0.427
-Bird,Passerella_iliaca,8.075,-3.8,0.265
-Bird,Passerina_amoena,3.875,6.4,0.289
-Bird,Passerina_amoena,4,6.4,0.538
-Bird,Passerina_ciris,3.75,18.5,0.244
-Bird,Passerina_cyanea,3.525,12.8,0.233
-Bird,Passerina_cyanea,3.725,12.8,0.233
-Bird,Passerina_cyanea,3.75,12.8,0.429
-Bird,Passerina_cyanea,3.75,12.8,0.454
-Bird,Pelecanus_erythrorhynchos,1750,2.6,0.096
-Bird,Pelecanus_erythrorhynchos,1750,2.6,0.159
-Bird,Pelecanus_occidentalis,859.5,28.38008623676189,0.129
-Bird,Perdix_perdix,97.38,6.2,0.508
-Bird,Perisoreus_canadensis,18.25,-0.7,0.132
-Bird,Perisoreus_canadensis,18.25,-0.7,0.159
-Bird,Perisoreus_canadensis,18.25,-0.7,0.182
-Bird,Pernis_apivorus,189.5,5.7,0.087
-Bird,Phalacrocorax_auritus,418.5,10.9,0.142
-Bird,Phalacrocorax_carbo,527.4,28.455979024868086,0.141
-Bird,Phalacrocorax_carbo,527.4,28.455979024868086,0.178
-Bird,Phalacrocorax_pelagicus,467,17.973747610397282,0.142
-Bird,Phalacrocorax_penicillatus,525.8,8.781181453987806,0.273
-Bird,Phalaenoptilus_nuttallii,12.9,6,0.909
-Bird,Steganopus_tricolor,14.99,20.8,0.256
-Bird,Pheucticus_ludovicianus,11.4,5.2,0.355
-Bird,Pheucticus_melanocephalus,10.45,4.8,0.282
-Bird,Phoenicopterus_ruber,758.8,28.425795939463686,0.076
-Bird,Phoenicopterus_ruber,758.8,28.425795939463686,0.193
-Bird,Phylloscopus_borealis,2.65,-5.2,0.877
-Bird,Pica_nuttalli,36,16.4,0.259
-Bird,Pica_nuttalli,39.75,16.4,0.256
-Bird,Pica_pica,44.38,7.8,0.442
-Bird,Pica_pica,44.38,7.8,0.526
-Bird,Picoides_borealis,10.9,17.8,0.185
-Bird,Picoides_borealis,10.9,17.8,0.213
-Bird,Picoides_pubescens,6.75,6.3,0.224
-Bird,Picoides_scalaris,7.575,18,0.588
-Bird,Picoides_villosus,15.63,7,0.161
-Bird,Pinicola_enucleator,14.1,-5.5,0.265
-Bird,Pipilo_aberti,11.49,20.7,0.299
-Bird,Pipilo_chlorurus,7.35,18.1,0.336
-Bird,Pipilo_erythrophthalmus,10.43,8.4,0.207
-Bird,Pipilo_erythrophthalmus,10.43,8.4,0.239
-Bird,Pipilo_fuscus,11.1,18.6,0.199
-Bird,Piranga_ludoviciana,7.025,3.7,0.327
-Bird,Piranga_olivacea,7.15,9.4,0.254
-Bird,Piranga_rubra,7.05,19.4,0.355
-Bird,Piranga_rubra,7.05,19.4,0.435
-Bird,Platalea_leucorodia,473,3.1,0.09
-Bird,Plectrophenax_hyperboreus,13.63,3.3813651786329806,0.549
-Bird,Plectrophenax_nivalis,10.55,2.2,0.292
-Bird,Plegadis_chihi,155.4,21.5,0.175
-Bird,Pluvialis_dominica,36.25,27.974808536500593,0.549
-Bird,Pluvialis_squatarola,55,28.7772755013219,0.125
-Bird,Pluvialis_squatarola,55,28.7772755013219,0.201
-Bird,Podiceps_auritus,113.3,0.1,0.505
-Bird,Podiceps_grisegena,255.8,10.001509663433314,0.549
-Bird,Podiceps_nigricollis,73,8,0.505
-Bird,Polioptila_caerulea,1.5,13.8,0.633
-Bird,Caracara_plancus,223.4,22.7,0.289
-Bird,Polysticta_stelleri,193.3,3.5152753574037607,0.207
-Bird,Polysticta_stelleri,210.5,3.5152753574037607,0.178
-Bird,Pooecetes_gramineus,6.425,6.8,0.327
-Bird,Pooecetes_gramineus,6.425,6.8,0.376
-Bird,Procellaria_parkinsoni,168.8,23.003715177610843,0.149
-Bird,Progne_subis,12.35,26.9,0.185
-Bird,Protonotaria_citrea,3.75,14.3,0.538
-Bird,Pterodroma_alba,68,27.69136788158553,0.226
-Bird,Pterodroma_hypoleuca,44,25,0.239
-Bird,Pterodroma_macroptera,133.1,13.55354281883547,0.141
-Bird,Pterodroma_phaeopygia,108.5,24.282648271447965,0.37
-Bird,Ptychoramphus_aleuticus,47,0,0.251
-Bird,Ptychoramphus_aleuticus,47,0,0.435
-Bird,Ptychoramphus_aleuticus,47,0,0.459
-Bird,Puffinus_gravis,212.3,27.47620653625869,0.365
-Bird,Puffinus_lherminieri,42,25.475714540378124,0.133
-Bird,Puffinus_nativitatis,89,26.307460200118243,0.237
-Bird,Puffinus_pacificus,97,24.7,0.151
-Bird,Puffinus_pacificus,97,24.7,0.182
-Bird,Puffinus_puffinus,113.3,27.692463623180394,0.084
-Bird,Puffinus_puffinus,113.3,27.692463623180394,0.549
-Bird,Puffinus_tenuirostris,135.8,27.719568251856575,0.084
-Bird,Puffinus_tenuirostris,135.8,27.719568251856575,0.08
-Bird,Pycnonotus_jocosus,6.85,26,0.667
-Bird,Pyrocephalus_rubinus,3.6,25.6,0.476
-Bird,Quiscalus_major,41.63,20.2,0.215
-Bird,Quiscalus_mexicanus,47.75,21.6,0.204
-Bird,Quiscalus_quiscula,31.75,3.9,0.121
-Bird,Rallus_longirostris,80.75,26.4,0.345
-Bird,Recurvirostra_americana,79,5.1,0.286
-Bird,Regulus_calendula,1.663,-0.2,0.467
-Bird,Regulus_satrapa,1.575,14.3,0.495
-Bird,Rynchops_niger,75.38,25.3,0.127
-Bird,Riparia_riparia,3.65,7.1,0.323
-Bird,Rissa_brevirostris,97.75,6.5979940024055805,0.667
-Bird,Rissa_tridactyla,98.25,13.6,0.135
-Bird,Rissa_tridactyla,101.8,13.6,0.37
-Bird,Rissa_tridactyla,101.8,13.6,0.526
-Bird,Rissa_tridactyla,105.3,13.6,0.196
-Bird,Rostrhamus_sociabilis,94.5,25,0.149
-Bird,Rostrhamus_sociabilis,94.5,25,0.37
-Bird,Sayornis_nigricans,4.663,20.2,0.323
-Bird,Sayornis_nigricans,4.663,20.2,0.909
-Bird,Sayornis_phoebe,4.95,4.1,0.282
-Bird,Scolopax_minor,54.75,8.3,0.226
-Bird,Scolopax_minor,54.75,8.3,0.276
-Bird,Seiurus_aurocapilla,4.85,4.3,0.286
-Bird,Coturnicops_noveboracensis,5.075,0,0.323
-Bird,Coturnicops_noveboracensis,4.45,0,0.289
-Bird,Selasphorus_platycercus,0.875,16.3,0.365
-Bird,Selasphorus_platycercus,0.8875,16.3,0.323
-Bird,Selasphorus_platycercus,0.9,16.3,0.209
-Bird,Selasphorus_platycercus,0.9,16.3,0.211
-Bird,Selasphorus_rufus,0.875,0.5,0.649
-Bird,Selasphorus_sasin,0.7875,23.1,0.667
-Bird,Selasphorus_sasin,0.8,23.1,0.685
-Bird,Setophaga_ruticilla,2.125,4.3,0.256
-Bird,Sialia_currucoides,7.4,0.6,0.549
-Bird,Sialia_mexicana,7.25,15.6,0.617
-Bird,Sialia_sialis,7.9,7.2,0.323
-Bird,Sitta_canadensis,2.45,4.1,0.345
-Bird,Sitta_carolinensis,5.275,10,0.262
-Bird,Sitta_pusilla,2.55,17.1,0.45
-Bird,Sitta_pygmaea,2.65,12.4,0.314
-Bird,Somateria_mollissima,478.8,5.7,0.119
-Bird,Somateria_mollissima,478.8,5.7,0.172
-Bird,Somateria_mollissima,516.6,5.7,0.11
-Bird,Somateria_spectabilis,391.8,12.195019447564079,0.134
-Bird,Spheniscus_magellanicus,1125,12.576765586479077,0.196
-Bird,Sphyrapicus_varius,12.58,0.8,0.382
-Bird,Spiza_americana,7.325,12.2,0.667
-Bird,Spizella_arborea,5.025,9,0.254
-Bird,Spizella_breweri,2.725,1.4,0.505
-Bird,Spizella_pallida,3,1.6,0.515
-Bird,Spizella_passerina,3.075,5.9,0.262
-Bird,Spizella_pusilla,3.125,13.9,0.292
-Bird,Spizella_pusilla,3.125,13.9,0.331
-Bird,Sporophila_torqueola,2.175,13.6,0.218
-Bird,Stelgidopteryx_ruficollis,3.8,26.4,0.442
-Bird,Stellula_calliope,0.6625,5.2,0.435
-Bird,Stellula_calliope,0.7,5.2,0.427
-Bird,Stercorarius_longicaudus,74.13,-0.24154332412544982,0.318
-Bird,Sterna_albifrons,14.25,7.7,0.12
-Bird,Sterna_antillarum,10.78,28.086445623663955,0.105
-Bird,Sterna_caspia,163.8,29.7,0.096
-Bird,Sterna_dougallii,27.5,26.4,0.182
-Bird,Sterna_dougallii,27.5,26.4,0.211
-Bird,Sterna_elegans,64.25,27.92905677747849,0.289
-Bird,Sterna_forsteri,39.5,11.4,0.213
-Bird,Sterna_forsteri,39.5,11.4,0.249
-Bird,Sterna_fuscata,45,25.930134119641103,0.079
-Bird,Sterna_lunata,36.5,27.43818586638425,0.141
-Bird,Sterna_lunata,36.5,27.43818586638425,0.157
-Bird,Sterna_maxima,117.5,28.18305610281282,0.114
-Bird,Sterna_maxima,117.5,28.18305610281282,0.149
-Bird,Sterna_nilotica,58.25,12.8,0.159
-Bird,Sterna_nilotica,58.25,12.8,0.413
-Bird,Sterna_paradisaea,27.5,-0.3795845974723797,0.074
-Bird,Sterna_sandvicensis,52,27.1,0.158
-Bird,Stigmatopelia_chinensis,39.75,26.46481761465995,0.336
-Bird,Strix_nebulosa,243.5,4.1,0.286
-Bird,Strix_nebulosa,289.8,4.1,0.196
-Bird,Strix_occidentalis,152.4,19.5,0.149
-Bird,Strix_varia,179.1,8.1,0.139
-Bird,Strix_varia,200.3,8.1,0.254
-Bird,Sturnella_magna,22.25,27.53683130235585,0.286
-Bird,Sturnus_vulgaris,20.58,2.6,0.119
-Bird,Morus_bassanus,749.9,17.00331622475932,0.101
-Bird,Morus_bassanus,749.9,17.00331622475932,0.124
-Bird,Sula_dactylatra,438.1,25.902089308114352,0.1
-Bird,Sula_dactylatra,438.1,25.902089308114352,0.11
-Bird,Sula_leucogaster,345.5,23.7,0.103
-Bird,Sula_leucogaster,345.5,23.7,0.158
-Bird,Morus_serrator,587.5,19.425291820100217,0.076
-Bird,Sula_sula,250.8,25.873140338402948,0.11
-Bird,Sula_sula,250.8,25.873140338402948,0.115
-Bird,Synthliboramphus_antiquus,51.5,12.7,0.526
-Bird,Synthliboramphus_antiquus,51.5,12.7,0.602
-Bird,Synthliboramphus_hypoleucus,41.75,14.776578971062754,0.169
-Bird,Synthliboramphus_hypoleucus,41.75,14.776578971062754,0.262
-Bird,Tachybaptus_ruficollis,50.25,19.8,0.196
-Bird,Tachycineta_bicolor,5.025,3.3,0.233
-Bird,Tachycineta_bicolor,5.025,3.3,0.289
-Bird,Tachycineta_thalassina,3.6,6.9,0.382
-Bird,Telespiza_cantans,8.2,23.5,0.435
-Bird,Threskiornis_aethiopicus,374.5,24.6,0.12
-Bird,Thryomanes_bewickii,2.475,16.1,0.323
-Bird,Thryomanes_bewickii,2.475,16.1,0.34
-Bird,Thryothorus_ludovicianus,4.675,15.4,0.427
-Bird,Toxostoma_bendirei,15.55,14.1,0.633
-Bird,Toxostoma_curvirostre,19.85,17.9,0.237
-Bird,Toxostoma_lecontei,15.48,21.8,0.459
-Bird,Toxostoma_longirostre,17.48,23.3,0.355
-Bird,Toxostoma_redivivum,21.1,17.1,0.376
-Bird,Toxostoma_rufum,17.2,7.6,0.199
-Bird,Tringa_flavipes,20.25,26.2,0.549
-Bird,Actitis_macularius,10.1,3.4,0.213
-Bird,Troglodytes_aedon,2.725,24.6,0.365
-Bird,Troglodytes_troglodytes,2.225,14,0.649
-Bird,Turdus_migratorius,19.33,-0.7,0.183
-Bird,Tympanuchus_cupido,221.4,9,2
-Bird,Tympanuchus_pallidicinctus,188.9,15,0.189
-Bird,Tympanuchus_phasianellus,208.9,1.8,0.413
-Bird,Tyrannus_tyrannus,10.9,7.5,0.259
-Bird,Tyrannus_verticalis,9.9,5.8,0.376
-Bird,Uria_aalge,248.1,12.987792711393809,0.096
-Bird,Uria_lomvia,241,14.052173901222998,0.111
-Bird,Vermivora_celata,2.25,1.9,0.382
-Bird,Vermivora_chrysoptera,2.175,17.7,0.327
-Bird,Vermivora_luciae,1.65,18.6,0.45
-Bird,Vermivora_peregrina,2.45,-0.2,0.407
-Bird,Vermivora_pinus,2.1,11.1,0.327
-Bird,Vermivora_ruficapilla,2.15,13.9,0.355
-Bird,Vermivora_virginiae,1.95,18.4,0.649
-Bird,Vermivora_virginiae,1.95,18.4,0.847
-Bird,Vireo_atricapilla,2.125,20.7,0.37
-Bird,Vireo_bellii,2.125,16.6,0.376
-Bird,Vireo_flavifrons,4.5,12.1,0.427
-Bird,Vireo_gilvus,3.7,8,0.195
-Bird,Vireo_griseus,2.85,14.3,0.355
-Bird,Vireo_huttoni,2.9,18.4,0.4
-Bird,Vireo_olivaceus,4.175,27.301038842933185,0.256
-Bird,Vireo_philadelphicus,3.05,0.5,0.292
-Bird,Vireo_solitarius,4.15,0.5,0.35
-Bird,Wilsonia_canadensis,2.55,16.3,0.327
-Bird,Wilsonia_canadensis,2.625,16.3,0.323
-Bird,Wilsonia_citrina,2.613,13,0.323
-Bird,Wilsonia_pusilla,1.825,-0.3,0.382
-Bird,Xanthocephalus_xanthocephalus,19.93,8.7,0.235
-Bird,Zenaida_asiatica,38.25,24.2,0.116
-Bird,Zenaida_macroura,29.75,15.2,0.131
-Bird,Zonotrichia_albicollis,6.475,-1.2,0.265
-Bird,Zonotrichia_atricapilla,7.45,-5.4,0.244
-Bird,Zonotrichia_leucophrys,7.35,-2,0.192
-Bird,Zonotrichia_querula,9.063,2.7,0.218
-Bird,Zosterops_japonicus,2.5,15.9,0.515
-Fish,Abramis brama,398,8,0.165
-Fish,Acipenser transmontanus,24200,10,0.05
-Fish,Acipenser transmontanus,42500,22,0.03
-Fish,Acipsnser fulvescens,9000,8,0.01
-Fish,Ammodytes marinus,8.03,11,1.24
-Fish,Ammodytes tobianus,3.75,11,1.29
-Fish,Aphinius fasciatus,0.625,15,2.6
-Fish,Aphinius fasciatus,1,15,1.8
-Fish,Apsilus dentatus,1000,27,0.83
-Fish,Apsilus dentatus,1130,27,1.9
-Fish,Bajacalifornia burragei,2.45,4,1.039
-Fish,Balistes vetula,730,27,2.61
-Fish,Bathylagus milleri,7.5,5.5,1.217
-Fish,Benthosema glaciale,0.56,13,1.521
-Fish,Benthosema glaciale,1.4,7,1.75
-Fish,Benthosema glaciale,1.43,7,0.74
-Fish,Blennius pholis,13.5,17,0.9
-Fish,Borostomias panamensis,12.5,5.5,1.097
-Fish,Brevoortia tyrannus,35.3,23,1
-Fish,Brevoortia tyrannus,216,13,0.5
-Fish,Callionymus lyra,1.95,12,0.96
-Fish,Callionymus lyra,6.75,12,0.86
-Fish,Caranx ruber,623,27,1.51
-Fish,Centengraulis mysticetus,14,24,2.4
-Fish,Cephalopholis fulva,160,27,0.55
-Fish,Cetorhinus maximus,3450000,10,0.046
-Fish,Chelodactylus macropterus,348,14,0.08
-Fish,Clupea harengus,13.8,8,0.35
-Fish,Clupea harengus,40,9,0.36
-Fish,Clupea harengus,48.3,12,0.2
-Fish,Clupea harengus,50,11,0.25
-Fish,Clupea harengus,87.5,8,0.16
-Fish,Clupea pallassii,52.3,10,0.5
-Fish,Clupea pallassii,131,12,0.2
-Fish,Cololabis aira,47.3,12,1.6
-Fish,Coregonus clupeaformis,6.75,5,1.3
-Fish,Coregonus clupeaformis,708,5,0.15
-Fish,Coregonus clupeaformis,1050,5,1.35
-Fish,Coregonus clupeaformis,1560,5,0.17
-Fish,Coryphaennoides acrolepis,450,3.2,0.822
-Fish,Coryphaenoides rupestris,239,9.5,0.12
-Fish,Cottus gobio,1.08,9,1.1
-Fish,Cottus gobio,1.08,9,0.8
-Fish,Cottus gobio,1.48,9,1.1
-Fish,Cottus gobio,1.53,9,0.9
-Fish,Cyclothone braueri,0.131,10,4.867
-Fish,Cynoglossus macrolepidus,42.5,27,0.49
-Fish,Cynolebias adloffi,0.375,22,6.348
-Fish,Cynolebias adloffi,0.625,16,3.476
-Fish,Cynolebias bellottii,0.65,15,3.862
-Fish,Cynolebias bellottii,0.65,20,5.214
-Fish,Cynolebias wolterstarfii,1.25,15.5,3.395
-Fish,Cynolebias wolterstarfii,1.25,20,5.84
-Fish,Cynoscion analis,368,18,0.4
-Fish,Cynoscion macdonaldi,4450,27,0.3
-Fish,Cynoscion nobilis,6980,24,0.3
-Fish,Dicentrarchus labrax,1720,10,0.1
-Fish,Engraulis anchoita,12.5,16,0.9
-Fish,Engraulis anchoita,53,16,1.42
-Fish,Engraulis encrasicholus,6,15,1.8
-Fish,Engraulis japonicus,9,20,1.63
-Fish,Engraulis mordax,5.25,15,1.7
-Fish,Engraulis ringens,6,16,1.52
-Fish,Engraulis ringens,9.25,16,1
-Fish,Eopsetta jordani,993,9,0.2
-Fish,Eopsetta jordani,1140,9,0.25
-Fish,Epinephelus guttatus,470,27,0.68
-Fish,Epinephelus striatus,3230,27,0.24
-Fish,Esox lucius,823,9,0.24
-Fish,Esox lucius,2200,9,0.26
-Fish,Gadus minitus,14.9,12,1.1
-Fish,Gadus minitus,39.5,12,0.9
-Fish,Gadus morhua,750,8,0.18
-Fish,Gadus morhua,2040,6,0.44
-Fish,Gadus morhua,2700,5,0.31
-Fish,Gadus morhua,2750,7,0.33
-Fish,Gadus morhua,2930,6,0.2
-Fish,Gadus morhua,3750,6,0.1
-Fish,Gadus morhua,4100,8,0.17
-Fish,Gadus morhua,5000,8,0.2
-Fish,Gadus morhua,6000,5,0.1
-Fish,Gasterosteus aculeatus,0.45,10,0.9
-Fish,Haemulon album,1330,27,0.79
-Fish,Haemulon plumieri,340,27,1.77
-Fish,Haplochromis anaphyrmus,27.8,26,1.45
-Fish,Haplochromis mloto,18.5,26,0.92
-Fish,Hippoglossoides platessoides,173,11,0.3
-Fish,Hippoglossoides platessoides,310,15,0.27
-Fish,Hippoglossoides platessoides,415,14,0.25
-Fish,Hippoglossoides platessoides,510,7,0.26
-Fish,Hippoglossoides platessoides,515,11,0.22
-Fish,Hippoglossoides platessoides,545,15,0.18
-Fish,Hippoglossoides platessoides,713,14,0.23
-Fish,Hippoglossoides platessoides,955,7,0.18
-Fish,Hoplostethus atlanticus,540,4,0.048
-Fish,Hypomesus olidus,3.75,16,2.45
-Fish,Katsuwonus pelamis,2530,25,0.65
-Fish,Katsuwonus pelamis,8080,25,1.68
-Fish,Lamna nasus,41800,7,0.18
-Fish,Lampanyctus macdonaldi,0.725,10.25,1.014
-Fish,Lampanyctus regalis,0.725,6,1.329
-Fish,Latimeria chalumnae,20000,16,0.2
-Fish,Leiognathus splendens,16,28,1.8
-Fish,Lethrinops longispinis,30.5,26,1.69
-Fish,Lethrinops parvidens,33,26,1.2
-Fish,Leucichthys artedi,17.5,8,1.1
-Fish,Leucichthys artedi,23.8,8,1.2
-Fish,Leucichthys artedi,150,8,0.35
-Fish,Leucichthys sardinella,138,5,0.6
-Fish,Limanda ferruginea,295,10,0.15
-Fish,Lithrinus enigmaticus,730,27,0.2
-Fish,Lutjanus apodus,950,27,0.54
-Fish,Lutjanus buccanella,473,27,1.83
-Fish,Lutjanus buccanella,800,27,2.24
-Fish,Lutjanus purpureus,2930,27,0.37
-Fish,Mallotus villosus,15,11,1.3
-Fish,Maurolicus muelleri,0.125,13,4.867
-Fish,Melanogrammus aeglefinus,538,5,0.2
-Fish,Merluccius angustimanus,63.8,20,0.84
-Fish,Merluccius gayi,1460,14,0.37
-Fish,Merluccius merluccius,156,15,0.6
-Fish,Merluccius merluccius,395,15,0.5
-Fish,Merluccius productus,318,12,0.56
-Fish,Mugil cephalus,613,20,0.31
-Fish,Mulloidichthys martinicus,90,27,1.73
-Fish,Mulloidichthys martinicus,130,27,1.7
-Fish,Mycteroperca venenosa,2080,27,0.42
-Fish,Myctophum punctatum,1.65,15,0.73
-Fish,Nemipterus bleekeri,75,28,1.12
-Fish,Nemipterus delagoe,60,28,1.62
-Fish,Nemipterus hexodon,53.8,28,0.88
-Fish,Nemipterus japonicus,63.8,28,1.88
-Fish,Nemipterus marginatus,52.5,28,1.73
-Fish,Nemipterus marginatus,57.5,28,1.14
-Fish,Nemipterus mesoprion,18.8,28,1.08
-Fish,Nemipterus nematophorus,50,28,1.63
-Fish,Nemipterus nemurus,61.3,28,1.03
-Fish,Nemipterus peronii,64.3,28,1.05
-Fish,Nemipterus sp.,102,28,0.53
-Fish,Nemipterus tolu,57.5,28,0.41
-Fish,Notothenia neglecta,545,16,0.36
-Fish,Ocyurus chrysurus,900,27,0.62
-Fish,Perca fluviatilis,109,6,0.29
-Fish,Perca fluviatilis,158,6,0.16
-Fish,Phoxinus phoxinus,2.05,9,1.1
-Fish,Platichthys flesus,260,8,0.18
-Fish,Pleuronectes platessa,228,7,0.22
-Fish,Pleuronectes platessa,858,7,0.12
-Fish,Pneumatophorus japonicus,203,15,0.9
-Fish,Pollachius virens,2900,6,0.15
-Fish,Pollachius virens,4130,5,0.3
-Fish,Pollachius virens,5030,5,0.3
-Fish,Pomatoschistus minutus,1,10,3.3
-Fish,Poromitra crassiceps,3.53,6.5,0.677
-Fish,Pseudopleuronectes americanus,345,5,0.4
-Fish,Pseudosciaena diacanthus,4350,27,0.8
-Fish,Pseudotolithus elongatus,179,26,0.34
-Fish,Pseudoupeneus macularus,90,27,1.89
-Fish,Pungitius pungitius,0.1,10,1.1
-Fish,Restrelliger kanagurta,38.5,27,7.8
-Fish,Restrelliger kanagurta,40,28,4.44
-Fish,Restrelliger neglectus,21,28,4.2
-Fish,Restrelliger neglectus,27.5,28,7.22
-Fish,Restrelliger neglectus,51.3,28,4.56
-Fish,Salmo trutta,75,9,0.94
-Fish,Salmo trutta,125,5,0.31
-Fish,Salvelinus alpinus,1250,7,0.17
-Fish,Sardinella longiceps,15.8,27,0.67
-Fish,Sardinella longiceps,16.5,27,1.12
-Fish,Sardinops caerrula,56.3,15,0.45
-Fish,Sardinops caerrula,84.3,15,0.4
-Fish,Sardinops melanosticta,52.3,15,0.5
-Fish,Saurida tumbil,588,17,0.46
-Fish,Sebastes aleutianus,9380,4.5,0.029
-Fish,Sebastes alutus,200,5,0.193
-Fish,Sebastes alutus,270,6,0.271
-Fish,Sebastes alutus,340,8,0.227
-Fish,Sebastes alutus,1420,4.5,0.06
-Fish,Sebastes babcocki,1960,5.5,0.057
-Fish,Sebastes borealis,9300,4.5,0.038
-Fish,Sebastes brevispinis,1960,7,0.073
-Fish,Sebastes caurinus,778,6.5,0.109
-Fish,Sebastes chlorostictus,545,7,0.182
-Fish,Sebastes ciliatus,1030,6,0.09
-Fish,Sebastes constellatus,410,7,0.188
-Fish,Sebastes crameri,778,5.5,0.091
-Fish,Sebastes dalli,76.8,7,0.5
-Fish,Sebastes diploproa,1140,6,0.071
-Fish,Sebastes elongatus,343,6,0.143
-Fish,Sebastes entomelas,815,5.5,0.1
-Fish,Sebastes flavidus,1110,6,0.094
-Fish,Sebastes goodei,705,6.5,0.222
-Fish,Sebastes helvomaculatus,1050,6,0.069
-Fish,Sebastes jorani,152,6.5,0.194
-Fish,Sebastes levis,2930,6.5,0.109
-Fish,Sebastes maliger,1790,7,0.067
-Fish,Sebastes melanops,1020,6.5,0.12
-Fish,Sebastes miniatus,1640,6.5,0.14
-Fish,Sebastes mystinus,608,6,0.136
-Fish,Sebastes nigrocinctus,5400,7,0.052
-Fish,Sebastes ovalis,705,6.5,0.162
-Fish,Sebastes paucipinis,2930,6,0.167
-Fish,Sebastes pinniger,1970,7,0.071
-Fish,Sebastes polyspinis,1030,5.5,0.105
-Fish,Sebastes reedi,1280,6.5,0.061
-Fish,Sebastes rosaceus,210,7,0.429
-Fish,Sebastes rosenblatti,705,6.5,0.12
-Fish,Sebastes ruberrinus,4200,6,0.051
-Fish,Sebastes rubrivinctus,1020,6.5,0.333
-Fish,Sebastes rufus,545,7,0.113
-Fish,Sebastes saxicola,300,6,0.158
-Fish,Sebastes variegatus,226,5.5,0.128
-Fish,Sebastes wilsoni,61,7,0.25
-Fish,Sebastes zacentrus,533,6,0.103
-Fish,Sebastolobus alascanus,2470,2.8,0.053
-Fish,Sebastolobus altivelis,243,2.4,0.13
-Fish,Soela vulgaris,121,7,0.25
-Fish,Sprattus sprattus,5.1,9,0.7
-Fish,Sprattus sprattus,5.75,8,0.53
-Fish,Stolothrissa tanganicae,1.5,27,5.2
-Fish,Stizostedion canadensis,154,5,0.44
-Fish,Thunnus alaunga,1290,26,0.2
-Fish,Thunnus alaunga,14700,25,0.23
-Fish,Thunnus albacares,24800,25,0.77
-Fish,Thunnus albacares,34500,26,0.8
-Fish,Thunnus albacares,36000,25,0.8
-Fish,Thunnus albacares,49800,25,0.9
-Fish,Thunnus atlanticus,2440,26,0.67
-Fish,Thunnus germo,9230,25,0.22
-Fish,Thunnus macoyi,49000,26,0.2
-Fish,Tilapia esculenta,188,25,1.75
-Fish,Tracharus japonicus,298,20,0.99
-Fish,Trisopterus esmarkii,11.3,9,1.6
-Fish,Trisopterus esmarkii,12,9,0.6
-Invertebrate,Acanthochitona crinita,0.333,13.85,4.44
-Invertebrate,Acanthocyclops robustus,1.13e-5,5,19.211
-Invertebrate,Acanthocyclops robustus,1.13e-5,10,22.01
-Invertebrate,Acanthocyclops robustus,1.13e-5,15,44.242
-Invertebrate,Acanthocyclops robustus,1.13e-5,20,56.154
-Invertebrate,Acanthocyclops robustus,1.13e-5,25,87.6
-Invertebrate,Aega antarctica,5.6,-1.15,0.13
-Invertebrate,Amphicteis gunneri,0.365,3.35,1.083
-Invertebrate,Ancylus fluviatilis,0.0665,11.85,3.9
-Invertebrate,Ancylus fluviatilis,0.108,7.85,3.2
-Invertebrate,Anodonta grandis,28.8,5.85,0.183
-Invertebrate,Anodonta grandis,137,8.85,0.218
-Invertebrate,Anodonta piscinalis,9.98,12.85,0.265
-Invertebrate,Arctica islandica,165,6.85,0.35
-Invertebrate,Aulacomya ater,3,15.35,1.459
-Invertebrate,Boreomysis microps,0.00575,9.5,3.042
-Invertebrate,Bovallia gigantea f,5.93,-0.95,0.889
-Invertebrate,Bovallia gigantea f,15.3,-0.95,0.729
-Invertebrate,Bovallia gigantea,1.51,-0.95,1.385
-Invertebrate,Bovallia gigantea,4.75,-0.95,0.801
-Invertebrate,Brachycentrus spinae,0.00613,10.85,6.205
-Invertebrate,Calyptogena magnifica,0.243,17,1.538
-Invertebrate,Calyptogena magnifica,6.85,7.8,0.324
-Invertebrate,Cardium edule,3.8,11.85,0.86
-Invertebrate,Cardium edule,5.65,11.85,0.59
-Invertebrate,Cardium edule,9.25,11.85,0.44
-Invertebrate,Cardium edule,9.9,9.85,0.727
-Invertebrate,Cassidulus mitis,0.95,22.15,0.812
-Invertebrate,Chamelea gallina,1.35,24.85,4.687
-Invertebrate,Chione cancellata,5.23,25.85,0.553
-Invertebrate,Chorismus antarcticus,12.7,-1.15,0.731
-Invertebrate,Corbicula fluminea,0.45,21.35,4.39
-Invertebrate,Corbicula fluminea,0.638,21.85,1.739
-Invertebrate,Cyclops strenuus,3.75e-5,15,18.75
-Invertebrate,Cyclops strenuus,3.75e-5,20,24.146
-Invertebrate,Cyclops vicinus,3.8e-5,5,15.315
-Invertebrate,Cyclops vicinus,3.8e-5,10,15.755
-Invertebrate,Cyclops vicinus,3.8e-5,15,42.941
-Invertebrate,Daphnia ambigua,7.55e-7,5,24.333
-Invertebrate,Daphnia ambigua,7.55e-7,10,35.902
-Invertebrate,Daphnia magna,4.43e-5,14,24.971
-Invertebrate,Daphnia magna,4.43e-5,19,34.873
-Invertebrate,Daphnia magna,4.43e-5,24,51.408
-Invertebrate,Daphnia magna,4.43e-5,29,84.884
-Invertebrate,Donax incarnatus,0.905,27.85,7.483
-Invertebrate,Dosinia hepatica,1.85,19.85,0.568
-Invertebrate,Echinosigra phiale,0.182,2.85,0.275
-Invertebrate,Echinus acutus var. norvegicus,6.5,7,0.28
-Invertebrate,Echinus affinis,8.43,2.85,0.236
-Invertebrate,Echinus elegans,14.7,7,0.559
-Invertebrate,Egeria radiata,194,28.85,2.03
-Invertebrate,Ephemerella subvaria,0.0415,14.85,6.597
-Invertebrate,Epitheca spp.,0.758,16.85,2.95
-Invertebrate,Eucyclops serrulatus,1.28e-5,10,23.422
-Invertebrate,Eucyclops serrulatus,1.28e-5,15,31.878
-Invertebrate,Eucyclops serrulatus,1.28e-5,20,36.079
-Invertebrate,Eucyclops serrulatus,1.28e-5,25,105.288
-Invertebrate,Euphausia krohni,0.004,13,5.214
-Invertebrate,Eurhomalea exalbida,230,6.45,0.145
-Invertebrate,Filinia pejleri,1.25e-8,5,87.6
-Invertebrate,Filinia pejleri,1.25e-8,10,128.824
-Invertebrate,Filinia pejleri,1.25e-8,15,168.462
-Invertebrate,Filinia pejleri,1.25e-8,20,292
-Invertebrate,Filinia pejleri,1.25e-8,25,365
-Invertebrate,Filinia terminalis,1.25e-8,5,87.6
-Invertebrate,Filinia terminalis,1.25e-8,10,128.824
-Invertebrate,Filinia terminalis,1.25e-8,15,168.462
-Invertebrate,Filinia terminalis,1.25e-8,20,292
-Invertebrate,Filinia terminalis,1.25e-8,25,365
-Invertebrate,Gammarus fossarum,0.0128,12,3.809
-Invertebrate,Gammarus fossarum,0.0128,16.1,5.475
-Invertebrate,Gammarus fossarum,0.0128,20.2,7.552
-Invertebrate,Gammarus roeseli,0.0181,12,3.809
-Invertebrate,Gammarus roeseli,0.0181,16.1,5.475
-Invertebrate,Gammarus roeseli,0.0181,20.2,7.552
-Invertebrate,Gennadas elegans,0.109,10.5,2.028
-Invertebrate,Gnathophausia zoea,0.95,9.5,1.521
-Invertebrate,Haliotis iris,363,12.15,0.077
-Invertebrate,Hiatella arctica,14.5,-0.15,0.28
-Invertebrate,Hiatella byssifera,11.3,1.85,0.28
-Invertebrate,Holothuria atra,880,25.95,0.549
-Invertebrate,Hyalella azteca,0.00578,15.95,4.716
-Invertebrate,Hydrobia acuta,0.0121,9.85,3.482
-Invertebrate,Keratella cochlearis,1.75e-8,5,79.927
-Invertebrate,Keratella cochlearis,1.75e-8,10,98.649
-Invertebrate,Keratella cochlearis,1.75e-8,15,142.208
-Invertebrate,Keratella cochlearis,1.75e-8,20,240.659
-Invertebrate,Keratella cochlearis,1.75e-8,25,326.866
-Invertebrate,Laeonereis fragilis,1.13,21.85,6.658
-Invertebrate,Laevilacunaria antarctica,0.123,-0.95,1.832
-Invertebrate,Laevilacunaria antarctica,0.129,-0.95,1.647
-Invertebrate,Lamellibranchia,3.43,7,0.035
-Invertebrate,Lamellibranchia,3.43,7,0.06
-Invertebrate,Ledella pustulosa,0.0118,2.65,0.426
-Invertebrate,Lissarca miliaris,0.031,-0.95,0.597
-Invertebrate,Lissarca notorcadensis,0.056,-1.15,0.319
-Invertebrate,Lissarca notorcadensis,0.0953,-1.15,0.297
-Invertebrate,Littorina africana,0.115,13.85,2.027
-Invertebrate,Lumbrinereis fragilis,8.63,6.85,0.744
-Invertebrate,Lymnaea peregra,1.75,9.85,2.526
-Invertebrate,Macoma balthica,0.144,8.85,1.139
-Invertebrate,Macoma balthica,0.196,8.85,0.463
-Invertebrate,Macoma balthica,0.733,12.85,1.29
-Invertebrate,Macoma balthica,3.33,9.85,0.57
-Invertebrate,Macoma balthica,10.8,5.85,1.067
-Invertebrate,Meganyctiphanes norvegica,0.0145,13,5.214
-Invertebrate,Mercenaria mercenaria,38.3,11.85,0.448
-Invertebrate,Mesocyclops leuckarti,8.13e-6,10,18.025
-Invertebrate,Mesocyclops leuckarti,8.13e-6,15,38.087
-Invertebrate,Mesocyclops leuckarti,8.13e-6,20,49.213
-Invertebrate,Mesocyclops leuckarti,8.13e-6,25,69.524
-Invertebrate,Mesodesma arctatum,11.7,5.35,0.263
-Invertebrate,Mesodesma donacium,31,16.85,2.5
-Invertebrate,Moira atropes,33.3,25.85,0.83
-Invertebrate,Mya arenaria,9.05,8.85,0.64
-Invertebrate,Mya truncata,6.78,1.85,0.25
-Invertebrate,Mya truncata,7.33,-0.15,0.1
-Invertebrate,Mya truncata,84.8,1.85,0.14
-Invertebrate,Mytilid sp.,9.68,17,0.308
-Invertebrate,Nacella concinna,5.95,-0.95,0.196
-Invertebrate,Nacella delesserti,38.8,4.85,0.343
-Invertebrate,Nematobrachion boopis,0.0065,10.25,3.476
-Invertebrate,Nematoscelis megalops,0.0075,13,4.056
-Invertebrate,Nephtys incisa,0.28,11.65,2.155
-Invertebrate,Nereis diversicolor,1.22,8.85,3.79
-Invertebrate,Nereis virens,2.68,8.85,1.44
-Invertebrate,Notholca caudata,1.75e-8,5,88.664
-Invertebrate,Notholca caudata,1.75e-8,10,103.302
-Invertebrate,Notholca caudata,1.75e-8,15,190.435
-Invertebrate,Notholca caudata,1.75e-8,20,312.857
-Invertebrate,Notoacmaea scutum,6.23,11.85,2.05
-Invertebrate,Nucella lapillus,20.6,6.85,0.35
-Invertebrate,Nucula proxima,0.0107,9.85,0.49
-Invertebrate,Nucula turgida,0.448,11.85,0.599
-Invertebrate,Ophiocten gracilis,0.025,9.5,0.857
-Invertebrate,Ophiocten gracilis,0.0833,2.85,0.811
-Invertebrate,Ophiocten hastatum,0.05,9,0.615
-Invertebrate,Ophionepthys limicola,8.15,24.85,1.966
-Invertebrate,Ophionotus hexactis,1.69,1.35,0.597
-Invertebrate,Ophiura ljungmani,0.0273,2.85,1.148
-Invertebrate,Ophiura ljungmani,0.218,2.85,0.334
-Invertebrate,Pachygrapsus gracilis,2.7,27.85,5.4
-Invertebrate,Parvicardium exiguum,0.368,15.65,4.088
-Invertebrate,Pectinaria hyperboreia,0.239,5.85,2.263
-Invertebrate,Pectinaria koreni,0.0358,11.85,8.522
-Invertebrate,Perna perna,3.98,20.85,4.799
-Invertebrate,Perna perna,6.63,20.85,4.618
-Invertebrate,Philine gibba,9.53,1.35,0.671
-Invertebrate,Pontoporeia femorata,0.0905,5.85,4.233
-Invertebrate,Prochaetoderma yongei,2.73e-4,3.35,10.429
-Invertebrate,Reticulammina labyrinthica,0.0113,2.5,7.526
-Invertebrate,Scolelepis gaucha,0.00438,19.85,11.354
-Invertebrate,Scolelepis squamata,0.0244,21.85,4.02
-Invertebrate,Serolis polita,1.15,-0.85,0.626
-Invertebrate,Siliqua patula,9.3,10.3,1.644
-Invertebrate,Siliqua patula,10.5,10.3,0.968
-Invertebrate,Siliqua patula,11.4,14.4,1.681
-Invertebrate,Siliqua patula,14.6,12.2,1.027
-Invertebrate,Siliqua patula,14.9,10.3,1.195
-Invertebrate,Siliqua patula,15,8,0.826
-Invertebrate,Siliqua patula,23.8,5,0.306
-Invertebrate,Siliqua patula,24.2,5.9,0.413
-Invertebrate,Siliqua patula,26,5.9,0.448
-Invertebrate,Siliqua patula,29,4.6,0.396
-Invertebrate,Spisula sachalinesis,181,13.85,0.609
-Invertebrate,Sterechinus antarcticus,13.1,-1.15,0.07
-Invertebrate,Strongylocentr. droeb.,0.52,5.85,0.799
-Invertebrate,Strongylocentr. franciscanus,400,16.05,0.106
-Invertebrate,Strongylocentr. franciscanus,648,16.05,0.083
-Invertebrate,Strongylocentr purpuratus,0.82,14.85,1.227
-Invertebrate,Strongylocentr purpuratus,4.5,14.05,0.204
-Invertebrate,Strongylocentr purpuratus,5.18,15.25,0.317
-Invertebrate,Strongylocentr purpuratus,8.8,8.85,0.119
-Invertebrate,Strongylocentrotus pallidus,30.8,0.85,0.082
-Invertebrate,Tapes philippimarum,4.73,24.05,2.406
-Invertebrate,Tellina fabula,0.0615,9.85,1.99
-Invertebrate,Tellina fabula,0.153,9.85,1.723
-Invertebrate,Tellina martinicensis,1.26,25.85,1.686
-Invertebrate,Terebellides stroemi,0.0625,-0.15,0.475
-Invertebrate,Theora lubrica,0.0238,16.85,4.236
-Invertebrate,Thysanopoda acutifrons,0.0198,10.25,2.704
-Invertebrate,Tindaria callistiformis,0.00144,3.5,0.946
-Invertebrate,Turbo sarmaticus,163,16.85,0.81
-Invertebrate,Tysanoessa longicaudata,0.0015,13,7.3
-Invertebrate,Uca cumulanta,1.57,27.85,10.6
-Invertebrate,Uca maracoani,7.85,27.85,5.3
-Invertebrate,Uca maracoani,14.3,27.85,5.3
-Invertebrate,Uca rapax,6.85,27.85,4.9
-Invertebrate,Uca vocator,8.9,27.85,2.8
-Invertebrate,Unio tumidis,5.35,12.55,0.352
-Invertebrate,Venerupis aurea,5.2,11.85,0.37
-Invertebrate,Venerupis aurea,5.45,11.85,0.35
-Invertebrate,Venus antiqua,40.5,11.55,0.664
-Invertebrate,Vesicomyid sp.,0.00238,21,0.228
-Invertebrate,Yoldia eightsi,5.2,-0.95,0.13
-Invertebrate,Yoldia eightsi,5.48,-0.95,0.114
-Invertebrate,Yoldia limatula,4.93,8.85,0.803
-Invertebrate,Zygochlamys patagonica,75.3,7.85,1.039
+"Group","Species","dry_mass_g","Temp_C","Mortality_yr"
+"Mammal","Acinonyx_jubatus",12500,26.2,0.213
+"Mammal","Acinonyx_jubatus",12500,26.2,0.169
+"Mammal","Acrobates_pygmaeus",3,20.4,0.667
+"Mammal","Aepyceros_melampus",13130,24,0.196
+"Mammal","Aepyceros_melampus",13130,24,0.169
+"Mammal","Aepyprymnus_rufescens",812.5,20.1,0.435
+"Mammal","Ailuropoda_melanoleuca",30000,13.3,0.097
+"Mammal","Ailurus_fulgens",875,4.5,0.182
+"Mammal","Alcelaphus_buselaphus",42750,28,0.127
+"Mammal","Alces_alces",89750,9.32039685331055,0.159
+"Mammal","Alces_alces",89750,9.32039685331055,0.093
+"Mammal","Allenopithecus_nigroviridis",1187,24.9,0.11
+"Mammal","Vulpes_lagopus",862.5,0.9,0.256
+"Mammal","Alouatta_palliata",1819,23.1,0.127
+"Mammal","Alouatta_palliata",1819,23.1,0.127
+"Mammal","Alouatta_palliata",1819,23.1,0.101
+"Mammal","Alouatta_palliata",1819,23.1,0.101
+"Mammal","Ammotragus_lervia",20940,24.6,0.256
+"Mammal","Antechinus_flavipes",11.25,20.2,3.333
+"Mammal","Antechinus_flavipes",11.25,20.2,1.429
+"Mammal","Antechinus_stuartii",6.875,11.4,3.846
+"Mammal","Antechinus_stuartii",6.875,11.4,0.909
+"Mammal","Antidorcas_marsupialis",9762,20.3,0.127
+"Mammal","Antilocapra_americana",11520,1,0.256
+"Mammal","Antilocapra_americana",11520,1,0.256
+"Mammal","Antilope_cervicapra",9250,27.5,0.169
+"Mammal","Antilope_cervicapra",9250,27.5,0.141
+"Mammal","Aotus_trivirgatus",225,26.3,0.213
+"Mammal","Aotus_trivirgatus",225,26.3,0.127
+"Mammal","Aplodontia_rufa",251,7.2,0.435
+"Mammal","Aplodontia_rufa",251,7.2,0.256
+"Mammal","Apodemus_sylvaticus",6.25,1.4,3.333
+"Mammal","Arctictis_binturong",2875,24.7,0.141
+"Mammal","Arctocebus_calabarensis",52.5,25.8,0.27
+"Mammal","Arctocephalus_galapagoensis",6750,23.9,0.115
+"Mammal","Arctocephalus_gazella",24380,0.992370320108086,0.196
+"Mammal","Arctocephalus_gazella",24380,0.992370320108086,0.11
+"Mammal","Arctocephalus_pusillus",44630,16.5,0.141
+"Mammal","Arctogalidia_trivirgata",562.5,25.7,0.213
+"Mammal","Arvicola_amphibius",50,2.9,1.111
+"Mammal","Ateles_paniscus",1975,25.9,0.127
+"Mammal","Babyrousa_babyrussa",25000,22.3,0.105
+"Mammal","Balaena_mysticetus",17250000,5.05874710769122,0.084
+"Mammal","Balaena_mysticetus",17250000,5.05874710769122,0.063
+"Mammal","Balaenoptera_acutorostrata",2500000,25.7599834785664,0.056
+"Mammal","Balaenoptera_acutorostrata",2500000,25.7599834785664,0.053
+"Mammal","Balaenoptera_acutorostrata",2500000,25.7599834785664,0.05
+"Mammal","Balaenoptera_borealis",5e+06,26.1573438033159,0.036
+"Mammal","Balaenoptera_borealis",5e+06,26.1573438033159,0.034
+"Mammal","Balaenoptera_edeni",4e+06,26.0932379968349,0.035
+"Mammal","Balaenoptera_musculus",37500000,20.30535723611,0.056
+"Mammal","Balaenoptera_musculus",37500000,20.30535723611,0.05
+"Mammal","Balaenoptera_musculus",37500000,20.30535723611,0.039
+"Mammal","Balaenoptera_musculus",37500000,20.30535723611,0.023
+"Mammal","Balaenoptera_physalus",11250000,23.626656051592,0.022
+"Mammal","Balaenoptera_physalus",11250000,23.626656051592,0.022
+"Mammal","Bassaricyon_gabbii",312.5,25.4,0.105
+"Mammal","Bassariscus_astutus",282.4,16.1,0.159
+"Mammal","Bassariscus_sumichrasti",225,24.2,0.11
+"Mammal","Berardius_bairdii",2845000,16.1376618311844,0.035
+"Mammal","Bison_bison",144800,-2.8,0.101
+"Mammal","Bison_bison",144800,-2.8,0.076
+"Mammal","Bison_bonasus",2e+05,7.4,0.093
+"Mammal","Blarina_brevicauda",3.787,7.2,1.111
+"Mammal","Bradypus_torquatus",975,23.7,0.213
+"Mammal","Burramys_parvus",10.38,8.5,0.667
+"Mammal","Cacajao_calvus",1449,25.8,0.141
+"Mammal","Cacajao_melanocephalus",950,26.4,0.213
+"Mammal","Callithrix_jacchus",73,25.7,0.256
+"Mammal","Callithrix_jacchus",73,25.7,0.256
+"Mammal","Callorhinus_ursinus",25000,14.6503243472263,0.101
+"Mammal","Callorhinus_ursinus",25000,14.6503243472263,0.084
+"Mammal","Callorhinus_ursinus",62500,14.6503243472263,0.051
+"Mammal","Canis_latrans",3352,3.8,0.175
+"Mammal","Canis_latrans",3352,3.8,0.175
+"Mammal","Canis_latrans",3352,3.8,0.12
+"Mammal","Canis_lupus",4200,9.3,0.256
+"Mammal","Canis_lupus",4200,9.3,0.186
+"Mammal","Canis_lupus",4200,9.3,0.159
+"Mammal","Canis_lupus",7069,9.3,0.256
+"Mammal","Canis_lupus",7069,9.3,0.186
+"Mammal","Canis_lupus",7069,9.3,0.159
+"Mammal","Canis_rufus",5746,16.4,0.159
+"Mammal","Capra_cylindricornis",20000,3,0.115
+"Mammal","Capra_falconeri",23750,2.4,0.213
+"Mammal","Capra_falconeri",23750,2.4,0.196
+"Mammal","Capreolus_capreolus",7500,7.7,0.169
+"Mammal","Castor_canadensis",3604,5.9,0.169
+"Mammal","Castor_fiber",6250,4.3,0.149
+"Mammal","Cebus_albifrons",657.2,25.9,0.063
+"Mammal","Sapajus_apella",625,26.5,0.063
+"Mammal","Philantomba_monticola",1562,25,0.213
+"Mammal","Cephalorhynchus_commersonii",12500,8.93852871482976,0.141
+"Mammal","Ceratotherium_simum",737500,20.9,0.07
+"Mammal","Ceratotherium_simum",737500,20.9,0.056
+"Mammal","Ceratotherium_simum",737500,20.9,0.05
+"Mammal","Cercocebus_torquatus",1937,21.7,0.123
+"Mammal","Cercocebus_torquatus",1937,21.7,0.084
+"Mammal","Cercopithecus_diana",1044,25.1,0.072
+"Mammal","Cercopithecus_mona",1156,25.4,0.084
+"Mammal","Cervus_elaphus",12500,9.5,0.05
+"Mammal","Cervus_elaphus",12500,9.5,0.025
+"Mammal","Cervus_elaphus",29880,9.5,0.127
+"Mammal","Cervus_elaphus",29880,9.5,0.094
+"Mammal","Cervus_elaphus",39060,9.5,0.127
+"Mammal","Cervus_elaphus",39060,9.5,0.094
+"Mammal","Cervus_elaphus",54440,9.5,0.127
+"Mammal","Cervus_elaphus",54440,9.5,0.094
+"Mammal","Chinchilla_lanigera",121.2,12.1,0.256
+"Mammal","Chinchilla_lanigera",121.2,12.1,0.226
+"Mammal","Chiropotes_albinasus",725,26.4,0.149
+"Mammal","Chiropotes_satanas",750,26.7,0.141
+"Mammal","Civettictis_civetta",3000,26.4,0.169
+"Mammal","Coendou_prehensilis",1100,26.4,0.149
+"Mammal","Colobus_polykomos",2459,25.7,0.097
+"Mammal","Colobus_polykomos",2459,25.7,0.083
+"Mammal","Cricetus_cricetus",125,3.2,0.667
+"Mammal","Crocidura_leucodon",2.455,11.1,0.909
+"Mammal","Crocidura_russula",1.6,12.4,0.847
+"Mammal","Crocuta_crocuta",15750,24.7,0.101
+"Mammal","Ctenomys_talarum",33.08,13.6,0.909
+"Mammal","Cystophora_cristata",50000,8.92589457262316,0.074
+"Mammal","Cystophora_cristata",50000,8.92589457262316,0.072
+"Mammal","Cystophora_cristata",50000,8.92589457262316,0.072
+"Mammal","Dactylopsila_trivirgata",105.8,24,0.526
+"Mammal","Dama_dama",12130,8,0.101
+"Mammal","Damaliscus_lunatus",24500,22.2,0.182
+"Mammal","Damaliscus_lunatus",24500,22.2,0.166
+"Mammal","Dasycercus_cristicauda",25,22.3,0.435
+"Mammal","Dasyprocta_punctata",668.7,28.4280522887005,0.256
+"Mammal","Dasyprocta_punctata",668.7,28.4280522887005,0.256
+"Mammal","Dasypus_novemcinctus",1051,26,0.169
+"Mammal","Dasypus_novemcinctus",1051,26,0.169
+"Mammal","Dasyurus_viverrinus",272.5,6.5,0.526
+"Mammal","Delanymys_brooksi",1.25,20.1,1.429
+"Mammal","Delphinapterus_leucas",350000,0.74482525014465,0.147
+"Mammal","Delphinapterus_leucas",350000,0.74482525014465,0.084
+"Mammal","Delphinapterus_leucas",350000,0.74482525014465,0.063
+"Mammal","Delphinus_delphis",16250,25.2248935332361,0.127
+"Mammal","Dendrohyrax_arboreus",737.5,20.7,0.256
+"Mammal","Dendrolagus_matschiei",1740,12.7,0.323
+"Mammal","Dicerorhinus_sumatrensis",350000,28.9450139521275,0.079
+"Mammal","Dicerorhinus_sumatrensis",350000,28.9450139521275,0.072
+"Mammal","Diceros_bicornis",295100,23.3,0.063
+"Mammal","Dugong_dugon",105000,27.5,0.046
+"Mammal","Dugong_dugon",105000,27.5,0.046
+"Mammal","Dugong_dugon",105000,27.5,0.036
+"Mammal","Echinops_telfairi",45,22.6,2.632
+"Mammal","Elephantulus_myurus",13.1,18.8,2.941
+"Mammal","Elephantulus_rufescens",9.375,20.8,0.435
+"Mammal","Elephas_maximus",1250000,28.4222746125626,0.063
+"Mammal","Elephas_maximus",1250000,28.4222746125626,0.042
+"Mammal","Elephas_maximus",1250000,28.4222746125626,0.036
+"Mammal","Elephas_maximus",1250000,28.4222746125626,0.032
+"Mammal","Enhydra_lutris",7500,5.3,0.11
+"Mammal","Enhydra_lutris",7500,5.3,0.084
+"Mammal","Equus_africanus",41250,30.1,0.127
+"Mammal","Equus_africanus",81250,30.1,0.127
+"Mammal","Equus_quagga",59430,19.6,0.057
+"Mammal","Equus_quagga",59430,19.6,0.057
+"Mammal","Equus_ferus",62500,5.9,0.04
+"Mammal","Equus_grevyi",102000,26,0.127
+"Mammal","Equus_hemionus",57500,4.4,0.127
+"Mammal","Equus_zebra",71750,20,0.127
+"Mammal","Equus_zebra",71750,20,0.105
+"Mammal","Erethizon_dorsatum",1771,4.3,0.149
+"Mammal","Erethizon_dorsatum",1771,4.3,0.141
+"Mammal","Erignathus_barbatus",75000,3.67541800858861,0.101
+"Mammal","Erignathus_barbatus",75000,3.67541800858861,0.081
+"Mammal","Erignathus_barbatus",75000,3.67541800858861,0.081
+"Mammal","Erinaceus_europaeus",205.8,8.1,0.37
+"Mammal","Erinaceus_europaeus",205.8,8.1,0.323
+"Mammal","Erinaceus_europaeus",205.8,8.1,0.182
+"Mammal","Erythrocebus_patas",1817,25.1,0.12
+"Mammal","Eschrichtius_robustus",7500000,8.15232062183361,0.036
+"Mammal","Eschrichtius_robustus",7500000,8.15232062183361,0.033
+"Mammal","Eumetopias_jubatus",150000,6.4,0.11
+"Mammal","Eumetopias_jubatus",150000,6.4,0.084
+"Mammal","Felis_nigripes",325,20,0.213
+"Mammal","Felis_silvestris",1063,26.5,0.169
+"Mammal","Felis_silvestris",1063,26.5,0.141
+"Mammal","Felis_silvestris",1162,26.5,0.169
+"Mammal","Felis_silvestris",1162,26.5,0.141
+"Mammal","Galea_musteloides",120,8.6,2.381
+"Mammal","Gazella_dorcas",5750,23.5,0.204
+"Mammal","Gazella_gazella",5625,19.2,0.213
+"Mammal","Georychus_capensis",45.25,13,0.909
+"Mammal","Gerbillus_pyramidum",10.22,24.7,0.323
+"Mammal","Giraffa_camelopardalis",225000,18.8,0.101
+"Mammal","Giraffa_camelopardalis",225000,18.8,0.097
+"Mammal","Giraffa_camelopardalis",225000,18.8,0.069
+"Mammal","Gorilla_gorilla",31060,23.8,0.053
+"Mammal","Gorilla_gorilla",31060,23.8,0.05
+"Mammal","Gymnobelideus_leadbeateri",31.75,10.5,0.345
+"Mammal","Halichoerus_grypus",62500,10.2759283510288,0.081
+"Mammal","Halichoerus_grypus",62500,10.2759283510288,0.063
+"Mammal","Halichoerus_grypus",62500,10.2759283510288,0.055
+"Mammal","Halichoerus_grypus",62500,10.2759283510288,0.055
+"Mammal","Hemibelideus_lemuroides",238.1,20.8,0.667
+"Mammal","Hemicentetes_semispinosus",28,21.1,1.02
+"Mammal","Hemitragus_jemlahicus",22500,0.6,0.256
+"Mammal","Herpestes_ichneumon",712.5,24.4,0.213
+"Mammal","Heterohyrax_brucei",656.3,19.6,0.182
+"Mammal","Hippopotamus_amphibius",3e+05,23.5,0.03
+"Mammal","Hippopotamus_amphibius",354400,23.5,0.056
+"Mammal","Hippopotamus_amphibius",354400,23.5,0.05
+"Mammal","Hippopotamus_amphibius",354400,23.5,0.046
+"Mammal","Hydropotes_inermis",3375,14.9,0.213
+"Mammal","Hydrurga_leptonyx",90000,-1.20942936663349,0.11
+"Mammal","Hydrurga_leptonyx",90000,-1.20942936663349,0.097
+"Mammal","Hydrurga_leptonyx",90000,-1.20942936663349,0.097
+"Mammal","Hyemoschus_aquaticus",2713,24.6,0.196
+"Mammal","Hyemoschus_aquaticus",2713,24.6,0.182
+"Mammal","Hylobates_agilis",1250,26.7,0.101
+"Mammal","Hylobates_lar",1250,25.7,0.101
+"Mammal","Symphalangus_syndactylus",2750,23.9,0.101
+"Mammal","Symphalangus_syndactylus",2750,23.9,0.084
+"Mammal","Hyperoodon_ampullatus",625000,18.029368007018,0.068
+"Mammal","Isoodon_macrourus",400,25.9,3.333
+"Mammal","Isoodon_macrourus",400,25.9,0.909
+"Mammal","Kobus_ellipsiprymnus",52500,25.4,0.137
+"Mammal","Kobus_kob",29380,26.4,0.206
+"Mammal","Kobus_leche",27690,22.3,0.169
+"Mammal","Kobus_megaceros",21880,27.4,0.256
+"Mammal","Lagenorhynchus_acutus",50000,10.7239698763713,0.115
+"Mammal","Lagenorhynchus_acutus",50000,10.7239698763713,0.093
+"Mammal","Lama_guanicoe",21250,14.3,0.127
+"Mammal","Lemur_catta",500,23.1,0.093
+"Mammal","Leptailurus_serval",3000,24.4,0.11
+"Mammal","Lepus_americanus",427.5,0.8,0.526
+"Mammal","Lepus_europaeus",950,7.6,0.213
+"Mammal","Lepus_timidus",625,-1.4,0.286
+"Mammal","Liomys_adspersus",16.25,27.2,2
+"Mammal","Litocranius_walleri",9500,28.9,0.323
+"Mammal","Litocranius_walleri",9500,28.9,0.213
+"Mammal","Lobodon_carcinophaga",56250,-1.20174851849096,0.11
+"Mammal","Lobodon_carcinophaga",56250,-1.20174851849096,0.084
+"Mammal","Lobodon_carcinophaga",56250,-1.20174851849096,0.07
+"Mammal","Lobodon_carcinophaga",56250,-1.20174851849096,0.065
+"Mammal","Loxodonta_africana",985000,21.8,0.042
+"Mammal","Loxodonta_africana",985000,21.8,0.036
+"Mammal","Loxodonta_africana",1652000,21.8,0.04
+"Mammal","Lycaon_pictus",5513,20.5,0.256
+"Mammal","Lycaon_pictus",5513,20.5,0.233
+"Mammal","Macaca_arctoides",2500,21.1,0.084
+"Mammal","Macaca_mulatta",1150,23.8,0.087
+"Mammal","Macaca_mulatta",2500,23.8,0.084
+"Mammal","Macaca_nemestrina",2500,23.3,0.084
+"Mammal","Macaca_radiata",2500,26.5,0.127
+"Mammal","Macaca_silenus",2500,26,0.084
+"Mammal","Macaca_sinica",1000,27.2,0.084
+"Mammal","Macaca_sylvanus",1750,13.3,0.127
+"Mammal","Macaca_sylvanus",1750,13.3,0.115
+"Mammal","Macropus_agilis",3750,26.2,0.256
+"Mammal","Macropus_antilopinus",6813,27.4,0.159
+"Mammal","Macropus_dorsalis",2813,20.3,0.169
+"Mammal","Macropus_eugenii",1625,15.5,0.182
+"Mammal","Macropus_fuliginosus",5500,18.1,0.127
+"Mammal","Macropus_giganteus",6469,20.5,0.128
+"Mammal","Macropus_giganteus",6469,20.5,0.127
+"Mammal","Macropus_parma",1125,14.3,0.37
+"Mammal","Macropus_parma",1125,14.3,0.323
+"Mammal","Macropus_parryi",3375,21.6,0.256
+"Mammal","Macropus_robustus",5316,21.2,0.137
+"Mammal","Macropus_rufogriseus",4213,19.1,0.169
+"Mammal","Macropus_rufogriseus",4213,19.1,0.137
+"Mammal","Macropus_rufus",11560,20.9,0.127
+"Mammal","Macropus_rufus",11560,20.9,0.115
+"Mammal","Macropus_rufus",11560,20.9,0.084
+"Mammal","Marmota_marmota",1313,-0.1,0.169
+"Mammal","Martes_martes",325,6.9,0.256
+"Mammal","Martes_zibellina",295,-8.4,0.28
+"Mammal","Mazama_americana",5700,26.4,0.213
+"Mammal","Mazama_americana",5700,26.4,0.213
+"Mammal","Megaptera_novaeangliae",7500000,25.7599834785664,0.033
+"Mammal","Megaptera_novaeangliae",7500000,25.7599834785664,0.026
+"Mammal","Mellivora_capensis",2000,26.2,0.096
+"Mammal","Mephitis_mephitis",521.3,8.8,0.435
+"Mammal","Mesocricetus_auratus",26.25,17.1,0.909
+"Mammal","Mesocricetus_auratus",26.25,17.1,0.256
+"Mammal","Microgale_dobsoni",9.75,19.8,0.467
+"Mammal","Microgale_talazaci",12.5,19.5,0.45
+"Mammal","Micromys_minutus",1.5,7.2,2
+"Mammal","Microtus_agrestis",10,3,1.852
+"Mammal","Microtus_oeconomus",8.055,1.5,2.174
+"Mammal","Miopithecus_talapoin",312.5,22.4,0.09
+"Mammal","Mirounga_angustirostris",6e+05,12.3278464613353,0.182
+"Mammal","Mirounga_angustirostris",6e+05,12.3278464613353,0.182
+"Mammal","Mirounga_angustirostris",6e+05,12.3278464613353,0.182
+"Mammal","Mirounga_leonina",4e+05,0.660378518723564,0.141
+"Mammal","Mirounga_leonina",4e+05,0.660378518723564,0.127
+"Mammal","Mirounga_leonina",4e+05,0.660378518723564,0.127
+"Mammal","Mirounga_leonina",4e+05,0.660378518723564,0.11
+"Mammal","Monodon_monoceros",225000,2.10085466438212,0.063
+"Mammal","Mus_musculus",4.125,4,0.435
+"Mammal","Mus_musculus",5.375,4,0.435
+"Mammal","Muscardinus_avellanarius",7.5,7.1,0.667
+"Mammal","Mustela_lutreola",110,5.4,0.256
+"Mammal","Mustela_putorius",275,7.8,0.435
+"Mammal","Mustela_putorius",275,7.8,0.256
+"Mammal","Neovison_vison",236.2,4.1,0.256
+"Mammal","Myocastor_coypus",1734,16.9,0.435
+"Mammal","Myopus_schisticolor",6.25,-4,3.333
+"Mammal","Myosorex_varius",2.85,15.1,3.333
+"Mammal","Napaeozapus_insignis",5.575,3.6,0.667
+"Mammal","Nasua_nasua",948.5,25.2,0.182
+"Mammal","Nasua_nasua",948.5,25.2,0.182
+"Mammal","Neomys_anomalus",4,11.1,1.429
+"Mammal","Neomys_fodiens",3.75,3.8,0.909
+"Mammal","Neophocaena_phocaenoides",7500,28.7219913740797,0.11
+"Mammal","Neotoma_floridana",61.19,16.6,0.909
+"Mammal","Ningaui_timealeyi",1.425,25.4,1.429
+"Mammal","Nyctereutes_procyonoides",1500,6.7,0.233
+"Mammal","Ochotona_collaris",32.25,-6.6,0.435
+"Mammal","Ovis_dalli",18250,-6.3,0.107
+"Mammal","Ochotona_princeps",39.41,6,0.435
+"Mammal","Ochotona_princeps",39.41,6,0.37
+"Mammal","Odobenus_rosmarus",3e+05,3.04309801166752,0.151
+"Mammal","Odobenus_rosmarus",3e+05,3.04309801166752,0.063
+"Mammal","Odobenus_rosmarus",3e+05,3.04309801166752,0.063
+"Mammal","Odobenus_rosmarus",3e+05,3.04309801166752,0.063
+"Mammal","Odocoileus_virginianus",13880,18.9,0.256
+"Mammal","Odocoileus_virginianus",13880,18.9,0.256
+"Mammal","Ondatra_zibethicus",245.4,2,0.909
+"Mammal","Ondatra_zibethicus",245.4,2,0.667
+"Mammal","Orcinus_orca",1375000,25.7599834785664,0.05
+"Mammal","Orcinus_orca",1375000,25.7599834785664,0.028
+"Mammal","Orcinus_orca",1375000,25.7599834785664,0.025
+"Mammal","Oreamnos_americanus",18130,2.2,0.182
+"Mammal","Oreamnos_americanus",18130,2.2,0.141
+"Mammal","Oreamnos_americanus",18130,2.2,0.141
+"Mammal","Ornithorhynchus_anatinus",371.1,19.7,0.149
+"Mammal","Orycteropus_afer",13090,24.3,0.11
+"Mammal","Oryctolagus_cuniculus",395,13.8,0.286
+"Mammal","Oryctolagus_cuniculus",395,13.8,0.256
+"Mammal","Oryctolagus_cuniculus",395,13.8,0.141
+"Mammal","Oryctolagus_cuniculus",537.5,13.8,0.286
+"Mammal","Oryctolagus_cuniculus",537.5,13.8,0.256
+"Mammal","Oryctolagus_cuniculus",537.5,13.8,0.141
+"Mammal","Otaria_bryonia",61250,14.7,0.127
+"Mammal","Ovibos_moschatus",92130,-13.3,0.105
+"Mammal","Ovis_ammon",35000,-4.4,0.196
+"Mammal","Ovis_canadensis",18660,8.8,0.105
+"Mammal","Ovis_dalli",18250,-6.3,0.049
+"Mammal","Pusa_hispida",16250,0.915755340726869,0.032
+"Mammal","Paguma_larvata",1100,18.6,0.141
+"Mammal","Pan_paniscus",8500,24.6,0.127
+"Mammal","Pan_troglodytes",9750,24.6,0.055
+"Mammal","Pan_troglodytes",11250,24.6,0.056
+"Mammal","Pan_troglodytes",11250,24.6,0.05
+"Mammal","Pan_troglodytes",11250,24.6,0.049
+"Mammal","Pan_troglodytes",11250,24.6,0.042
+"Mammal","Panthera_leo",39000,17.8,0.032
+"Mammal","Panthera_leo",40370,17.8,0.169
+"Mammal","Panthera_leo",40370,17.8,0.169
+"Mammal","Panthera_leo",40370,17.8,0.087
+"Mammal","Panthera_pardus",13750,23.7,0.213
+"Mammal","Panthera_tigris",50000,2.3,0.169
+"Mammal","Panthera_tigris",50000,2.3,0.097
+"Mammal","Panthera_tigris",50000,2.3,0.096
+"Mammal","Papio_hamadryas",5313,26.8,0.068
+"Mammal","Paradoxurus_hermaphroditus",750,26.3,0.115
+"Mammal","Parantechinus_apicalis",17.19,16.3,0.909
+"Mammal","Pseudantechinus_bilarni",6.875,26.8,0.909
+"Mammal","Parascalops_breweri",12.75,6.4,0.667
+"Mammal","Parascalops_breweri",12.75,6.4,0.526
+"Mammal","Pelea_capreolus",5000,15.7,0.256
+"Mammal","Peponocephala_electra",51500,26.9792551183646,0.053
+"Mammal","Petauroides_volans",325,19.8,0.435
+"Mammal","Petaurus_australis",143.8,18.2,0.256
+"Mammal","Petaurus_breviceps",31.88,23.4,0.182
+"Mammal","Phacochoerus_aethiopicus",17750,30.1,0.169
+"Mammal","Phacochoerus_aethiopicus",17750,30.1,0.135
+"Mammal","Phascolarctos_cinereus",2563,20,0.196
+"Mammal","Phascolarctos_cinereus",2563,20,0.149
+"Mammal","Pusa_caspica",21500,15.9294186870444,0.072
+"Mammal","Pusa_caspica",21500,15.9294186870444,0.053
+"Mammal","Pusa_caspica",21500,15.9294186870444,0.05
+"Mammal","Pusa_caspica",21500,15.9294186870444,0.05
+"Mammal","Histriophoca_fasciata",22500,9.60161599402717,0.11
+"Mammal","Histriophoca_fasciata",22500,9.60161599402717,0.084
+"Mammal","Histriophoca_fasciata",22500,9.60161599402717,0.081
+"Mammal","Pagophilus_groenlandicus",30000,3,0.087
+"Mammal","Pagophilus_groenlandicus",30000,3,0.084
+"Mammal","Pagophilus_groenlandicus",30000,3,0.084
+"Mammal","Pusa_hispida",16250,0.915755340726869,0.063
+"Mammal","Pusa_hispida",25000,0.915755340726869,0.063
+"Mammal","Pusa_hispida",25000,0.915755340726869,0.058
+"Mammal","Pusa_hispida",25000,0.915755340726869,0.058
+"Mammal","Pusa_hispida",25000,0.915755340726869,0.055
+"Mammal","Pusa_sibirica",25000,-2.2,0.048
+"Mammal","Pusa_sibirica",25000,-2.2,0.045
+"Mammal","Pusa_sibirica",25000,-2.2,0.045
+"Mammal","Phoca_vitulina",25000,-4.1,0.097
+"Mammal","Phoca_vitulina",25000,-4.1,0.079
+"Mammal","Phoca_vitulina",25000,-4.1,0.074
+"Mammal","Phoca_vitulina",25000,-4.1,0.063
+"Mammal","Phocoena_phocoena",12500,11.9868068257261,0.196
+"Mammal","Phocoenoides_dalli",25000,16.0437438387854,0.149
+"Mammal","Phocoenoides_dalli",25000,16.0437438387854,0.115
+"Mammal","Physeter_macrocephalus",1e+07,25.7599834785664,0.033
+"Mammal","Pithecia_pithecia",343.9,26,0.182
+"Mammal","Pongo_pygmaeus",12500,26.6,0.072
+"Mammal","Pongo_pygmaeus",12500,26.6,0.043
+"Mammal","Pontoporia_blainvillei",10000,18.1,0.159
+"Mammal","Potamochoerus_porcus",17500,23.6,0.169
+"Mammal","Potamochoerus_porcus",17500,23.6,0.127
+"Mammal","Potos_flavus",408.8,26.9,0.087
+"Mammal","Potos_flavus",408.8,26.9,0.087
+"Mammal","Priodontes_maximus",11340,26.4,0.169
+"Mammal","Prionailurus_bengalensis",1250,8.9,0.169
+"Mammal","Procavia_capensis",757.5,24.9,0.303
+"Mammal","Procavia_capensis",757.5,24.9,0.182
+"Mammal","Procyon_cancrivorus",1737,25.5,0.182
+"Mammal","Procyon_lotor",1381,14.4,0.127
+"Mammal","Proechimys_semispinosus",90.13,27.9871941531191,1.429
+"Mammal","Pseudocheirus_peregrinus",225,20.4,0.526
+"Mammal","Pseudocheirus_peregrinus",225,20.4,0.435
+"Mammal","Pseudois_nayaur",16000,-5.6,0.105
+"Mammal","Pseudorca_crassidens",340000,27.885914623151,0.115
+"Mammal","Rangifer_tarandus",21510,7.35566184031715,0.323
+"Mammal","Rangifer_tarandus",21510,7.35566184031715,0.256
+"Mammal","Rangifer_tarandus",21510,7.35566184031715,0.169
+"Mammal","Rangifer_tarandus",26250,7.35566184031715,0.076
+"Mammal","Rangifer_tarandus",26250,7.35566184031715,0.076
+"Mammal","Redunca_fulvorufula",7375,14.6,0.213
+"Mammal","Rhinoceros_unicornis",4e+05,25,0.063
+"Mammal","Rhinoceros_unicornis",4e+05,25,0.056
+"Mammal","Rhinoceros_unicornis",4e+05,25,0.051
+"Mammal","Rhynchocyon_chrysopygus",135,25.7,0.667
+"Mammal","Rupicapra_rupicapra",8500,1.4,0.219
+"Mammal","Rupicapra_rupicapra",8750,1.4,0.127
+"Mammal","Syncerus_caffer",117300,20.1,0.026
+"Mammal","Syncerus_caffer",117300,20.1,0.092
+"Mammal","Syncerus_caffer",117300,20.1,0.03
+"Mammal","Leontocebus_nigricollis",115.5,26.1,0.256
+"Mammal","Saiga_tatarica",10000,7.1,0.256
+"Mammal","Saiga_tatarica",10000,7.1,0.213
+"Mammal","Saimiri_sciureus",185.8,25.6,0.12
+"Mammal","Scalopus_aquaticus",22.81,14.6,0.909
+"Mammal","Sciurus_carolinensis",126.6,11.7,0.204
+"Mammal","Sciurus_carolinensis",126.6,11.7,0.108
+"Mammal","Sciurus_carolinensis",126.6,11.7,0.107
+"Mammal","Sciurus_vulgaris",75,0.3,0.213
+"Mammal","Setonix_brachyurus",812.5,14.8,0.256
+"Mammal","Setonix_brachyurus",812.5,14.8,0.256
+"Mammal","Sicista_betulina",2.5,1.8,0.769
+"Mammal","Sminthopsis_crassicaudata",3.75,21.2,2.381
+"Mammal","Sminthopsis_crassicaudata",3.75,21.2,2
+"Mammal","Sorex_alpinus",1.95,9.4,2.381
+"Mammal","Sorex_araneus",2.5,2.9,1.429
+"Mammal","Sorex_fumeus",1.925,7.4,3.333
+"Mammal","Sorex_minutus",1.125,4.8,1.429
+"Mammal","Sorex_vagrans",1.106,4.2,2.381
+"Mammal","Spilocuscus_maculatus",1600,25.5,0.233
+"Mammal","Stenella_attenuata",25000,25.95815808172,0.055
+"Mammal","Stenella_coeruleoalba",25000,26.2576991381327,0.05
+"Mammal","Suncus_etruscus",0.45,23.9,2.381
+"Mammal","Suncus_etruscus",0.45,23.9,1.429
+"Mammal","Suncus_murinus",21.66,26.9,1.111
+"Mammal","Sundamys_muelleri",106,23.3,10
+"Mammal","Sus_scrofa",21560,-0.6,0.127
+"Mammal","Sus_scrofa",21560,-0.6,0.12
+"Mammal","Sylvilagus_floridanus",293.2,18.3,0.526
+"Mammal","Sylvilagus_floridanus",293.2,18.3,0.526
+"Mammal","Sylvilagus_floridanus",302.5,18.3,1.225
+"Mammal","Syncerus_caffer",117300,20.1,0.026
+"Mammal","Syncerus_caffer",145000,20.1,0.141
+"Mammal","Syncerus_caffer",145000,20.1,0.097
+"Mammal","Syncerus_caffer",145000,20.1,0.085
+"Mammal","Talpa_europaea",22.5,6.8,0.909
+"Mammal","Talpa_europaea",22.5,6.8,0.667
+"Mammal","Tamias_striatus",27.98,8.5,0.909
+"Mammal","Tamiasciurus_hudsonicus",47.5,0.7,0.437
+"Mammal","Tapirus_indicus",50000,26.2,0.084
+"Mammal","Tapirus_terrestris",51880,26.4,0.084
+"Mammal","Tapirus_terrestris",51880,26.4,0.072
+"Mammal","Tarsipes_rostratus",2.25,16.7,1.429
+"Mammal","Tarsius_bancanus",30,23.3,0.323
+"Mammal","Taxidea_taxus",1777,0.2,0.182
+"Mammal","Taxidea_taxus",1777,0.2,0.182
+"Mammal","Taxidea_taxus",1777,0.2,0.097
+"Mammal","Tayassu_pecari",8058,26.4,0.192
+"Mammal","Tayassu_pecari",8058,26.4,0.192
+"Mammal","Tetracerus_quadricornis",4750,24.6,0.256
+"Mammal","Theropithecus_gelada",4262,15.2,0.127
+"Mammal","Thomomys_talpoides",32.52,4.4,1.852
+"Mammal","Thryonomys_swinderianus",1015,24.8,0.617
+"Mammal","Tragelaphus_imberbis",20390,26.6,0.256
+"Mammal","Tragelaphus_imberbis",20390,26.6,0.169
+"Mammal","Trichechus_inunguis",1e+05,26.8,0.084
+"Mammal","Trichechus_manatus",62500,28.0012485493679,0.084
+"Mammal","Trichosurus_caninus",875,17,0.213
+"Mammal","Trichosurus_caninus",875,17,0.149
+"Mammal","Trichosurus_caninus",875,17,0.149
+"Mammal","Trichosurus_vulpecula",662.5,23,0.196
+"Mammal","Trichosurus_vulpecula",662.5,23,0.196
+"Mammal","Tupaia_glis",37.5,20.1,0.213
+"Mammal","Tursiops_truncatus",43750,25.8710721165859,0.101
+"Mammal","Tursiops_truncatus",43750,25.8710721165859,0.101
+"Mammal","Tursiops_truncatus",43750,25.8710721165859,0.101
+"Mammal","Ursus_arctos",34860,-4.3,0.101
+"Mammal","Ursus_arctos",34860,-4.3,0.084
+"Mammal","Vicugna_vicugna",11870,18.1,0.127
+"Mammal","Vombatus_ursinus",6500,14.3,0.526
+"Mammal","Vombatus_ursinus",6500,14.3,0.097
+"Mammal","Vulpes_cana",250,16.5,0.256
+"Mammal","Vulpes_chama",738.8,19.8,0.256
+"Mammal","Vulpes_pallida",700,26.9,0.256
+"Mammal","Vulpes_vulpes",1033,7.6,0.37
+"Mammal","Vulpes_vulpes",1033,7.6,0.213
+"Mammal","Vulpes_vulpes",1488,7.6,0.37
+"Mammal","Vulpes_vulpes",1488,7.6,0.213
+"Mammal","Vulpes_vulpes",1500,7.6,0.37
+"Mammal","Vulpes_vulpes",1500,7.6,0.213
+"Mammal","Wallabia_bicolor",3750,20.4,0.213
+"Mammal","Wallabia_bicolor",3750,20.4,0.169
+"Mammal","Zalophus_californianus",62500,18,0.149
+"Bird","Accipiter_cooperii",109.8,13.4,0.213
+"Bird","Accipiter_cooperii",132.3,13.4,0.244
+"Bird","Accipiter_cooperii",132.3,13.4,0.345
+"Bird","Accipiter_gentilis",256.1,1.5,0.133
+"Bird","Accipiter_gentilis",256.1,1.5,0.133
+"Bird","Accipiter_gentilis",256.1,1.5,0.196
+"Bird","Accipiter_gentilis",284.3,1.5,0.196
+"Bird","Accipiter_gentilis",284.3,1.5,0.199
+"Bird","Accipiter_nisus",50.5,-1.5,0.201
+"Bird","Accipiter_nisus",59.38,-1.5,0.169
+"Bird","Accipiter_nisus",59.38,-1.5,0.164
+"Bird","Accipiter_striatus",43.5,26.2,0.262
+"Bird","Acridotheres_cristatellus",28.25,16.2,0.228
+"Bird","Aechmophorus_occidentalis",369.3,-0.4,0.394
+"Bird","Aechmophorus_occidentalis",369.3,-0.4,0.182
+"Bird","Aegolius_acadicus",20.71,6.6,0.35
+"Bird","Aegolius_acadicus",20.71,6.6,0.355
+"Bird","Aegolius_acadicus",20.71,6.6,0.37
+"Bird","Aegolius_funereus",33.5,4.7,0.233
+"Bird","Aegolius_funereus",33.5,4.7,0.794
+"Bird","Aeronautes_saxatalis",8.025,17.4,0.459
+"Bird","Aethia_cristatella",66,5.2,0.34
+"Bird","Aethia_pusilla",21,7,0.602
+"Bird","Agelaius_phoeniceus",15.9,13.9,0.161
+"Bird","Aimophila_aestivalis",4.913,18.4,0.909
+"Bird","Aimophila_quinquestriata",4.763,16.1,0.667
+"Bird","Aimophila_ruficeps",4.675,18.6,0.847
+"Bird","Aix_sponsa",62,13.1,0.112
+"Bird","Aix_sponsa",62,13.1,0.144
+"Bird","Alca_torda",179.8,13.2231693891735,0.407
+"Bird","Alca_torda",179.8,13.2231693891735,0.42
+"Bird","Ammodramus_caudacutus",4.45,23.5469415704823,0.435
+"Bird","Ammodramus_caudacutus",5.175,23.5469415704823,0.256
+"Bird","Ammodramus_maritimus",5.575,18.1,0.286
+"Bird","Ammodramus_maritimus",5.813,18.1,0.289
+"Bird","Ammodramus_maritimus",6.05,18.1,0.286
+"Bird","Ammodramus_savannarum",4.25,9.1,0.877
+"Bird","Amphispiza_bilineata",3.375,17.5,0.435
+"Bird","Anas_acuta",258.8,-1.2,0.119
+"Bird","Anas_acuta",258.8,-1.2,0.123
+"Bird","Anas_americana",179.8,0.5,0.119
+"Bird","Anas_americana",198,0.5,0.286
+"Bird","Anas_clypeata",159,0.9,0.153
+"Bird","Anas_crecca",79.5,-0.5,0.123
+"Bird","Anas_crecca",91,-0.5,0.125
+"Bird","Anas_cyanoptera",102,19.3763670509881,0.198
+"Bird","Anas_discors",90.75,5.6,0.113
+"Bird","Anas_discors",102.3,5.6,0.146
+"Bird","Anas_fulvigula",242,22.1,0.196
+"Bird","Anas_fulvigula",257.5,22.1,0.19
+"Bird","Anas_laysanensis",106.8,22.4,0.216
+"Bird","Anas_penelope",204.8,-5.4,0.299
+"Bird","Anas_platyrhynchos",270.5,6.4,0.087
+"Bird","Anas_platyrhynchos",270.5,6.4,0.108
+"Bird","Anas_platyrhynchos",270.5,6.4,0.123
+"Bird","Anas_rubripes",350,-1,0.096
+"Bird","Anas_strepera",247.5,2.6,0.13
+"Bird","Anas_strepera",247.5,2.6,0.143
+"Bird","Anhinga_anhinga",308.8,26.5,0.215
+"Bird","Anous_minutus",29.75,27.4788849636163,0.116
+"Bird","Anous_stolidus",49.5,26.4235041820011,0.101
+"Bird","Anous_tenuirostris",27.75,28.5491748535027,0.158
+"Bird","Anser_albifrons",614,-15.6,0.113
+"Bird","Anser_albifrons",614,-15.6,0.125
+"Bird","Anser_albifrons",675.8,-15.6,0.113
+"Bird","Anser_brachyrhynchus",661.3,0.380010758690645,0.115
+"Bird","Chen_caerulescens",657.6,3,0.095
+"Bird","Chen_caerulescens",657.6,3,0.103
+"Bird","Chen_caerulescens",657.6,3,0.13
+"Bird","Chen_canagica",685.8,3.7,0.286
+"Bird","Chen_canagica",685.8,3.7,0.413
+"Bird","Chen_rossii",419.8,7.6,0.118
+"Bird","Chen_rossii",419.8,7.6,0.129
+"Bird","Anthus_rubescens",5.213,8.98964768935014,0.515
+"Bird","Anthus_spinoletta",5.975,19.6,0.515
+"Bird","Aphelocoma_coerulescens",20.05,22.3,0.161
+"Bird","Aphelocoma_ultramarina",31,15.5,0.133
+"Bird","Aphelocoma_ultramarina",31,15.5,0.144
+"Bird","Aphelocoma_ultramarina",31,15.5,0.237
+"Bird","Aquila_audax",875,21.5,0.442
+"Bird","Aquila_chrysaetos",869.3,2.7,0.148
+"Bird","Aquila_chrysaetos",1049,2.7,0.066
+"Bird","Aquila_chrysaetos",1049,2.7,0.098
+"Bird","Aquila_chrysaetos",1049,2.7,0.246
+"Bird","Aquila_pomarina",342.5,21.7,0.097
+"Bird","Aquila_wahlbergi",160,25.8,0.216
+"Bird","Archilochus_colubris",0.7875,9.9,0.286
+"Bird","Archilochus_colubris",0.825,9.9,0.413
+"Bird","Ardea_herodias",597.5,13.6,0.108
+"Bird","Arenaria_interpres",28.75,29.2366403036227,0.178
+"Bird","Asio_flammeus",86.63,-0.6,0.198
+"Bird","Asio_otus",65.5,4.7,0.091
+"Bird","Athene_cunicularia",38.75,24.9,0.296
+"Bird","Auriparus_flaviceps",1.7,18.9,0.467
+"Bird","Aythya_affinis",212.5,1.4,0.139
+"Bird","Aythya_americana",205.3,7.2,0.118
+"Bird","Aythya_collaris",182.5,-0.2,0.124
+"Bird","Aythya_collaris",182.5,-0.2,0.157
+"Bird","Aythya_marila",233,-11.5,0.139
+"Bird","Aythya_valisineria",185.8,16.8,0.113
+"Bird","Bartramia_longicauda",37.63,26.6,0.505
+"Bird","Bombycilla_cedrorum",7.963,20.4,0.37
+"Bird","Bombycilla_garrulus",14.1,4.2,0.45
+"Bird","Bonasa_umbellus",133,0.9,0.303
+"Bird","Bonasa_umbellus",144.1,0.9,0.34
+"Bird","Botaurus_lentiginosus",176.5,3.7,0.311
+"Bird","Botaurus_lentiginosus",176.5,3.7,0.323
+"Bird","Branta_bernicla",325,-0.388285014023449,0.153
+"Bird","Branta_bernicla",307.5,-0.388285014023449,0.117
+"Bird","Branta_bernicla",342.5,-0.388285014023449,0.098
+"Bird","Branta_canadensis",828.5,-2.1,0.108
+"Bird","Branta_canadensis",953.5,-2.1,0.104
+"Bird","Bubo_virginianus",385.8,26.7752517666949,0.123
+"Bird","Bubo_virginianus",385.8,26.7752517666949,0.147
+"Bird","Bubulcus_ibis",84.5,24.3,0.11
+"Bird","Bubulcus_ibis",84.5,24.3,0.149
+"Bird","Bucephala_albeola",83.5,12.9,0.222
+"Bird","Bucephala_albeola",118.3,12.9,0.171
+"Bird","Bucephala_albeola",118.3,12.9,0.204
+"Bird","Bucephala_clangula",200,-0.5,0.213
+"Bird","Bucephala_clangula",225,-0.5,0.178
+"Bird","Bucephala_clangula",250,-0.5,0.233
+"Bird","Bucephala_islandica",272.5,4.3,0.166
+"Bird","Bulweria_bulwerii",24.75,25.7,0.115
+"Bird","Butastur_indicus",99.25,26.2,0.303
+"Bird","Buteo_buteo",218.8,3,0.101
+"Bird","Buteo_buteo",218.8,3,0.1
+"Bird","Buteo_jamaicensis",281.5,0.1,0.118
+"Bird","Buteo_jamaicensis",281.5,0.1,0.118
+"Bird","Buteo_jamaicensis",281.5,0.1,0.128
+"Bird","Buteo_lagopus",239,-1.8,0.141
+"Bird","Buteo_lagopus",239,-1.8,0.235
+"Bird","Buteo_lagopus",266.3,-1.8,0.142
+"Bird","Buteo_lineatus",139.8,15.4,0.127
+"Bird","Buteo_lineatus",139.8,15.4,0.127
+"Bird","Buteo_regalis",286.3,5.6,0.127
+"Bird","Buteo_regalis",286.3,5.6,0.16
+"Bird","Buteo_swainsoni",247.1,25.7,0.159
+"Bird","Buteo_swainsoni",247.1,25.7,0.16
+"Bird","Buteogallus_anthracinus",249,26.9,0.189
+"Bird","Butorides_striata",53,27.0681069115249,0.327
+"Bird","Calamospiza_melanocorys",9.4,5.2,0.667
+"Bird","Calcarius_lapponicus",6.825,5.67999104378053,0.526
+"Bird","Calcarius_pictus",0.625,-0.1,0.526
+"Bird","Calcarius_pictus",6.075,-0.1,0.667
+"Bird","Calidris_alba",14.25,29.2366403036227,0.195
+"Bird","Calidris_alba",14.25,29.2366403036227,0.495
+"Bird","Calidris_alpina",23,4.8,0.206
+"Bird","Calidris_alpina",23,4.8,0.276
+"Bird","Calidris_canutus",34.25,-8.9,0.251
+"Bird","Calidris_canutus",34.25,-8.9,0.42
+"Bird","Calidris_fuscicollis",8.675,28.1,0.37
+"Bird","Calidris_mauri",5.825,26.4383459815606,0.279
+"Bird","Calidris_melanotos",20.35,28.3857636171039,0.442
+"Bird","Calidris_minutilla",5.8,7.3,0.159
+"Bird","Calidris_minutilla",5.8,7.3,0.159
+"Bird","Calidris_minutilla",5.8,7.3,0.226
+"Bird","Calidris_ptilocnemis",19.91,2.1,0.355
+"Bird","Calidris_pusilla",7.825,6.4,0.213
+"Bird","Callipepla_californica",43.25,9.1,0.376
+"Bird","Callipepla_gambelii",42.5,20.1,0.35
+"Bird","Calypte_anna",1,9.7,0.435
+"Bird","Calypte_anna",1.05,9.7,0.413
+"Bird","Camptostoma_imberbe",1.85,25.8,0.549
+"Bird","Campylorhynchus_brunneicapillus",9.725,18.9,0.413
+"Bird","Caprimulgus_vociferus",13.24,9.3,0.667
+"Bird","Cardellina_rubrifrons",2.45,13.4,0.909
+"Bird","Cardinalis_cardinalis",10.98,16.3,0.161
+"Bird","Cardinalis_sinuatus",9.175,18.3,0.45
+"Bird","Carduelis_flammea",3.25,9.8,0.45
+"Bird","Carduelis_pinus",3.65,14.2,0.273
+"Bird","Carduelis_psaltria",2.375,13.6,0.459
+"Bird","Carduelis_tristis",3.225,10.6,0.233
+"Bird","Carduelis_tristis",3.225,10.6,0.276
+"Bird","Carpodacus_cassinii",6.625,6.8,0.37
+"Bird","Carpodacus_mexicanus",5.35,7.2,0.22
+"Bird","Carpodacus_mexicanus",5.35,7.2,2.941
+"Bird","Carpodacus_purpureus",6.225,-0.7,0.216
+"Bird","Cathartes_aura",3668,26.1,0.151
+"Bird","Catharus_fuscescens",7.8,26.8,0.254
+"Bird","Catharus_guttatus",7.75,2.9,0.296
+"Bird","Catharus_minimus",8.2,10,0.355
+"Bird","Catharus_ustulatus",7.7,24.9,0.254
+"Bird","Catoptrophorus_semipalmatus",53.75,7.3,0.289
+"Bird","Cepphus_columba",121.8,9.3,0.182
+"Bird","Cepphus_columba",121.8,9.3,0.216
+"Bird","Cepphus_columba",121.8,9.3,0.276
+"Bird","Cepphus_grylle",101.3,7.23137794817869,0.211
+"Bird","Cerorhinca_monocerata",130,-4.9,0.35
+"Bird","Cerorhinca_monocerata",130,-4.9,0.42
+"Bird","Certhia_familiaris",2.25,1.9,0.575
+"Bird","Chaetura_vauxi",4.275,2.7,0.515
+"Bird","Chaetura_pelagica",5.9,11,0.182
+"Bird","Charadrius_alexandrinus",10.35,9.1,0.169
+"Bird","Charadrius_alexandrinus",10.35,9.1,0.233
+"Bird","Charadrius_alexandrinus",10.35,9.1,0.37
+"Bird","Charadrius_melodus",13.8,4.5,0.182
+"Bird","Charadrius_melodus",13.8,4.5,0.233
+"Bird","Charadrius_semipalmatus",11.69,5.6,0.314
+"Bird","Charadrius_vociferus",24.14,1.8,0.235
+"Bird","Chlidonias_niger",16.33,5.5,0.147
+"Bird","Chlidonias_niger",16.33,5.5,0.307
+"Bird","Chondestes_grammacus",7.25,9.4,0.331
+"Bird","Chordeiles_minor",15.38,9,0.286
+"Bird","Ciconia_ciconia",868.3,24.5,0.076
+"Bird","Ciconia_nigra",750,3.3,0.141
+"Bird","Cinclus_mexicanus",15.25,11.1540950918426,0.515
+"Bird","Circaetus_cinereus",512,24.7,0.382
+"Bird","Circaetus_gallicus",425.8,9.9,0.147
+"Bird","Circaetus_gallicus",425.8,9.9,0.149
+"Bird","Circus_aeruginosus",156.9,5.8,0.152
+"Bird","Circus_aeruginosus",156.9,5.8,0.155
+"Bird","Circus_aeruginosus",156.9,5.8,0.139
+"Bird","Circus_cyaneus",108.9,0,0.155
+"Bird","Circus_cyaneus",108.9,0,0.159
+"Bird","Clangula_hyemalis",203.5,-10.6,0.163
+"Bird","Clangula_hyemalis",233,-10.6,0.166
+"Bird","Coccyzus_americanus",16,25.2,0.526
+"Bird","Coccyzus_erythropthalmus",12.78,8.2,0.526
+"Bird","Colaptes_auratus",33,-0.3,0.204
+"Bird","Colaptes_auratus",33,-0.3,0.279
+"Bird","Colaptes_auratus",33,-0.3,0.34
+"Bird","Colaptes_auratus",33,-0.3,0.388
+"Bird","Colinus_virginianus",44.5,16.8,0.407
+"Bird","Patagioenas_fasciata",85.63,18,0.137
+"Bird","Patagioenas_fasciata",85.63,18,0.164
+"Bird","Patagioenas_leucocephala",61.75,25.7,0.177
+"Bird","Patagioenas_leucocephala",61.75,25.7,0.209
+"Bird","Patagioenas_leucocephala",61.75,25.7,0.311
+"Bird","Columba_livia",88.63,11.2,0.435
+"Bird","Columbina_inca",11.88,20.9,0.331
+"Bird","Columbina_passerina",7.525,15.2,0.36
+"Bird","Columbina_passerina",7.525,15.2,0.427
+"Bird","Contopus_cooperi",8.025,3.4,0.365
+"Bird","Contopus_cooperi",8.025,3.4,0.442
+"Bird","Contopus_sordidulus",3.2,8.1,0.427
+"Bird","Contopus_virens",3.525,11.4,0.365
+"Bird","Coragyps_atratus",520.1,26.2,0.099
+"Bird","Corvus_brachyrhynchos",112,12.7,0.174
+"Bird","Corvus_brachyrhynchos",112,12.7,0.185
+"Bird","Corvus_caurinus",97.88,7.3,0.199
+"Bird","Corvus_corax",299.8,2,0.192
+"Bird","Corvus_cryptoleucus",133.5,19.4,0.204
+"Bird","Corvus_ossifragus",71.25,16.2,0.175
+"Bird","Cyanocitta_cristata",21.7,11.2,0.139
+"Bird","Cyanocitta_cristata",21.7,11.2,0.156
+"Bird","Cyanocitta_stelleri",32,7.7,0.158
+"Bird","Cyanocitta_stelleri",32,7.7,0.233
+"Bird","Cyanocorax_yncas",19.63,26,0.239
+"Bird","Cygnus_buccinator",2713,-1.4,0.105
+"Bird","Cygnus_buccinator",2850,-1.4,0.106
+"Bird","Cygnus_columbianus",1550,-12.3,0.129
+"Bird","Cygnus_columbianus",1425,-12.3,0.009
+"Bird","Cygnus_columbianus",1550,-12.3,0.157
+"Bird","Cygnus_columbianus",1600,-12.3,0.036
+"Bird","Cygnus_columbianus",1663,-12.3,0.12
+"Bird","Cygnus_olor",2418,6.1,0.192
+"Bird","Cygnus_olor",2684,6.1,0.12
+"Bird","Cygnus_olor",2950,6.1,0.094
+"Bird","Cypseloides_niger",11.4,16.6,0.435
+"Bird","Daption_capense",107,11.5712412458721,0.127
+"Bird","Dendragapus_canadensis",114,-2.1,0.495
+"Bird","Dendragapus_canadensis",123,-2.1,0.196
+"Bird","Dendragapus_obscurus",222.8,2.1,0.233
+"Bird","Dendragapus_obscurus",297,2.1,0.235
+"Bird","Dendragapus_obscurus",299.5,2.1,0.182
+"Bird","Dendrocygna_autumnalis",212.3,27.2061268048193,0.314
+"Bird","Dendrocygna_bicolor",177.5,22.8,0.4
+"Bird","Dendroica_caerulescens",2.45,12.1,0.323
+"Bird","Dendroica_caerulescens",2.538,12.1,0.265
+"Bird","Dendroica_castanea",3.138,15.7,0.794
+"Bird","Dendroica_coronata",3.025,-1.2,0.394
+"Bird","Dendroica_coronata",3.138,-1.2,0.376
+"Bird","Dendroica_discolor",2,13.8,0.249
+"Bird","Dendroica_dominica",2.35,24.4,0.515
+"Bird","Dendroica_fusca",2.5,17.7,0.314
+"Bird","Dendroica_kirtlandii",3.425,5.7,0.286
+"Bird","Dendroica_kirtlandii",3.45,5.7,0.323
+"Bird","Dendroica_magnolia",2.175,0,0.376
+"Bird","Dendroica_palmarum",2.575,-1.6,0.45
+"Bird","Dendroica_palmarum",2.575,-1.6,0.394
+"Bird","Dendroica_pensylvanica",2.4,15.5,0.376
+"Bird","Dendroica_petechia",2.45,6.6,0.289
+"Bird","Dendroica_pinus",2.975,8.8,0.382
+"Bird","Dendroica_striata",3.25,-2.8,0.617
+"Bird","Dendroica_striata",3.25,-2.8,0.794
+"Bird","Dendroica_tigrina",2.75,-0.3,0.617
+"Bird","Dendroica_townsendi",2.213,13,0.746
+"Bird","Dendroica_virens",2.2,12.6,0.442
+"Bird","Diomedea_amsterdamensis",1568,17.5859906080664,0.063
+"Bird","Thalassarche_chlororhynchos",615,19.1251428916549,0.068
+"Bird","Thalassarche_chrysostoma",876.9,4.31654935085002,0.084
+"Bird","Diomedea_epomophora",2050,5.45585779167463,0.043
+"Bird","Diomedea_exulans",1913,8.87055097787992,0.063
+"Bird","Phoebastria_immutabilis",766.6,21.4052359308201,0.047
+"Bird","Phoebastria_immutabilis",766.6,21.4052359308201,0.067
+"Bird","Phoebastria_irrorata",848.8,22.6903733183299,0.063
+"Bird","Phoebastria_nigripes",787,25.4180043564628,0.091
+"Bird","Phoebastria_nigripes",787,25.4180043564628,0.093
+"Bird","Diomedea_exulans",1913,8.87055097787992,0.02
+"Bird","Dolichonyx_oryzivorus",10.51,28.2,0.286
+"Bird","Dolichonyx_oryzivorus",10.51,28.2,0.318
+"Bird","Dryocopus_pileatus",66.5,6.9,0.259
+"Bird","Dryocopus_pileatus",71.75,6.9,0.259
+"Bird","Dryocopus_pileatus",71.75,6.9,0.286
+"Bird","Dumetella_carolinensis",9.225,8.5,0.235
+"Bird","Egretta_caerulea",84.88,26.2,0.183
+"Bird","Egretta_rufescens",112.5,26.2210261107238,0.207
+"Bird","Egretta_thula",92.75,26.3,0.144
+"Bird","Egretta_thula",92.75,26.3,0.226
+"Bird","Elanus_caeruleus",83.25,27.2,0.435
+"Bird","Empidonax_difficilis",2.5,7.8,0.435
+"Bird","Empidonax_flaviventris",2.9,-1,0.685
+"Bird","Empidonax_fulvifrons",1.975,16.6,1.429
+"Bird","Empidonax_minimus",2.575,1.1,0.323
+"Bird","Empidonax_minimus",2.575,1.1,0.442
+"Bird","Empidonax_oberholseri",2.6,6.2,0.286
+"Bird","Empidonax_oberholseri",2.6,6.2,0.314
+"Bird","Empidonax_oberholseri",2.6,6.2,0.323
+"Bird","Empidonax_oberholseri",2.6,6.2,0.435
+"Bird","Empidonax_traillii",3.35,9,0.37
+"Bird","Empidonax_virescens",3.225,14.2,0.235
+"Bird","Eremophila_alpestris",7.838,10.2096454244134,0.323
+"Bird","Eremophila_alpestris",7.838,10.2096454244134,0.327
+"Bird","Eremophila_alpestris",7.975,10.2096454244134,0.365
+"Bird","Eudocimus_albus",225,28.3573077800964,0.156
+"Bird","Eudyptula_minor",276.3,15.6976258576116,0.195
+"Bird","Euphagus_carolinus",14.94,-1.1,0.292
+"Bird","Euphagus_cyanocephalus",15.66,4,0.233
+"Bird","Falco_berigora",137.4,21.5,0.244
+"Bird","Falco_columbarius",47.63,9.13140831961835,0.331
+"Bird","Falco_eleonorae",97.5,22.6,0.435
+"Bird","Falco_mexicanus",138.5,9.5,0.282
+"Bird","Falco_mexicanus",215.8,9.5,0.242
+"Bird","Falco_naumanni",38.13,25.7861474450381,0.42
+"Bird","Falco_peregrinus",195.4,-5.2,0.207
+"Bird","Falco_rupicoloides",65,21.6,0.4
+"Bird","Falco_sparverius",30,25.2,0.22
+"Bird","Falco_subbuteo",63.25,1.7,0.244
+"Bird","Falco_subbuteo",60,1.7,0.237
+"Bird","Falco_tinnunculus",50.38,29.4352310496644,0.159
+"Bird","Falco_vespertinus",41.38,28.5,0.207
+"Bird","Ficedula_hypoleuca",3,4.9,0.748
+"Bird","Ficedula_hypoleuca",3,4.9,0.656
+"Bird","Fratercula_arctica",95.25,12.6637275783086,0.127
+"Bird","Fratercula_arctica",95.25,12.6637275783086,0.193
+"Bird","Fratercula_cirrhata",194.8,15.9463067648606,0.435
+"Bird","Fregata_ariel",188.5,24.7,0.149
+"Bird","Fregata_ariel",201.5,24.7,0.108
+"Bird","Fregata_minor",263.8,26.5304988195402,0.074
+"Bird","Fregata_minor",295.8,26.5304988195402,0.084
+"Bird","Fulica_americana",140,4.7,0.113
+"Bird","Fulica_americana",160.5,4.7,0.13
+"Bird","Fulmarus_glacialis",136,8,0.052
+"Bird","Fulmarus_glacialis",136,8,0.355
+"Bird","Gallinago_gallinago",30.5,-0.5,0.276
+"Bird","Gallinula_chloropus",75.63,27.3481922431652,0.244
+"Bird","Gavia_arctica",838.8,-2.2,0.09
+"Bird","Gavia_immer",1034,-1.4,0.127
+"Bird","Gavia_immer",1034,-1.4,0.331
+"Bird","Gavia_stellata",387.8,-8.2,0.11
+"Bird","Geococcyx_californianus",94,15.6,0.704
+"Bird","Geothlypis_trichas",2.475,7.4,0.259
+"Bird","Grus_americana",1457,4.5,0.084
+"Bird","Grus_americana",1457,4.5,0.355
+"Bird","Grus_canadensis",791.5,-1.5,0.118
+"Bird","Grus_canadensis",791.5,-1.5,0.131
+"Bird","Grus_canadensis",791.5,-1.5,0.139
+"Bird","Passerina_caerulea",7.325,17.6,0.442
+"Bird","Gygis_alba",27.75,26.628623867392,0.142
+"Bird","Gymnogyps_californianus",2526,11.1,0.056
+"Bird","Gymnorhinus_cyanocephalus",25.75,2.7,0.233
+"Bird","Gymnorhinus_cyanocephalus",25.75,2.7,0.292
+"Bird","Gyps_coprotheres",2044,20.7,0.227
+"Bird","Haematopus_ostralegus",131.5,3.4,0.07
+"Bird","Haematopus_palliatus",158,25.8,0.149
+"Bird","Haematopus_palliatus",158,25.8,0.182
+"Bird","Haliaeetus_albicilla",1198,-2.2,0.12
+"Bird","Haliaeetus_leucocephalus",1185,-0.7,0.246
+"Bird","Haliastur_sphenurus",200,23.2,0.235
+"Bird","Helmitheros_vermivorum",3.25,14,0.365
+"Bird","Hieraaetus_morphnoides",209.8,21.8,0.249
+"Bird","Himatione_sanguinea",6.275,25.4245922739587,0.407
+"Bird","Petrochelidon_fulva",5.1,26.5428813329659,0.276
+"Bird","Petrochelidon_fulva",5.1,26.5428813329659,0.549
+"Bird","Petrochelidon_pyrrhonota",5.4,5.9,0.233
+"Bird","Petrochelidon_pyrrhonota",5.4,5.9,0.256
+"Bird","Petrochelidon_pyrrhonota",5.4,5.9,0.286
+"Bird","Hirundo_rustica",3.95,7.4,0.318
+"Bird","Hydrobates_pelagicus",6.3,27.6650539795207,0.127
+"Bird","Icteria_virens",6.325,12.2,0.289
+"Bird","Icterus_cucullatus",6.075,20.7,0.435
+"Bird","Icterus_galbula",8.4,8.2,0.394
+"Bird","Icterus_galbula",8.575,8.2,0.22
+"Bird","Icterus_parisorum",9.35,16.8,0.407
+"Bird","Icterus_pectoralis",11.13,20.7,0.22
+"Bird","Icterus_spurius",4.9,14.3,0.267
+"Bird","Icterus_spurius",4.9,14.3,0.276
+"Bird","Ictinia_mississippiensis",69.5,27.3188174367782,0.323
+"Bird","Junco_hyemalis",4.9,-1.5,0.237
+"Bird","Junco_hyemalis",4.9,-1.5,0.239
+"Bird","Junco_hyemalis",4.9,-1.5,0.262
+"Bird","Junco_hyemalis",4.9,-1.5,0.394
+"Bird","Junco_phaeonotus",5.1,16.6,0.394
+"Bird","Lagopus_leucura",87.75,0.8,0.213
+"Bird","Lagopus_leucura",89.75,0.8,0.169
+"Bird","Lamprolaima_rhami",1.525,24.1,0.323
+"Bird","Lanius_excubitor",16.4,23.9782536834371,0.82
+"Bird","Lanius_ludovicianus",11.85,17.2,0.204
+"Bird","Lanius_ludovicianus",11.85,17.2,0.427
+"Bird","Larus_argentatus",283.8,10.5379966536663,0.084
+"Bird","Larus_argentatus",283.8,10.5379966536663,0.09
+"Bird","Larus_argentatus",283.8,10.5379966536663,0.092
+"Bird","Larus_argentatus",283.8,10.5379966536663,0.133
+"Bird","Larus_atricilla",81.25,26.9,0.168
+"Bird","Larus_californicus",151.6,9.8,0.192
+"Bird","Larus_canus",100.9,1.7,0.139
+"Bird","Larus_canus",101,1.7,0.098
+"Bird","Larus_delawarensis",129.6,3,0.079
+"Bird","Larus_delawarensis",129.6,3,0.101
+"Bird","Larus_glaucescens",252.5,11.6018088595903,0.079
+"Bird","Larus_glaucescens",252.5,11.6018088595903,0.111
+"Bird","Larus_glaucescens",252.5,11.6018088595903,0.114
+"Bird","Larus_marinus",414.6,11.1738184829481,0.108
+"Bird","Larus_occidentalis",252.8,14.1,0.091
+"Bird","Larus_occidentalis",252.8,14.1,0.101
+"Bird","Larus_pipixcan",70,14.5,0.273
+"Bird","Larus_pipixcan",70,14.5,0.286
+"Bird","Laterallus_jamaicensis",8.475,25.5,1.163
+"Bird","Leptotila_verreauxi",38.25,26.3,0.299
+"Bird","Leucosticte_arctoa",6.625,-6.1,0.459
+"Bird","Leucosticte_arctoa",6.725,-6.1,0.394
+"Bird","Limnodromus_griseus",28.25,-0.8,0.192
+"Bird","Limnodromus_griseus",28.25,-0.8,0.34
+"Bird","Limnodromus_scolopaceus",26.13,7.2,0.311
+"Bird","Limnothlypis_swainsonii",4.725,16.8,0.331
+"Bird","Limosa_fedoa",92.63,3.7,0.299
+"Bird","Limosa_lapponica",84.5,29.2366403036227,0.685
+"Bird","Lophodytes_cucullatus",135,9.8,0.226
+"Bird","Lophodytes_cucullatus",152.5,9.8,0.249
+"Bird","Lophoictinia_isura",125.3,20.6,0.149
+"Bird","Loxia_curvirostra",10.15,6.7,0.633
+"Bird","Melanerpes_aurifrons",21.35,26.2210261107238,0.459
+"Bird","Melanerpes_carolinus",16.8,14.2,0.211
+"Bird","Melanerpes_erythrocephalus",17.9,14.4,0.259
+"Bird","Melanerpes_formicivorus",19.53,19.4,0.169
+"Bird","Melanerpes_formicivorus",20.73,19.4,0.159
+"Bird","Melanerpes_uropygialis",17.43,23.7,0.331
+"Bird","Melanitta_fusca",300,-2.5,0.218
+"Bird","Melanitta_fusca",439.3,-8.1,0.163
+"Bird","Melanitta_fusca",439.3,-8.1,0.213
+"Bird","Meleagris_gallopavo",1056,14,0.196
+"Bird","Meleagris_gallopavo",1453,14,0.204
+"Bird","Melospiza_georgiana",4.25,-0.6,0.549
+"Bird","Melospiza_lincolnii",4.35,0.3,0.34
+"Bird","Melospiza_melodia",5.188,0.8,0.226
+"Bird","Mergus_merganser",308,-0.4,0.19
+"Bird","Mergus_serrator",255.4,-5.1,0.485
+"Bird","Merops_bullockoides",8.7,19.7,0.37
+"Bird","Micrathene_whitneyi",10.25,20.7,0.538
+"Bird","Calidris_himantopus",14.34,26.4,0.282
+"Bird","Milvus_migrans",206.8,29.1531048264437,0.107
+"Bird","Milvus_migrans",206.8,29.1531048264437,0.11
+"Bird","Milvus_milvus",270,10.6,0.097
+"Bird","Milvus_milvus",270,10.6,0.098
+"Bird","Mimus_polyglottos",12.13,14.7,0.127
+"Bird","Mniotilta_varia",2.65,4,0.226
+"Bird","Molothrus_aeneus",16.68,16.1,0.746
+"Bird","Molothrus_ater",10.98,6.9,0.15
+"Bird","Molothrus_ater",12.25,6.9,0.161
+"Bird","Morus_bassanus",749.9,17.0033162247593,0.125
+"Bird","Mycteria_americana",594,25.9,0.4
+"Bird","Myiarchus_cinerascens",6.8,7.2,0.286
+"Bird","Myiarchus_cinerascens",6.8,7.2,0.538
+"Bird","Myiarchus_crinitus",8.375,11.2,0.183
+"Bird","Myiarchus_tyrannulus",10.95,24.8,0.259
+"Bird","Myiarchus_tyrannulus",10.95,24.8,0.323
+"Bird","Myioborus_pictus",1.975,16.8,0.394
+"Bird","Myioborus_pictus",1.975,16.8,0.617
+"Bird","Nucifraga_columbiana",33.75,8.6,0.146
+"Bird","Numenius_arquata",201.4,14.1,0.08
+"Bird","Numenius_phaeopus",101,29.2739431263736,0.233
+"Bird","Numenius_tahitiensis",108.4,-2.8,0.216
+"Bird","Bubo_scandiaca",510.6,-6.1,0.273
+"Bird","Bubo_scandiaca",569.8,-6.1,0.237
+"Bird","Nycticorax_nycticorax",220.8,27.1,0.12
+"Bird","Nycticorax_nycticorax",220.8,27.1,0.12
+"Bird","Nyctanassa_violacea",170.6,27.5,0.413
+"Bird","Oceanodroma_furcata",13.83,17.9910045887002,0.286
+"Bird","Oceanodroma_furcata",13.83,17.9910045887002,0.435
+"Bird","Oceanodroma_homochroa",9.225,16.0643040736976,0.323
+"Bird","Oceanodroma_leucorhoa",9.95,26.0985405786268,0.081
+"Bird","Oceanodroma_leucorhoa",9.95,26.0985405786268,0.087
+"Bird","Oceanodroma_leucorhoa",9.95,26.0985405786268,0.105
+"Bird","Oceanodroma_tristrami",21,20.7,0.262
+"Bird","Oporornis_tolmiei",2.6,10.6,0.649
+"Bird","Oporornis_agilis",3.8,25.6,0.617
+"Bird","Oporornis_formosus",3.575,14.5,0.435
+"Bird","Oporornis_philadelphia",3.25,17,0.327
+"Bird","Oporornis_tolmiei",2.6,10.6,0.649
+"Bird","Megascops_asio",45.13,13,0.179
+"Bird","Otus_flammeolus",13.89,6.8,0.318
+"Bird","Megascops_kennicottii",42.25,7.8,0.198
+"Bird","Oxyura_jamaicensis",147.5,6.6,0.187
+"Bird","Pagodroma_nivea",67,-0.281823958064704,0.127
+"Bird","Pandion_haliaetus",371.4,7.8,0.115
+"Bird","Parabuteo_unicinctus",215.8,26.2,0.233
+"Bird","Parabuteo_unicinctus",215.8,26.2,0.256
+"Bird","Parabuteo_unicinctus",220.6,26.2,0.202
+"Bird","Parula_americana",2.15,11.8,0.538
+"Bird","Parus_atricapillus",2.7,4.2,0.206
+"Bird","Parus_atricapillus",2.75,4.2,0.361
+"Bird","Baeolophus_bicolor",5.4,13.7,0.192
+"Bird","Baeolophus_bicolor",5.4,13.7,0.549
+"Bird","Parus_carolinensis",2.538,15.6,0.235
+"Bird","Parus_cinctus",3.1,-8.6,0.37
+"Bird","Parus_gambeli",2.875,4.9,0.254
+"Bird","Parus_hudsonicus",2.45,-1.4,0.562
+"Bird","Baeolophus_inornatus",4.375,17.3,0.323
+"Bird","Parus_major",4.75,14.2,0.756
+"Bird","Parus_major",4.75,14.2,0.989
+"Bird","Parus_rufescens",2.425,7.2,0.331
+"Bird","Parus_sclateri",2.75,15.9,0.526
+"Bird","Baeolophus_wollweberi",2.6,17.7,0.394
+"Bird","Passer_domesticus",6.925,12.1,0.192
+"Bird","Passer_montanus",5.5,11.8,0.667
+"Bird","Passerculus_sandwichensis",4.28,1.8,0.427
+"Bird","Passerella_iliaca",8.075,-3.8,0.265
+"Bird","Passerina_amoena",3.875,6.4,0.289
+"Bird","Passerina_amoena",4,6.4,0.538
+"Bird","Passerina_ciris",3.75,18.5,0.244
+"Bird","Passerina_cyanea",3.525,12.8,0.233
+"Bird","Passerina_cyanea",3.725,12.8,0.233
+"Bird","Passerina_cyanea",3.75,12.8,0.429
+"Bird","Passerina_cyanea",3.75,12.8,0.454
+"Bird","Pelecanus_erythrorhynchos",1750,2.6,0.096
+"Bird","Pelecanus_erythrorhynchos",1750,2.6,0.159
+"Bird","Pelecanus_occidentalis",859.5,28.3800862367619,0.129
+"Bird","Perdix_perdix",97.38,6.2,0.508
+"Bird","Perisoreus_canadensis",18.25,-0.7,0.132
+"Bird","Perisoreus_canadensis",18.25,-0.7,0.159
+"Bird","Perisoreus_canadensis",18.25,-0.7,0.182
+"Bird","Pernis_apivorus",189.5,5.7,0.087
+"Bird","Phalacrocorax_auritus",418.5,10.9,0.142
+"Bird","Phalacrocorax_carbo",527.4,28.4559790248681,0.141
+"Bird","Phalacrocorax_carbo",527.4,28.4559790248681,0.178
+"Bird","Phalacrocorax_pelagicus",467,17.9737476103973,0.142
+"Bird","Phalacrocorax_penicillatus",525.8,8.78118145398781,0.273
+"Bird","Phalaenoptilus_nuttallii",12.9,6,0.909
+"Bird","Steganopus_tricolor",14.99,20.8,0.256
+"Bird","Pheucticus_ludovicianus",11.4,5.2,0.355
+"Bird","Pheucticus_melanocephalus",10.45,4.8,0.282
+"Bird","Phoenicopterus_ruber",758.8,28.4257959394637,0.076
+"Bird","Phoenicopterus_ruber",758.8,28.4257959394637,0.193
+"Bird","Phylloscopus_borealis",2.65,-5.2,0.877
+"Bird","Pica_nuttalli",36,16.4,0.259
+"Bird","Pica_nuttalli",39.75,16.4,0.256
+"Bird","Pica_pica",44.38,7.8,0.442
+"Bird","Pica_pica",44.38,7.8,0.526
+"Bird","Picoides_borealis",10.9,17.8,0.185
+"Bird","Picoides_borealis",10.9,17.8,0.213
+"Bird","Picoides_pubescens",6.75,6.3,0.224
+"Bird","Picoides_scalaris",7.575,18,0.588
+"Bird","Picoides_villosus",15.63,7,0.161
+"Bird","Pinicola_enucleator",14.1,-5.5,0.265
+"Bird","Pipilo_aberti",11.49,20.7,0.299
+"Bird","Pipilo_chlorurus",7.35,18.1,0.336
+"Bird","Pipilo_erythrophthalmus",10.43,8.4,0.207
+"Bird","Pipilo_erythrophthalmus",10.43,8.4,0.239
+"Bird","Pipilo_fuscus",11.1,18.6,0.199
+"Bird","Piranga_ludoviciana",7.025,3.7,0.327
+"Bird","Piranga_olivacea",7.15,9.4,0.254
+"Bird","Piranga_rubra",7.05,19.4,0.355
+"Bird","Piranga_rubra",7.05,19.4,0.435
+"Bird","Platalea_leucorodia",473,3.1,0.09
+"Bird","Plectrophenax_hyperboreus",13.63,3.38136517863298,0.549
+"Bird","Plectrophenax_nivalis",10.55,2.2,0.292
+"Bird","Plegadis_chihi",155.4,21.5,0.175
+"Bird","Pluvialis_dominica",36.25,27.9748085365006,0.549
+"Bird","Pluvialis_squatarola",55,28.7772755013219,0.125
+"Bird","Pluvialis_squatarola",55,28.7772755013219,0.201
+"Bird","Podiceps_auritus",113.3,0.1,0.505
+"Bird","Podiceps_grisegena",255.8,10.0015096634333,0.549
+"Bird","Podiceps_nigricollis",73,8,0.505
+"Bird","Polioptila_caerulea",1.5,13.8,0.633
+"Bird","Caracara_plancus",223.4,22.7,0.289
+"Bird","Polysticta_stelleri",193.3,3.51527535740376,0.207
+"Bird","Polysticta_stelleri",210.5,3.51527535740376,0.178
+"Bird","Pooecetes_gramineus",6.425,6.8,0.327
+"Bird","Pooecetes_gramineus",6.425,6.8,0.376
+"Bird","Procellaria_parkinsoni",168.8,23.0037151776108,0.149
+"Bird","Progne_subis",12.35,26.9,0.185
+"Bird","Protonotaria_citrea",3.75,14.3,0.538
+"Bird","Pterodroma_alba",68,27.6913678815855,0.226
+"Bird","Pterodroma_hypoleuca",44,25,0.239
+"Bird","Pterodroma_macroptera",133.1,13.5535428188355,0.141
+"Bird","Pterodroma_phaeopygia",108.5,24.282648271448,0.37
+"Bird","Ptychoramphus_aleuticus",47,0,0.251
+"Bird","Ptychoramphus_aleuticus",47,0,0.435
+"Bird","Ptychoramphus_aleuticus",47,0,0.459
+"Bird","Puffinus_gravis",212.3,27.4762065362587,0.365
+"Bird","Puffinus_lherminieri",42,25.4757145403781,0.133
+"Bird","Puffinus_nativitatis",89,26.3074602001182,0.237
+"Bird","Puffinus_pacificus",97,24.7,0.151
+"Bird","Puffinus_pacificus",97,24.7,0.182
+"Bird","Puffinus_puffinus",113.3,27.6924636231804,0.084
+"Bird","Puffinus_puffinus",113.3,27.6924636231804,0.549
+"Bird","Puffinus_tenuirostris",135.8,27.7195682518566,0.084
+"Bird","Puffinus_tenuirostris",135.8,27.7195682518566,0.08
+"Bird","Pycnonotus_jocosus",6.85,26,0.667
+"Bird","Pyrocephalus_rubinus",3.6,25.6,0.476
+"Bird","Quiscalus_major",41.63,20.2,0.215
+"Bird","Quiscalus_mexicanus",47.75,21.6,0.204
+"Bird","Quiscalus_quiscula",31.75,3.9,0.121
+"Bird","Rallus_longirostris",80.75,26.4,0.345
+"Bird","Recurvirostra_americana",79,5.1,0.286
+"Bird","Regulus_calendula",1.663,-0.2,0.467
+"Bird","Regulus_satrapa",1.575,14.3,0.495
+"Bird","Rynchops_niger",75.38,25.3,0.127
+"Bird","Riparia_riparia",3.65,7.1,0.323
+"Bird","Rissa_brevirostris",97.75,6.59799400240558,0.667
+"Bird","Rissa_tridactyla",98.25,13.6,0.135
+"Bird","Rissa_tridactyla",101.8,13.6,0.37
+"Bird","Rissa_tridactyla",101.8,13.6,0.526
+"Bird","Rissa_tridactyla",105.3,13.6,0.196
+"Bird","Rostrhamus_sociabilis",94.5,25,0.149
+"Bird","Rostrhamus_sociabilis",94.5,25,0.37
+"Bird","Sayornis_nigricans",4.663,20.2,0.323
+"Bird","Sayornis_nigricans",4.663,20.2,0.909
+"Bird","Sayornis_phoebe",4.95,4.1,0.282
+"Bird","Scolopax_minor",54.75,8.3,0.226
+"Bird","Scolopax_minor",54.75,8.3,0.276
+"Bird","Seiurus_aurocapilla",4.85,4.3,0.286
+"Bird","Coturnicops_noveboracensis",5.075,0,0.323
+"Bird","Coturnicops_noveboracensis",4.45,0,0.289
+"Bird","Selasphorus_platycercus",0.875,16.3,0.365
+"Bird","Selasphorus_platycercus",0.8875,16.3,0.323
+"Bird","Selasphorus_platycercus",0.9,16.3,0.209
+"Bird","Selasphorus_platycercus",0.9,16.3,0.211
+"Bird","Selasphorus_rufus",0.875,0.5,0.649
+"Bird","Selasphorus_sasin",0.7875,23.1,0.667
+"Bird","Selasphorus_sasin",0.8,23.1,0.685
+"Bird","Setophaga_ruticilla",2.125,4.3,0.256
+"Bird","Sialia_currucoides",7.4,0.6,0.549
+"Bird","Sialia_mexicana",7.25,15.6,0.617
+"Bird","Sialia_sialis",7.9,7.2,0.323
+"Bird","Sitta_canadensis",2.45,4.1,0.345
+"Bird","Sitta_carolinensis",5.275,10,0.262
+"Bird","Sitta_pusilla",2.55,17.1,0.45
+"Bird","Sitta_pygmaea",2.65,12.4,0.314
+"Bird","Somateria_mollissima",478.8,5.7,0.119
+"Bird","Somateria_mollissima",478.8,5.7,0.172
+"Bird","Somateria_mollissima",516.6,5.7,0.11
+"Bird","Somateria_spectabilis",391.8,12.1950194475641,0.134
+"Bird","Spheniscus_magellanicus",1125,12.5767655864791,0.196
+"Bird","Sphyrapicus_varius",12.58,0.8,0.382
+"Bird","Spiza_americana",7.325,12.2,0.667
+"Bird","Spizella_arborea",5.025,9,0.254
+"Bird","Spizella_breweri",2.725,1.4,0.505
+"Bird","Spizella_pallida",3,1.6,0.515
+"Bird","Spizella_passerina",3.075,5.9,0.262
+"Bird","Spizella_pusilla",3.125,13.9,0.292
+"Bird","Spizella_pusilla",3.125,13.9,0.331
+"Bird","Sporophila_torqueola",2.175,13.6,0.218
+"Bird","Stelgidopteryx_ruficollis",3.8,26.4,0.442
+"Bird","Stellula_calliope",0.6625,5.2,0.435
+"Bird","Stellula_calliope",0.7,5.2,0.427
+"Bird","Stercorarius_longicaudus",74.13,-0.24154332412545,0.318
+"Bird","Sterna_albifrons",14.25,7.7,0.12
+"Bird","Sterna_antillarum",10.78,28.086445623664,0.105
+"Bird","Sterna_caspia",163.8,29.7,0.096
+"Bird","Sterna_dougallii",27.5,26.4,0.182
+"Bird","Sterna_dougallii",27.5,26.4,0.211
+"Bird","Sterna_elegans",64.25,27.9290567774785,0.289
+"Bird","Sterna_forsteri",39.5,11.4,0.213
+"Bird","Sterna_forsteri",39.5,11.4,0.249
+"Bird","Sterna_fuscata",45,25.9301341196411,0.079
+"Bird","Sterna_lunata",36.5,27.4381858663842,0.141
+"Bird","Sterna_lunata",36.5,27.4381858663842,0.157
+"Bird","Sterna_maxima",117.5,28.1830561028128,0.114
+"Bird","Sterna_maxima",117.5,28.1830561028128,0.149
+"Bird","Sterna_nilotica",58.25,12.8,0.159
+"Bird","Sterna_nilotica",58.25,12.8,0.413
+"Bird","Sterna_paradisaea",27.5,-0.37958459747238,0.074
+"Bird","Sterna_sandvicensis",52,27.1,0.158
+"Bird","Stigmatopelia_chinensis",39.75,26.4648176146599,0.336
+"Bird","Strix_nebulosa",243.5,4.1,0.286
+"Bird","Strix_nebulosa",289.8,4.1,0.196
+"Bird","Strix_occidentalis",152.4,19.5,0.149
+"Bird","Strix_varia",179.1,8.1,0.139
+"Bird","Strix_varia",200.3,8.1,0.254
+"Bird","Sturnella_magna",22.25,27.5368313023558,0.286
+"Bird","Sturnus_vulgaris",20.58,2.6,0.119
+"Bird","Morus_bassanus",749.9,17.0033162247593,0.101
+"Bird","Morus_bassanus",749.9,17.0033162247593,0.124
+"Bird","Sula_dactylatra",438.1,25.9020893081144,0.1
+"Bird","Sula_dactylatra",438.1,25.9020893081144,0.11
+"Bird","Sula_leucogaster",345.5,23.7,0.103
+"Bird","Sula_leucogaster",345.5,23.7,0.158
+"Bird","Morus_serrator",587.5,19.4252918201002,0.076
+"Bird","Sula_sula",250.8,25.8731403384029,0.11
+"Bird","Sula_sula",250.8,25.8731403384029,0.115
+"Bird","Synthliboramphus_antiquus",51.5,12.7,0.526
+"Bird","Synthliboramphus_antiquus",51.5,12.7,0.602
+"Bird","Synthliboramphus_hypoleucus",41.75,14.7765789710628,0.169
+"Bird","Synthliboramphus_hypoleucus",41.75,14.7765789710628,0.262
+"Bird","Tachybaptus_ruficollis",50.25,19.8,0.196
+"Bird","Tachycineta_bicolor",5.025,3.3,0.233
+"Bird","Tachycineta_bicolor",5.025,3.3,0.289
+"Bird","Tachycineta_thalassina",3.6,6.9,0.382
+"Bird","Telespiza_cantans",8.2,23.5,0.435
+"Bird","Threskiornis_aethiopicus",374.5,24.6,0.12
+"Bird","Thryomanes_bewickii",2.475,16.1,0.323
+"Bird","Thryomanes_bewickii",2.475,16.1,0.34
+"Bird","Thryothorus_ludovicianus",4.675,15.4,0.427
+"Bird","Toxostoma_bendirei",15.55,14.1,0.633
+"Bird","Toxostoma_curvirostre",19.85,17.9,0.237
+"Bird","Toxostoma_lecontei",15.48,21.8,0.459
+"Bird","Toxostoma_longirostre",17.48,23.3,0.355
+"Bird","Toxostoma_redivivum",21.1,17.1,0.376
+"Bird","Toxostoma_rufum",17.2,7.6,0.199
+"Bird","Tringa_flavipes",20.25,26.2,0.549
+"Bird","Actitis_macularius",10.1,3.4,0.213
+"Bird","Troglodytes_aedon",2.725,24.6,0.365
+"Bird","Troglodytes_troglodytes",2.225,14,0.649
+"Bird","Turdus_migratorius",19.33,-0.7,0.183
+"Bird","Tympanuchus_cupido",221.4,9,2
+"Bird","Tympanuchus_pallidicinctus",188.9,15,0.189
+"Bird","Tympanuchus_phasianellus",208.9,1.8,0.413
+"Bird","Tyrannus_tyrannus",10.9,7.5,0.259
+"Bird","Tyrannus_verticalis",9.9,5.8,0.376
+"Bird","Uria_aalge",248.1,12.9877927113938,0.096
+"Bird","Uria_lomvia",241,14.052173901223,0.111
+"Bird","Vermivora_celata",2.25,1.9,0.382
+"Bird","Vermivora_chrysoptera",2.175,17.7,0.327
+"Bird","Vermivora_luciae",1.65,18.6,0.45
+"Bird","Vermivora_peregrina",2.45,-0.2,0.407
+"Bird","Vermivora_pinus",2.1,11.1,0.327
+"Bird","Vermivora_ruficapilla",2.15,13.9,0.355
+"Bird","Vermivora_virginiae",1.95,18.4,0.649
+"Bird","Vermivora_virginiae",1.95,18.4,0.847
+"Bird","Vireo_atricapilla",2.125,20.7,0.37
+"Bird","Vireo_bellii",2.125,16.6,0.376
+"Bird","Vireo_flavifrons",4.5,12.1,0.427
+"Bird","Vireo_gilvus",3.7,8,0.195
+"Bird","Vireo_griseus",2.85,14.3,0.355
+"Bird","Vireo_huttoni",2.9,18.4,0.4
+"Bird","Vireo_olivaceus",4.175,27.3010388429332,0.256
+"Bird","Vireo_philadelphicus",3.05,0.5,0.292
+"Bird","Vireo_solitarius",4.15,0.5,0.35
+"Bird","Wilsonia_canadensis",2.55,16.3,0.327
+"Bird","Wilsonia_canadensis",2.625,16.3,0.323
+"Bird","Wilsonia_citrina",2.613,13,0.323
+"Bird","Wilsonia_pusilla",1.825,-0.3,0.382
+"Bird","Xanthocephalus_xanthocephalus",19.93,8.7,0.235
+"Bird","Zenaida_asiatica",38.25,24.2,0.116
+"Bird","Zenaida_macroura",29.75,15.2,0.131
+"Bird","Zonotrichia_albicollis",6.475,-1.2,0.265
+"Bird","Zonotrichia_atricapilla",7.45,-5.4,0.244
+"Bird","Zonotrichia_leucophrys",7.35,-2,0.192
+"Bird","Zonotrichia_querula",9.063,2.7,0.218
+"Bird","Zosterops_japonicus",2.5,15.9,0.515
+"Fish","Abramis brama",398,8,0.165
+"Fish","Acipenser transmontanus",24200,10,0.05
+"Fish","Acipenser transmontanus",42500,22,0.03
+"Fish","Acipsnser fulvescens",9000,8,0.01
+"Fish","Ammodytes marinus",8.03,11,1.24
+"Fish","Ammodytes tobianus",3.75,11,1.29
+"Fish","Aphinius fasciatus",0.625,15,2.6
+"Fish","Aphinius fasciatus",1,15,1.8
+"Fish","Apsilus dentatus",1000,27,0.83
+"Fish","Apsilus dentatus",1130,27,1.9
+"Fish","Bajacalifornia burragei",2.45,4,1.039
+"Fish","Balistes vetula",730,27,2.61
+"Fish","Bathylagus milleri",7.5,5.5,1.217
+"Fish","Benthosema glaciale",0.56,13,1.521
+"Fish","Benthosema glaciale",1.4,7,1.75
+"Fish","Benthosema glaciale",1.43,7,0.74
+"Fish","Blennius pholis",13.5,17,0.9
+"Fish","Borostomias panamensis",12.5,5.5,1.097
+"Fish","Brevoortia tyrannus",35.3,23,1
+"Fish","Brevoortia tyrannus",216,13,0.5
+"Fish","Callionymus lyra",1.95,12,0.96
+"Fish","Callionymus lyra",6.75,12,0.86
+"Fish","Caranx ruber",623,27,1.51
+"Fish","Centengraulis mysticetus",14,24,2.4
+"Fish","Cephalopholis fulva",160,27,0.55
+"Fish","Cetorhinus maximus",3450000,10,0.046
+"Fish","Chelodactylus macropterus",348,14,0.08
+"Fish","Clupea harengus",13.8,8,0.35
+"Fish","Clupea harengus",40,9,0.36
+"Fish","Clupea harengus",48.3,12,0.2
+"Fish","Clupea harengus",50,11,0.25
+"Fish","Clupea harengus",87.5,8,0.16
+"Fish","Clupea pallassii",52.3,10,0.5
+"Fish","Clupea pallassii",131,12,0.2
+"Fish","Cololabis aira",47.3,12,1.6
+"Fish","Coregonus clupeaformis",6.75,5,1.3
+"Fish","Coregonus clupeaformis",708,5,0.15
+"Fish","Coregonus clupeaformis",1050,5,1.35
+"Fish","Coregonus clupeaformis",1560,5,0.17
+"Fish","Coryphaennoides acrolepis",450,3.2,0.822
+"Fish","Coryphaenoides rupestris",239,9.5,0.12
+"Fish","Cottus gobio",1.08,9,1.1
+"Fish","Cottus gobio",1.08,9,0.8
+"Fish","Cottus gobio",1.48,9,1.1
+"Fish","Cottus gobio",1.53,9,0.9
+"Fish","Cyclothone braueri",0.131,10,4.867
+"Fish","Cynoglossus macrolepidus",42.5,27,0.49
+"Fish","Cynolebias adloffi",0.375,22,6.348
+"Fish","Cynolebias adloffi",0.625,16,3.476
+"Fish","Cynolebias bellottii",0.65,15,3.862
+"Fish","Cynolebias bellottii",0.65,20,5.214
+"Fish","Cynolebias wolterstarfii",1.25,15.5,3.395
+"Fish","Cynolebias wolterstarfii",1.25,20,5.84
+"Fish","Cynoscion analis",368,18,0.4
+"Fish","Cynoscion macdonaldi",4450,27,0.3
+"Fish","Cynoscion nobilis",6980,24,0.3
+"Fish","Dicentrarchus labrax",1720,10,0.1
+"Fish","Engraulis anchoita",12.5,16,0.9
+"Fish","Engraulis anchoita",53,16,1.42
+"Fish","Engraulis encrasicholus",6,15,1.8
+"Fish","Engraulis japonicus",9,20,1.63
+"Fish","Engraulis mordax",5.25,15,1.7
+"Fish","Engraulis ringens",6,16,1.52
+"Fish","Engraulis ringens",9.25,16,1
+"Fish","Eopsetta jordani",993,9,0.2
+"Fish","Eopsetta jordani",1140,9,0.25
+"Fish","Epinephelus guttatus",470,27,0.68
+"Fish","Epinephelus striatus",3230,27,0.24
+"Fish","Esox lucius",823,9,0.24
+"Fish","Esox lucius",2200,9,0.26
+"Fish","Gadus minitus",14.9,12,1.1
+"Fish","Gadus minitus",39.5,12,0.9
+"Fish","Gadus morhua",750,8,0.18
+"Fish","Gadus morhua",2040,6,0.44
+"Fish","Gadus morhua",2700,5,0.31
+"Fish","Gadus morhua",2750,7,0.33
+"Fish","Gadus morhua",2930,6,0.2
+"Fish","Gadus morhua",3750,6,0.1
+"Fish","Gadus morhua",4100,8,0.17
+"Fish","Gadus morhua",5000,8,0.2
+"Fish","Gadus morhua",6000,5,0.1
+"Fish","Gasterosteus aculeatus",0.45,10,0.9
+"Fish","Haemulon album",1330,27,0.79
+"Fish","Haemulon plumieri",340,27,1.77
+"Fish","Haplochromis anaphyrmus",27.8,26,1.45
+"Fish","Haplochromis mloto",18.5,26,0.92
+"Fish","Hippoglossoides platessoides",173,11,0.3
+"Fish","Hippoglossoides platessoides",310,15,0.27
+"Fish","Hippoglossoides platessoides",415,14,0.25
+"Fish","Hippoglossoides platessoides",510,7,0.26
+"Fish","Hippoglossoides platessoides",515,11,0.22
+"Fish","Hippoglossoides platessoides",545,15,0.18
+"Fish","Hippoglossoides platessoides",713,14,0.23
+"Fish","Hippoglossoides platessoides",955,7,0.18
+"Fish","Hoplostethus atlanticus",540,4,0.048
+"Fish","Hypomesus olidus",3.75,16,2.45
+"Fish","Katsuwonus pelamis",2530,25,0.65
+"Fish","Katsuwonus pelamis",8080,25,1.68
+"Fish","Lamna nasus",41800,7,0.18
+"Fish","Lampanyctus macdonaldi",0.725,10.25,1.014
+"Fish","Lampanyctus regalis",0.725,6,1.329
+"Fish","Latimeria chalumnae",20000,16,0.2
+"Fish","Leiognathus splendens",16,28,1.8
+"Fish","Lethrinops longispinis",30.5,26,1.69
+"Fish","Lethrinops parvidens",33,26,1.2
+"Fish","Leucichthys artedi",17.5,8,1.1
+"Fish","Leucichthys artedi",23.8,8,1.2
+"Fish","Leucichthys artedi",150,8,0.35
+"Fish","Leucichthys sardinella",138,5,0.6
+"Fish","Limanda ferruginea",295,10,0.15
+"Fish","Lithrinus enigmaticus",730,27,0.2
+"Fish","Lutjanus apodus",950,27,0.54
+"Fish","Lutjanus buccanella",473,27,1.83
+"Fish","Lutjanus buccanella",800,27,2.24
+"Fish","Lutjanus purpureus",2930,27,0.37
+"Fish","Mallotus villosus",15,11,1.3
+"Fish","Maurolicus muelleri",0.125,13,4.867
+"Fish","Melanogrammus aeglefinus",538,5,0.2
+"Fish","Merluccius angustimanus",63.8,20,0.84
+"Fish","Merluccius gayi",1460,14,0.37
+"Fish","Merluccius merluccius",156,15,0.6
+"Fish","Merluccius merluccius",395,15,0.5
+"Fish","Merluccius productus",318,12,0.56
+"Fish","Mugil cephalus",613,20,0.31
+"Fish","Mulloidichthys martinicus",90,27,1.73
+"Fish","Mulloidichthys martinicus",130,27,1.7
+"Fish","Mycteroperca venenosa",2080,27,0.42
+"Fish","Myctophum punctatum",1.65,15,0.73
+"Fish","Nemipterus bleekeri",75,28,1.12
+"Fish","Nemipterus delagoe",60,28,1.62
+"Fish","Nemipterus hexodon",53.8,28,0.88
+"Fish","Nemipterus japonicus",63.8,28,1.88
+"Fish","Nemipterus marginatus",52.5,28,1.73
+"Fish","Nemipterus marginatus",57.5,28,1.14
+"Fish","Nemipterus mesoprion",18.8,28,1.08
+"Fish","Nemipterus nematophorus",50,28,1.63
+"Fish","Nemipterus nemurus",61.3,28,1.03
+"Fish","Nemipterus peronii",64.3,28,1.05
+"Fish","Nemipterus sp.",102,28,0.53
+"Fish","Nemipterus tolu",57.5,28,0.41
+"Fish","Notothenia neglecta",545,16,0.36
+"Fish","Ocyurus chrysurus",900,27,0.62
+"Fish","Perca fluviatilis",109,6,0.29
+"Fish","Perca fluviatilis",158,6,0.16
+"Fish","Phoxinus phoxinus",2.05,9,1.1
+"Fish","Platichthys flesus",260,8,0.18
+"Fish","Pleuronectes platessa",228,7,0.22
+"Fish","Pleuronectes platessa",858,7,0.12
+"Fish","Pneumatophorus japonicus",203,15,0.9
+"Fish","Pollachius virens",2900,6,0.15
+"Fish","Pollachius virens",4130,5,0.3
+"Fish","Pollachius virens",5030,5,0.3
+"Fish","Pomatoschistus minutus",1,10,3.3
+"Fish","Poromitra crassiceps",3.53,6.5,0.677
+"Fish","Pseudopleuronectes americanus",345,5,0.4
+"Fish","Pseudosciaena diacanthus",4350,27,0.8
+"Fish","Pseudotolithus elongatus",179,26,0.34
+"Fish","Pseudoupeneus macularus",90,27,1.89
+"Fish","Pungitius pungitius",0.1,10,1.1
+"Fish","Restrelliger kanagurta",38.5,27,7.8
+"Fish","Restrelliger kanagurta",40,28,4.44
+"Fish","Restrelliger neglectus",21,28,4.2
+"Fish","Restrelliger neglectus",27.5,28,7.22
+"Fish","Restrelliger neglectus",51.3,28,4.56
+"Fish","Salmo trutta",75,9,0.94
+"Fish","Salmo trutta",125,5,0.31
+"Fish","Salvelinus alpinus",1250,7,0.17
+"Fish","Sardinella longiceps",15.8,27,0.67
+"Fish","Sardinella longiceps",16.5,27,1.12
+"Fish","Sardinops caerrula",56.3,15,0.45
+"Fish","Sardinops caerrula",84.3,15,0.4
+"Fish","Sardinops melanosticta",52.3,15,0.5
+"Fish","Saurida tumbil",588,17,0.46
+"Fish","Sebastes aleutianus",9380,4.5,0.029
+"Fish","Sebastes alutus",200,5,0.193
+"Fish","Sebastes alutus",270,6,0.271
+"Fish","Sebastes alutus",340,8,0.227
+"Fish","Sebastes alutus",1420,4.5,0.06
+"Fish","Sebastes babcocki",1960,5.5,0.057
+"Fish","Sebastes borealis",9300,4.5,0.038
+"Fish","Sebastes brevispinis",1960,7,0.073
+"Fish","Sebastes caurinus",778,6.5,0.109
+"Fish","Sebastes chlorostictus",545,7,0.182
+"Fish","Sebastes ciliatus",1030,6,0.09
+"Fish","Sebastes constellatus",410,7,0.188
+"Fish","Sebastes crameri",778,5.5,0.091
+"Fish","Sebastes dalli",76.8,7,0.5
+"Fish","Sebastes diploproa",1140,6,0.071
+"Fish","Sebastes elongatus",343,6,0.143
+"Fish","Sebastes entomelas",815,5.5,0.1
+"Fish","Sebastes flavidus",1110,6,0.094
+"Fish","Sebastes goodei",705,6.5,0.222
+"Fish","Sebastes helvomaculatus",1050,6,0.069
+"Fish","Sebastes jorani",152,6.5,0.194
+"Fish","Sebastes levis",2930,6.5,0.109
+"Fish","Sebastes maliger",1790,7,0.067
+"Fish","Sebastes melanops",1020,6.5,0.12
+"Fish","Sebastes miniatus",1640,6.5,0.14
+"Fish","Sebastes mystinus",608,6,0.136
+"Fish","Sebastes nigrocinctus",5400,7,0.052
+"Fish","Sebastes ovalis",705,6.5,0.162
+"Fish","Sebastes paucipinis",2930,6,0.167
+"Fish","Sebastes pinniger",1970,7,0.071
+"Fish","Sebastes polyspinis",1030,5.5,0.105
+"Fish","Sebastes reedi",1280,6.5,0.061
+"Fish","Sebastes rosaceus",210,7,0.429
+"Fish","Sebastes rosenblatti",705,6.5,0.12
+"Fish","Sebastes ruberrinus",4200,6,0.051
+"Fish","Sebastes rubrivinctus",1020,6.5,0.333
+"Fish","Sebastes rufus",545,7,0.113
+"Fish","Sebastes saxicola",300,6,0.158
+"Fish","Sebastes variegatus",226,5.5,0.128
+"Fish","Sebastes wilsoni",61,7,0.25
+"Fish","Sebastes zacentrus",533,6,0.103
+"Fish","Sebastolobus alascanus",2470,2.8,0.053
+"Fish","Sebastolobus altivelis",243,2.4,0.13
+"Fish","Soela vulgaris",121,7,0.25
+"Fish","Sprattus sprattus",5.1,9,0.7
+"Fish","Sprattus sprattus",5.75,8,0.53
+"Fish","Stolothrissa tanganicae",1.5,27,5.2
+"Fish","Stizostedion canadensis",154,5,0.44
+"Fish","Thunnus alaunga",1290,26,0.2
+"Fish","Thunnus alaunga",14700,25,0.23
+"Fish","Thunnus albacares",24800,25,0.77
+"Fish","Thunnus albacares",34500,26,0.8
+"Fish","Thunnus albacares",36000,25,0.8
+"Fish","Thunnus albacares",49800,25,0.9
+"Fish","Thunnus atlanticus",2440,26,0.67
+"Fish","Thunnus germo",9230,25,0.22
+"Fish","Thunnus macoyi",49000,26,0.2
+"Fish","Tilapia esculenta",188,25,1.75
+"Fish","Tracharus japonicus",298,20,0.99
+"Fish","Trisopterus esmarkii",11.3,9,1.6
+"Fish","Trisopterus esmarkii",12,9,0.6
+"Invertebrate","Acanthochitona crinita",0.333,13.85,4.44
+"Invertebrate","Acanthocyclops robustus",1.13e-05,5,19.211
+"Invertebrate","Acanthocyclops robustus",1.13e-05,10,22.01
+"Invertebrate","Acanthocyclops robustus",1.13e-05,15,44.242
+"Invertebrate","Acanthocyclops robustus",1.13e-05,20,56.154
+"Invertebrate","Acanthocyclops robustus",1.13e-05,25,87.6
+"Invertebrate","Aega antarctica",5.6,-1.15,0.13
+"Invertebrate","Amphicteis gunneri",0.365,3.35,1.083
+"Invertebrate","Ancylus fluviatilis",0.0665,11.85,3.9
+"Invertebrate","Ancylus fluviatilis",0.108,7.85,3.2
+"Invertebrate","Anodonta grandis",28.8,5.85,0.183
+"Invertebrate","Anodonta grandis",137,8.85,0.218
+"Invertebrate","Anodonta piscinalis",9.98,12.85,0.265
+"Invertebrate","Arctica islandica",165,6.85,0.35
+"Invertebrate","Aulacomya ater",3,15.35,1.459
+"Invertebrate","Boreomysis microps",0.00575,9.5,3.042
+"Invertebrate","Bovallia gigantea f",5.93,-0.95,0.889
+"Invertebrate","Bovallia gigantea f",15.3,-0.95,0.729
+"Invertebrate","Bovallia gigantea",1.51,-0.95,1.385
+"Invertebrate","Bovallia gigantea",4.75,-0.95,0.801
+"Invertebrate","Brachycentrus spinae",0.00613,10.85,6.205
+"Invertebrate","Calyptogena magnifica",0.243,17,1.538
+"Invertebrate","Calyptogena magnifica",6.85,7.8,0.324
+"Invertebrate","Cardium edule",3.8,11.85,0.86
+"Invertebrate","Cardium edule",5.65,11.85,0.59
+"Invertebrate","Cardium edule",9.25,11.85,0.44
+"Invertebrate","Cardium edule",9.9,9.85,0.727
+"Invertebrate","Cassidulus mitis",0.95,22.15,0.812
+"Invertebrate","Chamelea gallina",1.35,24.85,4.687
+"Invertebrate","Chione cancellata",5.23,25.85,0.553
+"Invertebrate","Chorismus antarcticus",12.7,-1.15,0.731
+"Invertebrate","Corbicula fluminea",0.45,21.35,4.39
+"Invertebrate","Corbicula fluminea",0.638,21.85,1.739
+"Invertebrate","Cyclops strenuus",3.75e-05,15,18.75
+"Invertebrate","Cyclops strenuus",3.75e-05,20,24.146
+"Invertebrate","Cyclops vicinus",3.8e-05,5,15.315
+"Invertebrate","Cyclops vicinus",3.8e-05,10,15.755
+"Invertebrate","Cyclops vicinus",3.8e-05,15,42.941
+"Invertebrate","Daphnia ambigua",7.55e-07,5,24.333
+"Invertebrate","Daphnia ambigua",7.55e-07,10,35.902
+"Invertebrate","Daphnia magna",4.43e-05,14,24.971
+"Invertebrate","Daphnia magna",4.43e-05,19,34.873
+"Invertebrate","Daphnia magna",4.43e-05,24,51.408
+"Invertebrate","Daphnia magna",4.43e-05,29,84.884
+"Invertebrate","Donax incarnatus",0.905,27.85,7.483
+"Invertebrate","Dosinia hepatica",1.85,19.85,0.568
+"Invertebrate","Echinosigra phiale",0.182,2.85,0.275
+"Invertebrate","Echinus acutus var. norvegicus",6.5,7,0.28
+"Invertebrate","Echinus affinis",8.43,2.85,0.236
+"Invertebrate","Echinus elegans",14.7,7,0.559
+"Invertebrate","Egeria radiata",194,28.85,2.03
+"Invertebrate","Ephemerella subvaria",0.0415,14.85,6.597
+"Invertebrate","Epitheca spp.",0.758,16.85,2.95
+"Invertebrate","Eucyclops serrulatus",1.28e-05,10,23.422
+"Invertebrate","Eucyclops serrulatus",1.28e-05,15,31.878
+"Invertebrate","Eucyclops serrulatus",1.28e-05,20,36.079
+"Invertebrate","Eucyclops serrulatus",1.28e-05,25,105.288
+"Invertebrate","Euphausia krohni",0.004,13,5.214
+"Invertebrate","Eurhomalea exalbida",230,6.45,0.145
+"Invertebrate","Filinia pejleri",1.25e-08,5,87.6
+"Invertebrate","Filinia pejleri",1.25e-08,10,128.824
+"Invertebrate","Filinia pejleri",1.25e-08,15,168.462
+"Invertebrate","Filinia pejleri",1.25e-08,20,292
+"Invertebrate","Filinia pejleri",1.25e-08,25,365
+"Invertebrate","Filinia terminalis",1.25e-08,5,87.6
+"Invertebrate","Filinia terminalis",1.25e-08,10,128.824
+"Invertebrate","Filinia terminalis",1.25e-08,15,168.462
+"Invertebrate","Filinia terminalis",1.25e-08,20,292
+"Invertebrate","Filinia terminalis",1.25e-08,25,365
+"Invertebrate","Gammarus fossarum",0.0128,12,3.809
+"Invertebrate","Gammarus fossarum",0.0128,16.1,5.475
+"Invertebrate","Gammarus fossarum",0.0128,20.2,7.552
+"Invertebrate","Gammarus roeseli",0.0181,12,3.809
+"Invertebrate","Gammarus roeseli",0.0181,16.1,5.475
+"Invertebrate","Gammarus roeseli",0.0181,20.2,7.552
+"Invertebrate","Gennadas elegans",0.109,10.5,2.028
+"Invertebrate","Gnathophausia zoea",0.95,9.5,1.521
+"Invertebrate","Haliotis iris",363,12.15,0.077
+"Invertebrate","Hiatella arctica",14.5,-0.15,0.28
+"Invertebrate","Hiatella byssifera",11.3,1.85,0.28
+"Invertebrate","Holothuria atra",880,25.95,0.549
+"Invertebrate","Hyalella azteca",0.00578,15.95,4.716
+"Invertebrate","Hydrobia acuta",0.0121,9.85,3.482
+"Invertebrate","Keratella cochlearis",1.75e-08,5,79.927
+"Invertebrate","Keratella cochlearis",1.75e-08,10,98.649
+"Invertebrate","Keratella cochlearis",1.75e-08,15,142.208
+"Invertebrate","Keratella cochlearis",1.75e-08,20,240.659
+"Invertebrate","Keratella cochlearis",1.75e-08,25,326.866
+"Invertebrate","Laeonereis fragilis",1.13,21.85,6.658
+"Invertebrate","Laevilacunaria antarctica",0.123,-0.95,1.832
+"Invertebrate","Laevilacunaria antarctica",0.129,-0.95,1.647
+"Invertebrate","Lamellibranchia",3.43,7,0.035
+"Invertebrate","Lamellibranchia",3.43,7,0.06
+"Invertebrate","Ledella pustulosa",0.0118,2.65,0.426
+"Invertebrate","Lissarca miliaris",0.031,-0.95,0.597
+"Invertebrate","Lissarca notorcadensis",0.056,-1.15,0.319
+"Invertebrate","Lissarca notorcadensis",0.0953,-1.15,0.297
+"Invertebrate","Littorina africana",0.115,13.85,2.027
+"Invertebrate","Lumbrinereis fragilis",8.63,6.85,0.744
+"Invertebrate","Lymnaea peregra",1.75,9.85,2.526
+"Invertebrate","Macoma balthica",0.144,8.85,1.139
+"Invertebrate","Macoma balthica",0.196,8.85,0.463
+"Invertebrate","Macoma balthica",0.733,12.85,1.29
+"Invertebrate","Macoma balthica",3.33,9.85,0.57
+"Invertebrate","Macoma balthica",10.8,5.85,1.067
+"Invertebrate","Meganyctiphanes norvegica",0.0145,13,5.214
+"Invertebrate","Mercenaria mercenaria",38.3,11.85,0.448
+"Invertebrate","Mesocyclops leuckarti",8.13e-06,10,18.025
+"Invertebrate","Mesocyclops leuckarti",8.13e-06,15,38.087
+"Invertebrate","Mesocyclops leuckarti",8.13e-06,20,49.213
+"Invertebrate","Mesocyclops leuckarti",8.13e-06,25,69.524
+"Invertebrate","Mesodesma arctatum",11.7,5.35,0.263
+"Invertebrate","Mesodesma donacium",31,16.85,2.5
+"Invertebrate","Moira atropes",33.3,25.85,0.83
+"Invertebrate","Mya arenaria",9.05,8.85,0.64
+"Invertebrate","Mya truncata",6.78,1.85,0.25
+"Invertebrate","Mya truncata",7.33,-0.15,0.1
+"Invertebrate","Mya truncata",84.8,1.85,0.14
+"Invertebrate","Mytilid sp.",9.68,17,0.308
+"Invertebrate","Nacella concinna",5.95,-0.95,0.196
+"Invertebrate","Nacella delesserti",38.8,4.85,0.343
+"Invertebrate","Nematobrachion boopis",0.0065,10.25,3.476
+"Invertebrate","Nematoscelis megalops",0.0075,13,4.056
+"Invertebrate","Nephtys incisa",0.28,11.65,2.155
+"Invertebrate","Nereis diversicolor",1.22,8.85,3.79
+"Invertebrate","Nereis virens",2.68,8.85,1.44
+"Invertebrate","Notholca caudata",1.75e-08,5,88.664
+"Invertebrate","Notholca caudata",1.75e-08,10,103.302
+"Invertebrate","Notholca caudata",1.75e-08,15,190.435
+"Invertebrate","Notholca caudata",1.75e-08,20,312.857
+"Invertebrate","Notoacmaea scutum",6.23,11.85,2.05
+"Invertebrate","Nucella lapillus",20.6,6.85,0.35
+"Invertebrate","Nucula proxima",0.0107,9.85,0.49
+"Invertebrate","Nucula turgida",0.448,11.85,0.599
+"Invertebrate","Ophiocten gracilis",0.025,9.5,0.857
+"Invertebrate","Ophiocten gracilis",0.0833,2.85,0.811
+"Invertebrate","Ophiocten hastatum",0.05,9,0.615
+"Invertebrate","Ophionepthys limicola",8.15,24.85,1.966
+"Invertebrate","Ophionotus hexactis",1.69,1.35,0.597
+"Invertebrate","Ophiura ljungmani",0.0273,2.85,1.148
+"Invertebrate","Ophiura ljungmani",0.218,2.85,0.334
+"Invertebrate","Pachygrapsus gracilis",2.7,27.85,5.4
+"Invertebrate","Parvicardium exiguum",0.368,15.65,4.088
+"Invertebrate","Pectinaria hyperboreia",0.239,5.85,2.263
+"Invertebrate","Pectinaria koreni",0.0358,11.85,8.522
+"Invertebrate","Perna perna",3.98,20.85,4.799
+"Invertebrate","Perna perna",6.63,20.85,4.618
+"Invertebrate","Philine gibba",9.53,1.35,0.671
+"Invertebrate","Pontoporeia femorata",0.0905,5.85,4.233
+"Invertebrate","Prochaetoderma yongei",0.000273,3.35,10.429
+"Invertebrate","Reticulammina labyrinthica",0.0113,2.5,7.526
+"Invertebrate","Scolelepis gaucha",0.00438,19.85,11.354
+"Invertebrate","Scolelepis squamata",0.0244,21.85,4.02
+"Invertebrate","Serolis polita",1.15,-0.85,0.626
+"Invertebrate","Siliqua patula",9.3,10.3,1.644
+"Invertebrate","Siliqua patula",10.5,10.3,0.968
+"Invertebrate","Siliqua patula",11.4,14.4,1.681
+"Invertebrate","Siliqua patula",14.6,12.2,1.027
+"Invertebrate","Siliqua patula",14.9,10.3,1.195
+"Invertebrate","Siliqua patula",15,8,0.826
+"Invertebrate","Siliqua patula",23.8,5,0.306
+"Invertebrate","Siliqua patula",24.2,5.9,0.413
+"Invertebrate","Siliqua patula",26,5.9,0.448
+"Invertebrate","Siliqua patula",29,4.6,0.396
+"Invertebrate","Spisula sachalinesis",181,13.85,0.609
+"Invertebrate","Sterechinus antarcticus",13.1,-1.15,0.07
+"Invertebrate","Strongylocentr. droeb.",0.52,5.85,0.799
+"Invertebrate","Strongylocentr. franciscanus",400,16.05,0.106
+"Invertebrate","Strongylocentr. franciscanus",648,16.05,0.083
+"Invertebrate","Strongylocentr purpuratus",0.82,14.85,1.227
+"Invertebrate","Strongylocentr purpuratus",4.5,14.05,0.204
+"Invertebrate","Strongylocentr purpuratus",5.18,15.25,0.317
+"Invertebrate","Strongylocentr purpuratus",8.8,8.85,0.119
+"Invertebrate","Strongylocentrotus pallidus",30.8,0.85,0.082
+"Invertebrate","Tapes philippimarum",4.73,24.05,2.406
+"Invertebrate","Tellina fabula",0.0615,9.85,1.99
+"Invertebrate","Tellina fabula",0.153,9.85,1.723
+"Invertebrate","Tellina martinicensis",1.26,25.85,1.686
+"Invertebrate","Terebellides stroemi",0.0625,-0.15,0.475
+"Invertebrate","Theora lubrica",0.0238,16.85,4.236
+"Invertebrate","Thysanopoda acutifrons",0.0198,10.25,2.704
+"Invertebrate","Tindaria callistiformis",0.00144,3.5,0.946
+"Invertebrate","Turbo sarmaticus",163,16.85,0.81
+"Invertebrate","Tysanoessa longicaudata",0.0015,13,7.3
+"Invertebrate","Uca cumulanta",1.57,27.85,10.6
+"Invertebrate","Uca maracoani",7.85,27.85,5.3
+"Invertebrate","Uca maracoani",14.3,27.85,5.3
+"Invertebrate","Uca rapax",6.85,27.85,4.9
+"Invertebrate","Uca vocator",8.9,27.85,2.8
+"Invertebrate","Unio tumidis",5.35,12.55,0.352
+"Invertebrate","Venerupis aurea",5.2,11.85,0.37
+"Invertebrate","Venerupis aurea",5.45,11.85,0.35
+"Invertebrate","Venus antiqua",40.5,11.55,0.664
+"Invertebrate","Vesicomyid sp.",0.00238,21,0.228
+"Invertebrate","Yoldia eightsi",5.2,-0.95,0.13
+"Invertebrate","Yoldia eightsi",5.48,-0.95,0.114
+"Invertebrate","Yoldia limatula",4.93,8.85,0.803
+"Invertebrate","Zygochlamys patagonica",75.3,7.85,1.039
