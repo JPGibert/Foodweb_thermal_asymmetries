@@ -384,7 +384,7 @@ mort_bird3$Species[mort_bird3$Species == "Haemorhous_mexicanus"] <- "Carpodacus_
 mort_bird3$Species[mort_bird3$Species %nin% bird_tree$tip.label] # a few could not be included
 
 mort_bird_fin <- mort_bird3 %>%
-  filter(Species %in% bird_tree$tip.label) %>%
+  filter(Species %in% bird_tree$tip.label, !is.na(Mean_Temp_C)) %>%
   dplyr::select(Group, Species, dry_mass_g, Mean_Temp_C, Mortality_yr) %>%
      rename(Temp_C = Mean_Temp_C)
 mort_bird_fin
@@ -602,7 +602,7 @@ mort_mammals_4$Species[mort_mammals_4$Species %nin% mam_tree$tip.label]
 mort_mammals_4$Species[mort_mammals_4$Species == "Heteromys_adspersus"] <- "Liomys_adspersus"
 mort_mammals_4$Species[mort_mammals_4$Species == "Otaria_byronia"] <- "Otaria_bryonia"
 mort_mammals_fin <- mort_mammals_4 %>%
-  filter(Species %in% mam_tree$tip.label) %>%
+  filter(Species %in% mam_tree$tip.label, !is.na(Mean_Temp_C)) %>%
   dplyr::select(Group, Species, dry_mass_g, Mean_Temp_C, Mortality_yr) %>%
   rename(Temp_C = Mean_Temp_C)
 
@@ -617,7 +617,70 @@ mortality_endo <- as_tibble(rbind(mort_mammals_fin , mort_bird_fin))
 mortality_ecto <- mortality_mccoy %>%
   filter(Group == "Invertebrate" | Group == "Fish") %>%
   dplyr::select(-Ref)
+
+#update fish names
+#update fish names, reference is fishbase
+
+mortality_ecto$Species[mortality_ecto$Species == "Clupea pallassii"] <- "Clupea pallasii" 
+mortality_ecto$Species[mortality_ecto$Species == "Restrelliger kanagurta"] <- "Rastrelliger kanagurta"
+mortality_ecto$Species[mortality_ecto$Species == "Restrelliger neglectus"] <- "Rastrelliger neglectus"
+mortality_ecto$Species[mortality_ecto$Species == "Lethrinops longispinis"] <- "Lethrinops longipinnis"
+mortality_ecto$Species[mortality_ecto$Species == "Pseudopeneus maculatus"] <- "Pseudupeneus maculatus"
+mortality_ecto$Species[mortality_ecto$Species == "Sebastes paucispinus"] <- "Sebastes paucispinis"
+mortality_ecto$Species[mortality_ecto$Species == "Bathylagus milleri"] <- "Pseudobathylagus milleri"
+mortality_ecto$Species[mortality_ecto$Species == "Blennius pholis"] <- "Lipophrys pholis"
+mortality_ecto$Species[mortality_ecto$Species == "Clupea pallasii"] <- "Clupea pallasii pallasii"
+mortality_ecto$Species[mortality_ecto$Species == "Cynoglossus macrolepidus"] <- "Cynoglossus arel"
+mortality_ecto$Species[mortality_ecto$Species == "Cynolebias adloffi"] <- "Austrolebias adloffi"
+mortality_ecto$Species[mortality_ecto$Species == "Engraulis encrasicholus"] <- "Engraulis encrasicolus"
+mortality_ecto$Species[mortality_ecto$Species == "Gadus minimus"] <- "Raniceps raninus"
+mortality_ecto$Species[mortality_ecto$Species == "Gadus minutus"] <- "Trisopterus minutus"
+mortality_ecto$Species[mortality_ecto$Species == "Gadus minitus"] <- "Trisopterus minutus"
+mortality_ecto$Species[mortality_ecto$Species == "Haemulon plumieri"] <- "Haemulon plumierii"
+mortality_ecto$Species[mortality_ecto$Species == "Haplochromis anaphyrmus"] <- "Mylochromis anaphyrmus"
+mortality_ecto$Species[mortality_ecto$Species == "Haplochromis mloto"] <- "Copadichromis mloto"
+mortality_ecto$Species[mortality_ecto$Species == "Lampanyctus regalis"] <- "Nannobrachium regale"
+mortality_ecto$Species[mortality_ecto$Species == "Leiognathus splendens"] <- "Eubleekeria splendens"
+mortality_ecto$Species[mortality_ecto$Species == "Leucichthys artedi"] <- "Coregonus artedi"
+mortality_ecto$Species[mortality_ecto$Species == "Leucichthys sardinella"] <- "Coregonus sardinella"
+mortality_ecto$Species[mortality_ecto$Species == "Lithrinus enigmaticus"] <- "Lethrinus enigmaticus"
+mortality_ecto$Species[mortality_ecto$Species == "Merluccius gayi"] <- "Merluccius gayi gayi"
+mortality_ecto$Species[mortality_ecto$Species == "Nemipterus bleekeri"] <- "Nemipterus bipunctatus"
+mortality_ecto$Species[mortality_ecto$Species == "Nemipterus delagoe"] <- "Nemipterus bipunctatus"
+mortality_ecto$Species[mortality_ecto$Species == "Nemipterus tolu"] <- "Nemipterus peronii"
+mortality_ecto$Species[mortality_ecto$Species == "Pneumatophorus japonicus"] <- "Scomber japonicus"
+mortality_ecto$Species[mortality_ecto$Species == "Pseudosciaena diacanthus"] <- "Protonibea diacanthus"
+mortality_ecto$Species[mortality_ecto$Species == "Rastrelliger neglectus"] <- "Rastrelliger brachysoma"
+mortality_ecto$Species[mortality_ecto$Species == "Sardinops caerrula"] <- "Sardinops sagax"
+mortality_ecto$Species[mortality_ecto$Species == "Sardinops melanosticta"] <- "Sardinops sagax "
+mortality_ecto$Species[mortality_ecto$Species == "Sebastes dalli"] <- "Sebastes dallii"
+mortality_ecto$Species[mortality_ecto$Species == "Sebastes jorani"] <- "Sebastes jordani"
+mortality_ecto$Species[mortality_ecto$Species == "Sebastes paucipinis"] <- "Sebastes paucispinis"
+mortality_ecto$Species[mortality_ecto$Species == "Sebastes ruberrinus"] <- "Sebastes ruberrimus"
+mortality_ecto$Species[mortality_ecto$Species == "Soela vulgaris"] <- "Solea solea"
+mortality_ecto$Species[mortality_ecto$Species == "Stizostedion canadensis"] <- "Sander canadensis"
+mortality_ecto$Species[mortality_ecto$Species == "Thunnus germo"] <- "Thunnus alalunga"
+mortality_ecto$Species[mortality_ecto$Species == "Thunnus alaunga"] <- "Thunnus alalunga"
+mortality_ecto$Species[mortality_ecto$Species == "Thunnus macoyi"] <- "Thunnus maccoyii"
+mortality_ecto$Species[mortality_ecto$Species == "Tracharus japonicus"] <- "Trachurus japonicus"
+mortality_ecto$Species[mortality_ecto$Species == "Tilapia esculenta"] <- "Oreochromis esculentus"
+mortality_ecto$Species[mortality_ecto$Species == "Cheilodactylus macropterus"] <- "Nemadactylus macropterus"
+mortality_ecto$Species[mortality_ecto$Species == "Cynolebias bellottii"] <- "Austrolebias bellottii"
+mortality_ecto$Species[mortality_ecto$Species == "Cynoscion macdonaldi"] <- "Totoaba macdonaldi"
+mortality_ecto$Species[mortality_ecto$Species == "Cynoscion nobilis"] <- "Atractoscion nobilis"
+mortality_ecto$Species[mortality_ecto$Species == "Cynolebias wolterstarfii"] <- "Austrolebias wolterstorffi"
+mortality_ecto$Species[mortality_ecto$Species == "Sardinops sagax "] <- "Sardinops sagax"
+mortality_ecto$Species[mortality_ecto$Species == "Acipsnser fulvescens"] <- "Acipenser fulvescens"
+mortality_ecto$Species[mortality_ecto$Species == "Aphinius fasciatus"] <- "Aphanius fasciatus"
+mortality_ecto$Species[mortality_ecto$Species == "Centengraulis mysticetus"] <- "Cetengraulis mysticetus"
+mortality_ecto$Species[mortality_ecto$Species == "Cololabis aira"] <- "Cololabis saira"
+mortality_ecto$Species[mortality_ecto$Species == "Coryphaennoides acrolepis"] <- "Coryphaenoides acrolepis"
+mortality_ecto$Species[mortality_ecto$Species == "Chelodactylus macropterus"] <- "Nemadactylus macropterus"
+mortality_ecto$Species[mortality_ecto$Species == "Pseudoupeneus macularus"] <- "Pseudupeneus maculatus"
+mortality_ecto$Species <- gsub(" ", "_",mortality_ecto$Species )
+
+# mortality with updated names
 mortality_updated <- as_tibble(rbind(mortality_endo, mortality_ecto))
 
 
-write_csv(mortality_updated,'/Users/jgradym/Documents/GitHub/Foodweb_thermal_asymmetries/Data/McCoy_mortality_updated.csv')
+#write_csv(mortality_updated,'/Users/jgradym/Documents/GitHub/Foodweb_thermal_asymmetries/Data/McCoy_mortality_updated.csv')
