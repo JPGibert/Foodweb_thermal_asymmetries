@@ -31,7 +31,7 @@ endo_col2 <- "red3"
 ecto_mort_col <- "deepskyblue2"
 ecto_attack_col <- "navy"
 
-theme_single<- theme(panel.grid = element_blank(), 
+theme_single <- theme(panel.grid = element_blank(), 
                           aspect.ratio = .70,
                           axis.text = element_text(size = 18, color = "black"), 
                           axis.ticks.length=unit(0.2,"cm"),
@@ -104,7 +104,9 @@ mort_ecto <- mortality2 %>% filter(Thermy == "Ectotherm")
 
 # Model
 lmer_mort_ecto <- lmer(log_mort ~ one_kT + log_mass +  (one_kT|Genus),  data = mort_ecto)
+lmer_mort_ecto 
 lmer_mort_ecto_full <- lmer(log_mort ~ one_kT + log_mass + (one_kT|Group/Genus),  data = mort_ecto)
+lmer_mort_ecto_full
 
 # Results
 rand(lmer_mort_ecto) # AIC
@@ -127,12 +129,12 @@ mort_ecto_results_all$max_mort <- exp(mort_ecto_results_all$intercept + mort_ect
 mort_ecto_results_all$Thermy <- "Ectotherm"
 mort_ecto_results_all
 
+mort_ecto <- mort_ecto %>%
+  mutate(mort_mass_corr = Mortality_yr/dry_mass_g^mort_ecto_results_all$mass_slope)
 
+# Model Endos
+mort_endo <- mortality2 %>% filter(Thermy == "Endotherm")
 
-# Mixed Model Ectotherms
-attack <- mortality2 %>% filter(Thermy == "Endotherm")
-
-# Model
 lmer_mort_endo <-  lmer(log_mort ~ log_mass + one_kT + (one_kT|Genus), data = mort_endo )
 lmer_mort_endo_full <-  lmer(log_mort ~ log_mass+ one_kT + (one_kT|Group/Genus), data = mort_endo )
 
@@ -157,15 +159,16 @@ mort_endo_results_all$max_mort <- exp(mort_endo_results_all$intercept + mort_end
 mort_endo_results_all$Thermy <- "Endotherm"
 mort_endo_results_all
 
-
+mort_endo <- mort_endo %>%
+  mutate(mort_mass_corr = Mortality_yr/dry_mass_g^mort_endo_results_all$mass_slope)
 
 # add mass correction for plotting
 
-mort_ecto$mort_mass_corr <- mort_ecto$Mortality_yr/mort_ecto$dry_mass_g^mort_ecto_results_all$mass_slope
-mortality2$mort_mass_corr[mortality2$Thermy == "Ectotherm"] <- mort_ecto$mort_mass_corr 
+mortality2 <- mortality2 %>%
+  mutate(mort_mass_corr = NA)
 
-mort_endo$mort_mass_corr <- mort_endo$Mortality_yr/mort_endo$dry_mass_g^mort_endo_results_all$mass_slope
 mortality2$mort_mass_corr[mortality2$Thermy == "Endotherm"] <- mort_endo$mort_mass_corr 
+mortality2$mort_mass_corr[mortality2$Thermy == "Ectotherm"] <- mort_ecto$mort_mass_corr 
 
 
 ###########################################
@@ -174,13 +177,14 @@ mortality2$mort_mass_corr[mortality2$Thermy == "Endotherm"] <- mort_endo$mort_ma
 #------------- Plot Fig 2A  -----------------
 mort_endo_results_all
 endo_lab <- expression(paste('y = -0.011x + 0.093'))
+
 mortal_plot_endo <- ggplot(mortality2 %>% filter(Thermy == "Endotherm"),
                            aes(x = one_kT, y = mort_mass_corr)) + 
   theme_single + theme(legend.position = "none") +  theme_ticks +
   scale_y_continuous(name = expression(paste('Mortality (yr'^-1,' g'^{-alpha},')')), 
                      trans = "log", breaks = c(0.1, 1, 10), labels = c("0.1", "1", "10"), 
                      #limits = c(0.02, 10)
-  ) +  
+                     ) +  
   scale_x_reverse( name = NULL, breaks = c(46,44, 42,40, 38),
                    limits = c(45.1, 38.1),
                    sec.axis = sec_axis(~ 1/(.*0.00008617) - 273.15, breaks = c(-20, -10, 0, 10, 20, 30),
@@ -193,17 +197,18 @@ mortal_plot_endo <- ggplot(mortality2 %>% filter(Thermy == "Endotherm"),
 
 grid.newpage()
 grid.draw(mortal_plot_endo)
+
 mortal_plot_endo <- set_panel_size(mortal_plot_endo, width = unit(10.25,"cm"), height=unit(7,"cm"))
 grid.newpage()
 grid.draw(mortal_plot_endo )
 
+# Save plot
 pdf('~/Desktop/Fig_2/Fig2A.pdf')
 grid.draw(mortal_plot_endo )
 dev.off()
 system2(command = "pdfcrop", 
         args  = c('~/Desktop/Fig_2/Fig2A.pdf', 
                   '~/Desktop/Fig_2/Fig2A.pdf'))
-# Save plot
 
 
 ###########################################
@@ -259,7 +264,7 @@ system2(command = "pdfcrop",
 
 mort_results_all <- as_tibble(rbind(mort_endo_results_all, mort_ecto_results_all))
 
-# Genus analysis
+# Genus analysis - remove data deficient genera
 mortality3 <- mortality2 %>%
   filter(temp_range_genus >= 5, n_genus >= 5)
 
@@ -272,12 +277,13 @@ mort_ecto_genus <- mortality3 %>%
   select(Thermy, Group, Genus, min_one_kT,  max_one_kT)
 mort_ecto_genus 
 
-
 mort_ecto3 <- mortality3 %>% filter(Thermy == "Ectotherm")
 
 # Model
 lmer_mort_gen_ecto <- lmer(log_mort ~ one_kT + log_mass +  (one_kT|Genus),  data = mort_ecto3)
+lmer_mort_gen_ecto 
 lmer_mort_gen_full_ecto <- lmer(log_mort ~ one_kT + log_mass + (one_kT|Group/Genus),  data = mort_ecto3)
+lmer_mort_gen_full_ecto
 
 # Results
 rand(lmer_mort_gen_ecto ) # AIC
@@ -286,8 +292,9 @@ summary(lmer_mort_gen_ecto )
 confint.merMod(lmer_mort_gen_ecto, method = "Wald") #confidence intervals
 coef(lmer_mort_gen_ecto)
 r.squaredGLMM(lmer_mort_gen_ecto) #r2
-
-
+broom.mixed::tidy(lmer_mort_gen_ecto, effects = "ran_coefs", conf.int = TRUE) # CIs for random effects not available
+lme4_tidiers(lmer_mort_gen_ecto)
+confint.merMod(coef(lmer_mort_gen_ecto), method = "Wald") 
 #-------- Regression fits for plotting ---------
 # Ectotherm Genera
 mort_ecto_results <- as_tibble(tibble::rownames_to_column(coef(lmer_mort_gen_ecto)$Genus, "Genus") %>%
@@ -302,9 +309,6 @@ mort_ecto_results$max_y <- exp(mort_ecto_results$intercept + mort_ecto_results$t
 mort_ecto_results$Thermy <- "Ectotherm"
 mort_ecto_results$Group <- mort_ecto_genus$Group[mort_ecto_genus$Genus %in% mort_ecto_results$Genus]
 mort_ecto_results
-
-
-mortality_genus_ecto <- mortality_genus %>% filter(Thermy == "Ectotherm")
 
 
 # Endotherm Genera
@@ -350,15 +354,13 @@ mort_endo_results$Group <- mort_endo_genus$Group[mort_endo_genus$Genus %in% mort
 mort_endo_results
 
 # Genus regressions
-lmer_mort_gen_ecto <- coef(lmer_mort_ecto)$`Group:Genus`
+lmer_mort_gen_ecto <- coef(lmer_mort_ecto)$Genus
 
 lmer_mort_gen_ecto <- as_tibble(rownames_to_column(lmer_mort_gen_ecto)) %>%
   rename(intercept = `(Intercept)`, temp_slope = one_kT, mass_slope = log_mass) %>%
   mutate(Group = word(rowname, 1, sep = ":"), Genus = word(rowname, 2, sep = ":")) %>%
   select(-rowname) %>%
   select(Group, Genus, everything())
-library(data.table)
-
 
 # Combine 
 mort_results <- as_tibble(rbind(mort_endo_results, mort_ecto_results))
@@ -546,10 +548,10 @@ attack2  <- attack1  %>%
   mutate(temp_range_genus = max(temperature.degree.celcius) - min(temperature.degree.celcius)) %>%
   mutate(log_attack = log(attack.rate), log_mass = log(predator.mass.mg)) %>%
   mutate(min_one_kT = min(one_kT), max_one_kT = max(one_kT)) %>%
+  mutate(mass_corr_attack = NA) %>% # fill in later
   rename(Group = predator.ana.group ) %>%
   ungroup() %>%
   arrange(Genus)
-
 
 
 # Model
@@ -613,7 +615,7 @@ attack_genus_regr <- ggplot(data = attack_results) +
 grid.newpage()
 grid.draw(attack_genus_regr )
 
-
+# supplemental - show genus data
 attack_genus_regr <- set_panel_size(attack_genus_regr , width = unit(10.25,"cm"), height=unit(7,"cm"))
 grid.newpage()
 grid.draw(attack_genus_regr )
@@ -731,7 +733,7 @@ sigma.test(mort_ecto_results$temp_slope, sigmasq = var_endo, alternative = "grea
 
 
 ########################################################################
-#------------ Extra analysis: Phylogenetic covariate ------------------
+#------------ Extra analysis: Phylogenetic Bayesian Analysis ------------------
 #######################################################################
 
 
@@ -755,7 +757,7 @@ pd_to_p(pd_mamm$pd[2], "two-sided") # bayesian equivalent to p value for mass sc
 pd_to_p(pd_mamm$pd[3], "two-sided") # bayesian equivalent to p value for temp scaling
 
 
-#--------------Generate output----------------
+#--------------Generate phylogenetic corrected output----------------
 mam_tree_mcc <- read.tree('/Users/jgradym/Google Drive/Phylo_trees/mammal_mcc.tree') # to skip making
 # Data
 mort_mammal <- mortality1 %>%
@@ -899,609 +901,3 @@ pdf('~/Desktop/bird_bayes_plot.pdf')
 plot(model_mort_bird, N = 6)
 dev.off()
 
-
- #----------- Ectotherm mortality 
-
-# ------------ to load results ----------
-model_mort_ecto <- read_rds("/Users/jgradym/Google Drive/Gibert Paper/best_model/model_mort_ecto.rds")
-print(summary(model_mort_ecto), digits = 5) #main effects haverhat near 1
-coef(model_mort_ecto)$Group 
-
-bayes_R2(model_mort_ecto, re.form = NA) # exclude random effects
-bayes_R2(model_mort_ecto) # full model
-
-# p value equivalent
-pd_mort_ecto <- p_direction(pd_mort_ecto ) # p direction
-pd_to_p(pd_mort_ecto $pd[2], "two-sided") # bayesian equivalent to p value for mass scaling
-
-#----------- generate results -----------------
-mort_ecto <- mortality1 %>%
-  filter(Group == "Fish" | Group == "Invertebrate") 
-
-# Model
-#------------------- Ectotherm Mortality -----------------
-priors_ecto <- c(set_prior("normal(-0.65, 1)", class = "b", coef = "one_kT"), #slope = 0 for endotherms
-                 set_prior("normal(-0.25, 1)", class = "b", coef = "log_mass")
-                 )
-priors_ecto2 <- c(set_prior("normal(-0.65, 1)", class = "b", coef = "one_kT")) #slope = 0 for endotherms
-
-
-
-mort_ecto <- mortality1 %>%
-  filter(Group == "Fish" | Group == "Invertebrate") 
-
-#
-system.time(model_mort_ecto <- brm(
-  log_mort ~ log_mass + one_kT + (log_mass + one_kT|Group) + (1|species), 
-  data = mort_ecto, 
-  family = gaussian(),
-  prior = priors_ecto,
-  iter = 50000,
-  control = list(adapt_delta = 0.99999),
-  cores = parallel::detectCores() -1) 
-)  
-
-#Results
-print(summary(model_mort_ecto), digits = 5) #fixed coefficents have low rhat, more uncertainty in 1|species
-coef(model_mort_ecto)$Group
-plot(model_mort_ectol, N = 3)
-bayes_R2(model_mort_ecto) #full model
-bayes_R2(model_mort_ecto, re.form = NA) # exclude random effects
-pd_mort_ecto <- p_direction(model_mort_ecto) # p direction
-pd_to_p(pd_mort_ecto$pd[2], "two-sided") # bayesian equivalent to p value for mass scaling
-pd_to_p(pd_mort_ecto$pd[3], "two-sided") # bayesian equivalent to p value for temp scaling
-
-
-
-
-#--------------- ---------------
-# ecto genus 
-priors_ecto2 <- c(set_prior("normal(-0.65, 1)", class = "b", coef = "one_kT")) #slope = 0 for endotherms
-
-
-
-mort_ecto_genus <- mortality %>%
-  filter(n_genus >= 5, temp_range_genus >= 5, Group == "Fish" | Group == "Invertebrate" ) 
-mort_ecto_genus$log_mass_corr_mort <- log(mort_ecto_genus$mass_corr_mortality)
-#
-system.time(model_mort_ecto_genus  <- brm(
-  log_mass_corr_mort ~  one_kT + (one_kT|Group/Genus), 
-  data = mort_ecto_genus , 
-  family = gaussian(),
-  prior = priors_ecto,
-  iter = 100000,
-  control = list(adapt_delta = 0.99999))
-  #cores = parallel::detectCores() -1) 
-)  
-##########################################
- #### Panel 2a
-##########################################
-
-bird_lab  <- expression(paste('y = -0.022x + 0.19')) #from model summary
-mamm_lab  <- expression(paste('y = 0.0050x - 0.45'))
-
-# for manual plotting, results from Bayesian mixed effect analysis with phylogeny
-bird_fit <- data.frame(x = c(min(mort_bird$one_kT),  max(mort_bird$one_kT)), 
-                     y = c(exp((bird_intercept  + (bird_temp_slope * min(mort_bird$one_kT)))), 
-                     exp(bird_intercept  + (bird_temp_slope * max(mort_bird$one_kT)))),
-                     Group = c("Bird", "Bird"))
-
-mammal_fit <- data.frame(x = c(min(mort_mammal$one_kT),  max(mort_mammal$one_kT)), 
-                         y = c(exp((mammal_intercept + (mammal_temp_slope * min(mort_mammal$one_kT)))), 
-                         exp(mammal_intercept + (mammal_temp_slope*  max(mort_mammal$one_kT)))),
-                         Group = c("Mammal", "Mammal"))
-
-endo_fit <- data.frame(rbind(bird_fit, mammal_fit))
-endo_fit 
-
-
-#------------- Plot Fig 2A  -----------------
-
-mortal_plot_endo <- ggplot(mortality %>% filter(Group == "Mammal" | Group == "Bird") %>%
-                             arrange(Group),
-                           aes(x = one_kT, y = mass_corr_mortality, shape = Group)) + 
-  theme_single + theme(legend.position = "none") +  theme_ticks +
-  scale_y_continuous(name = expression(paste('Mortality (yr'^-1,' g'^{-alpha},')')), 
-                     trans = "log", breaks = c(0.1, 1, 10), labels = c("0.1", "1", "10"), 
-                    limits = c(0.02, 40)
-                     ) +  
-  scale_x_reverse( name = NULL, breaks = c(46,44, 42,40, 38),
-                   limits = c(45.1, 38),
-                  sec.axis = sec_axis(~ 1/(.*0.00008617) - 273.15, breaks = c(-20, -10, 0, 10, 20, 30),
-                                      name = "Ambient Temperature (ºC)")) +
-  geom_point(size = 2.5, shape = 21, color = "black",  stroke = .5, aes(fill = Group)) + 
-  scale_fill_manual(values =c("Mammal" = mamm_col, "Bird" = "darkred")) +
-  scale_color_manual(values =c("Mammal" = mamm_col, "Bird" = "brown4")) +
-  geom_line(data = endo_fit, aes(x = x, y = y, color = Group), size = 1) + 
-  annotate("text", x = 45, size = 6, y = 17, hjust = 0,  fontface = "bold",label = "Bird", color = bird_col) +
-  annotate("text", x = 45, size = 6, y = 35,  hjust = 0, fontface = "bold",label = "Mammal", color = mamm_col) +
-  annotate("text", x = 41, size = 6, y = .045,  hjust = 0, label = mamm_lab, color = "red1")+
-  annotate("text", x = 41, size = 6, y = .025,  hjust = 0, label = bird_lab, color = "brown4") 
-  
-grid.newpage()
-grid.draw(mortal_plot_endo)
-
-
-ggsave(mortal_plot_endo, height = 4.6, width = 6.7, filename = '~/Desktop/Fig_2/Fig2A.pdf')
-
-# Save plot
-ggsave(mortal_plot_endo, height = 4.6, width = 6.7, filename = file.path(github_path, "NAME YOUR FILE.pdf"))
-
-
-###########################################
-#### Panel 2b - species as random effect
-##########################################
-
-# Prepare plot
-invert_lab  <- expression(paste('y = -0.55x + 22.6'))
-fish_lab  <- expression(paste('y = -0.53x + 22.0'))
-
-# from models summary - fit from model
-mort_invert <-  mortality[mortality$Group == "Invertebrate",]
-invert_fit <- data.frame(x = c(min(mort_invert$one_kT),  max(mort_invert$one_kT)), 
-                       y = c(exp((invert_intercept+ (invert_temp_slope * min(mort_invert$one_kT)))), 
-                             exp((invert_intercept + (invert_temp_slope  *  max(mort_invert$one_kT))))),
-                       Group = c("Invertebrate", "Invertebrate"))
-
-mort_fish <-  mortality[mortality$Group == "Fish",]
-fish_fit <- data.frame(x = c(min(mort_fish$one_kT), max(mort_fish$one_kT)), 
-                         y = c( exp((fish_intercept + (fish_temp_slope * min(mort_fish$one_kT)))), 
-                                exp((fish_intercept + (fish_temp_slope *  max(mort_fish$one_kT))))),
-                         Group = c("Fish", "Fish"))
-
-ecto_fit <- data.frame(rbind(invert_fit, fish_fit))
-ecto_fit 
-
-#--------------  Plot Fig 2b ------------
-mortal_plot_ecto <- ggplot(mortality %>% 
-                             filter(Group == "Fish" | Group == "Invertebrate") %>%
-                             arrange(Group),
-                           aes(x = one_kT, y = mass_corr_mortality,fill = Group)) + 
-  scale_y_continuous(trans = "log10",  name = expression(paste('Mortality (yr'^-1,' g'^{-alpha},')')), 
-                    breaks = c(0.1,  1, 10), labels = c("0.1", "1",  "10"), 
-                    limits = c(0.03, 30), 
-                    position = "right")+ 
-  scale_x_reverse(name = expression("1/kT"),
-                  limits = c(43, 38.1), 
-                  sec.axis = sec_axis(~ 1/(.*0.00008617) - 273.15, 
-                                      name = "Ambient Temperature (ºC)")) +
-  theme(legend.position = "none") +theme_single + 
-  geom_point(size = 2.5, shape = 21, color = "black", 
-             stroke = .5, aes(fill = Group)) +
-  scale_fill_manual(values =c("Fish" = fish_col, "Invertebrate" =  invert_col)) +
-  scale_color_manual(values =c("Fish" = fish_col, "Invertebrate" =  invert_col)) +
-  geom_line(data = ecto_fit, aes(x = x, y = y, color = Group), size = 1) + 
-   annotate("text", x = 43, size = 6, y = 14, hjust = 0, 
-                          fontface = "bold",label = "Fish", color = fish_col) +
-  annotate("text", x = 43, size = 6, y = 25, hjust = 0, 
-           fontface = "bold",label = "Invertebrate", color = invert_col) +
-  theme(axis.ticks.length=unit(-0.25, "cm"),
-        axis.text.x = element_text(margin=unit(c(0.4,0.4,0.4,0.4), "cm")), 
-        axis.text.x.top = element_text(margin=unit(c(0.4,0.4,0.4,0.4), "cm")), 
-        axis.text.y.right = element_text(margin=unit(c(0.4,0.4,0.4,0.4), "cm")),
-        axis.text.y.left = element_text(margin=unit(c(0.4,0.4,0.4,0.4), "cm")))
-grid.newpage()
-grid.draw(mortal_plot_ecto) 
-
-
-# Save plot
-ggsave(mortal_plot_ecto, height = 4.6, width = 6.7, filename = '~/Desktop/Fig_2/Fig2b.pdf')
-
-####################################################################################
-#### Panel 2c - genus level regressions, min 5 individual per genus, temp range 5 C 
-####################################################################################
-
-
-
-#--- plot Fig 2C ------
-
-mortal_genus_regr <- ggplot(data = mortality %>% 
-                              filter(n_genus >= 5, temp_range_genus >= 5),
-                            aes(y = mass_corr_mortality, x = one_kT)) +
-    geom_smooth(method = "lm", se =- F, size = 0.3, aes(group = Genus, color = Group)) + 
-  geom_line(data = ecto_fit, aes(x = x, y = y, color = Group), size = 1.5) +
-  geom_line(data = endo_fit, aes(x = x, y = y, color = Group), size = 1.5) + 
-  scale_color_manual(values =c("Invertebrate" = invert_col, "Fish" = fish_col, 
-                                 "Mammal" = mamm_col, "Bird" = bird_col)) +
-  scale_y_continuous(name = expression(paste('Mortality (yr'^-1,' g'^{-alpha},')')), 
-                     trans = "log", 
-                     #limits = c(.15, 10),
-                     breaks = c(0.3, 1, 3,10), labels = c("0.3", "1", "3", "10")) + 
-  scale_x_reverse(name =NULL, limits = c(45.1, 38), 
-                  sec.axis = sec_axis(~ 1/(.*0.00008617) - 273.15,  name = NULL)) + 
-  theme_single + theme(legend.position = "none") +theme_ticks 
-grid.newpage()
-grid.draw(mortal_genus_regr)
-
-# Save plot
-ggsave(mortal_genus_regr, height = 4.3, width = 6.3, filename = '~/Desktop/Fig2C.pdf')
-
-
-##########################################
-#### Panel 2d, Mortality violin plot
- #first get regressions
-##########################################
-# Thermy
-endo_genus <- mortality %>%
-  filter(Thermy == "Endotherm") %>%
-  pull(Genus) %>%
-  unique()
-
-# get parameter coefficients for plotting
-genus_mort_lm <- mortality %>%
-  filter(n_genus >= 5, temp_range_genus >= 5) %>%
-  nest(-Genus) %>% 
-  mutate(
-    fit = map(data, ~ lm(log(mass_corr_mortality) ~ one_kT, data = .x)),
-    tidied = purrr::map(fit, tidy, conf.int = T)
-  ) %>% 
-  unnest(tidied) 
-genus_mort_lm$Thermy<-if_else(genus_mort_lm$Genus %in% endo_genus, "Endotherm", "Ectotherm" )
-genus_mort_lm
-
-# output results
-genus_mort_lm2 <- genus_mort_lm %>%
-  filter(term == "one_kT") %>%
-  dplyr::select(-data, -fit) %>%
-  dplyr::select(Thermy,Genus, everything())
-genus_mort_lm2
-write_csv(genus_mort_lm2, "~/Desktop/Fig_2/genus_regressions.csv")
-
-
-# compare approaches 
-mortality_5C <- mortality %>% filter(n_genus >= 5, temp_range_genus >= 5)
-
-# linear model, genera calculated separately
-mort_lm1a <- mortality_5C  %>%
-  nest(-Genus) %>% 
-  mutate(
-    fit = map(data, ~ lm(log_mort ~ one_kT +log_mass  , data = .x)),
-    tidied = purrr::map(fit, tidy, conf.int = T)
-  ) %>% unnest(tidied) %>%
-  filter(term == "one_kT") %>% 
-  select(-data, -fit) 
-mort_lm1a
-
-mort_group <- mortality_5C %>% 
-  group_by(Genus) %>%
-  slice_head() %>%
-  select(Genus, Group) 
-
-mort_lm1 <- mort_lm1a %>% left_join(mort_group, by = "Genus") %>%
-  arrange(Group, Genus) %>%
-  select(Group, Genus, estimate) %>%
-  rename(lm_estimate_separate = estimate)
-
-accipter <- mortality_5C %>% filter(Genus == "Accipiter")
-circus <- mortality_5C %>% filter(Genus == "Circus")
-lm_acc <- lm(log_mort ~ log_mass + one_kT, data = accipter)
-print(summary(lm_acc), digits = 8)
-lm_circ <- lm(log_mort ~   one_kT + log_mass, data = circus)
-summary(lm_circ )
-### mixed model
-mort_lmer <-  lmer(log_mort~ one_kT +log_mass  +
-                     (log_mass + one_kT|Group:Genus),
-                   data = mortality_5C )
-
-mort_lmer_results0 <- tibble::rownames_to_column(coef(mort_lmer)$`Group:Genus`,"Genus")
-mort_lmer_results <- tidyr::separate(mort_lmer_results0,Genus, sep = ":", into = c("Group", "Genus")) %>%
-  select(Group, Genus, one_kT) %>%
-  arrange(Group, Genus) %>%
-  rename(lmer_estimate = one_kT)
-mort_lmer_results  
-
-mort_lmer2 <-  lmer(log_mort~ one_kT +log_mass  +
-                     (one_kT|Group:Genus),
-                   data = mortality_5C )
-mort_lmer_results20 <- tibble::rownames_to_column(coef(mort_lmer2)$`Group:Genus`,"Genus")
-mort_lmer_results2 <- tidyr::separate(mort_lmer_results20,Genus, sep = ":", into = c("Group", "Genus")) %>%
-  select(Group, Genus, one_kT) %>%
-  arrange(Group, Genus) %>%
-  rename(lmer_estimate = one_kT)
-mort_lmer_results2  
-
-mort_lmer3 <-  lmer(log_mort~ one_kT +log_mass  +
-                      (one_kT|Genus),
-                    data = mortality)
-summary(mort_lmer3)
-coef <- coef(mort_lmer3)
-str(coef)
-coef(mort_lmer3)$Group
-coef(mort_lmer3)$Genus
-mort_lmer_results30 <- tibble::rownames_to_column(coef(mort_lmer)$`Group:Genus`,"Genus")
-mort_lmer_results3 <- tidyr::separate(mort_lmer_results30,Genus, sep = ":", into = c("Group", "Genus")) %>%
-  select(Group, Genus, one_kT) %>%
-  arrange(Group, Genus) %>%
-  rename(lmer_estimate = one_kT)
-mort_lmer_results3  
-
-
-write_csv(mort_lmer_results, "~/Desktop/Fig_2/mort_lmer_results.csv")
-
-# combine
-combine <- as.data.frame(cbind(mort_lmer_results, mort_lmer_results2,mort_lm1[,3]))
-write_csv(combine, "~/Desktop/Fig_2/mort_genus_results.csv")
-
-
-
-mort_lm2a <- lm(log_mort ~ one_kT * Genus + log_mass, data = mortality_5C)
-mort_lm2b <- as.data.frame(coef(mort_lm2a))
-mort_lm2c <- tibble::rownames_to_column(mort_lm2b, "Coefficient")
-mort_lm2 <- separate(mort_lm2c, Coefficient, sep = ":", into = c("Genus", "term" )) %>%
-  filter(term == "one_kT") %>%
-  rename(lm_estimate_interaction = "coef(mort_lm2a)")
-mort_lm2$Genus <- str_remove_all(mort_lm2$Genus, "Genus")
-mort_lm2 <- mort_lm2 %>% 
-  left_join(mort_group, by = "Genus") 
-mort_lm2  
-mort_lmer_full <-  lmer(log_mort~ log_mass + one_kT +
-                     (log_mass + one_kT|Group) + (log_mass + one_kT|Group:Genus),
-                   data = mortality_5C )
-
-mort_lmer <-  lmer(log_mort~ log_mass + one_kT +
-                    (log_mass + one_kT|Group:Genus),
-                   data = mortality_5C )
-
-mort_lm <-  lm(log_mort~ log_mass + one_kT +
-                     (log_mass + one_kT|Group:Genus),
-                   data = mortality_5C )
-
-
-
-
-
-
-mort_vio_Ea <- ggplot(genus_mort_lm %>% filter(term == "one_kT"), 
-                      aes(x = Thermy, y = -1*estimate))+
-  geom_violin(size = 1, aes(color = Thermy)) + 
-  geom_jitter(aes(fill = Thermy),shape = 21, size = 3, color = "black", width = 0.08, stroke = .5 ) +
-  scale_y_continuous(position = "right",
-                     limits = c(-0.6, 1.1),
-                     name = expression(paste('Thermal Sensitivity (E'[a],')')))+ 
-  scale_x_discrete(name = NULL) +
-  scale_color_manual(values =c("Ectotherm" = ecto_col, "Endotherm" = endo_col)) +
-  scale_fill_manual(values =c("Ectotherm" = ecto_col, "Endotherm" = endo_col)) +
-  theme_single + theme(legend.position = "none") +  
-  theme(plot.title = element_text(hjust = 0.5, face = "bold")) + theme_ticks +
-  ggtitle("Mortality")  
- 
-mort_vio_Ea
-ggsave(mort_vio_Ea , height = 4.3, width = 6.3, filename = '~/Desktop/Fig2D.pdf')
-
-
-####################################################
-##v  Fig 2E - Mortality & Attack regressions (ectos)
-####################################################
-##---------------------------------
-## Plotting Fig 2e, Part I (mortality)
-
-
-mortal_scaling <- ggplot(mortality %>% 
-                           filter(Group == "Fish" | Group == "Invertebrate")  %>%
-                           filter(n_genus >= 5) %>%
-                           filter(temp_range_genus >= 5),
-                         aes(x = one_kT, y = mass_corr_mortality)) + 
-  geom_smooth(method = 'lm', size = 1,  alpha = 0, aes(group = Genus, color = Group)) +
-  scale_color_manual(values =c("Invertebrate" = invert_col, "Fish" = fish_col, 
-                               "Mammal" = mamm_col, "Bird" = bird_col)) +
-  scale_y_continuous(name = expression(paste('Mortality (yr'^-1,' g'^{-alpha},')')), position = "right",
-                     trans = "log10", breaks = c(0.1, 1, 10), 
-                     limits = c(0.1, 10), 
-                     labels = c("0.1", "1", "10")) +  
-  scale_x_reverse(name =NULL, limits = c(42.5, 38), 
-                  sec.axis = sec_axis(~ 1/(.*0.00008617) - 273.15, name = NULL)) + 
-  theme_single + theme_ticks +theme(legend.position = "none")
-grid.draw(mortal_scaling )
-# Note: range of y limits is equal to attack rates below - can observe difference in spread of intercepts
-
-# Save plot
-ggsave(mortal_scaling, height = 4.7, width = 6.7, filename = '~/Desktop/mortal_scaling.pdf')
-
-ggsave(mortal_regress, height = 4.7, width = 6.7, filename = file.path(github_path,'NAME YOUR FILE.pdf'))
-
-##---------------------------------
-## PART 2 (attack)
-
-# Read in data
-attack <- read_csv(file.path(github_path, 'Lietal_oikos_2017_data.csv'))
-attack$one_kT <- 1/(8.617e-5*(attack$temperature.degree.celcius +273.15))
-
-# Add columns
-attack2 <- attack %>%
-  mutate(Pred_Genus = word(predator.species)) %>%
-  add_count(predator.species, name = "n_species") %>%# exclude taxa with few members
-  add_count(Pred_Genus, name = "n_genus")#adjust n by changing filter(n_species/n_genus = )
-
-attack3  <- attack2  %>%
-  group_by(predator.species ) %>% 
-  mutate(temp_range_spp = max(temperature.degree.celcius) - min(temperature.degree.celcius))
-
-attack4  <- attack3  %>%
-  group_by(Pred_Genus) %>% 
-  mutate(temp_range_genus = max(temperature.degree.celcius) - min(temperature.degree.celcius))
-
-attack <- attack4
-attack$log_attack <- log(attack$attack.rate)
-attack$log_mass <- log(attack$predator.mass.mg)
-
-
-# linear and mixed model
-# compare approaches 
-attack_5C <- attack %>% filter(n_genus >= 5, temp_range_genus >= 5)
-
-# linear model, genera calculated separately
-attack_lm1a <- attack_5C  %>%
-  nest(-Pred_Genus) %>% 
-  mutate(
-    fit = map(data, ~ lm(log_attack ~ log_mass + one_kT, data = .x)),
-    tidied = purrr::map(fit, tidy, conf.int = T)
-  ) %>% unnest(tidied) %>%
-  filter(term == "one_kT") %>% 
-  select(-data, -fit) 
-attack_lm1a
-
-attack_group <- attack_5C %>% 
-  group_by(Pred_Genus) %>%
-  slice_head() %>%
-  select(Pred_Genus, predator.ana.group )  
-
-attack_lm1 <- attack_lm1a %>% left_join(attack_group, by = "Pred_Genus") %>%
-  arrange(predator.ana.group, Pred_Genus) %>%
-  select(predator.ana.group, Pred_Genus, estimate) %>%
-  rename(lm_estimate_separate = estimate)
-attack_lm1
-
-### mixed model
-library(lmerTest)
-attack_lmer <-  lmer(log_attack~ one_kT + log_mass + ( one_kT|predator.ana.group:Pred_Genus),
-                   data = attack_5C )
-attack_lmer2 <-  lmer(log_attack~ one_kT + log_mass + (one_kT|predator.ana.group/Pred_Genus),
-                     data = attack_5C )
-attack_lmer3 <-  lmer(log_attack~ one_kT + log_mass + (one_kT|Pred_Genus),
-                      data = attack_5C )
-attack_lmer4<-  lmer(log_attack~ one_kT + log_mass + (one_kT|predator.ana.group) +
-                        ( one_kT|predator.ana.group:Pred_Genus),data = attack_5C )
-attack_lmer5<-  lmer(log_attack~ one_kT + log_mass + (one_kT|predator.ana.group) +
-                       ( one_kT|Pred_Genus),data = attack_5C )
-attack_lm<-  lm(log_attack~ one_kT + log_mass + predator.ana.group +
-                        one_kT*Pred_Genus,data = attack_5C )
-coef(attack_lm)
-coef(attack_lmer3)
-coef(attack_lmer)
-coef(attack_lmer2)
-coef(attack_lmer4)
-coef(attack_lmer5)
-library(jtools)
-summ(attack_lmer,confint = T, digits = 4)
-rand(attack_lmer)
-coef(attack_lmer2)
-plotREsim(REsim(attack_lmer, n.sims = 500))
-library(parameters)
-model_parameters(attack_lmer), robust = TRUE, vcov_estimation = "CL", vcov_type = "HC1")
-
-library(merTools)
-randomSims <- REsim(attack_lmer, n.sims = 500)
-FEsim(attack_lmer, n.sims = 200, oddsRatio = FALSE, seed = NULL)
-confint.merMod(attack_lmer , method = "Wald", digits = 4)
-r.squaredGLMM(attack_lmer )
-attack_lmer_results0 <- tibble::rownames_to_column(coef(attack_lmer)$`predator.ana.group:Pred_Genus`,"Genus")
-attack_lmer_results <- tidyr::separate(attack_lmer_results0, Genus, sep = ":", into = c("Group", "Genus")) %>%
-  select(Group, Genus, one_kT) %>%
-  arrange(Group, Genus) %>%
-  rename(lmer_estimate = one_kT)
-attack_lmer_results  
-write_csv(attack_lmer_results, "~/Desktop/Fig_2/attack_lmer_results.csv")
-
-# combine
-attack_combine<- as.data.frame(cbind(attack_lmer_results, attack_lm1[,3]))
-attack_combine
-write_csv(attack_combine, "~/Desktop/Fig_2/attack_genus_results.csv")
-
-
-# together 
-model_ecto_attack <- read_rds('/Users/jgradym/Google Drive/Gibert Paper/best_model/model_ecto_attack.rds')
-
-#------- can skip -------
-system.time(model_ecto_attack <- brm(
-  log_attack  ~ log_mass + one_kT + (log_mass + one_kT|predator.ana.group) +(1|predator.species), 
-  data = attack, 
-  family = gaussian(), 
-  prior = priors_ecto,
-  iter = 100000,
-  control = list(adapt_delta = 0.99999),
-  cores = parallel::detectCores() -1) 
-) 
-attack2$log_mass_corr_attack <- log(attack2$mass_corr_attack)
-attack2 <- attack2 %>% filter(n_genus >= 5, temp_range_genus >= 5)
-
-attack_lmer <- lmer(log_attack ~ log_mass + one_kT +
-                      (log_mass + one_kT|predator.ana.group:Pred_Genus),
-                    data = attack2)
-attack_genus_results0 <- tibble::rownames_to_column(coef(attack_lmer)$`predator.ana.group:Pred_Genus`,"Genus")
-attack_genus_results <- tidyr::separate(attack_genus_results,Genus, sep = ":", into = c("Group", "Genus"))
-attack_genus_results
-str(attack_genus_results0 )
-write_csv(attack_genus_results, "~/Desktop/Fig_2/attack_mixed.csv")
-
-
-system.time(model_ecto_attack_genus <- brm(
-  mass_corr_attack ~ one_kT + (one_kT|predator.ana.group/Pred_Genus), 
-  data = attack2, 
-  family = gaussian(), 
-  prior = priors_ecto2,
-  iter = 100000,
-  control = list(adapt_delta = 0.99999),
-  cores = parallel::detectCores() -1) 
-) 
-saveRDS(model_ecto_attack_genus , "/Users/jgradym/Google Drive/Gibert Paper/model_ecto_attack_genus.rds")
-#------- can skip -------
-
-print(summary(model_ecto_attack ), digits = 5)
-saveRDS(model_ecto_attack, "/Users/jgradym/Google Drive/Gibert Paper/model_ecto_attack.rds")
-coef(model_ecto_attack)$predator.ana.group
-bayes_R2(model_vert_attack, re.form = NA) # exclude random effects
-bayes_R2(model_vert_attack) #full model
-pd_vert_attack <- p_direction(model_vert_attack) # p direction
-pd_to_p(pd_vert_attack$pd[2], "two-sided") # bayesian equivalent to p value for mass scaling
-pd_to_p(pd_vert_attack$pd[3], "two-sided") # bayesian equivalent to p value for temp scaling
-
-pdf('~/Desktop/ecto_attack_bayes_plot.pdf')
-plot(model_ecto_attack, N = 6)
-dev.off()
-
-
-######33
-# mass slopes, intercept
-attack_coef <- coef(model_ecto_attack )$predator.ana.group
-invert_attack_intercept <- attack_coef[1]
-invert_attack_mass_slope <- attack_coef[9]
-invert_attack_temp_slope <- attack_coef[17]
-
-fish_attack_intercept <-  attack_coef[2]
-fish_attack_mass_slope <- attack_coef[10]
-fish_attack_temp_slope <- attack_coef[18]
-
-
-#------- Add mass-corrected mortality for plotting ----
-
-attack2 <- attack %>% 
-  mutate(mass_corr_attack= NA)
-
-invert <- attack2[attack2$predator.ana.group == "invertebrate",]
-attack2$mass_corr_attack[attack2$predator.ana.group == "invertebrate"] <- invert$attack.rate/invert$predator.mass.mg^invert_attack_mass_slope  
-
-fish <- attack2[attack2$predator.ana.group == "vertebrate",]
-attack2$mass_corr_attack[attack2$predator.ana.group == "vertebrate"] <- fish$attack.rate/fish$predator.mass.mg^fish_attack_mass_slope
-
-
-
-
-# get attack regressions with temperature
-attack_genus_lm0 <- attack2 %>%
-  filter(n_genus >= 5, temp_range_genus >= 5) %>%
-  nest(-Pred_Genus) %>% 
-  mutate(
-    fit = map(data, ~ lm(log(mass_corr_attack) ~ one_kT, data = .x)),
-    tidied = purrr::map(fit, tidy, conf.int = T)
-  ) %>% unnest(tidied) %>%
-  filter(term == "one_kT") %>% 
-  select(-data, -fit)
-attack_genus_lm0 
-write_csv(attack_genus_lm0 , "~/Desktop/Fig_2/attack_slopes.csv")
-
-attack_genus_lm0 
-attack_genus_lm0
-attack_genus_lm <- attack2 %>%
-  filter(n_genus >= 5, temp_range_genus >= 5) %>%
-  nest(-Pred_Genus) %>% 
-  mutate(
-    fit = map(data, ~ lm(log(mass_corr_attack) ~ one_kT, data = .x)),
-    tidied = purrr::map(fit, tidy, conf.int = T),
-    pred = map(fit, broom.mixed::augment)
-  ) 
-attack_genus_lm
-#Add group names
-attack_genus_lm$Group <- unlist(map(attack_genus_lm$data, ~ .x[["predator.ana.group"]][[1]])) 
-attack_genus_lm <- unnest(attack_genus_lm,  pred)%>% 
-  rename(log_attack_mass_corr = `log(attack_mass_corr)`)
-attack_genus_lm
