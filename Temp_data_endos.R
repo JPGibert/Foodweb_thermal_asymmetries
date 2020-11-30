@@ -390,7 +390,6 @@ mort_bird_fin <- mort_bird3 %>%
 mort_bird_fin
 
 
-
 #----------------------------------------------------------------------------------------------------
 #---------Check Mammal Species Names and Update to match names for IUCN Range Maps--------
 #----------------------------------------------------------------------------------------------------
@@ -602,7 +601,7 @@ mort_mammals_4$Species[mort_mammals_4$Species %nin% mam_tree$tip.label]
 mort_mammals_4$Species[mort_mammals_4$Species == "Heteromys_adspersus"] <- "Liomys_adspersus"
 mort_mammals_4$Species[mort_mammals_4$Species == "Otaria_byronia"] <- "Otaria_bryonia"
 mort_mammals_fin <- mort_mammals_4 %>%
-  filter(Species %in% mam_tree$tip.label, !is.na(Mean_Temp_C)) %>%
+  filter(Species %in% mam_tree$tip.label) %>%
   dplyr::select(Group, Species, dry_mass_g, Mean_Temp_C, Mortality_yr) %>%
   rename(Temp_C = Mean_Temp_C)
 
@@ -677,7 +676,7 @@ mortality_ecto$Species[mortality_ecto$Species == "Cololabis aira"] <- "Cololabis
 mortality_ecto$Species[mortality_ecto$Species == "Coryphaennoides acrolepis"] <- "Coryphaenoides acrolepis"
 mortality_ecto$Species[mortality_ecto$Species == "Chelodactylus macropterus"] <- "Nemadactylus macropterus"
 mortality_ecto$Species[mortality_ecto$Species == "Pseudoupeneus macularus"] <- "Pseudupeneus maculatus"
-mortality_ecto$Species <- gsub(" ", "_",mortality_ecto$Species )
+
 
 # mortality with updated names
 mortality_updated <- as_tibble(rbind(mortality_endo, mortality_ecto))
