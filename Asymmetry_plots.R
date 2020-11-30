@@ -143,6 +143,7 @@ rand(lmer_mort_endo) # AIC
 rand(lmer_mort_endo_full) # AIC
 print(summary(lmer_mort_endo), digits = 5)
 summary_mort_endo <- as.data.frame(summary(lmer_mort_endo)$coefficients)
+summary_mort_endo 
 confint.merMod(lmer_mort_endo, method = "Wald") #confidence intervals
 r.squaredGLMM(lmer_mort_endo) #r2
 # dataframe for plotting
@@ -410,11 +411,11 @@ mortal_ecto_regr <- ggplot(data = mort_results %>% filter(Thermy == "Ectotherm")
   scale_color_manual(values = mort_colors ) +
   scale_y_continuous(name = expression(paste('Mortality (yr'^-1,' g'^{-alpha},')')), 
                      trans = "log", 
-                    # limits = c(.3, 10),
+                    limits = c(.3, 10),
                      breaks = c(0.3, 1, 3,10), labels = c("0.3", "1", "3", "10")) + 
-  scale_x_reverse(name =NULL, 
+  scale_x_reverse(name = "1/kT", 
                   #limits = c(42, 38), 
-                  sec.axis = sec_axis(~ 1/(.*0.00008617) - 273.15,  name = NULL)) + 
+                  sec.axis = sec_axis(~ 1/(.*0.00008617) - 273.15,  name = "Ambient Temperature (Cº)")) + 
   theme_single + theme(legend.position = "bottom") +theme_ticks 
 grid.newpage()
 grid.draw(mortal_ecto_regr)
@@ -423,13 +424,13 @@ mortal_ecto_regr  <- set_panel_size(mortal_ecto_regr  , width = unit(10.25,"cm")
 grid.newpage()
 grid.draw(mortal_ecto_regr )
 
-pdf('~/Desktop/Fig_2/sup_ecto_mort_regr.pdf')
+pdf('~/Desktop/sup_ecto_mort_regr.pdf')
 grid.draw(mortal_ecto_regr )
 dev.off()
 
 system2(command = "pdfcrop", 
-        args  = c('~/Desktop/Fig_2/sup_ecto_mort_regr.pdf', 
-                  '~/Desktop/Fig_2/sup_ecto_mort_regr.pdf'))
+        args  = c('~/Desktop/sup_ecto_mort_regr.pdf', 
+                  '~/Desktop/sup_ecto_mort_regr.pdf'))
 
 
 # Endotherms
@@ -441,11 +442,11 @@ mortal_endo_regr <- ggplot(data = mort_results %>% filter(Thermy == "Endotherm")
   geom_segment(aes(x = min_one_kT, xend = max_one_kT, y = min_y, yend = max_y, color = Genus), size = 0.7) +
   scale_y_continuous(name = expression(paste('Mortality (yr'^-1,' g'^{-alpha},')')), 
                      trans = "log", 
-                     #limits = c(.3, 10),
-                     breaks = c(0.3, 1, 3,10), labels = c("0.3", "1", "3", "10")) + 
-  scale_x_reverse(name =NULL, 
-                  #limits = c(42, 38), 
-                  sec.axis = sec_axis(~ 1/(.*0.00008617) - 273.15,  name = NULL)) + 
+                     limits = c(.1, 5), #lower to show one outlier
+                     breaks = c( 0.1, 0.3, 1, 3), labels = c("0.1", "0.3", "1", "3")) + 
+  scale_x_reverse(name = "1/kT", 
+                  limits = c(45, 38), 
+                  sec.axis = sec_axis(~ 1/(.*0.00008617) - 273.15,  name = "Ambient Temperature (Cº)")) + 
   theme_single + theme(legend.position = "bottom") +theme_ticks 
 grid.newpage()
 grid.draw(mortal_endo_regr)
@@ -454,13 +455,13 @@ mortal_endo_regr  <- set_panel_size(mortal_endo_regr  , width = unit(10.25,"cm")
 grid.newpage()
 grid.draw(mortal_endo_regr )
 
-pdf('~/Desktop/Fig_2/sup_endo_mort_regr.pdf')
+pdf('~/Desktop/sup_endo_mort_regr.pdf')
 grid.draw(mortal_endo_regr )
 dev.off()
 
 system2(command = "pdfcrop", 
-        args  = c('~/Desktop/Fig_2/sup_endo_mort_regr.pdf', 
-                  '~/Desktop/Fig_2/sup_endo_mort_regr.pdf'))
+        args  = c('~/Desktop/sup_endo_mort_regr.pdf', 
+                  '~/Desktop/sup_endo_mort_regr.pdf'))
 
 ##########################################
 #### Panel 2d, Mortality violin plot
@@ -572,8 +573,9 @@ attack3 <-  attack2 %>%
   filter(n_genus >= 5, temp_range_genus >= 5)
 
 lmer_attack_gen <-  lmer(log_attack ~ one_kT + log_mass + (one_kT|Genus), data = attack3 )
+lmer_attack_gen 
 lmer_attack_gen_full <-  lmer(log_attack ~ one_kT + log_mass + (one_kT|Group/Genus), data = attack3 )
-
+lmer_attack_gen_full 
 attack_genus <- attack3 %>%
   group_by(Genus) %>%
   slice_head()
@@ -642,9 +644,9 @@ attack_data_regr <- ggplot() +
   scale_y_continuous(name = expression(paste('Attack Rate (m'^2,' s'^-1,' g'^{-alpha},')')),
                     # limits = c(10^-8.5, 10^-6.5), #note: same total range as mortality
                      labels = trans_format("log10", math_format(10^.x)),
-                     breaks = c(10^-8, 10^-7, 10^-6), trans = "log10") +  
+                     breaks = c(10^-12, 10^-10,10^-8,  10^-6), trans = "log10") +  
   scale_x_reverse(name = expression("1/kT"), #limits = c(42.5, 38), 
-                  sec.axis = sec_axis(~ 1/(.*0.00008617) - 273.15, name = NULL)) +
+                  sec.axis = sec_axis(~ 1/(.*0.00008617) - 273.15,name = "Ambient Temperature (ºC)")) +
   theme_single + theme(legend.position = "bottom") +theme_ticks 
 grid.newpage()
 grid.draw(attack_data_regr )
@@ -654,13 +656,13 @@ attack_genus_regr <- set_panel_size(attack_data_regr , width = unit(10.25,"cm"),
 grid.newpage()
 grid.draw(attack_data_regr)
 
-pdf('~/Desktop/Fig_2/supp_attack_data.pdf')
+pdf('~/Desktop/supp_attack_data.pdf')
 grid.draw(attack_data_regr)
 dev.off()
 
 system2(command = "pdfcrop", 
-        args  = c('~/Desktop/Fig_2/supp_attack_data.pdf', 
-                  '~/Desktop/Fig_2/supp_attack_data.pdf'))
+        args  = c('~/Desktop/supp_attack_data.pdf', 
+                  '~/Desktop/supp_attack_data.pdf'))
 
 ############################################
 ##  Fig 2F - violin plot
@@ -741,12 +743,15 @@ sigma.test(mort_ecto_results$temp_slope, sigmasq = var_endo, alternative = "grea
 
 
 #------- load output and view results
-model_mort_mammal <- read_rds('/Users/jgradym/Google Drive/Gibert Paper/best_model/Mammal_fit.rds')
+model_mort_mammal <- read_rds('/Users/jgradym/Google Drive/Gibert Paper/best_model/Mammal_fit_genus.rds')
 
 # Results
 print(summary(model_mort_mammal), digits = 5) 
-plot(model_mort_mammal, N = 6)
 
+plot(model_mort_mammal, N = 6)
+pdf('~/Desktop/mammal_bayes.pdf')
+plot(model_mort_mammal, N = 6)
+dev.off()
 # r2
 bayes_R2(model_mort_mammal, re.form = NA) # exclude random effects
 bayes_R2(model_mort_mammal) # full model
@@ -780,7 +785,7 @@ mam_tree_mcc <- drop.tip(mam_tree_mcc0,
 #write.tree(mam_tree_mcc, "/Users/jgradym/Google Drive/Phylo_trees/mammal_mcc.tree")
 
 
-mort_mammal$species2 <- mort_mammal$species #random effect for multiple individuals per species
+#mort_mammal$species2 <- mort_mammal$species #random effect for multiple individuals per species
 
 #----------------- bayesian model for mammals using brms, species and phylogeny as random effect -----------------
 
@@ -789,7 +794,7 @@ A <- ape::vcv.phylo(mam_tree_mcc)
 
 # Priors
 get_prior(formula = log_mort ~ log_mass + one_kT +
-            (1|gr(species, cov = A)) + (1|species2), data = mort_mammal)
+            (1|gr(species, cov = A)) + (1|Genus), data = mort_mammal)
 
 
 priors_endo1 <- c(set_prior("normal(0, 1)", class = "b", coef = "one_kT"), #slope = 0 for endotherms
@@ -799,7 +804,7 @@ priors_endo1 <- c(set_prior("normal(0, 1)", class = "b", coef = "one_kT"), #slop
 
 # run model
 system.time(model_mort_mammal <- brm(
-  log_mort ~ log_mass + one_kT + (1|gr(species, cov = A)) + (1|species2), 
+  log_mort ~ log_mass + one_kT + (1|gr(species, cov = A)) + (1|Genus), 
   data = mort_mammal, 
   family = gaussian(), 
   data2 = list(A = A),
@@ -809,8 +814,12 @@ system.time(model_mort_mammal <- brm(
   cores = parallel::detectCores() -1) 
 )
 
+saveRDS(model_mort_mammal, "/Users/jgradym/Google Drive/Gibert Paper/best_model/Mammal_fit_genus.rds")
 #
 # Model Results
+print(summary(model_mort_mammal), digits = 5) 
+plot(model_mort_mammal, N = 6)
+
 # r2
 bayes_R2(model_mort_mammal, re.form = NA) # exclude random effects
 bayes_R2(model_mort_mammal) # full model
@@ -827,13 +836,19 @@ pd_to_p(pd_mamm$pd[3], "two-sided") # bayesian equivalent to p value for temp sc
 #------------------- Birds ---------------------
 # ----------- Birds ------------------
 
-
+#ashorcut fter running model
 model_mort_bird <- read_rds("/Users/jgradym/Google Drive/Gibert Paper/best_model/bird_fit.rds")
 
 # Results
 print(summary(model_mort_bird), digits = 5) 
-plot(model_mort_bird, N = 6)
 
+plot(model_mort_bird, N = 6)
+pdf('~/Desktop/birds_gen.pdf')
+plot(model_mort_bird, N = 6)
+dev.off()
+pdf('~/Desktop/birds_gen_3.pdf')
+plot(model_mort_bird, N = 3)
+dev.off()
 # r2
 bayes_R2(model_mort_bird, re.form = NA) # exclude random effects
 bayes_R2(model_mort_bird) # full model
@@ -843,7 +858,7 @@ pd_bird <- p_direction(model_mort_bird) # p direction
 pd_to_p(pd_bird$pd[2], "two-sided") # bayesian equivalent to p value for mass scaling
 pd_to_p(pd_bird$pd[3], "two-sided") # bayesian equivalent to p value for temp scaling
 
-plot(model_mort_bird, N = 6)
+plot(model_mort_bird, N = 3)
 
 #------ Generate bird output ----------------
 mort_bird <- mortality1 %>%
@@ -877,7 +892,7 @@ priors_endo1 <- c(set_prior("normal(0, 1)", class = "b", coef = "one_kT"), #slop
 )
 # Run model
 system.time(model_mort_bird <- brm(
-  log_mort ~ log_mass + one_kT + (1|gr(species, cov = A)) + (1|species2), 
+  log_mort ~ log_mass + one_kT + (1|gr(species, cov = A)) + (1|Genus), 
   data = mort_bird, 
   family = gaussian(), 
   data2 = list(A = A),
@@ -885,10 +900,12 @@ system.time(model_mort_bird <- brm(
   iter = 5000,
   cores = parallel::detectCores() -1) 
 ) 
-#saveRDS(model_mort_bird, file = "/Users/jgradym/Google Drive/Gibert Paper/best_model/bird_fit.rds")
+saveRDS(model_mort_bird, file = "/Users/jgradym/Google Drive/Gibert Paper/best_model/bird_fit_gen_all.rds")
 #----------------------------------------
 # Model Results
 print(summary(model_mort_bird), digits = 6) 
+plot(model_mort_bird, N = 6)
+
 bayes_R2(model_mort_bird, re.form = NA) 
 bayes_R2(model_mort_bird) 
  # fixed effects only
