@@ -2,7 +2,6 @@
 
 library(grid)
 library(scales)
-library(TeachingDemos)
 library(ape)
 library(phangorn)
 library(Hmisc)
@@ -283,6 +282,9 @@ mort_ecto3 <- mortality3 %>% filter(Thermy == "Ectotherm")
 # Model
 lmer_mort_gen_ecto <- lmer(log_mort ~ one_kT + log_mass +  (one_kT|Genus),  data = mort_ecto3)
 lmer_mort_gen_ecto 
+summary(lmer_mort_gen_ecto)
+confint.merMod(lmer_mort_gen_ecto, method = "Wald")
+
 lmer_mort_gen_full_ecto <- lmer(log_mort ~ one_kT + log_mass + (one_kT|Group/Genus),  data = mort_ecto3)
 lmer_mort_gen_full_ecto
 
@@ -294,8 +296,7 @@ confint.merMod(lmer_mort_gen_ecto, method = "Wald") #confidence intervals
 coef(lmer_mort_gen_ecto)
 r.squaredGLMM(lmer_mort_gen_ecto) #r2
 broom.mixed::tidy(lmer_mort_gen_ecto, effects = "ran_coefs", conf.int = TRUE) # CIs for random effects not available
-lme4_tidiers(lmer_mort_gen_ecto)
-confint.merMod(coef(lmer_mort_gen_ecto), method = "Wald") 
+
 #-------- Regression fits for plotting ---------
 # Ectotherm Genera
 mort_ecto_results <- as_tibble(tibble::rownames_to_column(coef(lmer_mort_gen_ecto)$Genus, "Genus") %>%
@@ -366,6 +367,7 @@ lmer_mort_gen_ecto <- as_tibble(rownames_to_column(lmer_mort_gen_ecto)) %>%
 # Combine 
 mort_results <- as_tibble(rbind(mort_endo_results, mort_ecto_results))
 mort_results$Type <- "mortality" 
+
 #--- plot Fig 2C ------
 
 mortal_genus_regr <- ggplot(data =mort_results) +
@@ -504,7 +506,7 @@ system2(command = "pdfcrop",
 ##---------------------------------
 ## Plotting Fig 2e, Part I (mortality)
 
-mortal_genus_regr <- ggplot(data =mort_results %>% filter(Thermy == "Ectotherm")) +
+mortal_genus_regr <- ggplot(data = mort_results %>% filter(Thermy == "Ectotherm")) +
   geom_segment(aes(x = min_one_kT, xend = max_one_kT, y = min_y, yend = max_y, color = Thermy), size = .5) +
 
   scale_color_manual(values =c("Endotherm" = endo_col, "Ectotherm" = ecto_mort_col)) +
@@ -728,9 +730,10 @@ var_ecto
 var_endo <- var(mort_endo_results$temp_slope)
 var_endo
 
-#compare variance - not significantly different
-sigma.test(mort_ecto_results$temp_slope, sigmasq = var_endo, alternative = "greater") #significantly greater variance in ectotherms
+#compare variance of Ea's with thermy 
+var.test(temp_slope ~ Thermy, data = mort_results, alternative = "greater") #significantly greater variance in ectotherms
 
+48.812
 
 
 
