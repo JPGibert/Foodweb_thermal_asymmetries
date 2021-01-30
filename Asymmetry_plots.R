@@ -181,7 +181,7 @@ endo_lab <- expression(paste('y = -0.011x + 0.093'))
 mortal_plot_endo <- ggplot(mortality2 %>% filter(Thermy == "Endotherm"),
                            aes(x = one_kT, y = mort_mass_corr)) + 
   theme_single + theme(legend.position = "none") +  theme_ticks +
-  scale_y_continuous(name = expression(paste('Mortality (yr'^-1,' g'^{-alpha},')')), 
+  scale_y_continuous(name = expression(paste('Mortality (yr'^-1,' g'^{-theta},')')), 
                      trans = "log", breaks = c(0.1, 1, 10), labels = c("0.1", "1", "10"), 
                      #limits = c(0.02, 10)
                      ) +  
@@ -221,7 +221,7 @@ ecto_lab <- expression(paste('y = -0.53x + 25'))
 
 mortal_plot_ecto <- ggplot(mortality2 %>% filter(Thermy == "Ectotherm"),
                            aes(x = one_kT, y = mort_mass_corr)) + 
-  scale_y_continuous(trans = "log10",  name = expression(paste('Mortality (yr'^-1,' g'^{-alpha},')')), 
+  scale_y_continuous(trans = "log10",  name = expression(paste('Mortality (yr'^-1,' g'^{-theta},')')), 
                      breaks = c(0.1,  1, 10), labels = c("0.1", "1",  "10"), 
                      limits = c(0.02, 30), 
                      position = "right")+ 
@@ -326,7 +326,7 @@ mort_endo_genus <- mortality3 %>%
 
 mort_endo_genus 
 
-# data
+# data 
 mort_endo3 <- mortality3 %>% filter(Thermy == "Endotherm")
 
 # model
@@ -375,7 +375,7 @@ mortal_genus_regr <- ggplot(data =mort_results) +
   geom_segment(data =mort_results_all,
                aes(x = min_one_kT, xend = max_one_kT, y = min_mort, yend = max_mort, color = Thermy), size = 2) +
   scale_color_manual(values =c("Endotherm" = endo_col2, "Ectotherm" = ecto_mort_col )) +
-  scale_y_continuous(name = expression(paste('Mortality (yr'^-1,' g'^{-alpha},')')), 
+  scale_y_continuous(name = expression(paste('Mortality (yr'^-1,' g'^{-theta},')')), 
                      trans = "log", 
                      limits = c(.15, 10),
                      breaks = c(0.3, 1, 3,10), labels = c("0.3", "1", "3", "10")) + 
@@ -411,7 +411,7 @@ mortal_ecto_regr <- ggplot(data = mort_results %>% filter(Thermy == "Ectotherm")
              aes(x = one_kT, y = mort_mass_corr, color = Genus)) +
   geom_segment(aes(x = min_one_kT, xend = max_one_kT, y = min_y, yend = max_y, color = Genus), size = 0.7) +
   scale_color_manual(values = mort_colors ) +
-  scale_y_continuous(name = expression(paste('Mortality (yr'^-1,' g'^{-alpha},')')), 
+  scale_y_continuous(name = expression(paste('Mortality (yr'^-1,' g'^{-theta},')')), 
                      trans = "log", 
                     limits = c(.3, 10),
                      breaks = c(0.3, 1, 3,10), labels = c("0.3", "1", "3", "10")) + 
@@ -426,13 +426,13 @@ mortal_ecto_regr  <- set_panel_size(mortal_ecto_regr  , width = unit(10.25,"cm")
 grid.newpage()
 grid.draw(mortal_ecto_regr )
 
-pdf('~/Desktop/sup_ecto_mort_regr.pdf')
+pdf('~/Desktop/Fig_2/sup_ecto_mort_regr.pdf')
 grid.draw(mortal_ecto_regr )
 dev.off()
 
 system2(command = "pdfcrop", 
-        args  = c('~/Desktop/sup_ecto_mort_regr.pdf', 
-                  '~/Desktop/sup_ecto_mort_regr.pdf'))
+        args  = c('~/Desktop/Fig_2/sup_ecto_mort_regr.pdf', 
+                  '~/Desktop/Fig_2/sup_ecto_mort_regr.pdf'))
 
 
 # Endotherms
@@ -442,7 +442,7 @@ mortal_endo_regr <- ggplot(data = mort_results %>% filter(Thermy == "Endotherm")
   geom_point(data = mortality3 %>% filter (Thermy == "Endotherm"), shape = 21, stroke = 0.75, size =2,
              aes(x = one_kT, y = mort_mass_corr, color = Genus)) +
   geom_segment(aes(x = min_one_kT, xend = max_one_kT, y = min_y, yend = max_y, color = Genus), size = 0.7) +
-  scale_y_continuous(name = expression(paste('Mortality (yr'^-1,' g'^{-alpha},')')), 
+  scale_y_continuous(name = expression(paste('Mortality (yr'^-1,' g'^{-theta},')')), 
                      trans = "log", 
                      limits = c(.1, 5), #lower to show one outlier
                      breaks = c( 0.1, 0.3, 1, 3), labels = c("0.1", "0.3", "1", "3")) + 
@@ -457,13 +457,13 @@ mortal_endo_regr  <- set_panel_size(mortal_endo_regr  , width = unit(10.25,"cm")
 grid.newpage()
 grid.draw(mortal_endo_regr )
 
-pdf('~/Desktop/sup_endo_mort_regr.pdf')
+pdf('~/Desktop/Fig_2/sup_endo_mort_regr.pdf')
 grid.draw(mortal_endo_regr )
 dev.off()
 
 system2(command = "pdfcrop", 
-        args  = c('~/Desktop/sup_endo_mort_regr.pdf', 
-                  '~/Desktop/sup_endo_mort_regr.pdf'))
+        args  = c('~/Desktop/Fig_2/sup_endo_mort_regr.pdf', 
+                  '~/Desktop/Fig_2/sup_endo_mort_regr.pdf'))
 
 ##########################################
 #### Panel 2d, Mortality violin plot
@@ -510,7 +510,7 @@ mortal_genus_regr <- ggplot(data = mort_results %>% filter(Thermy == "Ectotherm"
   geom_segment(aes(x = min_one_kT, xend = max_one_kT, y = min_y, yend = max_y, color = Thermy), size = .5) +
 
   scale_color_manual(values =c("Endotherm" = endo_col, "Ectotherm" = ecto_mort_col)) +
-  scale_y_continuous(name = expression(paste('Mortality (yr'^-1,' g'^{-alpha},')')), 
+  scale_y_continuous(name = expression(paste('Mortality (yr'^-1,' g'^{-theta},')')), 
                      trans = "log10", position = "right", limits = c(0.3, 30),
                      breaks = c(0.3, 3, 30), labels = c("0.3", "3", "30")) + 
   scale_x_reverse(name =NULL, 
@@ -609,7 +609,7 @@ attack_results$Type<- "attack"
 attack_genus_regr <- ggplot(data = attack_results) +
   geom_segment(aes(x = min_one_kT, xend = max_one_kT, y = min_y, yend = max_y), 
                col = "navy",size = .5) +
-  scale_y_continuous(name = expression(paste('Attack Rate (m'^2,' s'^-1,' g'^{-alpha},')')),
+  scale_y_continuous(name = expression(paste('Attack Rate (m'^2,' s'^-1,' g'^{-theta},')')),
                      limits = c(10^-8.5, 10^-6.5), #note: same total range as mortality
                      labels = trans_format("log10", math_format(10^.x)),
                      breaks = c(10^-8, 10^-7, 10^-6), trans = "log10") +  
@@ -643,7 +643,7 @@ attack_data_regr <- ggplot() +
   geom_segment(data = attack_results, aes(x = min_one_kT, xend = max_one_kT, y = min_y, yend = max_y, color = Genus), 
                size = .5) +
   scale_color_manual(values = attack_color) +
-  scale_y_continuous(name = expression(paste('Attack Rate (m'^2,' s'^-1,' g'^{-alpha},')')),
+  scale_y_continuous(name = expression(paste('Attack Rate (m'^2,' s'^-1,' g'^{-theta},')')),
                     # limits = c(10^-8.5, 10^-6.5), #note: same total range as mortality
                      labels = trans_format("log10", math_format(10^.x)),
                      breaks = c(10^-12, 10^-10,10^-8,  10^-6), trans = "log10") +  
@@ -658,13 +658,13 @@ attack_genus_regr <- set_panel_size(attack_data_regr , width = unit(10.25,"cm"),
 grid.newpage()
 grid.draw(attack_data_regr)
 
-pdf('~/Desktop/supp_attack_data.pdf')
+pdf('~/Desktop/Fig_2/supp_attack_data.pdf')
 grid.draw(attack_data_regr)
 dev.off()
 
 system2(command = "pdfcrop", 
-        args  = c('~/Desktop/supp_attack_data.pdf', 
-                  '~/Desktop/supp_attack_data.pdf'))
+        args  = c('~/Desktop/Fig_2/supp_attack_data.pdf', 
+                  '~/Desktop/Fig_2/supp_attack_data.pdf'))
 
 ############################################
 ##  Fig 2F - violin plot
