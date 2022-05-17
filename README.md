@@ -1,5 +1,17 @@
 ## Foodweb_thermal_asymmetries
 
+ABSTRACT 
+
+1. Understanding how food webs will respond to globally rising temperatures is a pressing issue. Temperature effects on food webs are likely underpinned by differences in the thermal sensitivity of consumers and resources, or thermal asymmetries. We identify three sources of asymmetry in the rising portion of thermal performance curves: inter-thermy variation across thermoregulatory groups, intra-thermy variation within a thermoregulatory group, and rate-dependent variation in how different ecological rates respond to temperature. \
+
+2. We use a large empirical data on thermal sensitivities across thermoregulatory groups to explore how prevalent thermal asymmetries are in real consumer-resource interactions. We then develop theory to illustrate how food-web temperature responses are mediated by the magnitude and direction of these thermal asymmetries. We use this model to show possible conditions under which food webs could respond to warming as currently expected, and when that may not be the case.\
+
+3. Our results suggests that inter-thermy, intra-thermy, and rate-dependent asymmetries are likely common in natural food webs. We show how all thermal asymmetries have important effects on species abundances across trophic levels as well as the maximum trophic position in the food web. Both the direction of the asymmetries (i.e., which species responds more strongly) and their magnitude (the difference in thermal responses) determine the temperature response of the food web and, consistent with current expectations, top predator abundance almost always declines with temperature, even though maximum trophic position may increase. \
+
+4. While our model shows that food-web temperature responses can be varied, much of this variation can be explained by considering thermal asymmetries. Our study provides new data and theoretical insights into the widely varying food-web effects of warming observed in laboratory, experimental and observational settings, and clarifies how predator and prey thermal ecology may influence overall food web responses in a changing world.\
+
+Gibert, J.P, Grady J., A Dell, Functional Ecology, 2022
+
 [![DOI](https://zenodo.org/badge/246418052.svg)](https://zenodo.org/badge/latestdoi/246418052)
 
 **Data:**
