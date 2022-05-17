@@ -1,5 +1,7 @@
 ## Foodweb_thermal_asymmetries
 
+[![DOI](https://zenodo.org/badge/246418052.svg)](https://zenodo.org/badge/latestdoi/246418052)
+
 **Data:**
 1) Most data used in this paper can be found in the DATA folder. Some data (bird data from BirdLife International) was too large to report here, but can still be freely downloaded from BirdLife International as explained in the Methods section. 
 
