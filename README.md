@@ -12,7 +12,8 @@ ABSTRACT
 
 Gibert, J.P, Grady J., A Dell, Functional Ecology, 2022
 
-[![DOI](https://zenodo.org/badge/246418052.svg)](https://zenodo.org/badge/latestdoi/246418052)
+[![DOI](https://zenodo.org/badge/386067708.svg)](https://zenodo.org/badge/latestdoi/386067708)
+
 
 **Data:**
 1) Most data used in this paper can be found in the DATA folder. Some data (bird data from BirdLife International) was too large to report here, but can still be freely downloaded from BirdLife International as explained in the Methods section. 
