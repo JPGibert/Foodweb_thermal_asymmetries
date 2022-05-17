@@ -12,7 +12,7 @@ ABSTRACT
 
 Gibert, J.P, Grady J., A Dell, Functional Ecology, 2022
 
-[![DOI](https://zenodo.org/badge/386067708.svg)](https://zenodo.org/badge/latestdoi/386067708)
+[![DOI](https://zenodo.org/badge/246418052.svg)](https://zenodo.org/badge/latestdoi/246418052)
 
 
 **Data:**
